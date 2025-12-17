@@ -26,3 +26,6 @@ jobs:
 
       - name: 🗺️ Validate city × industry routes
         run: node scripts/validateRoutes.js
+
+      - name: Debug scripts folder
+        run: ls scripts
