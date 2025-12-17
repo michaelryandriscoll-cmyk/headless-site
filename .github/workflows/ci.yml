@@ -22,10 +22,7 @@ jobs:
         run: npm ci
 
       - name: 🧠 Validate industry configs
-        run: node scripts/validateIndustries.js
+        run: node scripts/validateIndustries.mjs
 
       - name: 🗺️ Validate city × industry routes
         run: node scripts/validateRoutes.js
-
-      - name: Debug scripts folder
-        run: ls scripts
