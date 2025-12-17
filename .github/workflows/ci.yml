@@ -25,4 +25,4 @@ jobs:
         run: node scripts/validateIndustries.mjs
 
       - name: 🗺️ Validate city × industry routes
-        run: node scripts/validateRoutes.js
+        run: node scripts/validateRoutes.mjs
