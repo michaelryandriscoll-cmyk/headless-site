@@ -1,7 +1,7 @@
 ﻿// scripts/validateRoutes.mjs
 
-import industries from "../app/lib/_industryList25.js";
 import stateCityMap from "../data/stateCityMap.ci.js";
+import industries from "../app/lib/_industryList25.js";
 
 let errors = 0;
 
