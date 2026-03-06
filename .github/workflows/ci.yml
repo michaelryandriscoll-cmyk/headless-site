@@ -1,14 +1,11 @@
 name: CI Validation
-
 on:
   push:
     branches: [ main ]
   pull_request:
-
 jobs:
   validate:
     runs-on: ubuntu-latest
-
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
@@ -24,8 +21,11 @@ jobs:
       - name: 🧠 Validate industry configs
         run: node scripts/validateIndustries.mjs
 
+      - name: 🔠 Validate H1 integrity
+        run: node scripts/validateH1.mjs
+
       - name: 🗺️ Validate city × industry routes
         run: node scripts/validateRoutes.mjs
 
-      - name: 🧠 Validate SEO (H1 + title integrity)
+      - name: 🔍 Validate SEO (H1 + title + description)
         run: node scripts/validateSeo.mjs
