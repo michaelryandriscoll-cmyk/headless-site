@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "seattle-business-loans",
+  "cityName": "Seattle",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Seattle Restaurant Business Loans | Washington",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Seattle, Washington.",
+  "h1": "Seattle Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Seattle, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Seattle Restaurant Business Loans",
+    "areaServed": "Seattle, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

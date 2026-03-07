@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oregon",
+  "stateName": "Oregon",
+  "citySlug": "eugene-business-loans",
+  "cityName": "Eugene",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Eugene Construction Business Loans | Oregon",
+  "description": "Compare construction business loans, working capital and equipment financing available in Eugene, Oregon.",
+  "h1": "Eugene Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Eugene, Oregon.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Eugene Construction Business Loans",
+    "areaServed": "Eugene, Oregon",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

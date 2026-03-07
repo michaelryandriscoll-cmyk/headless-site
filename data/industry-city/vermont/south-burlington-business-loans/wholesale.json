@@ -1,0 +1,41 @@
+{
+  "state": "Vermont",
+  "city": "South Burlington",
+  "industry": "wholesale",
+  "title": "South Burlington Wholesale Business Loans",
+  "intro": "Distributors in South Burlington, Vermont use working capital to manage payment terms and large orders.",
+  "bestFor": [
+    {
+      "slug": "inventory",
+      "label": "Bulk inventory purchases"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics, fuel & vehicles"
+    },
+    {
+      "slug": "warehousing",
+      "label": "Warehouse space & storage"
+    },
+    {
+      "slug": "software",
+      "label": "Inventory management systems",
+      "weight": 1
+    },
+    {
+      "slug": "expansion",
+      "label": "Territory or product line expansion",
+      "weight": 2
+    },
+    {
+      "slug": "new_accounts",
+      "label": "Onboarding new retail accounts",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

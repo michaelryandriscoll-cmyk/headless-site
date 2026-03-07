@@ -1,0 +1,24 @@
+{
+  "stateSlug": "north-carolina",
+  "stateName": "North Carolina",
+  "citySlug": "durham-business-loans",
+  "cityName": "Durham",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Durham Retail Business Loans | North Carolina",
+  "description": "Compare retail business loans, working capital and equipment financing available in Durham, North Carolina.",
+  "h1": "Durham Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Durham, North Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Durham Retail Business Loans",
+    "areaServed": "Durham, North Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "north-carolina",
+  "stateName": "North Carolina",
+  "citySlug": "raleigh-business-loans",
+  "cityName": "Raleigh",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Raleigh Retail Business Loans | North Carolina",
+  "description": "Compare retail business loans, working capital and equipment financing available in Raleigh, North Carolina.",
+  "h1": "Raleigh Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Raleigh, North Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Raleigh Retail Business Loans",
+    "areaServed": "Raleigh, North Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

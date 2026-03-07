@@ -1,0 +1,24 @@
+{
+  "stateSlug": "montana",
+  "stateName": "Montana",
+  "citySlug": "bozeman-business-loans",
+  "cityName": "Bozeman",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Bozeman Restaurant Business Loans | Montana",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Bozeman, Montana.",
+  "h1": "Bozeman Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Bozeman, Montana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Bozeman Restaurant Business Loans",
+    "areaServed": "Bozeman, Montana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

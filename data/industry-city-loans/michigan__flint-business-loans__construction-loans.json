@@ -1,0 +1,24 @@
+{
+  "stateSlug": "michigan",
+  "stateName": "Michigan",
+  "citySlug": "flint-business-loans",
+  "cityName": "Flint",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Flint Construction Business Loans | Michigan",
+  "description": "Compare construction business loans, working capital and equipment financing available in Flint, Michigan.",
+  "h1": "Flint Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Flint, Michigan.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Flint Construction Business Loans",
+    "areaServed": "Flint, Michigan",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

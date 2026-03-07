@@ -1,0 +1,7 @@
+﻿<svg width="150" height="48" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+ <rect width="200" height="60" rx="10" fill="#0b1f41"/>
+ <path fill="#00c684" d="M60 22h-6v-4a16 16 0 0132 0v4h-6v-4a10 10 0 00-20 0v4zM50 26h40v32H50z"/>
+ <text x="130" y="35" fill="#ffffff" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">
+  Encrypted & Secure
+ </text>
+</svg>

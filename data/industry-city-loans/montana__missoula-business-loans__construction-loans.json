@@ -1,0 +1,24 @@
+{
+  "stateSlug": "montana",
+  "stateName": "Montana",
+  "citySlug": "missoula-business-loans",
+  "cityName": "Missoula",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Missoula Construction Business Loans | Montana",
+  "description": "Compare construction business loans, working capital and equipment financing available in Missoula, Montana.",
+  "h1": "Missoula Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Missoula, Montana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Missoula Construction Business Loans",
+    "areaServed": "Missoula, Montana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

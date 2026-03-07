@@ -1,0 +1,24 @@
+{
+  "stateSlug": "utah",
+  "stateName": "Utah",
+  "citySlug": "salt-lake-city-business-loans",
+  "cityName": "Salt Lake City",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Salt Lake City Healthcare Business Loans | Utah",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Salt Lake City, Utah.",
+  "h1": "Salt Lake City Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Salt Lake City, Utah.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Salt Lake City Healthcare Business Loans",
+    "areaServed": "Salt Lake City, Utah",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alaska",
+  "stateName": "Alaska",
+  "citySlug": "anchorage-business-loans",
+  "cityName": "Anchorage",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Anchorage Construction Business Loans | Alaska",
+  "description": "Compare construction business loans, working capital and equipment financing available in Anchorage, Alaska.",
+  "h1": "Anchorage Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Anchorage, Alaska.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Anchorage Construction Business Loans",
+    "areaServed": "Anchorage, Alaska",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "illinois",
+  "stateName": "Illinois",
+  "citySlug": "naperville-business-loans",
+  "cityName": "Naperville",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Naperville Restaurant Business Loans | Illinois",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Naperville, Illinois.",
+  "h1": "Naperville Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Naperville, Illinois.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Naperville Restaurant Business Loans",
+    "areaServed": "Naperville, Illinois",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

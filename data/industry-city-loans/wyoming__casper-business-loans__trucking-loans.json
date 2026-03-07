@@ -1,0 +1,24 @@
+{
+  "stateSlug": "wyoming",
+  "stateName": "Wyoming",
+  "citySlug": "casper-business-loans",
+  "cityName": "Casper",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Casper Trucking Business Loans | Wyoming",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Casper, Wyoming.",
+  "h1": "Casper Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Casper, Wyoming.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Casper Trucking Business Loans",
+    "areaServed": "Casper, Wyoming",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

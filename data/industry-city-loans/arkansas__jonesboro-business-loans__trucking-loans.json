@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arkansas",
+  "stateName": "Arkansas",
+  "citySlug": "jonesboro-business-loans",
+  "cityName": "Jonesboro",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Jonesboro Trucking Business Loans | Arkansas",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Jonesboro, Arkansas.",
+  "h1": "Jonesboro Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Jonesboro, Arkansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Jonesboro Trucking Business Loans",
+    "areaServed": "Jonesboro, Arkansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-mexico",
+  "stateName": "New Mexico",
+  "citySlug": "albuquerque-business-loans",
+  "cityName": "Albuquerque",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Albuquerque Restaurant Business Loans | New Mexico",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Albuquerque, New Mexico.",
+  "h1": "Albuquerque Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Albuquerque, New Mexico.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Albuquerque Restaurant Business Loans",
+    "areaServed": "Albuquerque, New Mexico",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

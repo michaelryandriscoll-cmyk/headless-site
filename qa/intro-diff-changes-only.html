@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Intro Diff Report</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    color: #222;
+  }
+  .sidebar {
+    width: 220px;
+    background: #0b1724;
+    color: #f7f7f7;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  .sidebar h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .sidebar a {
+    display: block;
+    color: #d0d6e0;
+    text-decoration: none;
+    padding: 4px 0;
+    font-size: 14px;
+  }
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 24px;
+    background: #f3f4f6;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  .intro-block {
+    margin-bottom: 24px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.08);
+    padding: 12px 16px 16px;
+  }
+  .intro-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .intro-index {
+    font-weight: 600;
+    color: #111827;
+  }
+  .impact-badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .impact-small {
+    color: #166534;
+    background: #dcfce7;
+    border-color: #bbf7d0;
+  }
+  .impact-medium {
+    color: #92400e;
+    background: #ffedd5;
+    border-color: #fed7aa;
+  }
+  .impact-major {
+    color: #991b1b;
+    background: #fee2e2;
+    border-color: #fecaca;
+  }
+  .intro-meta {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .col {
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 8px 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .col h4 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+  }
+  .removed {
+    color: #b91c1c;
+    text-decoration: line-through;
+  }
+  .added {
+    color: #15803d;
+    text-decoration: underline;
+  }
+  .industry-block {
+    margin-bottom: 32px;
+  }
+  .industry-header {
+    margin-bottom: 8px;
+  }
+  .industry-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #111827;
+  }
+  .industry-header span {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  .filters {
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #374151;
+  }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>Industries</h2>
+<a href="#industry-roofing">roofing</a>
+<a href="#industry-trucking">trucking</a>
+<a href="#industry-solar">solar</a>
+<a href="#industry-restaurants">restaurants</a>
+<a href="#industry-retail">retail</a>
+<a href="#industry-construction">construction</a>
+<a href="#industry-hvac">hvac</a>
+<a href="#industry-plumbing">plumbing</a>
+<a href="#industry-electrician">electrician</a>
+<a href="#industry-cleaning">cleaning</a>
+<a href="#industry-landscaping">landscaping</a>
+<a href="#industry-auto-repair">auto-repair</a>
+<a href="#industry-medical">medical</a>
+<a href="#industry-pharmacy">pharmacy</a>
+<a href="#industry-fitness">fitness</a>
+<a href="#industry-professional-services">professional-services</a>
+<a href="#industry-manufacturing">manufacturing</a>
+<a href="#industry-wholesale">wholesale</a>
+<a href="#industry-real-estate">real-estate</a>
+<a href="#industry-food-truck">food-truck</a>
+<a href="#industry-childcare">childcare</a>
+<a href="#industry-nonprofit">nonprofit</a>
+<a href="#industry-franchise">franchise</a>
+<a href="#industry-technology">technology</a>
+<a href="#industry-ecommerce">ecommerce</a>
+<a href="#industry-food-services">food-services</a>
+<a href="#industry-general-contractors">general-contractors</a>
+</div>
+<div class="main">
+  <h1>Intro Diff Report — Changes Only</h1>
+  <p style="font-size:13px;color:#4b5563;">Left: Original &nbsp;&nbsp; Right: Rewritten</p>
+  <div class="filters">
+    <strong>Legend:</strong>
+    <span style="margin-left:10px;">🟢 Small change (>= 85% similar)</span>
+    <span style="margin-left:10px;">🟡 Medium (65–84%)</span>
+    <span style="margin-left:10px;">🔴 Major (&lt; 65%)</span>
+  </div>
+</div></body></html>

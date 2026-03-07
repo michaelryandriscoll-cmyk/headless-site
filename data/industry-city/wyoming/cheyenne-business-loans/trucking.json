@@ -1,0 +1,41 @@
+{
+  "state": "Wyoming",
+  "city": "Cheyenne",
+  "industry": "trucking",
+  "title": "Cheyenne Trucking Business Loans",
+  "intro": "Keep your routes running smoothly. Compare trucking business loans in Cheyenne, Wyoming for fuel, maintenance, and new equipment.",
+  "bestFor": [
+    {
+      "slug": "fuel_costs",
+      "label": "Fuel & operating expenses"
+    },
+    {
+      "slug": "fleet_repairs",
+      "label": "Fleet repairs & maintenance"
+    },
+    {
+      "slug": "cashflow_gaps",
+      "label": "Covering cash-flow gaps"
+    },
+    {
+      "slug": "hire_drivers",
+      "label": "Hiring CDL drivers",
+      "weight": 3
+    },
+    {
+      "slug": "buy_used_trucks",
+      "label": "Purchasing used trucks",
+      "weight": 3
+    },
+    {
+      "slug": "new_route_expansion",
+      "label": "Expanding routes or contracts",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "12–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

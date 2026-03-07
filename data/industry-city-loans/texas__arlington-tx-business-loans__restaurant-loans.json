@@ -1,0 +1,24 @@
+{
+  "stateSlug": "texas",
+  "stateName": "Texas",
+  "citySlug": "arlington-tx-business-loans",
+  "cityName": "Arlington",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Arlington Restaurant Business Loans | Texas",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Arlington, Texas.",
+  "h1": "Arlington Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Arlington, Texas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Arlington Restaurant Business Loans",
+    "areaServed": "Arlington, Texas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

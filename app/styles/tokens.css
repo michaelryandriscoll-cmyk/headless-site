@@ -1,0 +1,54 @@
+:root {
+  /* =========================
+     BRAND
+  ========================== */
+  --sbc-brand: #0b1f41;
+  --sbc-brand-dark: #07142a;
+  --sbc-brand-soft: #102a5c;
+
+  --sbc-accent: #00c684;
+  --sbc-accent-soft: #18d39a;
+  --sbc-danger: #dc2626;
+
+  /* =========================
+     SURFACES / BACKGROUNDS
+  ========================== */
+  --sbc-bg: #f3f4f6;
+  --sbc-surface: #ffffff;
+  --sbc-surface-soft: #f9fafb;
+
+  /* =========================
+     TEXT
+  ========================== */
+  --sbc-text: #111827;
+  --sbc-text-muted: #4b5563;
+  --sbc-text-soft: #6b7280;
+
+  /* =========================
+     BORDERS
+  ========================== */
+  --sbc-border-subtle: #e5e7eb;
+  --sbc-border-strong: #cbd5e1;
+
+  /* =========================
+     RADII
+  ========================== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* =========================
+     SHADOWS
+  ========================== */
+  --shadow-soft: 0 8px 20px rgba(15, 23, 42, 0.06);
+  --shadow-card: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --shadow-hero: 0 18px 40px rgba(15, 23, 42, 0.12);
+  --shadow-strong: 0 18px 44px rgba(0, 0, 0, 0.35);
+
+  /* =========================
+     HEADER
+  ========================== */
+  --hdr-text: #ffffff;
+  --hdr-accent: var(--sbc-accent);
+}

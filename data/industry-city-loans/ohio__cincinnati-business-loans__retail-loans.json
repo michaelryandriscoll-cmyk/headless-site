@@ -1,0 +1,24 @@
+{
+  "stateSlug": "ohio",
+  "stateName": "Ohio",
+  "citySlug": "cincinnati-business-loans",
+  "cityName": "Cincinnati",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Cincinnati Retail Business Loans | Ohio",
+  "description": "Compare retail business loans, working capital and equipment financing available in Cincinnati, Ohio.",
+  "h1": "Cincinnati Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Cincinnati, Ohio.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Cincinnati Retail Business Loans",
+    "areaServed": "Cincinnati, Ohio",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

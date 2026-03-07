@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oklahoma",
+  "stateName": "Oklahoma",
+  "citySlug": "tulsa-business-loans",
+  "cityName": "Tulsa",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Tulsa Healthcare Business Loans | Oklahoma",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Tulsa, Oklahoma.",
+  "h1": "Tulsa Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Tulsa, Oklahoma.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tulsa Healthcare Business Loans",
+    "areaServed": "Tulsa, Oklahoma",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

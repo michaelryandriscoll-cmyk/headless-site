@@ -1,0 +1,41 @@
+{
+  "state": "Connecticut",
+  "city": "New Haven",
+  "industry": "technology",
+  "title": "New Haven Technology Business Loans",
+  "intro": "Grow your tech business in New Haven, Connecticut with capital for engineers, sales, and product investment.",
+  "bestFor": [
+    {
+      "slug": "hiring",
+      "label": "Hiring engineers & product teams"
+    },
+    {
+      "slug": "development",
+      "label": "Product development & software build"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Cloud & infrastructure costs"
+    },
+    {
+      "slug": "security",
+      "label": "Security, compliance & audits",
+      "weight": 2
+    },
+    {
+      "slug": "expansion",
+      "label": "Scaling into new markets",
+      "weight": 2
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing & go-to-market programs",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "640+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "south-carolina",
+  "stateName": "South Carolina",
+  "citySlug": "columbia-sc-business-loans",
+  "cityName": "Columbia",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Columbia Restaurant Business Loans | South Carolina",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Columbia, South Carolina.",
+  "h1": "Columbia Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Columbia, South Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Columbia Restaurant Business Loans",
+    "areaServed": "Columbia, South Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

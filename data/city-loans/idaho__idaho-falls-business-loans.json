@@ -1,0 +1,99 @@
+{
+  "stateKey": "idaho",
+  "stateName": "Idaho",
+  "cityName": "Idaho Falls",
+  "citySlug": "idaho-falls-business-loans",
+  "title": "Idaho Falls Small Business Loans (Idaho) | Small Business Capital",
+  "metaDescription": "Get fast Idaho Falls, Idaho small business funding. Same-day approvals, working capital, equipment financing and business lines of credit with flexible terms.",
+  "h1": "Idaho Falls, Idaho Small Business Loans",
+  "heroIntro": "Access fast, flexible business funding in Idaho Falls, Idaho. We connect local businesses with a national network of private lenders for working capital, equipment financing and revolving credit lines — without the slow, collateral-heavy process of traditional banks.",
+  "cityOverview": [
+    "Whether you run a restaurant near downtown Idaho Falls, manage a growing trades business, or operate a professional services firm, access to reliable capital is critical. Our lending partners evaluate real revenue and cash flow — not just collateral — to help your business stay ahead of payroll, inventory, and growth opportunities.",
+    "Because we work with a national network of lenders, Idaho Falls businesses can compare multiple offers side-by-side, choose terms that fit their cash flow, and secure funding without spending weeks chasing bank approvals."
+  ],
+  "loanUseCases": [
+    "Bridge cash flow while waiting on invoices or seasonal revenue in Idaho Falls.",
+    "Purchase or upgrade equipment, vehicles, or specialized tools for your business.",
+    "Renovate your location, open a new branch, or expand your service area in Idaho.",
+    "Buy inventory in bulk to secure better pricing and higher margins.",
+    "Cover payroll, marketing campaigns, or contractor costs during growth pushes."
+  ],
+  "comparisonBlock": {
+    "heading": "Why Idaho Falls Businesses Use Private Lending vs. Banks",
+    "bullets": [
+      "Banks often require real estate or hard collateral — many Idaho Falls business owners don’t have or don’t want to risk it.",
+      "Traditional underwriting can take weeks; our network can issue decisions in as little as 2–24 hours.",
+      "Programs are built around real revenue and deposits, not just credit scores.",
+      "Flexible renewals and top-up options keep funding available as your Idaho Falls business grows."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How fast can I get funded in Idaho Falls?",
+      "answer": "Many Idaho Falls businesses receive same-day approvals and can be funded in as little as 24–48 hours once documents are complete. Timing depends on your industry, revenue consistency, and the specific program selected."
+    },
+    {
+      "question": "What credit score do I need for a small business loan in Idaho Falls?",
+      "answer": "Our lending network looks at more than just credit scores. While stronger credit can unlock better rates and terms, we also consider time-in-business, monthly revenue, and recent banking activity for Idaho Falls companies."
+    },
+    {
+      "question": "Do I need collateral to qualify for funding in Idaho Falls?",
+      "answer": "Most programs we arrange for Idaho Falls, Idaho businesses do not require traditional real estate collateral. Many are based on cash flow, receivables, or business performance instead."
+    },
+    {
+      "question": "Can startups in Idaho Falls qualify for funding?",
+      "answer": "Some programs require at least 6–12 months in business, but certain lenders may consider younger Idaho Falls businesses with strong personal credit, contracts, or documented revenue projections."
+    }
+  ],
+  "reviewBlock": {
+    "rating": 4.9,
+    "reviewCount": 248,
+    "exampleReviews": [
+      {
+        "authorType": "Restaurant Owner",
+        "text": "“We expanded our Idaho Falls location without putting our home up as collateral. Funding was fast and the terms were clear.”"
+      },
+      {
+        "authorType": "Trades & Services",
+        "text": "“Equipment financing helped us add another crew and take on more jobs across Idaho. Application was straightforward.”"
+      }
+    ]
+  },
+  "schemaOrg": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Idaho Falls Small Business Loans",
+    "areaServed": "Idaho Falls, Idaho",
+    "serviceType": "Working Capital, Equipment Financing, Credit Lines",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital",
+      "url": "https://smallbusiness.capital"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "248"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": "Local Café Owner",
+        "reviewBody": "Fast funding and great communication — we were approved in 36 hours!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        }
+      },
+      {
+        "@type": "Review",
+        "author": "Logistics Company",
+        "reviewBody": "Equipment financing helped us scale quickly.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        }
+      }
+    ]
+  }
+}

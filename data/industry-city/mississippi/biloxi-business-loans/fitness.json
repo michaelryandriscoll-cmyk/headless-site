@@ -1,0 +1,41 @@
+{
+  "state": "Mississippi",
+  "city": "Biloxi",
+  "industry": "fitness",
+  "title": "Biloxi Fitness Business Loans",
+  "intro": "Gyms and fitness studios in Biloxi, Mississippi use financing for equipment, buildouts, and membership growth.",
+  "bestFor": [
+    {
+      "slug": "equipment",
+      "label": "Fitness equipment & flooring"
+    },
+    {
+      "slug": "buildouts",
+      "label": "Studio buildouts & renovations"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring trainers & support staff"
+    },
+    {
+      "slug": "wellness_expansion",
+      "label": "Adding wellness or nutrition services",
+      "weight": 1
+    },
+    {
+      "slug": "multi_location",
+      "label": "Opening additional locations",
+      "weight": 2
+    },
+    {
+      "slug": "membership_growth",
+      "label": "Membership & marketing programs",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

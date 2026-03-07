@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "jacksonville-business-loans",
+  "cityName": "Jacksonville",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Jacksonville Construction Business Loans | Florida",
+  "description": "Compare construction business loans, working capital and equipment financing available in Jacksonville, Florida.",
+  "h1": "Jacksonville Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Jacksonville, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Jacksonville Construction Business Loans",
+    "areaServed": "Jacksonville, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

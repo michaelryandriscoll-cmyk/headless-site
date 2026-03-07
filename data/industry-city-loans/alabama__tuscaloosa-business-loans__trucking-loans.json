@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alabama",
+  "stateName": "Alabama",
+  "citySlug": "tuscaloosa-business-loans",
+  "cityName": "Tuscaloosa",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Tuscaloosa Trucking Business Loans | Alabama",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Tuscaloosa, Alabama.",
+  "h1": "Tuscaloosa Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Tuscaloosa, Alabama.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tuscaloosa Trucking Business Loans",
+    "areaServed": "Tuscaloosa, Alabama",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "texas",
+  "stateName": "Texas",
+  "citySlug": "fort-worth-business-loans",
+  "cityName": "Fort Worth",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Fort Worth Retail Business Loans | Texas",
+  "description": "Compare retail business loans, working capital and equipment financing available in Fort Worth, Texas.",
+  "h1": "Fort Worth Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Fort Worth, Texas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fort Worth Retail Business Loans",
+    "areaServed": "Fort Worth, Texas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

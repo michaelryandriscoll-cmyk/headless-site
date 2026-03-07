@@ -1,0 +1,780 @@
+/* ==================================================
+   LOAN PAGE — ONLY WHAT'S UNIQUE
+   (Relies on LoanLayout.css for structure)
+================================================== */
+
+.loan-page section {
+  padding: 80px 0;
+}
+
+.loan-hero {
+  padding: 96px 0 72px;
+}
+
+.loan-what,
+.loan-who,
+.wc-steps {
+  background: #ffffff;
+}
+
+.loan-compare {
+  background: #f8fafc;
+}
+
+.loan-final {
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+/* ---------- HERO TEXT TUNING ---------- */
+
+.loan-hero-copy h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.loan-hero-sub {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+/* ---------- INFO CARD TEXT ---------- */
+
+.loan-card p {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.loan-card li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.loan-final-card {
+  max-width: 720px;
+  padding: 56px;
+}
+
+.loan-final-card h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.loan-final-cta {
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ---------- STEPS VARIATION ---------- */
+
+.loan-step {
+  background: #f8fafc;
+}
+
+.loan-step span {
+  background: #22c55e;
+}
+
+/* ---------- FORM CTA GRADIENT ---------- */
+
+
+/* ---------- FINAL CTA (DARK) ---------- */
+
+.loan-final {
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #ffffff;
+}
+
+.loan-final p {
+  color: #cbd5e1;
+}
+
+.loan-final-cta {
+  display: inline-block;
+  background: #22c55e;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.loan-final-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(34, 197, 94, 0.3);
+}
+
+/* ---------- RESPONSIVE TEXT ---------- */
+
+@media (max-width: 900px) {
+  .loan-hero-copy h1 {
+    font-size: 34px;
+  }
+}
+
+/* =========================
+   FINAL CTA (SHARED)
+========================= */
+
+.loan-final {
+  padding: 96px 0;
+  background: linear-gradient(135deg, #0b1f3b, #0e2c4f);
+}
+
+.loan-final-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 56px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.loan-final-card h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.loan-final-card p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.loan-final-cta {
+  display: inline-block;
+  background: #2ecc71;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.loan-final-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(46, 204, 113, 0.35);
+}
+
+
+/* =========================
+   WHO SECTION
+========================= */
+
+.loan-who {
+  padding: 80px 0;
+  background: #f7f8fa;
+}
+
+.loan-who h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #0b1f3a;
+}
+
+.loan-who-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.loan-who-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 28px 30px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loan-who-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.loan-who-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0b1f3a;
+}
+
+.loan-who-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* =========================
+   WHO SECTION — QUALIFICATION CARDS
+========================= */
+
+.loan-who {
+  padding: 72px 0;
+  background: #f8fafc;
+}
+
+.loan-who h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.loan-who-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.loan-who-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+	text-align: center; 
+}
+
+.loan-who-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #ecfdf5;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center; 
+  margin:0 auto 15px; 
+}
+
+.loan-who-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.loan-who-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .loan-who-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .loan-who-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .loan-who {
+    padding: 60px 0;
+  }
+
+  .loan-who-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.loan-who-card {
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.loan-who-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15,23,42,.08);
+}
+
+.loan-who-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #ecfeff;
+  color: #0891b2;
+  font-weight: 700;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   WHAT SECTION — PRODUCT DEFINITION
+========================= */
+
+.loan-what {
+  padding: 72px 0;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.loan-what::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  background: #e5e7eb;
+  transform: translateX(-50%);
+}
+
+.loan-what-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 48px;
+}
+
+/* Headline */
+.loan-what h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+/* Description */
+.loan-what-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.loan-what-description p {
+  margin-bottom: 16px;
+}
+
+/* Bullet list = use cases */
+.loan-what-bullets ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.loan-what-bullets li {
+  padding: 12px 0;
+  font-size: 0.9rem;
+  color: #0f172a;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  gap: 10px;
+}
+
+.loan-what-bullets li::before {
+  content: "•";
+  color: #16a34a;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.loan-what h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.loan-what-description {
+  max-width: 640px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #334155;
+}
+
+.loan-what-bullets ul {
+  margin-top: 24px;
+}
+
+.loan-what-bullets li {
+  font-size: 15px;
+  color: #475569;
+} 
+
+/* Mobile */
+@media (max-width: 900px) {
+  .loan-what-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   COMPARISON — DECISION DRIVER
+========================= */
+
+.loan-compare {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.loan-compare-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.loan-compare-col {
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.loan-compare-col--highlight {
+  border: 2px solid #16a34a;
+  background: #f0fdf4;
+}
+
+.loan-compare-col h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.loan-compare-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.loan-compare-col li {
+  padding: 10px 0;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 10px;
+}
+
+.loan-compare-col--highlight li::before {
+  content: "✔";
+  color: #16a34a;
+}
+
+.loan-compare-col:not(.loan-compare-col--highlight) li::before {
+  content: "✖";
+  color: #dc2626;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .loan-compare-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   HOW / PROCESS RAIL
+========================= */
+
+.loan-how {
+  padding: 104px 0;
+  background: #ffffff;
+  border-top: 1px solid rgba(15,23,42,.06);
+}
+
+.loan-how-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px auto;
+}
+
+.loan-how-rail {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .loan-how-rail {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+
+  .loan-how-rail::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 6%;
+    right: 6%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(15,23,42,.10),
+      rgba(15,23,42,.04),
+      rgba(15,23,42,.10)
+    );
+    z-index: 0;
+  }
+}
+
+.loan-how-step {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 14px;
+  padding: 22px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(15,23,42,.06);
+  box-shadow:
+    0 1px 2px rgba(2,6,23,.06),
+    0 14px 34px rgba(2,6,23,.08);
+}
+
+.loan-how-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid rgba(15,23,42,.08);
+}
+
+.loan-how-body p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(15,23,42,.75);
+}
+
+/* Emphasize middle step slightly */
+@media (min-width: 900px) {
+  .loan-how-step:nth-child(2) {
+    border-color: rgba(14,165,233,.25);
+    box-shadow:
+      0 1px 2px rgba(2,6,23,.06),
+      0 18px 42px rgba(2,6,23,.12);
+  }
+
+  .loan-how-step:nth-child(2) .loan-how-badge {
+    background: rgba(14,165,233,.12);
+    border-color: rgba(14,165,233,.28);
+  }
+}
+
+.loan-how-footer {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(15,23,42,.65);
+}
+
+.wc-step {
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+
+.wc-step span {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #0f172a;
+  color: #fff;
+  font-weight: 700;
+} 
+
+/* =========================
+   WHY US VS BANKS
+========================= */
+
+.loan-compare-why {
+  padding: clamp(56px, 7vw, 96px) 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-top: 1px solid rgba(15,23,42,.06);
+}
+
+.loan-compare-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 44px auto;
+}
+
+.loan-compare-header p {
+  margin-top: 8px;
+  color: rgba(15,23,42,.65);
+}
+
+.loan-compare-cards {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 900px) {
+  .loan-compare-cards {
+    grid-template-columns: 1.1fr .9fr;
+    gap: 32px;
+    align-items: stretch;
+  }
+}
+
+.loan-compare-card {
+  position: relative;
+  padding: 32px 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+}
+
+.loan-compare-card h3 {
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+/* PRIMARY (YOU) */
+.loan-compare-card--primary {
+  border-color: rgba(14,165,233,.35);
+  box-shadow:
+    0 2px 6px rgba(2,6,23,.08),
+    0 24px 48px rgba(2,6,23,.12);
+}
+
+.loan-compare-card-badge {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  background: rgba(14,165,233,.12);
+  color: #0284c7;
+  border: 1px solid rgba(14,165,233,.35);
+}
+
+/* SECONDARY (BANKS) */
+.loan-compare-card--secondary {
+  background: linear-gradient(
+    180deg,
+    #f1f6fb 0%,
+    #e8f0f8 100%
+  );
+  border: 1px dashed rgba(37, 99, 235, 0.25);
+}
+
+/* LISTS */
+.loan-compare-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.loan-compare-list li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  align-items: start;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.loan-compare-list--positive li {
+  color: rgba(15,23,42,.85);
+}
+
+.loan-compare-list--negative li {
+  color: rgba(15,23,42,.55);
+}
+
+/* ICONS */
+.icon-check {
+  color: #16a34a;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+.icon-x {
+  color: #dc2626;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+.loan-compare-col--highlight {
+  background: #ffffff;
+  border: 2px solid #22c55e;
+  box-shadow: 0 20px 40px rgba(34,197,94,.15);
+}
+
+.loan-compare-col--highlight h4::after {
+  content: "Recommended";
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #166534;
+  background: #dcfce7;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+
+.loan-what,
+.loan-how,
+.loan-compare {
+  padding: 96px 0;
+}
+
+.loan-who,
+.loan-form {
+  padding: 96px 0;
+}
+
+.loan-what-grid {
+  padding: 0 8px;
+}
+
+@media (min-width: 900px) {
+  .loan-what-grid {
+    padding: 0 16px;
+  }
+}

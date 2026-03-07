@@ -1,0 +1,257 @@
+/* ======================================================
+   HOMEPAGE – FULL RESTORE STYLES
+   ====================================================== */
+
+.home { 
+  background: #ffffff;
+}
+
+/* =========================================
+   TRUST STRIP
+========================================= */
+
+.trust-strip {
+  background: #ffffff;
+  padding: 42px 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.trust-strip__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.trust-icon.filled {
+  background: #0b1f41;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-text strong {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0b1f41;
+}
+
+.trust-text span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.home-feature-row {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.home-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.feature-box {
+  background: #f4f6f8;
+  border: 1px solid #e1e4e8;
+  border-radius: 14px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.14);
+  border-color: #00c684;
+}
+
+.feature-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b1f41;
+  margin: 10px 0 8px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.feature-link {
+  font-weight: 700;
+  color: #111827;
+  font-size: 15px;
+}
+
+.feature-link:hover {
+  color: #00c684;
+}
+
+/* =========================================
+   PERFORMANCE APPROVAL
+========================================= */
+
+.performance-approval {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding: 96px 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.performance-approval .two-col {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.performance-approval h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0b1f41;
+  margin-bottom: 18px;
+}
+
+.performance-approval p {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.performance-approval .image-col img {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================================
+   RESULTS SECTION
+========================================= */
+
+.home-results {
+  background: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.home-results__inner h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0b1f41;
+  margin-bottom: 14px;
+}
+
+.home-results__lead {
+  font-size: 17px;
+  color: #4b5563;
+  margin-bottom: 40px;
+}
+
+.home-results__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.home-stat-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 22px 20px;
+  border-radius: 16px;
+  transition: 0.2s ease;
+}
+
+.home-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.07);
+}
+
+.home-stat-card__icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #00c684;
+}
+
+/* =========================================
+   PROOF SECTION
+========================================= */
+
+.home-proof {
+  padding: 56px 80px;
+  background: #f8fafc;
+}
+
+.home-proof__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.proof-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  border-left: 4px solid #00c684;
+}
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.home-final-cta {
+  background: linear-gradient(135deg, #0b1f41 0%, #092749 50%, #0b1f41 100%);
+  padding: 70px 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.home-final-cta__actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.home-faq {
+  background: #f8fafc;
+  padding: 80px 20px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "fort-myers-business-loans",
+  "cityName": "Fort Myers",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Fort Myers Retail Business Loans | Florida",
+  "description": "Compare retail business loans, working capital and equipment financing available in Fort Myers, Florida.",
+  "h1": "Fort Myers Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Fort Myers, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fort Myers Retail Business Loans",
+    "areaServed": "Fort Myers, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "California",
+  "city": "San Jose",
+  "industry": "hvac",
+  "title": "San Jose HVAC Business Loans",
+  "intro": "Keep your HVAC operations running smoothly in San Jose, California with loans designed for repairs, upgrades, and expansion.",
+  "bestFor": [
+    {
+      "slug": "equipment_costs",
+      "label": "HVAC equipment & tool purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vehicle upgrades"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring technicians during peak season"
+    },
+    {
+      "slug": "seasonal_demand",
+      "label": "Managing seasonal cash-flow swings",
+      "weight": 3
+    },
+    {
+      "slug": "ductwork_upgrades",
+      "label": "Ductwork & ventilation upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "emergency_repairs",
+      "label": "Emergency customer repair calls",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–24 Months"
+  }
+}

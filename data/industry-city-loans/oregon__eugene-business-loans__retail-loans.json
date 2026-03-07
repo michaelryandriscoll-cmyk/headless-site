@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oregon",
+  "stateName": "Oregon",
+  "citySlug": "eugene-business-loans",
+  "cityName": "Eugene",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Eugene Retail Business Loans | Oregon",
+  "description": "Compare retail business loans, working capital and equipment financing available in Eugene, Oregon.",
+  "h1": "Eugene Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Eugene, Oregon.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Eugene Retail Business Loans",
+    "areaServed": "Eugene, Oregon",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "rhode-island",
+  "stateName": "Rhode Island",
+  "citySlug": "providence-business-loans",
+  "cityName": "Providence",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Providence Construction Business Loans | Rhode Island",
+  "description": "Compare construction business loans, working capital and equipment financing available in Providence, Rhode Island.",
+  "h1": "Providence Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Providence, Rhode Island.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Providence Construction Business Loans",
+    "areaServed": "Providence, Rhode Island",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

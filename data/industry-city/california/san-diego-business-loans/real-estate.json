@@ -1,0 +1,41 @@
+{
+  "state": "California",
+  "city": "San Diego",
+  "industry": "real-estate",
+  "title": "San Diego Real Estate Business Loans",
+  "intro": "Agents and real estate teams in San Diego, California rely on financing for lead generation and expansion.",
+  "bestFor": [
+    {
+      "slug": "marketing",
+      "label": "Marketing & lead generation"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring agents & support staff"
+    },
+    {
+      "slug": "operations",
+      "label": "Covering operational overhead"
+    },
+    {
+      "slug": "software",
+      "label": "CRM or real estate software",
+      "weight": 1
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, signage & media",
+      "weight": 1
+    },
+    {
+      "slug": "new_offices",
+      "label": "Opening additional offices",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

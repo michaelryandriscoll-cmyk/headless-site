@@ -1,0 +1,41 @@
+{
+  "state": "Nevada",
+  "city": "Reno",
+  "industry": "manufacturing",
+  "title": "Reno Manufacturing Business Loans",
+  "intro": "From automation to expansion, manufacturers in Reno, Nevada use business loans to scale capacity.",
+  "bestFor": [
+    {
+      "slug": "machinery",
+      "label": "Machinery & equipment purchases"
+    },
+    {
+      "slug": "materials",
+      "label": "Raw materials & bulk inventory"
+    },
+    {
+      "slug": "labor",
+      "label": "Hiring & overtime labor costs"
+    },
+    {
+      "slug": "contract_scaling",
+      "label": "Scaling for large contracts",
+      "weight": 2
+    },
+    {
+      "slug": "automation",
+      "label": "Automation & robotics upgrades",
+      "weight": 2
+    },
+    {
+      "slug": "facility_upgrades",
+      "label": "Facility upgrades & safety improvements",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "3–7 Days",
+    "terms": "12–72 Months"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "orlando-business-loans",
+  "cityName": "Orlando",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Orlando Trucking Business Loans | Florida",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Orlando, Florida.",
+  "h1": "Orlando Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Orlando, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Orlando Trucking Business Loans",
+    "areaServed": "Orlando, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

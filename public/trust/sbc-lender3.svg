@@ -1,0 +1,6 @@
+﻿<svg width="150" height="48" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+ <rect width="200" height="60" rx="10" fill="#00c684"/>
+ <path d="M30 42L50 20l12 12-20 20z" fill="#0b1f41" />
+ <text x="120" y="35" fill="#0b1f41" font-size="18" font-family="Arial" font-weight="800"
+       text-anchor="middle">Accredited Financial</text>
+</svg>

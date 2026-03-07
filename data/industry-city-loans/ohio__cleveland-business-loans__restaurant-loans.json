@@ -1,0 +1,24 @@
+{
+  "stateSlug": "ohio",
+  "stateName": "Ohio",
+  "citySlug": "cleveland-business-loans",
+  "cityName": "Cleveland",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Cleveland Restaurant Business Loans | Ohio",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Cleveland, Ohio.",
+  "h1": "Cleveland Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Cleveland, Ohio.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Cleveland Restaurant Business Loans",
+    "areaServed": "Cleveland, Ohio",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

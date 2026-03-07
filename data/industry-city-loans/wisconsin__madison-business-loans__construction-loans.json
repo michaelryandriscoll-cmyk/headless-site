@@ -1,0 +1,24 @@
+{
+  "stateSlug": "wisconsin",
+  "stateName": "Wisconsin",
+  "citySlug": "madison-business-loans",
+  "cityName": "Madison",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Madison Construction Business Loans | Wisconsin",
+  "description": "Compare construction business loans, working capital and equipment financing available in Madison, Wisconsin.",
+  "h1": "Madison Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Madison, Wisconsin.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Madison Construction Business Loans",
+    "areaServed": "Madison, Wisconsin",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

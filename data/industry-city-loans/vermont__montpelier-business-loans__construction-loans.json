@@ -1,0 +1,24 @@
+{
+  "stateSlug": "vermont",
+  "stateName": "Vermont",
+  "citySlug": "montpelier-business-loans",
+  "cityName": "Montpelier",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Montpelier Construction Business Loans | Vermont",
+  "description": "Compare construction business loans, working capital and equipment financing available in Montpelier, Vermont.",
+  "h1": "Montpelier Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Montpelier, Vermont.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Montpelier Construction Business Loans",
+    "areaServed": "Montpelier, Vermont",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

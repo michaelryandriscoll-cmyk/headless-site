@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "spokane-business-loans",
+  "cityName": "Spokane",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Spokane Healthcare Business Loans | Washington",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Spokane, Washington.",
+  "h1": "Spokane Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Spokane, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Spokane Healthcare Business Loans",
+    "areaServed": "Spokane, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

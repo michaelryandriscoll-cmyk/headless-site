@@ -1,0 +1,24 @@
+{
+  "stateSlug": "wyoming",
+  "stateName": "Wyoming",
+  "citySlug": "laramie-business-loans",
+  "cityName": "Laramie",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Laramie Construction Business Loans | Wyoming",
+  "description": "Compare construction business loans, working capital and equipment financing available in Laramie, Wyoming.",
+  "h1": "Laramie Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Laramie, Wyoming.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Laramie Construction Business Loans",
+    "areaServed": "Laramie, Wyoming",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

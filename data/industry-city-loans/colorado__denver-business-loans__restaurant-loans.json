@@ -1,0 +1,24 @@
+{
+  "stateSlug": "colorado",
+  "stateName": "Colorado",
+  "citySlug": "denver-business-loans",
+  "cityName": "Denver",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Denver Restaurant Business Loans | Colorado",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Denver, Colorado.",
+  "h1": "Denver Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Denver, Colorado.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Denver Restaurant Business Loans",
+    "areaServed": "Denver, Colorado",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

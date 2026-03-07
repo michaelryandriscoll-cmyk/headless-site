@@ -1,0 +1,41 @@
+{
+  "state": "Nebraska",
+  "city": "Omaha",
+  "industry": "food-truck",
+  "title": "Omaha Food Truck Business Loans",
+  "intro": "Food truck owners in Omaha, Nebraska use financing for vehicles, kitchen buildouts, and permits.",
+  "bestFor": [
+    {
+      "slug": "truck",
+      "label": "Food truck purchases & buildouts"
+    },
+    {
+      "slug": "equipment",
+      "label": "Kitchen equipment & generators"
+    },
+    {
+      "slug": "permits",
+      "label": "Permits, licensing & fees"
+    },
+    {
+      "slug": "events",
+      "label": "Event & festival fees",
+      "weight": 2
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, wraps & signage",
+      "weight": 1
+    },
+    {
+      "slug": "staff",
+      "label": "Hiring cooks & servers",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

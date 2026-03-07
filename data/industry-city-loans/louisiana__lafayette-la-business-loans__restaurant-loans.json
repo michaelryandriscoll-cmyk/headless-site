@@ -1,0 +1,24 @@
+{
+  "stateSlug": "louisiana",
+  "stateName": "Louisiana",
+  "citySlug": "lafayette-la-business-loans",
+  "cityName": "Lafayette",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Lafayette Restaurant Business Loans | Louisiana",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Lafayette, Louisiana.",
+  "h1": "Lafayette Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Lafayette, Louisiana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Lafayette Restaurant Business Loans",
+    "areaServed": "Lafayette, Louisiana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

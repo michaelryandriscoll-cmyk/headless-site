@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oklahoma",
+  "stateName": "Oklahoma",
+  "citySlug": "tulsa-business-loans",
+  "cityName": "Tulsa",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Tulsa Trucking Business Loans | Oklahoma",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Tulsa, Oklahoma.",
+  "h1": "Tulsa Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Tulsa, Oklahoma.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tulsa Trucking Business Loans",
+    "areaServed": "Tulsa, Oklahoma",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

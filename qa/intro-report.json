@@ -1,0 +1,974 @@
+[
+  {
+    "industry": "roofing",
+    "index": 0,
+    "intro": "Need reliable roofing contractors in Dallas, TX? Compare top-rated pros for repairs, replacements, and inspections.",
+    "tone": "Urgent / Salesy",
+    "fkGrade": 10.935000000000002,
+    "ease": 30.022500000000008,
+    "improved": "Need reliable roofing contractors in Dallas, TX? Compare top-rated pros for repairs, replacements, and inspections."
+  },
+  {
+    "industry": "roofing",
+    "index": 1,
+    "intro": "Dallas, TX homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 11.169411764705881,
+    "ease": 45.26235294117649,
+    "improved": "Dallas, TX homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements."
+  },
+  {
+    "industry": "roofing",
+    "index": 2,
+    "intro": "Find trusted roofing contractors in Dallas, TX for repairs, inspections, or complete roof replacements.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 11.784285714285716,
+    "ease": 35.5107142857143,
+    "improved": "Find trusted roofing contractors in Dallas, TX for repairs, inspections, or complete roof replacements."
+  },
+  {
+    "industry": "roofing",
+    "index": 3,
+    "intro": "Your home in Dallas, TX deserves a dependable roof—explore local roofing services and financing options today.",
+    "tone": "Professional",
+    "fkGrade": 14.9875,
+    "ease": 16.107500000000016,
+    "improved": "Your home in Dallas, TX deserves a dependable roof—explore local roofing services and financing options today."
+  },
+  {
+    "industry": "trucking",
+    "index": 0,
+    "intro": "Local trucking companies in Dallas, TX rely on flexible business funding for fuel costs, repairs, and fleet expansion.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 11.752222222222223,
+    "ease": 42.86500000000001,
+    "improved": "Local trucking companies in Dallas, TX benefit from flexible business funding for fuel costs, repairs, and fleet expansion."
+  },
+  {
+    "industry": "trucking",
+    "index": 1,
+    "intro": "Need capital to keep your trucks on the road in Dallas, TX? Explore fast financing options built for trucking businesses.",
+    "tone": "Professional",
+    "fkGrade": 6.600000000000005,
+    "ease": 65.555,
+    "improved": "Need capital to keep your trucks on the road in Dallas, TX? Explore fast financing options built for trucking businesses."
+  },
+  {
+    "industry": "trucking",
+    "index": 2,
+    "intro": "Keep your routes running smoothly. Compare trucking business loans in Dallas, TX for fuel, maintenance, and new equipment.",
+    "tone": "Neutral Informational",
+    "fkGrade": 8.242222222222225,
+    "ease": 52.00000000000003,
+    "improved": "Keep your routes running smoothly. Compare trucking business loans in Dallas, TX for fuel, maintenance, and new equipment."
+  },
+  {
+    "industry": "trucking",
+    "index": 3,
+    "intro": "Grow or stabilize your fleet in Dallas, TX with funding options designed to manage cash flow, repairs, and unexpected breakdowns.",
+    "tone": "Professional",
+    "fkGrade": 12.270000000000003,
+    "ease": 42.71500000000003,
+    "improved": "Grow or stabilize your fleet in Dallas, TX with funding options designed to manage cash flow, repairs, and unexpected breakdowns."
+  },
+  {
+    "industry": "solar",
+    "index": 0,
+    "intro": "Solar installation companies in Dallas, TX rely on fast, flexible financing to manage equipment costs and project timelines.",
+    "tone": "Professional",
+    "fkGrade": 15.685555555555556,
+    "ease": 14.66500000000002,
+    "improved": "Solar installation companies in Dallas, TX benefit from fast, flexible financing to manage equipment costs and project timelines."
+  },
+  {
+    "industry": "solar",
+    "index": 1,
+    "intro": "Grow your solar business in Dallas, TX with funding options designed for panels, batteries, and installation crews.",
+    "tone": "Professional",
+    "fkGrade": 11.863529411764706,
+    "ease": 40.2858823529412,
+    "improved": "Strengthen your solar business in Dallas, TX with funding options designed for panels, batteries, and installation crews."
+  },
+  {
+    "industry": "solar",
+    "index": 2,
+    "intro": "Demand for clean energy is rising in Dallas, TX—compare solar business loans to expand your operations.",
+    "tone": "Professional",
+    "fkGrade": 12.775000000000002,
+    "ease": 31.97,
+    "improved": "Demand for clean energy is rising in Dallas, TX—explore solar business loans to expand your operations."
+  },
+  {
+    "industry": "solar",
+    "index": 3,
+    "intro": "Secure capital for solar equipment, payroll, or new projects in Dallas, TX with tailored financing for installers.",
+    "tone": "Professional",
+    "fkGrade": 13.251764705882355,
+    "ease": 30.332941176470626,
+    "improved": "Secure capital for solar equipment, payroll, or new projects in Dallas, TX with tailored financing for installers."
+  },
+  {
+    "industry": "restaurants",
+    "index": 0,
+    "intro": "Restaurants in Dallas, TX rely on flexible funding to manage inventory, payroll, and seasonal slowdowns.",
+    "tone": "Neutral",
+    "fkGrade": 13.860000000000003,
+    "ease": 22.410000000000025,
+    "improved": "Restaurants in Dallas, TX benefit from flexible funding to manage inventory, payroll, and seasonal slowdowns."
+  },
+  {
+    "industry": "restaurants",
+    "index": 1,
+    "intro": "Grow your restaurant in Dallas, TX with capital for kitchen equipment, staff, and marketing.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Strengthen your restaurant in Dallas, TX with capital for kitchen equipment, staff, and marketing."
+  },
+  {
+    "industry": "restaurants",
+    "index": 2,
+    "intro": "Local restaurants in Dallas, TX use working capital to cover food costs, upgrades, and delivery expansion.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 13.5125,
+    "ease": 26.682500000000005,
+    "improved": "Local restaurants in Dallas, TX use working capital to cover food costs, upgrades, and delivery expansion."
+  },
+  {
+    "industry": "restaurants",
+    "index": 3,
+    "intro": "From new menu launches to remodels, restaurants in Dallas, TX use business loans to stay competitive.",
+    "tone": "Neutral",
+    "fkGrade": 12.037500000000005,
+    "ease": 37.25750000000002,
+    "improved": "From new menu launches to remodels, restaurants in Dallas, TX use business loans to stay competitive."
+  },
+  {
+    "industry": "retail",
+    "index": 0,
+    "intro": "Retail shops in Dallas, TX use flexible financing to manage inventory, staffing, and seasonal peaks.",
+    "tone": "Professional",
+    "fkGrade": 13.073333333333338,
+    "ease": 28.05000000000001,
+    "improved": "Retail shops in Dallas, TX use flexible financing to manage inventory, staffing, and seasonal peaks."
+  },
+  {
+    "industry": "retail",
+    "index": 1,
+    "intro": "Grow your retail business in Dallas, TX with capital for bulk inventory, store upgrades, and marketing.",
+    "tone": "Professional",
+    "fkGrade": 12.037500000000005,
+    "ease": 37.25750000000002,
+    "improved": "Strengthen your retail business in Dallas, TX with capital for bulk inventory, store upgrades, and marketing."
+  },
+  {
+    "industry": "retail",
+    "index": 2,
+    "intro": "Local retailers in Dallas, TX rely on working capital to handle slow seasons and new product launches.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 10.47529411764706,
+    "ease": 50.2388235294118,
+    "improved": "Local retailers in Dallas, TX benefit from working capital to handle slow seasons and new product launches."
+  },
+  {
+    "industry": "retail",
+    "index": 3,
+    "intro": "From pop-up displays to remodels, retailers in Dallas, TX use business loans to stay competitive.",
+    "tone": "Neutral",
+    "fkGrade": 12.286666666666669,
+    "ease": 33.690000000000026,
+    "improved": "From pop-up displays to remodels, retailers in Dallas, TX use business loans to stay competitive."
+  },
+  {
+    "industry": "construction",
+    "index": 0,
+    "intro": "Construction companies in Dallas, TX rely on fast, flexible financing to manage labor, materials, and project timelines.",
+    "tone": "Professional",
+    "fkGrade": 15.334117647058822,
+    "ease": 15.403529411764737,
+    "improved": "Construction companies in Dallas, TX benefit from fast, flexible financing to manage labor, materials, and project timelines."
+  },
+  {
+    "industry": "construction",
+    "index": 1,
+    "intro": "Grow your construction business in Dallas, TX with capital for equipment, hiring, and new project bids.",
+    "tone": "Professional",
+    "fkGrade": 9.825,
+    "ease": 53.120000000000005,
+    "improved": "Strengthen your construction business in Dallas, TX with capital for equipment, hiring, and new project bids."
+  },
+  {
+    "industry": "construction",
+    "index": 2,
+    "intro": "Keep projects on track in Dallas, TX with construction loans built for materials, crews, and delays.",
+    "tone": "Neutral",
+    "fkGrade": 6.8750000000000036,
+    "ease": 74.27000000000001,
+    "improved": "Keep projects on track in Dallas, TX with construction loans built for materials, crews, and delays."
+  },
+  {
+    "industry": "construction",
+    "index": 3,
+    "intro": "Secure funding for equipment, subcontractors, and expanding contracts in Dallas, TX.",
+    "tone": "Professional",
+    "fkGrade": 12.3,
+    "ease": 26.470000000000027,
+    "improved": "Secure funding for equipment, subcontractors, and expanding contracts in Dallas, TX."
+  },
+  {
+    "industry": "hvac",
+    "index": 0,
+    "intro": "HVAC companies in Dallas, TX depend on fast financing for equipment, vehicles, and seasonal demand.",
+    "tone": "Professional",
+    "fkGrade": 11.500000000000004,
+    "ease": 39.33000000000001,
+    "improved": "HVAC companies in Dallas, TX depend on fast financing for equipment, vehicles, and seasonal demand."
+  },
+  {
+    "industry": "hvac",
+    "index": 1,
+    "intro": "Grow your HVAC business in Dallas, TX with capital for technicians, tools, and service vehicles.",
+    "tone": "Professional",
+    "fkGrade": 9.92666666666667,
+    "ease": 50.610000000000014,
+    "improved": "Strengthen your HVAC business in Dallas, TX with capital for technicians, tools, and service vehicles."
+  },
+  {
+    "industry": "hvac",
+    "index": 2,
+    "intro": "Peak seasons in Dallas, TX require HVAC companies to stay stocked and staffed — compare financing options today.",
+    "tone": "Professional",
+    "fkGrade": 11.096666666666668,
+    "ease": 47.565,
+    "improved": "Peak seasons in Dallas, TX require HVAC companies to stay stocked and staffed — explore financing options today."
+  },
+  {
+    "industry": "hvac",
+    "index": 3,
+    "intro": "Keep your HVAC operations running smoothly in Dallas, TX with loans designed for repairs, upgrades, and expansion.",
+    "tone": "Neutral",
+    "fkGrade": 11.169411764705881,
+    "ease": 45.26235294117649,
+    "improved": "Keep your HVAC operations running smoothly in Dallas, TX with loans designed for repairs, upgrades, and expansion."
+  },
+  {
+    "industry": "plumbing",
+    "index": 0,
+    "intro": "Plumbing companies in Dallas, TX rely on flexible financing for tools, trucks, and emergency repair demand.",
+    "tone": "Professional",
+    "fkGrade": 12.037500000000005,
+    "ease": 37.25750000000002,
+    "improved": "Plumbing companies in Dallas, TX benefit from flexible financing for tools, trucks, and emergency repair demand."
+  },
+  {
+    "industry": "plumbing",
+    "index": 1,
+    "intro": "Grow your plumbing business in Dallas, TX with capital for equipment, technicians, and marketing.",
+    "tone": "Professional",
+    "fkGrade": 10.941428571428574,
+    "ease": 41.553571428571445,
+    "improved": "Strengthen your plumbing business in Dallas, TX with capital for equipment, technicians, and marketing."
+  },
+  {
+    "industry": "plumbing",
+    "index": 2,
+    "intro": "Local homeowners in Dallas, TX need fast plumbing services — compare financing options to expand your team.",
+    "tone": "Professional",
+    "fkGrade": 10.47529411764706,
+    "ease": 50.2388235294118,
+    "improved": "Local homeowners in Dallas, TX need fast plumbing services — explore financing options to expand your team."
+  },
+  {
+    "industry": "plumbing",
+    "index": 3,
+    "intro": "Secure funding for service vehicles, tools, and expansion projects in Dallas, TX.",
+    "tone": "Neutral",
+    "fkGrade": 10.723333333333333,
+    "ease": 39.55500000000001,
+    "improved": "Secure funding for service vehicles, tools, and expansion projects in Dallas, TX."
+  },
+  {
+    "industry": "electrician",
+    "index": 0,
+    "intro": "Electricians in Dallas, TX rely on fast financing for tools, vans, and growing customer demand.",
+    "tone": "Professional",
+    "fkGrade": 9.92666666666667,
+    "ease": 50.610000000000014,
+    "improved": "Electricians in Dallas, TX benefit from fast financing for tools, vans, and growing customer demand."
+  },
+  {
+    "industry": "electrician",
+    "index": 1,
+    "intro": "Expand your electrical business in Dallas, TX with capital for equipment, apprentices, and service vehicles.",
+    "tone": "Professional",
+    "fkGrade": 15.433333333333337,
+    "ease": 11.130000000000024,
+    "improved": "Expand your electrical business in Dallas, TX with capital for equipment, apprentices, and service vehicles."
+  },
+  {
+    "industry": "electrician",
+    "index": 2,
+    "intro": "Local homeowners and businesses in Dallas, TX depend on reliable electricians — compare growth-focused financing options.",
+    "tone": "Professional",
+    "fkGrade": 16.462500000000002,
+    "ease": 5.532499999999999,
+    "improved": "Local homeowners and businesses in Dallas, TX depend on reliable electricians — explore growth-focused financing options."
+  },
+  {
+    "industry": "electrician",
+    "index": 3,
+    "intro": "Secure funding for panel upgrades, rewiring, and expanding service areas in Dallas, TX.",
+    "tone": "Professional",
+    "fkGrade": 13.080000000000002,
+    "ease": 24.440000000000026,
+    "improved": "Secure funding for panel upgrades, rewiring, and expanding service areas in Dallas, TX."
+  },
+  {
+    "industry": "cleaning",
+    "index": 0,
+    "intro": "Cleaning companies in Dallas, TX use business funding for supplies, staffing, and vehicles.",
+    "tone": "Neutral",
+    "fkGrade": 11.264615384615386,
+    "ease": 37.455384615384645,
+    "improved": "Cleaning companies in Dallas, TX use business funding for supplies, staffing, and vehicles."
+  },
+  {
+    "industry": "cleaning",
+    "index": 1,
+    "intro": "Grow your cleaning service in Dallas, TX with capital for crews, equipment, and marketing.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Strengthen your cleaning service in Dallas, TX with capital for crews, equipment, and marketing."
+  },
+  {
+    "industry": "cleaning",
+    "index": 2,
+    "intro": "Residential and commercial cleaners in Dallas, TX rely on working capital to win contracts and handle growth.",
+    "tone": "Professional",
+    "fkGrade": 11.169411764705881,
+    "ease": 45.26235294117649,
+    "improved": "Residential and commercial cleaners in Dallas, TX benefit from working capital to win contracts and handle growth."
+  },
+  {
+    "industry": "cleaning",
+    "index": 3,
+    "intro": "From move-outs to recurring accounts, cleaning businesses in Dallas, TX use loans to scale.",
+    "tone": "Neutral",
+    "fkGrade": 10.941428571428574,
+    "ease": 41.553571428571445,
+    "improved": "From move-outs to recurring accounts, cleaning businesses in Dallas, TX access loan options to scale."
+  },
+  {
+    "industry": "landscaping",
+    "index": 0,
+    "intro": "Landscaping companies in Dallas, TX rely on flexible funding for equipment, crews, and seasonal work.",
+    "tone": "Neutral",
+    "fkGrade": 11.500000000000004,
+    "ease": 39.33000000000001,
+    "improved": "Landscaping companies in Dallas, TX benefit from flexible funding for equipment, crews, and seasonal work."
+  },
+  {
+    "industry": "landscaping",
+    "index": 1,
+    "intro": "Grow your landscaping business in Dallas, TX with capital for mowers, trailers, and labor.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Strengthen your landscaping business in Dallas, TX with capital for mowers, trailers, and labor."
+  },
+  {
+    "industry": "landscaping",
+    "index": 2,
+    "intro": "Local landscapers in Dallas, TX use working capital to handle spring rushes and slow winter months.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 9.825,
+    "ease": 53.120000000000005,
+    "improved": "Local landscapers in Dallas, TX use working capital to handle spring rushes and slow winter months."
+  },
+  {
+    "industry": "landscaping",
+    "index": 3,
+    "intro": "From residential routes to commercial contracts, landscapers in Dallas, TX use business loans to scale.",
+    "tone": "Neutral",
+    "fkGrade": 12.286666666666669,
+    "ease": 33.690000000000026,
+    "improved": "From residential routes to commercial contracts, landscapers in Dallas, TX use business loans to scale."
+  },
+  {
+    "industry": "auto-repair",
+    "index": 0,
+    "intro": "Auto repair shops in Dallas, TX depend on financing for diagnostic tools, lifts, and parts inventory.",
+    "tone": "Professional",
+    "fkGrade": 9.825,
+    "ease": 53.120000000000005,
+    "improved": "Auto repair shops in Dallas, TX depend on financing for diagnostic tools, lifts, and parts inventory."
+  },
+  {
+    "industry": "auto-repair",
+    "index": 1,
+    "intro": "Grow your auto repair business in Dallas, TX with capital for technicians, equipment, and shop expansion.",
+    "tone": "Professional",
+    "fkGrade": 11.3,
+    "ease": 42.545000000000016,
+    "improved": "Strengthen your auto repair business in Dallas, TX with capital for technicians, equipment, and shop expansion."
+  },
+  {
+    "industry": "auto-repair",
+    "index": 2,
+    "intro": "Local drivers in Dallas, TX rely on fast repairs—compare financing options to upgrade your shop.",
+    "tone": "Professional",
+    "fkGrade": 11.500000000000004,
+    "ease": 39.33000000000001,
+    "improved": "Local drivers in Dallas, TX benefit from fast repairs—explore financing options to upgrade your shop."
+  },
+  {
+    "industry": "auto-repair",
+    "index": 3,
+    "intro": "Keep your auto repair shop running smoothly in Dallas, TX with loans for equipment, staffing, and inventory.",
+    "tone": "Neutral",
+    "fkGrade": 9.781176470588235,
+    "ease": 55.21529411764709,
+    "improved": "Keep your auto repair shop running smoothly in Dallas, TX with loans for equipment, staffing, and inventory."
+  },
+  {
+    "industry": "medical",
+    "index": 0,
+    "intro": "Medical practices in Dallas, TX use financing for equipment, staffing, and patient services.",
+    "tone": "Professional",
+    "fkGrade": 13.080000000000002,
+    "ease": 24.440000000000026,
+    "improved": "Medical practices in Dallas, TX secure financing for equipment, staffing, and patient services."
+  },
+  {
+    "industry": "medical",
+    "index": 1,
+    "intro": "Grow your medical practice in Dallas, TX with capital for technology, buildouts, and providers.",
+    "tone": "Professional",
+    "fkGrade": 11.784285714285716,
+    "ease": 35.5107142857143,
+    "improved": "Strengthen your medical practice in Dallas, TX with capital for technology, buildouts, and providers."
+  },
+  {
+    "industry": "medical",
+    "index": 2,
+    "intro": "Local clinics in Dallas, TX rely on working capital to manage insurance delays and operations.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 13.860000000000003,
+    "ease": 22.410000000000025,
+    "improved": "Local clinics in Dallas, TX benefit from working capital to manage insurance delays and operations."
+  },
+  {
+    "industry": "medical",
+    "index": 3,
+    "intro": "From diagnostics to expansion, medical practices in Dallas, TX use loans to improve patient care.",
+    "tone": "Neutral",
+    "fkGrade": 12.286666666666669,
+    "ease": 33.690000000000026,
+    "improved": "From diagnostics to expansion, medical practices in Dallas, TX access loan options to improve patient care."
+  },
+  {
+    "industry": "pharmacy",
+    "index": 0,
+    "intro": "Pharmacies in Dallas, TX use financing for inventory, staffing, and insurance reimbursement gaps.",
+    "tone": "Professional",
+    "fkGrade": 14.895384615384618,
+    "ease": 11.424615384615407,
+    "improved": "Pharmacies in Dallas, TX secure financing for inventory, staffing, and insurance reimbursement gaps."
+  },
+  {
+    "industry": "pharmacy",
+    "index": 1,
+    "intro": "Grow your pharmacy in Dallas, TX with capital for technology, upgrades, and expanded services.",
+    "tone": "Professional",
+    "fkGrade": 12.62714285714286,
+    "ease": 29.467857142857156,
+    "improved": "Strengthen your pharmacy in Dallas, TX with capital for technology, upgrades, and expanded services."
+  },
+  {
+    "industry": "pharmacy",
+    "index": 2,
+    "intro": "Independent pharmacies in Dallas, TX rely on working capital to manage cash flow challenges.",
+    "tone": "Neutral",
+    "fkGrade": 12.62714285714286,
+    "ease": 29.467857142857156,
+    "improved": "Independent pharmacies in Dallas, TX benefit from working capital to manage cash flow challenges."
+  },
+  {
+    "industry": "pharmacy",
+    "index": 3,
+    "intro": "From inventory to delivery, pharmacies in Dallas, TX use loans to better serve their customers.",
+    "tone": "Neutral",
+    "fkGrade": 12.286666666666669,
+    "ease": 33.690000000000026,
+    "improved": "From inventory to delivery, pharmacies in Dallas, TX access loan options to better serve their customers."
+  },
+  {
+    "industry": "fitness",
+    "index": 0,
+    "intro": "Gyms and fitness studios in Dallas, TX use financing for equipment, buildouts, and membership growth.",
+    "tone": "Professional",
+    "fkGrade": 9.92666666666667,
+    "ease": 50.610000000000014,
+    "improved": "Gyms and fitness studios in Dallas, TX secure financing for equipment, buildouts, and membership growth."
+  },
+  {
+    "industry": "fitness",
+    "index": 1,
+    "intro": "Grow your fitness business in Dallas, TX with capital for trainers, classes, and marketing.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Strengthen your fitness business in Dallas, TX with capital for trainers, classes, and marketing."
+  },
+  {
+    "industry": "fitness",
+    "index": 2,
+    "intro": "Local fitness centers in Dallas, TX rely on working capital to manage seasonality and new programs.",
+    "tone": "Reassuring / Helpful",
+    "fkGrade": 12.775000000000002,
+    "ease": 31.97,
+    "improved": "Local fitness centers in Dallas, TX benefit from working capital to manage seasonality and new programs."
+  },
+  {
+    "industry": "fitness",
+    "index": 3,
+    "intro": "From boutique studios to full gyms, fitness businesses in Dallas, TX use loans to stay competitive.",
+    "tone": "Neutral",
+    "fkGrade": 11.3,
+    "ease": 42.545000000000016,
+    "improved": "From boutique studios to full gyms, fitness businesses in Dallas, TX access loan options to stay competitive."
+  },
+  {
+    "industry": "professional-services",
+    "index": 0,
+    "intro": "Professional service firms in Dallas, TX use financing for hiring, technology, and client acquisition.",
+    "tone": "Professional",
+    "fkGrade": 14.312857142857148,
+    "ease": 17.382142857142867,
+    "improved": "Professional service firms in Dallas, TX secure financing for hiring, technology, and client acquisition."
+  },
+  {
+    "industry": "professional-services",
+    "index": 1,
+    "intro": "Grow your practice in Dallas, TX with capital for staff, marketing, and office upgrades.",
+    "tone": "Professional",
+    "fkGrade": 10.098571428571429,
+    "ease": 47.59642857142859,
+    "improved": "Strengthen your practice in Dallas, TX with capital for staff, marketing, and office upgrades."
+  },
+  {
+    "industry": "professional-services",
+    "index": 2,
+    "intro": "Consultants, attorneys, accountants, and agencies in Dallas, TX rely on working capital to manage long project cycles.",
+    "tone": "Neutral",
+    "fkGrade": 13.945882352941176,
+    "ease": 25.35647058823531,
+    "improved": "Consultants, attorneys, accountants, and agencies in Dallas, TX benefit from working capital to manage long project cycles."
+  },
+  {
+    "industry": "professional-services",
+    "index": 3,
+    "intro": "From retainers to expansion, professional service firms in Dallas, TX use loans to scale sustainably.",
+    "tone": "Neutral",
+    "fkGrade": 13.073333333333338,
+    "ease": 28.05000000000001,
+    "improved": "From retainers to expansion, professional service firms in Dallas, TX access loan options to scale sustainably."
+  },
+  {
+    "industry": "manufacturing",
+    "index": 0,
+    "intro": "Manufacturers in Dallas, TX use financing for machinery, raw materials, and large orders.",
+    "tone": "Professional",
+    "fkGrade": 13.98769230769231,
+    "ease": 17.932307692307717,
+    "improved": "Manufacturers in Dallas, TX secure financing for machinery, raw materials, and large orders."
+  },
+  {
+    "industry": "manufacturing",
+    "index": 1,
+    "intro": "Grow your manufacturing operation in Dallas, TX with capital for equipment and staffing.",
+    "tone": "Professional",
+    "fkGrade": 12.172307692307694,
+    "ease": 30.947692307692336,
+    "improved": "Strengthen your manufacturing operation in Dallas, TX with capital for equipment and staffing."
+  },
+  {
+    "industry": "manufacturing",
+    "index": 2,
+    "intro": "Production facilities in Dallas, TX rely on working capital to handle long lead times and big contracts.",
+    "tone": "Neutral",
+    "fkGrade": 11.169411764705881,
+    "ease": 45.26235294117649,
+    "improved": "Production facilities in Dallas, TX benefit from working capital to handle long lead times and big contracts."
+  },
+  {
+    "industry": "manufacturing",
+    "index": 3,
+    "intro": "From automation to expansion, manufacturers in Dallas, TX use business loans to scale capacity.",
+    "tone": "Neutral",
+    "fkGrade": 15.15571428571429,
+    "ease": 11.339285714285722,
+    "improved": "From automation to expansion, manufacturers in Dallas, TX use business loans to scale capacity."
+  },
+  {
+    "industry": "wholesale",
+    "index": 0,
+    "intro": "Wholesale distributors in Dallas, TX rely on financing for bulk inventory and logistics.",
+    "tone": "Professional",
+    "fkGrade": 13.98769230769231,
+    "ease": 17.932307692307717,
+    "improved": "Wholesale distributors in Dallas, TX benefit from financing for bulk inventory and logistics."
+  },
+  {
+    "industry": "wholesale",
+    "index": 1,
+    "intro": "Grow your wholesale business in Dallas, TX with capital for stock, staffing, and vehicles.",
+    "tone": "Professional",
+    "fkGrade": 10.098571428571429,
+    "ease": 47.59642857142859,
+    "improved": "Strengthen your wholesale business in Dallas, TX with capital for stock, staffing, and vehicles."
+  },
+  {
+    "industry": "wholesale",
+    "index": 2,
+    "intro": "Distributors in Dallas, TX use working capital to manage payment terms and large orders.",
+    "tone": "Neutral",
+    "fkGrade": 11.784285714285716,
+    "ease": 35.5107142857143,
+    "improved": "Distributors in Dallas, TX use working capital to manage payment terms and large orders."
+  },
+  {
+    "industry": "wholesale",
+    "index": 3,
+    "intro": "From new accounts to expanded product lines, wholesalers in Dallas, TX use business loans to scale.",
+    "tone": "Professional",
+    "fkGrade": 11.3,
+    "ease": 42.545000000000016,
+    "improved": "From new accounts to expanded product lines, wholesalers in Dallas, TX use business loans to scale."
+  },
+  {
+    "industry": "real-estate",
+    "index": 0,
+    "intro": "Real estate service businesses in Dallas, TX use funding for marketing, staffing, and operations.",
+    "tone": "Neutral",
+    "fkGrade": 14.312857142857148,
+    "ease": 17.382142857142867,
+    "improved": "Real estate service businesses in Dallas, TX use funding for marketing, staffing, and operations."
+  },
+  {
+    "industry": "real-estate",
+    "index": 1,
+    "intro": "Grow your real estate company in Dallas, TX with flexible business capital.",
+    "tone": "Professional",
+    "fkGrade": 10.723333333333333,
+    "ease": 39.55500000000001,
+    "improved": "Strengthen your real estate company in Dallas, TX with flexible business capital."
+  },
+  {
+    "industry": "real-estate",
+    "index": 2,
+    "intro": "Agents and real estate teams in Dallas, TX rely on financing for lead generation and expansion.",
+    "tone": "Professional",
+    "fkGrade": 10.562500000000004,
+    "ease": 47.83250000000001,
+    "improved": "Agents and real estate teams in Dallas, TX benefit from financing for lead generation and expansion."
+  },
+  {
+    "industry": "real-estate",
+    "index": 3,
+    "intro": "From listings to operations, real estate businesses in Dallas, TX use loans to stay competitive.",
+    "tone": "Neutral",
+    "fkGrade": 13.073333333333338,
+    "ease": 28.05000000000001,
+    "improved": "From listings to operations, real estate businesses in Dallas, TX access loan options to stay competitive."
+  },
+  {
+    "industry": "food-truck",
+    "index": 0,
+    "intro": "Food truck owners in Dallas, TX use financing for vehicles, kitchen buildouts, and permits.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Food truck owners in Dallas, TX secure financing for vehicles, kitchen buildouts, and permits."
+  },
+  {
+    "industry": "food-truck",
+    "index": 1,
+    "intro": "Grow your food truck business in Dallas, TX with capital for equipment, staff, and events.",
+    "tone": "Professional",
+    "fkGrade": 7.566666666666666,
+    "ease": 67.53000000000003,
+    "improved": "Strengthen your food truck business in Dallas, TX with capital for equipment, staff, and events."
+  },
+  {
+    "industry": "food-truck",
+    "index": 2,
+    "intro": "Mobile food businesses in Dallas, TX rely on working capital to manage seasonality and festivals.",
+    "tone": "Neutral",
+    "fkGrade": 15.433333333333337,
+    "ease": 11.130000000000024,
+    "improved": "Mobile food businesses in Dallas, TX benefit from working capital to manage seasonality and festivals."
+  },
+  {
+    "industry": "food-truck",
+    "index": 3,
+    "intro": "From new routes to additional trucks, food truck operators in Dallas, TX use loans to expand.",
+    "tone": "Professional",
+    "fkGrade": 9.087500000000002,
+    "ease": 58.4075,
+    "improved": "From new routes to additional trucks, food truck operators in Dallas, TX access loan options to expand."
+  },
+  {
+    "industry": "childcare",
+    "index": 0,
+    "intro": "Childcare centers in Dallas, TX use financing for staffing, safety, and facility improvements.",
+    "tone": "Professional",
+    "fkGrade": 14.895384615384618,
+    "ease": 11.424615384615407,
+    "improved": "Childcare centers in Dallas, TX secure financing for staffing, safety, and facility improvements."
+  },
+  {
+    "industry": "childcare",
+    "index": 1,
+    "intro": "Grow your childcare business in Dallas, TX with capital for classrooms, playgrounds, and programs.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Strengthen your childcare business in Dallas, TX with capital for classrooms, playgrounds, and programs."
+  },
+  {
+    "industry": "childcare",
+    "index": 2,
+    "intro": "Daycares in Dallas, TX rely on working capital to manage regulations and enrollment changes.",
+    "tone": "Neutral",
+    "fkGrade": 13.470000000000002,
+    "ease": 23.42500000000001,
+    "improved": "Daycares in Dallas, TX benefit from working capital to manage regulations and enrollment changes."
+  },
+  {
+    "industry": "childcare",
+    "index": 3,
+    "intro": "From licensing to expansion, childcare centers in Dallas, TX use loans to better serve families.",
+    "tone": "Neutral",
+    "fkGrade": 11.500000000000004,
+    "ease": 39.33000000000001,
+    "improved": "From licensing to expansion, childcare centers in Dallas, TX access loan options to better serve families."
+  },
+  {
+    "industry": "nonprofit",
+    "index": 0,
+    "intro": "Nonprofits in Dallas, TX use financing to support staffing, outreach, and programs.",
+    "tone": "Professional",
+    "fkGrade": 9.740000000000002,
+    "ease": 46.60500000000002,
+    "improved": "Nonprofits in Dallas, TX secure financing to support staffing, outreach, and programs."
+  },
+  {
+    "industry": "nonprofit",
+    "index": 1,
+    "intro": "Grow your nonprofit's impact in Dallas, TX with capital for operations and expansion.",
+    "tone": "Professional",
+    "fkGrade": 10.356923076923078,
+    "ease": 43.963076923076954,
+    "improved": "Strengthen your nonprofit's impact in Dallas, TX with capital for operations and expansion."
+  },
+  {
+    "industry": "nonprofit",
+    "index": 2,
+    "intro": "Organizations in Dallas, TX rely on working capital to manage grants and donor cycles.",
+    "tone": "Neutral",
+    "fkGrade": 11.784285714285716,
+    "ease": 35.5107142857143,
+    "improved": "Organizations in Dallas, TX benefit from working capital to manage grants and donor cycles."
+  },
+  {
+    "industry": "nonprofit",
+    "index": 3,
+    "intro": "From community services to advocacy, nonprofits in Dallas, TX use financing to stabilize cash flow.",
+    "tone": "Professional",
+    "fkGrade": 14.646666666666672,
+    "ease": 16.77000000000001,
+    "improved": "From community services to advocacy, nonprofits in Dallas, TX secure financing to stabilize cash flow."
+  },
+  {
+    "industry": "franchise",
+    "index": 0,
+    "intro": "Franchise owners in Dallas, TX use financing for buildouts, fees, and marketing.",
+    "tone": "Professional",
+    "fkGrade": 9.740000000000002,
+    "ease": 46.60500000000002,
+    "improved": "Franchise owners in Dallas, TX secure financing for buildouts, fees, and marketing."
+  },
+  {
+    "industry": "franchise",
+    "index": 1,
+    "intro": "Grow your franchise in Dallas, TX with capital for equipment, staff, and working capital.",
+    "tone": "Professional",
+    "fkGrade": 9.255714285714287,
+    "ease": 53.639285714285734,
+    "improved": "Strengthen your franchise in Dallas, TX with capital for equipment, staff, and working capital."
+  },
+  {
+    "industry": "franchise",
+    "index": 2,
+    "intro": "Franchisees in Dallas, TX rely on loans to support expansion and brand standards.",
+    "tone": "Neutral",
+    "fkGrade": 7.633846153846157,
+    "ease": 63.486153846153854,
+    "improved": "Franchisees in Dallas, TX benefit from loans to support expansion and brand standards."
+  },
+  {
+    "industry": "franchise",
+    "index": 3,
+    "intro": "From new openings to remodels, franchise businesses in Dallas, TX use financing to scale.",
+    "tone": "Professional",
+    "fkGrade": 12.62714285714286,
+    "ease": 29.467857142857156,
+    "improved": "From new openings to remodels, franchise businesses in Dallas, TX secure financing to scale."
+  },
+  {
+    "industry": "technology",
+    "index": 0,
+    "intro": "Technology companies in Dallas, TX use financing for hiring, development, and infrastructure.",
+    "tone": "Professional",
+    "fkGrade": 16.62333333333334,
+    "ease": -2.7450000000000045,
+    "improved": "Technology companies in Dallas, TX secure financing for hiring, development, and infrastructure."
+  },
+  {
+    "industry": "technology",
+    "index": 1,
+    "intro": "Grow your tech business in Dallas, TX with capital for engineers, sales, and product investment.",
+    "tone": "Professional",
+    "fkGrade": 9.92666666666667,
+    "ease": 50.610000000000014,
+    "improved": "Strengthen your tech business in Dallas, TX with capital for engineers, sales, and product investment."
+  },
+  {
+    "industry": "technology",
+    "index": 2,
+    "intro": "Tech startups in Dallas, TX rely on working capital to navigate long development cycles.",
+    "tone": "Neutral",
+    "fkGrade": 11.784285714285716,
+    "ease": 35.5107142857143,
+    "improved": "Tech startups in Dallas, TX benefit from working capital to navigate long development cycles."
+  },
+  {
+    "industry": "technology",
+    "index": 3,
+    "intro": "From SaaS to IT services, tech companies in Dallas, TX use loans to accelerate their roadmap.",
+    "tone": "Neutral",
+    "fkGrade": 9.825,
+    "ease": 53.120000000000005,
+    "improved": "From SaaS to IT services, tech companies in Dallas, TX access loan options to accelerate their roadmap."
+  },
+  {
+    "industry": "ecommerce",
+    "index": 0,
+    "intro": "Ecommerce stores in Dallas, TX use financing for inventory, ads, and fulfillment.",
+    "tone": "Professional",
+    "fkGrade": 12.690000000000001,
+    "ease": 25.455000000000013,
+    "improved": "Ecommerce stores in Dallas, TX secure financing for inventory, ads, and fulfillment."
+  },
+  {
+    "industry": "ecommerce",
+    "index": 1,
+    "intro": "Grow your ecommerce business in Dallas, TX with capital for product launches, marketing, and logistics.",
+    "tone": "Professional",
+    "fkGrade": 12.286666666666669,
+    "ease": 33.690000000000026,
+    "improved": "Strengthen your ecommerce business in Dallas, TX with capital for product launches, marketing, and logistics."
+  },
+  {
+    "industry": "ecommerce",
+    "index": 2,
+    "intro": "Online sellers in Dallas, TX rely on working capital to scale advertising and order volume.",
+    "tone": "Neutral",
+    "fkGrade": 13.073333333333338,
+    "ease": 28.05000000000001,
+    "improved": "Online sellers in Dallas, TX benefit from working capital to scale advertising and order volume."
+  },
+  {
+    "industry": "ecommerce",
+    "index": 3,
+    "intro": "From new SKUs to warehousing, ecommerce brands in Dallas, TX use loans to expand.",
+    "tone": "Professional",
+    "fkGrade": 8.412857142857145,
+    "ease": 59.68214285714288,
+    "improved": "From new SKUs to warehousing, ecommerce brands in Dallas, TX access loan options to expand."
+  },
+  {
+    "industry": "food-services",
+    "index": 0,
+    "intro": "Food service businesses in Dallas, TX use financing for equipment, staff, and delivery operations.",
+    "tone": "Professional",
+    "fkGrade": 15.15571428571429,
+    "ease": 11.339285714285722,
+    "improved": "Food service businesses in Dallas, TX secure financing for equipment, staff, and delivery operations."
+  },
+  {
+    "industry": "food-services",
+    "index": 1,
+    "intro": "Grow your catering or food service company in Dallas, TX with flexible business capital.",
+    "tone": "Professional",
+    "fkGrade": 11.784285714285716,
+    "ease": 35.5107142857143,
+    "improved": "Strengthen your catering or food service company in Dallas, TX with flexible business capital."
+  },
+  {
+    "industry": "food-services",
+    "index": 2,
+    "intro": "Ghost kitchens and caterers in Dallas, TX rely on working capital for supplies and expansion.",
+    "tone": "Neutral",
+    "fkGrade": 9.92666666666667,
+    "ease": 50.610000000000014,
+    "improved": "Ghost kitchens and caterers in Dallas, TX benefit from working capital for supplies and expansion."
+  },
+  {
+    "industry": "food-services",
+    "index": 3,
+    "intro": "From events to meal prep, food service businesses in Dallas, TX use loans to scale production.",
+    "tone": "Neutral",
+    "fkGrade": 9.825,
+    "ease": 53.120000000000005,
+    "improved": "From events to meal prep, food service businesses in Dallas, TX access loan options to scale production."
+  },
+  {
+    "industry": "general-contractors",
+    "index": 0,
+    "intro": "General contractors in Dallas, TX use flexible financing to manage labor, materials, and job scheduling.",
+    "tone": "Professional",
+    "fkGrade": 14.646666666666672,
+    "ease": 16.77000000000001,
+    "improved": "General contractors in Dallas, TX use flexible financing to manage labor, materials, and job scheduling."
+  },
+  {
+    "industry": "general-contractors",
+    "index": 1,
+    "intro": "Grow your contracting business in Dallas, TX with capital for tools, equipment, and new bids.",
+    "tone": "Professional",
+    "fkGrade": 8.353333333333339,
+    "ease": 61.890000000000015,
+    "improved": "Strengthen your contracting business in Dallas, TX with capital for tools, equipment, and new bids."
+  },
+  {
+    "industry": "general-contractors",
+    "index": 2,
+    "intro": "Contractors in Dallas, TX rely on working capital to balance multiple projects and timelines.",
+    "tone": "Neutral",
+    "fkGrade": 13.470000000000002,
+    "ease": 23.42500000000001,
+    "improved": "Contractors in Dallas, TX benefit from working capital to balance multiple projects and timelines."
+  },
+  {
+    "industry": "general-contractors",
+    "index": 3,
+    "intro": "From remodels to additions, general contractors in Dallas, TX use loans to stay competitive.",
+    "tone": "Neutral",
+    "fkGrade": 12.62714285714286,
+    "ease": 29.467857142857156,
+    "improved": "From remodels to additions, general contractors in Dallas, TX access loan options to stay competitive."
+  }
+]

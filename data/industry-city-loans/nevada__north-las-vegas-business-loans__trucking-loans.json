@@ -1,0 +1,24 @@
+{
+  "stateSlug": "nevada",
+  "stateName": "Nevada",
+  "citySlug": "north-las-vegas-business-loans",
+  "cityName": "North Las Vegas",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "North Las Vegas Trucking Business Loans | Nevada",
+  "description": "Compare trucking business loans, working capital and equipment financing available in North Las Vegas, Nevada.",
+  "h1": "North Las Vegas Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in North Las Vegas, Nevada.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "North Las Vegas Trucking Business Loans",
+    "areaServed": "North Las Vegas, Nevada",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

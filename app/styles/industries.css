@@ -1,0 +1,251 @@
+/* ============================================================
+   INDUSTRIES HUB PAGE
+   Add to bottom of city-loans.css or as a separate import
+   in the industries page component.
+============================================================ */
+
+/* ── PAGE WRAPPER ── */
+.industries-hub {
+  min-height: 100vh;
+  background: #f6f8fb;
+}
+
+/* ── HERO ── */
+.ihub-hero {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef3f9 100%);
+  padding: 100px 20px 56px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.ihub-hero__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ihub-hero h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  color: #0b1f41;
+  line-height: 1.08;
+  margin: 8px 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.ihub-hero p {
+  font-size: 17px;
+  color: #475569;
+  line-height: 1.65;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* ── GRID SECTION ── */
+.ihub-grid-section {
+  padding: 48px 20px 56px;
+}
+
+.ihub-grid-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ihub-grid-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.ihub-grid-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0b1f41;
+  margin: 0;
+}
+
+.ihub-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* ── CARD GRID ── */
+.ihub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+/* ── CARD ── */
+.ihub-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+
+  text-decoration: none !important;
+  color: #0b1f41;
+
+  box-shadow: 0 2px 8px rgba(11, 31, 65, 0.04);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.15s ease;
+}
+
+.ihub-card:hover {
+  border-color: #16a34a;
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.10);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.ihub-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.ihub-card__name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b1f41;
+  line-height: 1.3;
+}
+
+.ihub-card__desc {
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.ihub-card__arrow {
+  font-size: 16px;
+  color: #16a34a;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.ihub-card:hover .ihub-card__arrow {
+  transform: translateX(3px);
+}
+
+/* ── CTA ── */
+.ihub-cta {
+  background: linear-gradient(135deg, #0b1f41 0%, #142b57 100%);
+  padding: 64px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ihub-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 198, 132, 0.12), transparent 60%);
+  pointer-events: none;
+}
+
+.ihub-cta__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ihub-cta h2 {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.ihub-cta p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.ihub-cta__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.ihub-cta .btn-primary {
+  background: #00c684;
+  color: #0b1f41 !important;
+  box-shadow: 0 10px 28px rgba(0, 198, 132, 0.4);
+}
+
+.ihub-cta .btn-outline {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff !important;
+}
+
+.ihub-cta .btn-outline:hover {
+  background: #ffffff;
+  color: #0b1f41 !important;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .ihub-hero {
+    padding: 92px 16px 40px;
+  }
+
+  .ihub-hero h1 {
+    font-size: 30px;
+  }
+
+  .ihub-hero p {
+    font-size: 15px;
+  }
+
+  .ihub-grid-section {
+    padding: 32px 16px 40px;
+  }
+
+  .ihub-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .ihub-card {
+    padding: 14px;
+  }
+
+  .ihub-card__name {
+    font-size: 14px;
+  }
+
+  .ihub-cta {
+    padding: 48px 16px;
+  }
+
+  .ihub-cta__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 400px) {
+  .ihub-grid {
+    grid-template-columns: 1fr;
+  }
+}

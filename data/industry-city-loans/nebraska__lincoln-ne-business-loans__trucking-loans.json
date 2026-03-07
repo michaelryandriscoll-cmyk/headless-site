@@ -1,0 +1,24 @@
+{
+  "stateSlug": "nebraska",
+  "stateName": "Nebraska",
+  "citySlug": "lincoln-ne-business-loans",
+  "cityName": "Lincoln",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Lincoln Trucking Business Loans | Nebraska",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Lincoln, Nebraska.",
+  "h1": "Lincoln Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Lincoln, Nebraska.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Lincoln Trucking Business Loans",
+    "areaServed": "Lincoln, Nebraska",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

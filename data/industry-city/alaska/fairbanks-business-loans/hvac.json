@@ -1,0 +1,41 @@
+{
+  "state": "Alaska",
+  "city": "Fairbanks",
+  "industry": "hvac",
+  "title": "Fairbanks HVAC Business Loans",
+  "intro": "Peak seasons in Fairbanks, Alaska require HVAC companies to stay stocked and staffed — compare financing options today.",
+  "bestFor": [
+    {
+      "slug": "equipment_costs",
+      "label": "HVAC equipment & tool purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vehicle upgrades"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring technicians during peak season"
+    },
+    {
+      "slug": "ductwork_upgrades",
+      "label": "Ductwork & ventilation upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "emergency_repairs",
+      "label": "Emergency customer repair calls",
+      "weight": 2
+    },
+    {
+      "slug": "local_ads",
+      "label": "Local marketing & service-area expansion",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–24 Months"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "mississippi",
+  "stateName": "Mississippi",
+  "citySlug": "gulfport-business-loans",
+  "cityName": "Gulfport",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Gulfport Construction Business Loans | Mississippi",
+  "description": "Compare construction business loans, working capital and equipment financing available in Gulfport, Mississippi.",
+  "h1": "Gulfport Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Gulfport, Mississippi.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Gulfport Construction Business Loans",
+    "areaServed": "Gulfport, Mississippi",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

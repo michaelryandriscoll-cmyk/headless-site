@@ -1,0 +1,24 @@
+{
+  "stateSlug": "connecticut",
+  "stateName": "Connecticut",
+  "citySlug": "waterbury-business-loans",
+  "cityName": "Waterbury",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Waterbury Trucking Business Loans | Connecticut",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Waterbury, Connecticut.",
+  "h1": "Waterbury Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Waterbury, Connecticut.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Waterbury Trucking Business Loans",
+    "areaServed": "Waterbury, Connecticut",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

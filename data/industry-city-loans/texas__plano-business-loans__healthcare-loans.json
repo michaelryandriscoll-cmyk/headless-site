@@ -1,0 +1,24 @@
+{
+  "stateSlug": "texas",
+  "stateName": "Texas",
+  "citySlug": "plano-business-loans",
+  "cityName": "Plano",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Plano Healthcare Business Loans | Texas",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Plano, Texas.",
+  "h1": "Plano Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Plano, Texas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Plano Healthcare Business Loans",
+    "areaServed": "Plano, Texas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

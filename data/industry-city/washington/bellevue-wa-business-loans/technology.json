@@ -1,0 +1,41 @@
+{
+  "state": "Washington",
+  "city": "Bellevue",
+  "industry": "technology",
+  "title": "Bellevue Technology Business Loans",
+  "intro": "Technology companies in Bellevue, Washington use financing for hiring, development, and infrastructure.",
+  "bestFor": [
+    {
+      "slug": "hiring",
+      "label": "Hiring engineers & product teams"
+    },
+    {
+      "slug": "development",
+      "label": "Product development & software build"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Cloud & infrastructure costs"
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing & go-to-market programs",
+      "weight": 1
+    },
+    {
+      "slug": "security",
+      "label": "Security, compliance & audits",
+      "weight": 2
+    },
+    {
+      "slug": "expansion",
+      "label": "Scaling into new markets",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "640+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

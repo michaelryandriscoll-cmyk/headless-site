@@ -1,0 +1,1402 @@
+// AUTO-GENERATED SAFE REWRITE VERSION
+// Source: scripts/_industryList25.js
+// Only intros flagged as weak were rewritten.
+
+const industries = [
+  {
+    "slug": "roofing",
+    "title": "Roofing Business Loans",
+    "label": "Roofing Contractors",
+    "introTemplates": [
+      "Need reliable roofing contractors in {{city}}, {{state}}? Compare top-rated pros for repairs, replacements, and inspections.",
+      "{{city}}, {{state}} homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements.",
+      "Find trusted roofing contractors in {{city}}, {{state}} for repairs, inspections, or complete roof replacements.",
+      "Your home in {{city}}, {{state}} deserves a dependable roof—explore local roofing services and financing options today."
+    ],
+    "bestForCore": [
+      {
+        "slug": "emergency_repairs",
+        "label": "Emergency roof repairs"
+      },
+      {
+        "slug": "full_replacements",
+        "label": "Full roof replacements"
+      },
+      {
+        "slug": "leak_detection",
+        "label": "Leak detection & inspections"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "storm_damage",
+        "label": "Storm & hail damage claims",
+        "weight": 3
+      },
+      {
+        "slug": "flat_roofs",
+        "label": "Flat & low-slope roofs",
+        "weight": 2
+      },
+      {
+        "slug": "metal_roofs",
+        "label": "Metal roof installs",
+        "weight": 1
+      },
+      {
+        "slug": "solar_ready",
+        "label": "Solar-ready roofing options",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–72 Hours",
+      "terms": "6–24 Months"
+    }
+  },
+  {
+    "slug": "trucking",
+    "title": "Trucking Business Loans",
+    "label": "Trucking Businesses",
+    "introTemplates": [
+      "Local trucking companies in {{city}}, {{state}} benefit from flexible business funding for fuel costs, repairs, and fleet expansion.",
+      "Need capital to keep your trucks on the road in {{city}}, {{state}}? Explore fast financing options built for trucking businesses.",
+      "Keep your routes running smoothly. Compare trucking business loans in {{city}}, {{state}} for fuel, maintenance, and new equipment.",
+      "Grow or stabilize your fleet in {{city}}, {{state}} with funding options designed to manage cash flow, repairs, and unexpected breakdowns."
+    ],
+    "bestForCore": [
+      {
+        "slug": "fuel_costs",
+        "label": "Fuel & operating expenses"
+      },
+      {
+        "slug": "fleet_repairs",
+        "label": "Fleet repairs & maintenance"
+      },
+      {
+        "slug": "cashflow_gaps",
+        "label": "Covering cash-flow gaps"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "hire_drivers",
+        "label": "Hiring CDL drivers",
+        "weight": 3
+      },
+      {
+        "slug": "buy_used_trucks",
+        "label": "Purchasing used trucks",
+        "weight": 3
+      },
+      {
+        "slug": "new_route_expansion",
+        "label": "Expanding routes or contracts",
+        "weight": 2
+      },
+      {
+        "slug": "insurance_costs",
+        "label": "High trucking insurance costs",
+        "weight": 2
+      },
+      {
+        "slug": "freight_slowdowns",
+        "label": "Handling seasonal freight slowdowns",
+        "weight": 1
+      },
+      {
+        "slug": "dot_compliance",
+        "label": "DOT compliance upgrades",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "560+",
+      "speed": "12–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "solar",
+    "title": "Solar Installation Business Loans",
+    "label": "Solar Installers",
+    "introTemplates": [
+      "Solar installation companies in {{city}}, {{state}} benefit from fast, flexible financing to manage equipment costs and project timelines.",
+      "Strengthen your solar business in {{city}}, {{state}} with funding options designed for panels, batteries, and installation crews.",
+      "Demand for clean energy is rising in {{city}}, {{state}}—explore solar business loans to expand your operations.",
+      "Secure capital for solar equipment, payroll, or new projects in {{city}}, {{state}} with tailored financing for installers."
+    ],
+    "bestForCore": [
+      {
+        "slug": "equipment_costs",
+        "label": "Solar equipment & panel purchases"
+      },
+      {
+        "slug": "project_cashflow",
+        "label": "Project cash-flow smoothing"
+      },
+      {
+        "slug": "installation_crews",
+        "label": "Hiring & managing installation crews"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "battery_storage",
+        "label": "Adding battery storage systems",
+        "weight": 3
+      },
+      {
+        "slug": "marketing_growth",
+        "label": "Local marketing & lead generation",
+        "weight": 2
+      },
+      {
+        "slug": "warehouse_space",
+        "label": "Warehouse & storage space",
+        "weight": 2
+      },
+      {
+        "slug": "ev_charging",
+        "label": "EV charger installation expansion",
+        "weight": 1
+      },
+      {
+        "slug": "commercial_projects",
+        "label": "Commercial solar projects",
+        "weight": 3
+      },
+      {
+        "slug": "permitting_delays",
+        "label": "Managing permitting delays",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "600+",
+      "speed": "24–72 Hours",
+      "terms": "6–24 Months"
+    }
+  },
+  {
+    "slug": "restaurants",
+    "title": "Restaurant Business Loans",
+    "label": "Restaurants",
+    "introTemplates": [
+      "Restaurants in {{city}}, {{state}} benefit from flexible funding to manage inventory, payroll, and seasonal slowdowns.",
+      "Strengthen your restaurant in {{city}}, {{state}} with capital for kitchen equipment, staff, and marketing.",
+      "Local restaurants in {{city}}, {{state}} use working capital to cover food costs, upgrades, and delivery expansion.",
+      "From new menu launches to remodels, restaurants in {{city}}, {{state}} use business loans to stay competitive."
+    ],
+    "bestForCore": [
+      {
+        "slug": "kitchen_equipment",
+        "label": "Kitchen equipment & appliances"
+      },
+      {
+        "slug": "inventory_supplies",
+        "label": "Inventory & food supplies"
+      },
+      {
+        "slug": "staffing_payroll",
+        "label": "Staffing & payroll support"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "delivery_expansion",
+        "label": "Delivery & online ordering expansion",
+        "weight": 2
+      },
+      {
+        "slug": "renovations",
+        "label": "Dining room renovations",
+        "weight": 2
+      },
+      {
+        "slug": "local_marketing",
+        "label": "Local marketing & ads",
+        "weight": 1
+      },
+      {
+        "slug": "catering",
+        "label": "Launching or expanding catering services",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "retail",
+    "title": "Retail Business Loans",
+    "label": "Retail Stores",
+    "introTemplates": [
+      "Retail shops in {{city}}, {{state}} use flexible financing to manage inventory, staffing, and seasonal peaks.",
+      "Strengthen your retail business in {{city}}, {{state}} with capital for bulk inventory, store upgrades, and marketing.",
+      "Local retailers in {{city}}, {{state}} benefit from working capital to handle slow seasons and new product launches.",
+      "From pop-up displays to remodels, retailers in {{city}}, {{state}} use business loans to stay competitive."
+    ],
+    "bestForCore": [
+      {
+        "slug": "inventory",
+        "label": "Inventory purchases"
+      },
+      {
+        "slug": "seasonal_cashflow",
+        "label": "Seasonal cash flow support"
+      },
+      {
+        "slug": "store_upgrades",
+        "label": "Store upgrades & expansions"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "ecommerce_launch",
+        "label": "Launching ecommerce",
+        "weight": 2
+      },
+      {
+        "slug": "pos_upgrades",
+        "label": "POS system upgrades",
+        "weight": 1
+      },
+      {
+        "slug": "local_marketing",
+        "label": "Local marketing & signage",
+        "weight": 1
+      },
+      {
+        "slug": "new_location",
+        "label": "Opening additional locations",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "construction",
+    "title": "Construction Business Loans",
+    "label": "Construction Companies",
+    "introTemplates": [
+      "Construction companies in {{city}}, {{state}} benefit from fast, flexible financing to manage labor, materials, and project timelines.",
+      "Strengthen your construction business in {{city}}, {{state}} with capital for equipment, hiring, and new project bids.",
+      "Keep projects on track in {{city}}, {{state}} with construction loans built for materials, crews, and delays.",
+      "Secure funding for equipment, subcontractors, and expanding contracts in {{city}}, {{state}}."
+    ],
+    "bestForCore": [
+      {
+        "slug": "project_cashflow",
+        "label": "Project cash-flow management"
+      },
+      {
+        "slug": "equipment_purchases",
+        "label": "Equipment purchases & rentals"
+      },
+      {
+        "slug": "labor_costs",
+        "label": "Skilled labor & subcontractor costs"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "material_delays",
+        "label": "Handling material cost spikes",
+        "weight": 3
+      },
+      {
+        "slug": "permit_delays",
+        "label": "Managing permit or inspection delays",
+        "weight": 2
+      },
+      {
+        "slug": "commercial_bids",
+        "label": "Bidding on commercial contracts",
+        "weight": 3
+      },
+      {
+        "slug": "safety_upgrades",
+        "label": "Safety gear & compliance upgrades",
+        "weight": 1
+      },
+      {
+        "slug": "fleet_expansion",
+        "label": "Expanding work vehicle fleet",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "600+",
+      "speed": "24–72 Hours",
+      "terms": "6–24 Months"
+    }
+  },
+  {
+    "slug": "hvac",
+    "title": "HVAC Business Loans",
+    "label": "HVAC Contractors",
+    "introTemplates": [
+      "HVAC companies in {{city}}, {{state}} depend on fast financing for equipment, vehicles, and seasonal demand.",
+      "Strengthen your HVAC business in {{city}}, {{state}} with capital for technicians, tools, and service vehicles.",
+      "Peak seasons in {{city}}, {{state}} require HVAC companies to stay stocked and staffed — explore financing options today.",
+      "Keep your HVAC operations running smoothly in {{city}}, {{state}} with loans designed for repairs, upgrades, and expansion."
+    ],
+    "bestForCore": [
+      {
+        "slug": "equipment_costs",
+        "label": "HVAC equipment & tool purchases"
+      },
+      {
+        "slug": "service_vehicles",
+        "label": "Service vehicle upgrades"
+      },
+      {
+        "slug": "hiring_techs",
+        "label": "Hiring technicians during peak season"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "seasonal_demand",
+        "label": "Managing seasonal cash-flow swings",
+        "weight": 3
+      },
+      {
+        "slug": "ductwork_upgrades",
+        "label": "Ductwork & ventilation upgrades",
+        "weight": 1
+      },
+      {
+        "slug": "emergency_repairs",
+        "label": "Emergency customer repair calls",
+        "weight": 2
+      },
+      {
+        "slug": "local_ads",
+        "label": "Local marketing & service-area expansion",
+        "weight": 2
+      },
+      {
+        "slug": "inventory_storage",
+        "label": "Warehouse & inventory storage",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–24 Months"
+    }
+  },
+  {
+    "slug": "plumbing",
+    "title": "Plumbing Business Loans",
+    "label": "Plumbing Contractors",
+    "introTemplates": [
+      "Plumbing companies in {{city}}, {{state}} benefit from flexible financing for tools, trucks, and emergency repair demand.",
+      "Strengthen your plumbing business in {{city}}, {{state}} with capital for equipment, technicians, and marketing.",
+      "Local homeowners in {{city}}, {{state}} need fast plumbing services — explore financing options to expand your team.",
+      "Secure funding for service vehicles, tools, and expansion projects in {{city}}, {{state}}."
+    ],
+    "bestForCore": [
+      {
+        "slug": "tools_equipment",
+        "label": "Tools & equipment purchases"
+      },
+      {
+        "slug": "service_vehicles",
+        "label": "Service vans & trucks"
+      },
+      {
+        "slug": "hiring_techs",
+        "label": "Hiring additional plumbers"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "emergency_calls",
+        "label": "Emergency service call handling",
+        "weight": 3
+      },
+      {
+        "slug": "pipe_relining",
+        "label": "Pipe relining & trenchless repairs",
+        "weight": 1
+      },
+      {
+        "slug": "commercial_contracts",
+        "label": "Commercial plumbing expansion",
+        "weight": 2
+      },
+      {
+        "slug": "local_marketing",
+        "label": "Local marketing & lead generation",
+        "weight": 2
+      },
+      {
+        "slug": "water_heaters",
+        "label": "Water heater installation growth",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "electrician",
+    "title": "Electrician Business Loans",
+    "label": "Electricians",
+    "introTemplates": [
+      "Electricians in {{city}}, {{state}} benefit from fast financing for tools, vans, and growing customer demand.",
+      "Expand your electrical business in {{city}}, {{state}} with capital for equipment, apprentices, and service vehicles.",
+      "Local homeowners and businesses in {{city}}, {{state}} depend on reliable electricians — explore growth-focused financing options.",
+      "Secure funding for panel upgrades, rewiring, and expanding service areas in {{city}}, {{state}}."
+    ],
+    "bestForCore": [
+      {
+        "slug": "tools_meters",
+        "label": "Electrical tools & meter upgrades"
+      },
+      {
+        "slug": "service_vans",
+        "label": "Service vans & fleet upgrades"
+      },
+      {
+        "slug": "hire_apprentices",
+        "label": "Hiring apprentices & technicians"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "panel_upgrades",
+        "label": "Electrical panel upgrades",
+        "weight": 2
+      },
+      {
+        "slug": "ev_charger_installs",
+        "label": "EV charger installation services",
+        "weight": 3
+      },
+      {
+        "slug": "commercial_wiring",
+        "label": "Commercial wiring contracts",
+        "weight": 2
+      },
+      {
+        "slug": "smart_home",
+        "label": "Smart home installation growth",
+        "weight": 1
+      },
+      {
+        "slug": "emergency_repairs",
+        "label": "Emergency electrical repairs",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "cleaning",
+    "title": "Cleaning Business Loans",
+    "label": "Cleaning Services",
+    "introTemplates": [
+      "Cleaning companies in {{city}}, {{state}} use business funding for supplies, staffing, and vehicles.",
+      "Strengthen your cleaning service in {{city}}, {{state}} with capital for crews, equipment, and marketing.",
+      "Residential and commercial cleaners in {{city}}, {{state}} benefit from working capital to win contracts and handle growth.",
+      "From move-outs to recurring accounts, cleaning businesses in {{city}}, {{state}} access loan options to scale."
+    ],
+    "bestForCore": [
+      {
+        "slug": "supplies",
+        "label": "Cleaning supplies & chemicals"
+      },
+      {
+        "slug": "staffing",
+        "label": "Hiring cleaning crews"
+      },
+      {
+        "slug": "vehicles",
+        "label": "Service vehicles"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "janitorial_contracts",
+        "label": "Commercial janitorial contracts",
+        "weight": 3
+      },
+      {
+        "slug": "specialty_cleaning",
+        "label": "Medical, post-construction, or deep cleaning",
+        "weight": 2
+      },
+      {
+        "slug": "marketing",
+        "label": "Local advertising & SEO",
+        "weight": 1
+      },
+      {
+        "slug": "carpet_floor",
+        "label": "Carpet & floor care expansion",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "560+",
+      "speed": "24–48 Hours",
+      "terms": "6–12 Months"
+    }
+  },
+  {
+    "slug": "landscaping",
+    "title": "Landscaping Business Loans",
+    "label": "Landscapers",
+    "introTemplates": [
+      "Landscaping companies in {{city}}, {{state}} benefit from flexible funding for equipment, crews, and seasonal work.",
+      "Strengthen your landscaping business in {{city}}, {{state}} with capital for mowers, trailers, and labor.",
+      "Local landscapers in {{city}}, {{state}} use working capital to handle spring rushes and slow winter months.",
+      "From residential routes to commercial contracts, landscapers in {{city}}, {{state}} use business loans to scale."
+    ],
+    "bestForCore": [
+      {
+        "slug": "equipment",
+        "label": "Mowers & landscaping equipment"
+      },
+      {
+        "slug": "truck_trailer",
+        "label": "Truck & trailer purchases"
+      },
+      {
+        "slug": "seasonal_labor",
+        "label": "Seasonal labor hiring"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "hardscaping",
+        "label": "Hardscaping & outdoor living expansion",
+        "weight": 3
+      },
+      {
+        "slug": "commercial_contracts",
+        "label": "Commercial landscaping contracts",
+        "weight": 2
+      },
+      {
+        "slug": "snow_removal",
+        "label": "Snow removal operations",
+        "weight": 1
+      },
+      {
+        "slug": "branding",
+        "label": "Branding, uniforms & marketing",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "560+",
+      "speed": "24–48 Hours",
+      "terms": "6–12 Months"
+    }
+  },
+  {
+    "slug": "auto-repair",
+    "title": "Auto Repair Business Loans",
+    "label": "Auto Repair Shops",
+    "introTemplates": [
+      "Auto repair shops in {{city}}, {{state}} depend on financing for diagnostic tools, lifts, and parts inventory.",
+      "Strengthen your auto repair business in {{city}}, {{state}} with capital for technicians, equipment, and shop expansion.",
+      "Local drivers in {{city}}, {{state}} benefit from fast repairs—explore financing options to upgrade your shop.",
+      "Keep your auto repair shop running smoothly in {{city}}, {{state}} with loans for equipment, staffing, and inventory."
+    ],
+    "bestForCore": [
+      {
+        "slug": "diagnostic_tools",
+        "label": "Diagnostic tools & scanners"
+      },
+      {
+        "slug": "shop_equipment",
+        "label": "Lifts, jacks & major equipment"
+      },
+      {
+        "slug": "parts_inventory",
+        "label": "Parts inventory & bulk ordering"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "hire_techs",
+        "label": "Hiring experienced technicians",
+        "weight": 3
+      },
+      {
+        "slug": "hybrid_tools",
+        "label": "Hybrid/electric vehicle tooling",
+        "weight": 1
+      },
+      {
+        "slug": "marketing_growth",
+        "label": "Local marketing & acquisition",
+        "weight": 2
+      },
+      {
+        "slug": "mobile_repair",
+        "label": "Launching mobile repair services",
+        "weight": 1
+      },
+      {
+        "slug": "shop_expansion",
+        "label": "Expanding repair bays or locations",
+        "weight": 3
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "medical",
+    "title": "Medical Practice Business Loans",
+    "label": "Medical Practices",
+    "introTemplates": [
+      "Medical practices in {{city}}, {{state}} secure financing for equipment, staffing, and patient services.",
+      "Strengthen your medical practice in {{city}}, {{state}} with capital for technology, buildouts, and providers.",
+      "Local clinics in {{city}}, {{state}} benefit from working capital to manage insurance delays and operations.",
+      "From diagnostics to expansion, medical practices in {{city}}, {{state}} access loan options to improve patient care."
+    ],
+    "bestForCore": [
+      {
+        "slug": "medical_equipment",
+        "label": "Medical equipment & diagnostic tools"
+      },
+      {
+        "slug": "staffing",
+        "label": "Hiring physicians & medical staff"
+      },
+      {
+        "slug": "insurance_gaps",
+        "label": "Insurance reimbursement float"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "buildouts",
+        "label": "Buildouts & exam room expansion",
+        "weight": 2
+      },
+      {
+        "slug": "telehealth",
+        "label": "Telehealth technology investment",
+        "weight": 1
+      },
+      {
+        "slug": "marketing",
+        "label": "Local patient acquisition & marketing",
+        "weight": 1
+      },
+      {
+        "slug": "software",
+        "label": "EHR or software upgrades",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "2–7 Days",
+      "terms": "12–60 Months"
+    }
+  },
+  {
+    "slug": "pharmacy",
+    "title": "Pharmacy Business Loans",
+    "label": "Pharmacies",
+    "introTemplates": [
+      "Pharmacies in {{city}}, {{state}} secure financing for inventory, staffing, and insurance reimbursement gaps.",
+      "Strengthen your pharmacy in {{city}}, {{state}} with capital for technology, upgrades, and expanded services.",
+      "Independent pharmacies in {{city}}, {{state}} benefit from working capital to manage cash flow challenges.",
+      "From inventory to delivery, pharmacies in {{city}}, {{state}} access loan options to better serve their customers."
+    ],
+    "bestForCore": [
+      {
+        "slug": "inventory",
+        "label": "Prescription & retail inventory"
+      },
+      {
+        "slug": "staffing",
+        "label": "Pharmacist & technician payroll"
+      },
+      {
+        "slug": "insurance_gaps",
+        "label": "Insurance reimbursement timing gaps"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "delivery",
+        "label": "Launching delivery services",
+        "weight": 1
+      },
+      {
+        "slug": "clinical_services",
+        "label": "Adding clinical or vaccination services",
+        "weight": 2
+      },
+      {
+        "slug": "renovations",
+        "label": "Store renovations & modernization",
+        "weight": 1
+      },
+      {
+        "slug": "software",
+        "label": "POS & pharmacy management systems",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "2–7 Days",
+      "terms": "12–60 Months"
+    }
+  },
+  {
+    "slug": "fitness",
+    "title": "Fitness Business Loans",
+    "label": "Fitness Studios & Gyms",
+    "introTemplates": [
+      "Gyms and fitness studios in {{city}}, {{state}} secure financing for equipment, buildouts, and membership growth.",
+      "Strengthen your fitness business in {{city}}, {{state}} with capital for trainers, classes, and marketing.",
+      "Local fitness centers in {{city}}, {{state}} benefit from working capital to manage seasonality and new programs.",
+      "From boutique studios to full gyms, fitness businesses in {{city}}, {{state}} access loan options to stay competitive."
+    ],
+    "bestForCore": [
+      {
+        "slug": "equipment",
+        "label": "Fitness equipment & flooring"
+      },
+      {
+        "slug": "buildouts",
+        "label": "Studio buildouts & renovations"
+      },
+      {
+        "slug": "staffing",
+        "label": "Hiring trainers & support staff"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "membership_growth",
+        "label": "Membership & marketing programs",
+        "weight": 2
+      },
+      {
+        "slug": "new_classes",
+        "label": "New class offerings",
+        "weight": 1
+      },
+      {
+        "slug": "wellness_expansion",
+        "label": "Adding wellness or nutrition services",
+        "weight": 1
+      },
+      {
+        "slug": "multi_location",
+        "label": "Opening additional locations",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "600+",
+      "speed": "2–7 Days",
+      "terms": "12–48 Months"
+    }
+  },
+  {
+    "slug": "professional-services",
+    "title": "Professional Services Loans",
+    "label": "Professional Services",
+    "introTemplates": [
+      "Professional service firms in {{city}}, {{state}} secure financing for hiring, technology, and client acquisition.",
+      "Strengthen your practice in {{city}}, {{state}} with capital for staff, marketing, and office upgrades.",
+      "Consultants, attorneys, accountants, and agencies in {{city}}, {{state}} benefit from working capital to manage long project cycles.",
+      "From retainers to expansion, professional service firms in {{city}}, {{state}} access loan options to scale sustainably."
+    ],
+    "bestForCore": [
+      {
+        "slug": "staffing",
+        "label": "Hiring staff & assistants"
+      },
+      {
+        "slug": "software",
+        "label": "Software & productivity tools"
+      },
+      {
+        "slug": "cashflow",
+        "label": "Managing cash-flow between clients"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "marketing",
+        "label": "Marketing & business development",
+        "weight": 2
+      },
+      {
+        "slug": "office_upgrades",
+        "label": "Office upgrades & furniture",
+        "weight": 1
+      },
+      {
+        "slug": "training",
+        "label": "Education & certification",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "2–5 Days",
+      "terms": "12–36 Months"
+    }
+  },
+  {
+    "slug": "manufacturing",
+    "title": "Manufacturing Business Loans",
+    "label": "Manufacturers",
+    "introTemplates": [
+      "Manufacturers in {{city}}, {{state}} secure financing for machinery, raw materials, and large orders.",
+      "Strengthen your manufacturing operation in {{city}}, {{state}} with capital for equipment and staffing.",
+      "Production facilities in {{city}}, {{state}} benefit from working capital to handle long lead times and big contracts.",
+      "From automation to expansion, manufacturers in {{city}}, {{state}} use business loans to scale capacity."
+    ],
+    "bestForCore": [
+      {
+        "slug": "machinery",
+        "label": "Machinery & equipment purchases"
+      },
+      {
+        "slug": "materials",
+        "label": "Raw materials & bulk inventory"
+      },
+      {
+        "slug": "labor",
+        "label": "Hiring & overtime labor costs"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "automation",
+        "label": "Automation & robotics upgrades",
+        "weight": 2
+      },
+      {
+        "slug": "facility_upgrades",
+        "label": "Facility upgrades & safety improvements",
+        "weight": 1
+      },
+      {
+        "slug": "contract_scaling",
+        "label": "Scaling for large contracts",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "3–7 Days",
+      "terms": "12–72 Months"
+    }
+  },
+  {
+    "slug": "wholesale",
+    "title": "Wholesale Business Loans",
+    "label": "Wholesale Distributors",
+    "introTemplates": [
+      "Wholesale distributors in {{city}}, {{state}} benefit from financing for bulk inventory and logistics.",
+      "Strengthen your wholesale business in {{city}}, {{state}} with capital for stock, staffing, and vehicles.",
+      "Distributors in {{city}}, {{state}} use working capital to manage payment terms and large orders.",
+      "From new accounts to expanded product lines, wholesalers in {{city}}, {{state}} use business loans to scale."
+    ],
+    "bestForCore": [
+      {
+        "slug": "inventory",
+        "label": "Bulk inventory purchases"
+      },
+      {
+        "slug": "logistics",
+        "label": "Logistics, fuel & vehicles"
+      },
+      {
+        "slug": "warehousing",
+        "label": "Warehouse space & storage"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "new_accounts",
+        "label": "Onboarding new retail accounts",
+        "weight": 2
+      },
+      {
+        "slug": "software",
+        "label": "Inventory management systems",
+        "weight": 1
+      },
+      {
+        "slug": "expansion",
+        "label": "Territory or product line expansion",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "600+",
+      "speed": "2–5 Days",
+      "terms": "12–36 Months"
+    }
+  },
+  {
+    "slug": "real-estate",
+    "title": "Real Estate Business Loans",
+    "label": "Real Estate Services",
+    "introTemplates": [
+      "Real estate service businesses in {{city}}, {{state}} use funding for marketing, staffing, and operations.",
+      "Strengthen your real estate company in {{city}}, {{state}} with flexible business capital.",
+      "Agents and real estate teams in {{city}}, {{state}} benefit from financing for lead generation and expansion.",
+      "From listings to operations, real estate businesses in {{city}}, {{state}} access loan options to stay competitive."
+    ],
+    "bestForCore": [
+      {
+        "slug": "marketing",
+        "label": "Marketing & lead generation"
+      },
+      {
+        "slug": "staffing",
+        "label": "Hiring agents & support staff"
+      },
+      {
+        "slug": "operations",
+        "label": "Covering operational overhead"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "branding",
+        "label": "Branding, signage & media",
+        "weight": 1
+      },
+      {
+        "slug": "new_offices",
+        "label": "Opening additional offices",
+        "weight": 2
+      },
+      {
+        "slug": "software",
+        "label": "CRM or real estate software",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "2–5 Days",
+      "terms": "12–36 Months"
+    }
+  },
+  {
+    "slug": "food-truck",
+    "title": "Food Truck Business Loans",
+    "label": "Food Truck Owners",
+    "introTemplates": [
+      "Food truck owners in {{city}}, {{state}} secure financing for vehicles, kitchen buildouts, and permits.",
+      "Grow your food truck business in {{city}}, {{state}} with capital for equipment, staff, and events.",
+      "Mobile food businesses in {{city}}, {{state}} benefit from working capital to manage seasonality and festivals.",
+      "From new routes to additional trucks, food truck operators in {{city}}, {{state}} access loan options to expand."
+    ],
+    "bestForCore": [
+      {
+        "slug": "truck",
+        "label": "Food truck purchases & buildouts"
+      },
+      {
+        "slug": "equipment",
+        "label": "Kitchen equipment & generators"
+      },
+      {
+        "slug": "permits",
+        "label": "Permits, licensing & fees"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "events",
+        "label": "Event & festival fees",
+        "weight": 2
+      },
+      {
+        "slug": "branding",
+        "label": "Branding, wraps & signage",
+        "weight": 1
+      },
+      {
+        "slug": "staff",
+        "label": "Hiring cooks & servers",
+        "weight": 1
+      },
+      {
+        "slug": "second_truck",
+        "label": "Launching a second truck",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–72 Hours",
+      "terms": "6–24 Months"
+    }
+  },
+  {
+    "slug": "childcare",
+    "title": "Childcare Business Loans",
+    "label": "Childcare Providers",
+    "introTemplates": [
+      "Childcare centers in {{city}}, {{state}} secure financing for staffing, safety, and facility improvements.",
+      "Strengthen your childcare business in {{city}}, {{state}} with capital for classrooms, playgrounds, and programs.",
+      "Daycares in {{city}}, {{state}} benefit from working capital to manage regulations and enrollment changes.",
+      "From licensing to expansion, childcare centers in {{city}}, {{state}} access loan options to better serve families."
+    ],
+    "bestForCore": [
+      {
+        "slug": "staffing",
+        "label": "Hiring teachers & childcare staff"
+      },
+      {
+        "slug": "supplies",
+        "label": "Toys, supplies & educational materials"
+      },
+      {
+        "slug": "safety",
+        "label": "Safety & licensing compliance"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "playground",
+        "label": "Playground & outdoor upgrades",
+        "weight": 2
+      },
+      {
+        "slug": "after_school",
+        "label": "Launching after-school programs",
+        "weight": 2
+      },
+      {
+        "slug": "facility_renovation",
+        "label": "Facility renovation",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "600+",
+      "speed": "2–7 Days",
+      "terms": "12–48 Months"
+    }
+  },
+  {
+    "slug": "nonprofit",
+    "title": "Nonprofit Financing",
+    "label": "Nonprofit Organizations",
+    "introTemplates": [
+      "Nonprofits in {{city}}, {{state}} secure financing to support staffing, outreach, and programs.",
+      "Strengthen your nonprofit's impact in {{city}}, {{state}} with capital for operations and expansion.",
+      "Organizations in {{city}}, {{state}} benefit from working capital to manage grants and donor cycles.",
+      "From community services to advocacy, nonprofits in {{city}}, {{state}} secure financing to stabilize cash flow."
+    ],
+    "bestForCore": [
+      {
+        "slug": "operations",
+        "label": "Operating costs & staffing"
+      },
+      {
+        "slug": "programs",
+        "label": "Funding ongoing programs"
+      },
+      {
+        "slug": "cashflow",
+        "label": "Cash-flow smoothing between grants"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "outreach",
+        "label": "Community outreach & events",
+        "weight": 2
+      },
+      {
+        "slug": "technology",
+        "label": "CRM & donor management tools",
+        "weight": 1
+      },
+      {
+        "slug": "expansion",
+        "label": "Program expansion",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "3–7 Days",
+      "terms": "12–48 Months"
+    }
+  },
+  {
+    "slug": "franchise",
+    "title": "Franchise Business Loans",
+    "label": "Franchises",
+    "introTemplates": [
+      "Franchise owners in {{city}}, {{state}} secure financing for buildouts, fees, and marketing.",
+      "Strengthen your franchise in {{city}}, {{state}} with capital for equipment, staff, and working capital.",
+      "Franchisees in {{city}}, {{state}} rely on loans to support expansion and brand standards.",
+      "From new openings to remodels, franchise businesses in {{city}}, {{state}} secure financing to scale."
+    ],
+    "bestForCore": [
+      {
+        "slug": "franchise_fees",
+        "label": "Franchise fees & licensing"
+      },
+      {
+        "slug": "buildout",
+        "label": "Location buildouts & renovations"
+      },
+      {
+        "slug": "staffing",
+        "label": "Hiring & onboarding staff"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "marketing",
+        "label": "Marketing & grand opening ads",
+        "weight": 2
+      },
+      {
+        "slug": "multi_unit",
+        "label": "Opening multiple locations",
+        "weight": 2
+      },
+      {
+        "slug": "equipment",
+        "label": "Brand-required equipment upgrades",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "620+",
+      "speed": "3–7 Days",
+      "terms": "24–72 Months"
+    }
+  },
+  {
+    "slug": "technology",
+    "title": "Technology Business Loans",
+    "label": "Tech Companies",
+    "introTemplates": [
+      "Technology companies in {{city}}, {{state}} secure financing for hiring, development, and infrastructure.",
+      "Strengthen your tech business in {{city}}, {{state}} with capital for engineers, sales, and product investment.",
+      "Tech startups in {{city}}, {{state}} benefit from working capital to navigate long development cycles.",
+      "From SaaS to IT services, tech companies in {{city}}, {{state}} access loan options to accelerate their roadmap."
+    ],
+    "bestForCore": [
+      {
+        "slug": "hiring",
+        "label": "Hiring engineers & product teams"
+      },
+      {
+        "slug": "development",
+        "label": "Product development & software build"
+      },
+      {
+        "slug": "infrastructure",
+        "label": "Cloud & infrastructure costs"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "marketing",
+        "label": "Marketing & go-to-market programs",
+        "weight": 1
+      },
+      {
+        "slug": "security",
+        "label": "Security, compliance & audits",
+        "weight": 2
+      },
+      {
+        "slug": "expansion",
+        "label": "Scaling into new markets",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "640+",
+      "speed": "2–7 Days",
+      "terms": "12–48 Months"
+    }
+  },
+  {
+    "slug": "ecommerce",
+    "title": "Ecommerce Business Loans",
+    "label": "Ecommerce Stores",
+    "introTemplates": [
+      "Ecommerce stores in {{city}}, {{state}} secure financing for inventory, ads, and fulfillment.",
+      "Strengthen your ecommerce business in {{city}}, {{state}} with capital for product launches, marketing, and logistics.",
+      "Online sellers in {{city}}, {{state}} benefit from working capital to scale advertising and order volume.",
+      "From new SKUs to warehousing, ecommerce brands in {{city}}, {{state}} access loan options to expand."
+    ],
+    "bestForCore": [
+      {
+        "slug": "inventory",
+        "label": "Inventory & new product launches"
+      },
+      {
+        "slug": "ads",
+        "label": "Paid advertising & marketing"
+      },
+      {
+        "slug": "fulfillment",
+        "label": "Fulfillment & 3PL costs"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "seo",
+        "label": "SEO & CRO website improvements",
+        "weight": 2
+      },
+      {
+        "slug": "warehouse",
+        "label": "Warehouse storage expansion",
+        "weight": 1
+      },
+      {
+        "slug": "marketplaces",
+        "label": "Expanding to Amazon/Walmart marketplaces",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "600+",
+      "speed": "1–3 Days",
+      "terms": "6–24 Months"
+    }
+  },
+  {
+    "slug": "food-services",
+    "title": "Food Service Business Loans",
+    "label": "Food Service Operators",
+    "introTemplates": [
+      "Food service businesses in {{city}}, {{state}} secure financing for equipment, staff, and delivery operations.",
+      "Strengthen your catering or food service company in {{city}}, {{state}} with flexible business capital.",
+      "Ghost kitchens and caterers in {{city}}, {{state}} benefit from working capital for supplies and expansion.",
+      "From events to meal prep, food service businesses in {{city}}, {{state}} access loan options to scale production."
+    ],
+    "bestForCore": [
+      {
+        "slug": "equipment",
+        "label": "Kitchen equipment & small appliances"
+      },
+      {
+        "slug": "supplies",
+        "label": "Food inventory & supplies"
+      },
+      {
+        "slug": "staffing",
+        "label": "Hiring cooks & prep staff"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "delivery",
+        "label": "Delivery operations & packaging",
+        "weight": 1
+      },
+      {
+        "slug": "marketing",
+        "label": "Local marketing & outreach",
+        "weight": 1
+      },
+      {
+        "slug": "events",
+        "label": "Expanding into events or catering",
+        "weight": 2
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–48 Hours",
+      "terms": "6–18 Months"
+    }
+  },
+  {
+    "slug": "general-contractors",
+    "title": "General Contractor Business Loans",
+    "label": "General Contractors",
+    "introTemplates": [
+      "General contractors in {{city}}, {{state}} use flexible financing to manage labor, materials, and job scheduling.",
+      "Grow your contracting business in {{city}}, {{state}} with capital for tools, equipment, and new bids.",
+      "Contractors in {{city}}, {{state}} benefit from working capital to balance multiple projects and timelines.",
+      "From remodels to additions, general contractors in {{city}}, {{state}} access loan options to stay competitive."
+    ],
+    "bestForCore": [
+      {
+        "slug": "equipment",
+        "label": "Tools & construction equipment"
+      },
+      {
+        "slug": "materials",
+        "label": "Upfront material purchases"
+      },
+      {
+        "slug": "labor",
+        "label": "Hiring subcontractors & laborers"
+      }
+    ],
+    "bestForExtras": [
+      {
+        "slug": "permits",
+        "label": "Permits & inspection costs",
+        "weight": 1
+      },
+      {
+        "slug": "emergency_repairs",
+        "label": "Emergency or last-minute repairs",
+        "weight": 1
+      },
+      {
+        "slug": "marketing",
+        "label": "Local advertising & lead gen",
+        "weight": 1
+      }
+    ],
+    "stats": {
+      "credit": "580+",
+      "speed": "24–72 Hours",
+      "terms": "6–24 Months"
+    }
+  }
+];
+
+export default industries;

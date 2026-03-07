@@ -1,0 +1,24 @@
+{
+  "stateSlug": "colorado",
+  "stateName": "Colorado",
+  "citySlug": "aurora-co-business-loans",
+  "cityName": "Aurora",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Aurora Retail Business Loans | Colorado",
+  "description": "Compare retail business loans, working capital and equipment financing available in Aurora, Colorado.",
+  "h1": "Aurora Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Aurora, Colorado.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Aurora Retail Business Loans",
+    "areaServed": "Aurora, Colorado",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "maine",
+  "stateName": "Maine",
+  "citySlug": "bangor-business-loans",
+  "cityName": "Bangor",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Bangor Trucking Business Loans | Maine",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Bangor, Maine.",
+  "h1": "Bangor Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Bangor, Maine.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Bangor Trucking Business Loans",
+    "areaServed": "Bangor, Maine",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

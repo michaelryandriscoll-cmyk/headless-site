@@ -1,0 +1,530 @@
+﻿/* =========================
+   GLOBAL WRAPPERS
+========================= */
+
+.loan-page {
+  background: #f6f8fa;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.loan-hero {
+  padding: 96px 0 72px;
+  background: #ffffff;
+}
+
+.loan-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.loan-hero-copy h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.loan-hero-sub {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+.loan-hero-bullets {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.loan-hero-bullets li {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.loan-hero-visual img {
+  width: 100%;
+  max-width: 460px;
+}
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.loan-info {
+  padding: 72px 0;
+}
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.loan-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.loan-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.loan-card p {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.loan-card ul {
+  padding-left: 18px;
+}
+
+.loan-card li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* =========================
+   STEPS
+========================= */
+
+.loan-steps {
+  padding: 72px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.loan-steps h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.loan-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.loan-step {
+  background: #f8fafc;
+  padding: 28px;
+  border-radius: 14px;
+}
+
+.loan-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.loan-step p {
+  font-size: 15px;
+}
+
+.loan-amounts {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* =========================
+   FORM CTA
+========================= */
+
+.loan-form {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f0fdf4, #ffffff);
+}
+
+.loan-form-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loan-form h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.loan-form p {
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+.form-trust {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.form-trust li {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* =========================
+   COMPARISON
+========================= */
+
+.loan-compare {
+  padding: 72px 0;
+  background: #ffffff;
+}
+
+.loan-compare h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.loan-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.loan-compare-grid h4 {
+  margin-bottom: 12px;
+}
+
+.loan-compare-grid ul {
+  padding-left: 18px;
+}
+
+.loan-compare-grid li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.loan-final {
+  padding: 96px 0;
+  background: radial-gradient(
+    circle at top,
+    #1e293b,
+    #020617
+  );
+  color: #ffffff;
+  text-align: center;
+}
+
+.loan-final h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.loan-final p {
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.loan-final-cta {
+  display: inline-block;
+  background: #22c55e;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.loan-final-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(34, 197, 94, 0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .loan-hero-grid,
+  .loan-grid,
+  .loan-compare-grid,
+  .loan-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loan-hero {
+    padding: 72px 0;
+  }
+
+  .loan-hero-copy h1 {
+    font-size: 34px;
+  }
+}
+
+
+/* --------------------------------
+   GLOBAL HELPERS
+-------------------------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  margin-bottom: 72px;
+}
+
+/* --------------------------------
+   HERO
+-------------------------------- */
+.wc-hero {
+  background: linear-gradient(180deg, #f7fbf9 0%, #ffffff 100%);
+  padding: 72px 0 64px;
+}
+
+.wc-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.wc-hero-copy h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: #0b1f3b;
+}
+
+.wc-hero-sub {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 24px;
+  color: #4a5568;
+}
+
+.hero-features {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-weight: 500;
+  color: #0b1f3b;
+}
+
+.hero-features span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wc-hero-visual {
+  background: radial-gradient(
+    circle at center,
+    rgba(46, 204, 113, 0.08),
+    transparent 60%
+  );
+  padding: 24px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.wc-hero-visual img {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* --------------------------------
+   INFO CARDS
+-------------------------------- */
+.wc-info {
+  padding: 64px 0;
+}
+
+.wc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.wc-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+
+.wc-card h3 {
+  margin-bottom: 12px;
+}
+
+.wc-card ul {
+  padding-left: 18px;
+}
+
+/* --------------------------------
+   STEPS
+-------------------------------- */
+.wc-steps {
+  background: #f9fafb;
+  padding: 72px 0;
+}
+
+.wc-steps h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wc-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wc-step {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+}
+
+.wc-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #2ecc71;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.wc-amounts {
+  text-align: center;
+  margin-top: 28px;
+  color: #4a5568;
+}
+
+/* --------------------------------
+   FORM CTA
+-------------------------------- */
+.wc-form {
+  padding: 72px 0;
+}
+
+.wc-form-inner {
+  background: linear-gradient(180deg, #f7fbf9 0%, #ffffff 100%);
+  border-radius: 24px;
+  padding: 56px;
+  text-align: center;
+}
+
+.wc-form-inner h2 {
+  margin-bottom: 8px;
+}
+
+.wc-form-inner p {
+  margin-bottom: 32px;
+  color: #4a5568;
+}
+
+.form-trust {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 24px;
+  font-weight: 500;
+}
+
+/* --------------------------------
+   COMPARISON
+-------------------------------- */
+.wc-compare {
+  padding: 72px 0;
+}
+
+.wc-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.wc-compare-grid > div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+
+/* --------------------------------
+   FINAL CTA
+-------------------------------- */
+.wc-final {
+  background: linear-gradient(135deg, #0b1f3b, #0e2c4f);
+  padding: 96px 0;
+}
+
+.wc-final-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 56px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.wc-final-card h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.wc-final-card p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.wc-final-cta {
+  display: inline-block;
+  background: #2ecc71;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+}

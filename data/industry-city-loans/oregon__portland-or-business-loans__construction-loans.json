@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oregon",
+  "stateName": "Oregon",
+  "citySlug": "portland-or-business-loans",
+  "cityName": "Portland",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Portland Construction Business Loans | Oregon",
+  "description": "Compare construction business loans, working capital and equipment financing available in Portland, Oregon.",
+  "h1": "Portland Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Portland, Oregon.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Portland Construction Business Loans",
+    "areaServed": "Portland, Oregon",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

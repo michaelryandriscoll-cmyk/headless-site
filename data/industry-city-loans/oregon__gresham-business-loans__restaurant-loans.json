@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oregon",
+  "stateName": "Oregon",
+  "citySlug": "gresham-business-loans",
+  "cityName": "Gresham",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Gresham Restaurant Business Loans | Oregon",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Gresham, Oregon.",
+  "h1": "Gresham Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Gresham, Oregon.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Gresham Restaurant Business Loans",
+    "areaServed": "Gresham, Oregon",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

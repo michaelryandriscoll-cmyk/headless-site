@@ -1,0 +1,41 @@
+{
+  "state": "Missouri",
+  "city": "St. Louis",
+  "industry": "medical",
+  "title": "St. Louis Medical Practice Business Loans",
+  "intro": "Grow your medical practice in St. Louis, Missouri with capital for technology, buildouts, and providers.",
+  "bestFor": [
+    {
+      "slug": "medical_equipment",
+      "label": "Medical equipment & diagnostic tools"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring physicians & medical staff"
+    },
+    {
+      "slug": "insurance_gaps",
+      "label": "Insurance reimbursement float"
+    },
+    {
+      "slug": "software",
+      "label": "EHR or software upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "buildouts",
+      "label": "Buildouts & exam room expansion",
+      "weight": 2
+    },
+    {
+      "slug": "telehealth",
+      "label": "Telehealth technology investment",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–7 Days",
+    "terms": "12–60 Months"
+  }
+}

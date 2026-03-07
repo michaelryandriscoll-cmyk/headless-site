@@ -1,0 +1,40 @@
+{
+  "state": "Connecticut",
+  "city": "Stamford",
+  "industry": "roofing",
+  "intro": "Find trusted roofing contractors in Stamford, Connecticut for repairs, inspections, or complete roof replacements.",
+  "bestFor": [
+    {
+      "slug": "emergency_repairs",
+      "label": "Emergency roof repairs"
+    },
+    {
+      "slug": "full_replacements",
+      "label": "Full roof replacements"
+    },
+    {
+      "slug": "leak_detection",
+      "label": "Leak detection & inspections"
+    },
+    {
+      "slug": "storm_damage",
+      "label": "Storm & hail damage claims",
+      "weight": 3
+    },
+    {
+      "slug": "flat_roofs",
+      "label": "Flat & low-slope roofs",
+      "weight": 2
+    },
+    {
+      "slug": "metal_roofs",
+      "label": "Metal roof installs",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

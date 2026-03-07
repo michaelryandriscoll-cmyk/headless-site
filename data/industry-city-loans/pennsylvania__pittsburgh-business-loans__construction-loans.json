@@ -1,0 +1,24 @@
+{
+  "stateSlug": "pennsylvania",
+  "stateName": "Pennsylvania",
+  "citySlug": "pittsburgh-business-loans",
+  "cityName": "Pittsburgh",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Pittsburgh Construction Business Loans | Pennsylvania",
+  "description": "Compare construction business loans, working capital and equipment financing available in Pittsburgh, Pennsylvania.",
+  "h1": "Pittsburgh Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Pittsburgh, Pennsylvania.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Pittsburgh Construction Business Loans",
+    "areaServed": "Pittsburgh, Pennsylvania",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

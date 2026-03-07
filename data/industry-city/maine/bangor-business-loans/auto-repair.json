@@ -1,0 +1,41 @@
+{
+  "state": "Maine",
+  "city": "Bangor",
+  "industry": "auto-repair",
+  "title": "Bangor Auto Repair Business Loans",
+  "intro": "Local drivers in Bangor, Maine rely on fast repairs—compare financing options to upgrade your shop.",
+  "bestFor": [
+    {
+      "slug": "diagnostic_tools",
+      "label": "Diagnostic tools & scanners"
+    },
+    {
+      "slug": "shop_equipment",
+      "label": "Lifts, jacks & major equipment"
+    },
+    {
+      "slug": "parts_inventory",
+      "label": "Parts inventory & bulk ordering"
+    },
+    {
+      "slug": "hire_techs",
+      "label": "Hiring experienced technicians",
+      "weight": 3
+    },
+    {
+      "slug": "hybrid_tools",
+      "label": "Hybrid/electric vehicle tooling",
+      "weight": 1
+    },
+    {
+      "slug": "marketing_growth",
+      "label": "Local marketing & acquisition",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

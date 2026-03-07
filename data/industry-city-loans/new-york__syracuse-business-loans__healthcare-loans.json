@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-york",
+  "stateName": "New York",
+  "citySlug": "syracuse-business-loans",
+  "cityName": "Syracuse",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Syracuse Healthcare Business Loans | New York",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Syracuse, New York.",
+  "h1": "Syracuse Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Syracuse, New York.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Syracuse Healthcare Business Loans",
+    "areaServed": "Syracuse, New York",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

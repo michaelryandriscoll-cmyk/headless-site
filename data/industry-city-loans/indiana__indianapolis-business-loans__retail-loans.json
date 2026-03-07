@@ -1,0 +1,24 @@
+{
+  "stateSlug": "indiana",
+  "stateName": "Indiana",
+  "citySlug": "indianapolis-business-loans",
+  "cityName": "Indianapolis",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Indianapolis Retail Business Loans | Indiana",
+  "description": "Compare retail business loans, working capital and equipment financing available in Indianapolis, Indiana.",
+  "h1": "Indianapolis Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Indianapolis, Indiana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Indianapolis Retail Business Loans",
+    "areaServed": "Indianapolis, Indiana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

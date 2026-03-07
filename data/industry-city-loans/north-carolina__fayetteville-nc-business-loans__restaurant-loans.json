@@ -1,0 +1,24 @@
+{
+  "stateSlug": "north-carolina",
+  "stateName": "North Carolina",
+  "citySlug": "fayetteville-nc-business-loans",
+  "cityName": "Fayetteville",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Fayetteville Restaurant Business Loans | North Carolina",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Fayetteville, North Carolina.",
+  "h1": "Fayetteville Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Fayetteville, North Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fayetteville Restaurant Business Loans",
+    "areaServed": "Fayetteville, North Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

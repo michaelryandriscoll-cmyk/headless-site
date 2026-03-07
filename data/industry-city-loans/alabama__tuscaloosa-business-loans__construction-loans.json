@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alabama",
+  "stateName": "Alabama",
+  "citySlug": "tuscaloosa-business-loans",
+  "cityName": "Tuscaloosa",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Tuscaloosa Construction Business Loans | Alabama",
+  "description": "Compare construction business loans, working capital and equipment financing available in Tuscaloosa, Alabama.",
+  "h1": "Tuscaloosa Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Tuscaloosa, Alabama.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tuscaloosa Construction Business Loans",
+    "areaServed": "Tuscaloosa, Alabama",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

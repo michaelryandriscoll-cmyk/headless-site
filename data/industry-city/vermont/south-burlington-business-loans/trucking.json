@@ -1,0 +1,41 @@
+{
+  "state": "Vermont",
+  "city": "South Burlington",
+  "industry": "trucking",
+  "title": "South Burlington Trucking Business Loans",
+  "intro": "Keep your routes running smoothly. Compare trucking business loans in South Burlington, Vermont for fuel, maintenance, and new equipment.",
+  "bestFor": [
+    {
+      "slug": "fuel_costs",
+      "label": "Fuel & operating expenses"
+    },
+    {
+      "slug": "fleet_repairs",
+      "label": "Fleet repairs & maintenance"
+    },
+    {
+      "slug": "cashflow_gaps",
+      "label": "Covering cash-flow gaps"
+    },
+    {
+      "slug": "freight_slowdowns",
+      "label": "Handling seasonal freight slowdowns",
+      "weight": 1
+    },
+    {
+      "slug": "dot_compliance",
+      "label": "DOT compliance upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "hire_drivers",
+      "label": "Hiring CDL drivers",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "12–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "oregon",
+  "stateName": "Oregon",
+  "citySlug": "salem-or-business-loans",
+  "cityName": "Salem",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Salem Retail Business Loans | Oregon",
+  "description": "Compare retail business loans, working capital and equipment financing available in Salem, Oregon.",
+  "h1": "Salem Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Salem, Oregon.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Salem Retail Business Loans",
+    "areaServed": "Salem, Oregon",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

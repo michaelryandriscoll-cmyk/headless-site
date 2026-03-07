@@ -1,0 +1,970 @@
+﻿@charset "UTF-8";
+
+/* =========================================
+   ABOUT PAGE — MASTER CSS (Premium)
+   Matches app/about-us/page.js structure
+========================================= */
+
+/* -----------------------------
+   Base / Layout
+----------------------------- */
+
+:root {
+  --ink: #0f172a;
+  --navy: #0b1f41;
+  --muted: rgba(15, 23, 42, 0.72);
+  --muted2: rgba(15, 23, 42, 0.60);
+  --border: rgba(15, 23, 42, 0.08);
+  --shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 18px;
+  }
+}
+
+.about-hero,
+.about-ceo,
+.about-mission,
+.about-how-we-help,
+.about-cta {
+  padding: clamp(64px, 6vw, 110px) 0;
+}
+
+/* -----------------------------
+   Buttons (used in hero)
+----------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #06210f;
+  box-shadow: 0 18px 50px rgba(34, 197, 94, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 60px rgba(34, 197, 94, 0.35);
+}
+
+.btn-secondary {
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  background: rgba(15, 23, 42, 0.06);
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 42px;
+  align-items: center;
+
+  border-radius: 28px;
+  padding: clamp(48px, 6vw, 72px);
+
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle premium glow */
+.about-hero-grid::before {
+  content: "";
+  position: absolute;
+  inset: -160px -160px auto -160px;
+  height: 320px;
+  background: radial-gradient(
+    closest-side,
+    rgba(14, 165, 233, 0.14),
+    rgba(0, 198, 132, 0.10),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+
+.about-hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-copy h1 {
+  margin: 0 0 18px;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.06;
+  letter-spacing: -0.04em; 
+  font-weight: 950;
+  color: var(--ink);
+}
+
+.about-hero-intro {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(15, 23, 42, 0.74);
+  max-width: 62ch;
+}
+
+.about-hero-bullets {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  color: rgba(15, 23, 42, 0.78);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.about-hero-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+.about-hero-proof {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 560px;
+}
+
+.about-proof-item {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.about-proof-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(15, 23, 42, 0.50);
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.about-proof-value {
+  font-size: 14px;
+  font-weight: 950;
+  color: var(--navy);
+}
+
+.about-hero-visual {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero-visual img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+/* Responsive hero */
+@media (max-width: 900px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-hero-intro {
+    margin: 0 auto;
+  }
+
+  .about-hero-actions {
+    justify-content: center;
+  }
+
+  .about-hero-proof {
+    grid-template-columns: 1fr;
+    margin: 22px auto 0;
+    max-width: 420px;
+  }
+}
+
+/* =========================================
+   CEO SECTION (2-column premium card)
+========================================= */
+
+.about-ceo {
+  background: #ffffff;
+}
+
+.about-ceo-card {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 22px;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: clamp(22px, 3vw, 42px);
+
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-ceo-card::before {
+  content: "";
+  position: absolute;
+  inset: -160px -160px auto -160px;
+  height: 300px;
+  background: radial-gradient(
+    closest-side,
+    rgba(14, 165, 233, 0.12),
+    rgba(0, 198, 132, 0.10),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+
+.about-ceo-left,
+.about-ceo-right {
+  position: relative;
+  z-index: 2;
+}
+
+.about-ceo-left h2 {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.about-ceo-quote {
+  margin: 14px 0 16px;
+  padding: 16px;
+  border-radius: 18px;
+
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border: 1px solid var(--border);
+
+  color: var(--ink);
+  font-weight: 900;
+  line-height: 1.55;
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  position: relative;
+}
+
+.about-ceo-quote::before {
+  content: "“";
+  position: absolute;
+  top: -18px;
+  left: 14px;
+  font-size: 56px;
+  font-weight: 900;
+  color: rgba(14, 165, 233, 0.22);
+}
+
+.about-ceo-message p {
+  margin: 10px 0 0;
+  color: rgba(15, 23, 42, 0.72);
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+.about-ceo-signature {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.about-ceo-name {
+  font-weight: 950;
+  color: var(--navy);
+}
+
+.about-ceo-right {
+  border-left: 1px solid var(--border);
+  padding-left: 22px;
+
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.about-ceo-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-ceo-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+
+  display: grid;
+  place-items: center;
+
+  font-weight: 950;
+  color: var(--navy);
+
+  background: rgba(14, 165, 233, 0.10);
+  border: 1px solid rgba(14, 165, 233, 0.22);
+}
+
+.about-ceo-role {
+  font-size: 13px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.70);
+}
+
+.about-ceo-company {
+  font-size: 14px;
+  font-weight: 950;
+  color: var(--ink);
+}
+
+.about-ceo-highlight,
+.about-ceo-trust {
+  border-radius: 18px;
+  padding: 14px;
+  border: 1px solid var(--border);
+}
+
+.about-ceo-highlight {
+  background: rgba(15, 23, 42, 0.02);
+}
+
+.about-ceo-highlight-title,
+.about-ceo-trust-title {
+  font-weight: 950;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.about-ceo-highlight p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(15, 23, 42, 0.70);
+}
+
+.about-ceo-trust {
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.about-ceo-trust-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.trust-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  background: rgba(15, 23, 42, 0.02);
+
+  font-weight: 950;
+  font-size: 13px;
+  color: var(--navy);
+}
+
+.about-ceo-trust-note {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(15, 23, 42, 0.55);
+}
+
+/* Responsive CEO */
+@media (max-width: 900px) {
+  .about-ceo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-ceo-right {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+}
+
+/* =========================================
+   MISSION (Grid + panel)
+========================================= */
+
+.about-mission {
+  background: #ffffff;
+}
+
+.about-mission-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 38px;
+  align-items: start;
+}
+
+.about-mission-copy h2 {
+  margin: 0 0 10px;
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.about-mission-copy p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(15, 23, 42, 0.74);
+  max-width: 72ch;
+}
+
+.about-mission-tags {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(15, 23, 42, 0.02);
+  font-weight: 900;
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.82);
+}
+
+.about-mission-panel-card {
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  padding: 18px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.about-mission-panel-title {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 950;
+  color: rgba(15, 23, 42, 0.55);
+  margin-bottom: 12px;
+}
+
+.about-mission-panel-list {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(15, 23, 42, 0.78);
+  line-height: 1.75;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.about-mission-panel-list li {
+  margin-bottom: 10px;
+}
+
+.about-mission-panel-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .about-mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   HOW WE HELP (Premium cards)
+========================================= */
+
+.about-how-we-help {
+  background: #ffffff;
+}
+
+.about-section-header {
+  margin-bottom: 18px;
+}
+
+.about-section-header h2 {
+  margin: 0 0 8px;
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.about-section-subtitle {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.65);
+  line-height: 1.7;
+  font-size: 15px;
+  max-width: 70ch;
+}
+
+.about-help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.about-help-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+
+  padding: 18px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.06);
+
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.about-help-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 26px 80px rgba(15, 23, 42, 0.09);
+}
+
+.about-help-icon {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+
+  border-radius: 14px;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 20px;
+  background: rgba(11, 31, 65, 0.06);
+  border: 1px solid rgba(11, 31, 65, 0.10);
+}
+
+.about-help-content h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 950;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.about-help-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(15, 23, 42, 0.70);
+}
+
+@media (max-width: 900px) {
+  .about-help-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   CTA (Stripe-style)
+========================================= */
+
+.about-cta {
+  background: #f8fafc;
+}
+
+.about-cta-card {
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 18px;
+  align-items: center;
+
+  border-radius: 26px;
+  padding: 26px;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+
+  background: radial-gradient(
+      900px 380px at 18% 10%,
+      rgba(56, 189, 248, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 320px at 90% 40%,
+      rgba(34, 197, 94, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #0b1f41 0%, #07152e 100%);
+
+  box-shadow: 0 26px 80px rgba(2, 6, 23, 0.35);
+}
+
+.about-cta-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px 240px at 30% 20%,
+    rgba(255, 255, 255, 0.08),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.about-cta-left {
+  position: relative;
+  padding: 18px;
+  z-index: 2;
+}
+
+.about-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-cta-title {
+  margin: 14px 0 10px;
+  font-size: clamp(22px, 2.3vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 950;
+  color: #ffffff;
+}
+
+.about-cta-sub {
+  margin: 0;
+  max-width: 62ch;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.about-cta-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 950;
+  text-decoration: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #06210f;
+  box-shadow: 0 16px 40px rgba(34, 197, 94, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.about-cta-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 48px rgba(34, 197, 94, 0.38);
+}
+
+.about-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 950;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.about-cta-secondary:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.about-cta-footnote {
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.about-cta-right {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.about-cta-metric {
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.about-cta-metric-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 950;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 6px;
+}
+
+.about-cta-metric-value {
+  font-size: 14px;
+  font-weight: 950;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 900px) {
+  .about-cta-card {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .about-cta-actions {
+    justify-content: flex-start;
+  }
+
+  .about-cta-right {
+    padding: 14px;
+  }
+}
+
+/* =========================================
+   ABOUT PAGE — FLOW + TIGHTEN PATCH
+   (SeatGeek-style rhythm)
+========================================= */
+
+/* Whole page gets a single consistent background */
+.about-page {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 40%, #f8fafc 100%);
+}
+
+/* Reduce vertical padding globally */
+.about-hero,
+.about-ceo,
+.about-mission,
+.about-how-we-help,
+.about-cta {
+  padding: clamp(44px, 4vw, 72px) 0;
+}
+
+/* Remove “floating white sections” look */
+.about-ceo,
+.about-mission,
+.about-how-we-help,
+.about-cta {
+  background: transparent;
+}
+
+/* Add consistent spacing between sections (instead of random gaps) */
+.about-hero + .about-ceo,
+.about-ceo + .about-mission,
+.about-mission + .about-how-we-help,
+.about-how-we-help + .about-cta {
+  margin-top: 0;
+}
+
+/* Give each card a subtle lift but less “blocky” */
+.about-hero-grid,
+.about-ceo-card,
+.about-mission-panel-card,
+.about-help-card,
+.about-cta-card {
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.06);
+}
+
+/* Make hero feel like part of the page, not a separate box */
+.about-hero-grid {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+/* Tighten hero typography slightly */
+.about-hero-copy h1 {
+  margin-bottom: 10px;
+}
+
+.about-hero-intro {
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* Reduce extra space under proof blocks */
+.about-hero-proof {
+  margin-top: 16px;
+}
+
+/* CEO card should “dock” visually with less whitespace */
+.about-ceo-card {
+  margin-top: 0;
+}
+
+/* Mission section should feel connected to CEO */
+.about-mission-grid {
+  gap: 26px;
+}
+
+/* How we help: less vertical air */
+.about-section-header {
+  margin-bottom: 12px;
+}
+
+.about-help-grid {
+  margin-top: 12px;
+}
+
+/* CTA should sit closer, but still feel like a finale */
+.about-cta {
+  padding-bottom: clamp(56px, 5vw, 90px);
+}
+
+/* CTA background should blend with page background */
+.about-cta-card {
+  border-radius: 24px;
+}
+
+/* Make CTA a bit “SeatGeek” by reducing heavy glow */
+.about-cta-card::before {
+  opacity: 0.6;
+}
+
+/* Reduce footer-like extra padding on small screens */
+@media (max-width: 900px) {
+  .about-hero,
+  .about-ceo,
+  .about-mission,
+  .about-how-we-help,
+  .about-cta {
+    padding: 42px 0;
+  }
+
+  .about-hero-grid {
+    padding: 22px;
+  }
+
+  .about-ceo-card {
+    padding: 22px;
+  }
+
+  .about-cta-card {
+    padding: 18px;
+  }
+}
+
+/* Soft dividers between blocks */
+.about-ceo-card,
+.about-mission-grid,
+.about-help-grid,
+.about-cta-card {
+  position: relative;
+}
+
+.about-ceo-card::after,
+.about-mission-grid::after,
+.about-help-grid::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 42px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(15, 23, 42, 0.10),
+    transparent
+  );
+}
+
+/* Tighten overall vertical rhythm */
+.about-hero,
+.about-ceo,
+.about-mission,
+.about-how-we-help,
+.about-cta {
+  padding: clamp(36px, 4vw, 60px) 0;
+}
+
+/* Hero stays premium (slightly larger) */
+.about-hero {
+  padding: clamp(52px, 5vw, 80px) 0;
+}
+
+/* Reduce the “empty feeling” between mid sections */
+.about-mission {
+  padding: clamp(28px, 3vw, 48px) 0;
+}
+
+.about-how-we-help {
+  padding: clamp(28px, 3vw, 48px) 0;
+}

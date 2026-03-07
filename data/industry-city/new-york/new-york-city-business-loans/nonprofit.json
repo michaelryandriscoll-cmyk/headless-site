@@ -1,0 +1,41 @@
+{
+  "state": "New York",
+  "city": "New York City",
+  "industry": "nonprofit",
+  "title": "New York City Nonprofit Financing",
+  "intro": "Nonprofits in New York City, New York use financing to support staffing, outreach, and programs.",
+  "bestFor": [
+    {
+      "slug": "operations",
+      "label": "Operating costs & staffing"
+    },
+    {
+      "slug": "programs",
+      "label": "Funding ongoing programs"
+    },
+    {
+      "slug": "cashflow",
+      "label": "Cash-flow smoothing between grants"
+    },
+    {
+      "slug": "outreach",
+      "label": "Community outreach & events",
+      "weight": 2
+    },
+    {
+      "slug": "technology",
+      "label": "CRM & donor management tools",
+      "weight": 1
+    },
+    {
+      "slug": "expansion",
+      "label": "Program expansion",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "3–7 Days",
+    "terms": "12–48 Months"
+  }
+}

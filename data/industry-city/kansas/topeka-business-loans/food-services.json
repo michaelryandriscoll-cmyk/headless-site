@@ -1,0 +1,41 @@
+{
+  "state": "Kansas",
+  "city": "Topeka",
+  "industry": "food-services",
+  "title": "Topeka Food Service Business Loans",
+  "intro": "Grow your catering or food service company in Topeka, Kansas with flexible business capital.",
+  "bestFor": [
+    {
+      "slug": "equipment",
+      "label": "Kitchen equipment & small appliances"
+    },
+    {
+      "slug": "supplies",
+      "label": "Food inventory & supplies"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring cooks & prep staff"
+    },
+    {
+      "slug": "delivery",
+      "label": "Delivery operations & packaging",
+      "weight": 1
+    },
+    {
+      "slug": "marketing",
+      "label": "Local marketing & outreach",
+      "weight": 1
+    },
+    {
+      "slug": "events",
+      "label": "Expanding into events or catering",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "louisiana",
+  "stateName": "Louisiana",
+  "citySlug": "shreveport-business-loans",
+  "cityName": "Shreveport",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Shreveport Trucking Business Loans | Louisiana",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Shreveport, Louisiana.",
+  "h1": "Shreveport Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Shreveport, Louisiana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Shreveport Trucking Business Loans",
+    "areaServed": "Shreveport, Louisiana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

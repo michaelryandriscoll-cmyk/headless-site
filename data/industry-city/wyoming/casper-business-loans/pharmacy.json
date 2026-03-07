@@ -1,0 +1,41 @@
+{
+  "state": "Wyoming",
+  "city": "Casper",
+  "industry": "pharmacy",
+  "title": "Casper Pharmacy Business Loans",
+  "intro": "Pharmacies in Casper, Wyoming use financing for inventory, staffing, and insurance reimbursement gaps.",
+  "bestFor": [
+    {
+      "slug": "inventory",
+      "label": "Prescription & retail inventory"
+    },
+    {
+      "slug": "staffing",
+      "label": "Pharmacist & technician payroll"
+    },
+    {
+      "slug": "insurance_gaps",
+      "label": "Insurance reimbursement timing gaps"
+    },
+    {
+      "slug": "renovations",
+      "label": "Store renovations & modernization",
+      "weight": 1
+    },
+    {
+      "slug": "software",
+      "label": "POS & pharmacy management systems",
+      "weight": 1
+    },
+    {
+      "slug": "delivery",
+      "label": "Launching delivery services",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–7 Days",
+    "terms": "12–60 Months"
+  }
+}

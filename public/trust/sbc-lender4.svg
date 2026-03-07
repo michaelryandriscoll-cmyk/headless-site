@@ -1,0 +1,6 @@
+﻿<svg width="150" height="48" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+ <rect width="200" height="60" rx="30" fill="white" stroke="#0b1f41" stroke-width="3"/>
+ <path fill="#00c684" d="M35 40l8 8 16-20-6-6-10 12-4-4z"/>
+ <text x="120" y="34" fill="#0b1f41" font-size="17" font-weight="700" font-family="Arial"
+       text-anchor="middle">Business Lending Certified</text>
+</svg>

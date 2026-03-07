@@ -1,0 +1,24 @@
+{
+  "stateSlug": "minnesota",
+  "stateName": "Minnesota",
+  "citySlug": "saint-paul-business-loans",
+  "cityName": "Saint Paul",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Saint Paul Healthcare Business Loans | Minnesota",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Saint Paul, Minnesota.",
+  "h1": "Saint Paul Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Saint Paul, Minnesota.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Saint Paul Healthcare Business Loans",
+    "areaServed": "Saint Paul, Minnesota",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

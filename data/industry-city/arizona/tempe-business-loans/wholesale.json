@@ -1,0 +1,41 @@
+{
+  "state": "Arizona",
+  "city": "Tempe",
+  "industry": "wholesale",
+  "title": "Tempe Wholesale Business Loans",
+  "intro": "Grow your wholesale business in Tempe, Arizona with capital for stock, staffing, and vehicles.",
+  "bestFor": [
+    {
+      "slug": "inventory",
+      "label": "Bulk inventory purchases"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics, fuel & vehicles"
+    },
+    {
+      "slug": "warehousing",
+      "label": "Warehouse space & storage"
+    },
+    {
+      "slug": "new_accounts",
+      "label": "Onboarding new retail accounts",
+      "weight": 2
+    },
+    {
+      "slug": "software",
+      "label": "Inventory management systems",
+      "weight": 1
+    },
+    {
+      "slug": "expansion",
+      "label": "Territory or product line expansion",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

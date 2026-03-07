@@ -1,0 +1,24 @@
+{
+  "stateSlug": "iowa",
+  "stateName": "Iowa",
+  "citySlug": "davenport-business-loans",
+  "cityName": "Davenport",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Davenport Restaurant Business Loans | Iowa",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Davenport, Iowa.",
+  "h1": "Davenport Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Davenport, Iowa.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Davenport Restaurant Business Loans",
+    "areaServed": "Davenport, Iowa",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

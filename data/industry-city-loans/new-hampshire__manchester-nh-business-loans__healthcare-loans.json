@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-hampshire",
+  "stateName": "New Hampshire",
+  "citySlug": "manchester-nh-business-loans",
+  "cityName": "Manchester",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Manchester Healthcare Business Loans | New Hampshire",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Manchester, New Hampshire.",
+  "h1": "Manchester Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Manchester, New Hampshire.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Manchester Healthcare Business Loans",
+    "areaServed": "Manchester, New Hampshire",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

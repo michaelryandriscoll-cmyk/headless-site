@@ -1,0 +1,24 @@
+{
+  "stateSlug": "wisconsin",
+  "stateName": "Wisconsin",
+  "citySlug": "milwaukee-business-loans",
+  "cityName": "Milwaukee",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Milwaukee Construction Business Loans | Wisconsin",
+  "description": "Compare construction business loans, working capital and equipment financing available in Milwaukee, Wisconsin.",
+  "h1": "Milwaukee Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Milwaukee, Wisconsin.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Milwaukee Construction Business Loans",
+    "areaServed": "Milwaukee, Wisconsin",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

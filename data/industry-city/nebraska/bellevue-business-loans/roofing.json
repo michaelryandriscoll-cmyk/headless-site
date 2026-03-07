@@ -1,0 +1,40 @@
+{
+  "state": "Nebraska",
+  "city": "Bellevue",
+  "industry": "roofing",
+  "intro": "Bellevue, Nebraska homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements.",
+  "bestFor": [
+    {
+      "slug": "emergency_repairs",
+      "label": "Emergency roof repairs"
+    },
+    {
+      "slug": "full_replacements",
+      "label": "Full roof replacements"
+    },
+    {
+      "slug": "leak_detection",
+      "label": "Leak detection & inspections"
+    },
+    {
+      "slug": "solar_ready",
+      "label": "Solar-ready roofing options",
+      "weight": 1
+    },
+    {
+      "slug": "storm_damage",
+      "label": "Storm & hail damage claims",
+      "weight": 3
+    },
+    {
+      "slug": "flat_roofs",
+      "label": "Flat & low-slope roofs",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

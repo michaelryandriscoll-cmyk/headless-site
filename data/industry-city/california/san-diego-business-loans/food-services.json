@@ -1,0 +1,41 @@
+{
+  "state": "California",
+  "city": "San Diego",
+  "industry": "food-services",
+  "title": "San Diego Food Service Business Loans",
+  "intro": "Ghost kitchens and caterers in San Diego, California rely on working capital for supplies and expansion.",
+  "bestFor": [
+    {
+      "slug": "equipment",
+      "label": "Kitchen equipment & small appliances"
+    },
+    {
+      "slug": "supplies",
+      "label": "Food inventory & supplies"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring cooks & prep staff"
+    },
+    {
+      "slug": "events",
+      "label": "Expanding into events or catering",
+      "weight": 2
+    },
+    {
+      "slug": "delivery",
+      "label": "Delivery operations & packaging",
+      "weight": 1
+    },
+    {
+      "slug": "marketing",
+      "label": "Local marketing & outreach",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

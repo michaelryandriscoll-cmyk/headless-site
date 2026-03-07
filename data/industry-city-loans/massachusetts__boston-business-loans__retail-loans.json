@@ -1,0 +1,24 @@
+{
+  "stateSlug": "massachusetts",
+  "stateName": "Massachusetts",
+  "citySlug": "boston-business-loans",
+  "cityName": "Boston",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Boston Retail Business Loans | Massachusetts",
+  "description": "Compare retail business loans, working capital and equipment financing available in Boston, Massachusetts.",
+  "h1": "Boston Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Boston, Massachusetts.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Boston Retail Business Loans",
+    "areaServed": "Boston, Massachusetts",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

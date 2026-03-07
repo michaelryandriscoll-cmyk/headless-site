@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "spokane-business-loans",
+  "cityName": "Spokane",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Spokane Restaurant Business Loans | Washington",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Spokane, Washington.",
+  "h1": "Spokane Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Spokane, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Spokane Restaurant Business Loans",
+    "areaServed": "Spokane, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

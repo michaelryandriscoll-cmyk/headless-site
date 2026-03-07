@@ -1,0 +1,24 @@
+{
+  "stateSlug": "tennessee",
+  "stateName": "Tennessee",
+  "citySlug": "chattanooga-business-loans",
+  "cityName": "Chattanooga",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Chattanooga Retail Business Loans | Tennessee",
+  "description": "Compare retail business loans, working capital and equipment financing available in Chattanooga, Tennessee.",
+  "h1": "Chattanooga Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Chattanooga, Tennessee.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Chattanooga Retail Business Loans",
+    "areaServed": "Chattanooga, Tennessee",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

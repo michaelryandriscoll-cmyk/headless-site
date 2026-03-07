@@ -1,0 +1,41 @@
+{
+  "state": "Virginia",
+  "city": "Virginia Beach",
+  "industry": "medical",
+  "title": "Virginia Beach Medical Practice Business Loans",
+  "intro": "From diagnostics to expansion, medical practices in Virginia Beach, Virginia use loans to improve patient care.",
+  "bestFor": [
+    {
+      "slug": "medical_equipment",
+      "label": "Medical equipment & diagnostic tools"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring physicians & medical staff"
+    },
+    {
+      "slug": "insurance_gaps",
+      "label": "Insurance reimbursement float"
+    },
+    {
+      "slug": "telehealth",
+      "label": "Telehealth technology investment",
+      "weight": 1
+    },
+    {
+      "slug": "marketing",
+      "label": "Local patient acquisition & marketing",
+      "weight": 1
+    },
+    {
+      "slug": "software",
+      "label": "EHR or software upgrades",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–7 Days",
+    "terms": "12–60 Months"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "Colorado",
+  "city": "Denver",
+  "industry": "franchise",
+  "title": "Denver Franchise Business Loans",
+  "intro": "From new openings to remodels, franchise businesses in Denver, Colorado use financing to scale.",
+  "bestFor": [
+    {
+      "slug": "franchise_fees",
+      "label": "Franchise fees & licensing"
+    },
+    {
+      "slug": "buildout",
+      "label": "Location buildouts & renovations"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring & onboarding staff"
+    },
+    {
+      "slug": "multi_unit",
+      "label": "Opening multiple locations",
+      "weight": 2
+    },
+    {
+      "slug": "equipment",
+      "label": "Brand-required equipment upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing & grand opening ads",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "3–7 Days",
+    "terms": "24–72 Months"
+  }
+}

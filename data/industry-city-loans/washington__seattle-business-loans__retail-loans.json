@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "seattle-business-loans",
+  "cityName": "Seattle",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Seattle Retail Business Loans | Washington",
+  "description": "Compare retail business loans, working capital and equipment financing available in Seattle, Washington.",
+  "h1": "Seattle Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Seattle, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Seattle Retail Business Loans",
+    "areaServed": "Seattle, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

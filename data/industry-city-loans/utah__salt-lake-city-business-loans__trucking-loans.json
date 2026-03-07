@@ -1,0 +1,24 @@
+{
+  "stateSlug": "utah",
+  "stateName": "Utah",
+  "citySlug": "salt-lake-city-business-loans",
+  "cityName": "Salt Lake City",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Salt Lake City Trucking Business Loans | Utah",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Salt Lake City, Utah.",
+  "h1": "Salt Lake City Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Salt Lake City, Utah.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Salt Lake City Trucking Business Loans",
+    "areaServed": "Salt Lake City, Utah",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

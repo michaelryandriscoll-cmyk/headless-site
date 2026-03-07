@@ -1,0 +1,24 @@
+{
+  "stateSlug": "california",
+  "stateName": "California",
+  "citySlug": "san-francisco-business-loans",
+  "cityName": "San Francisco",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "San Francisco Retail Business Loans | California",
+  "description": "Compare retail business loans, working capital and equipment financing available in San Francisco, California.",
+  "h1": "San Francisco Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in San Francisco, California.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "San Francisco Retail Business Loans",
+    "areaServed": "San Francisco, California",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

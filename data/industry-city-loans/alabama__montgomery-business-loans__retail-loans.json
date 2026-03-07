@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alabama",
+  "stateName": "Alabama",
+  "citySlug": "montgomery-business-loans",
+  "cityName": "Montgomery",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Montgomery Retail Business Loans | Alabama",
+  "description": "Compare retail business loans, working capital and equipment financing available in Montgomery, Alabama.",
+  "h1": "Montgomery Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Montgomery, Alabama.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Montgomery Retail Business Loans",
+    "areaServed": "Montgomery, Alabama",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

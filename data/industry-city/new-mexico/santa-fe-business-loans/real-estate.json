@@ -1,0 +1,41 @@
+{
+  "state": "New Mexico",
+  "city": "Santa Fe",
+  "industry": "real-estate",
+  "title": "Santa Fe Real Estate Business Loans",
+  "intro": "From listings to operations, real estate businesses in Santa Fe, New Mexico use loans to stay competitive.",
+  "bestFor": [
+    {
+      "slug": "marketing",
+      "label": "Marketing & lead generation"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring agents & support staff"
+    },
+    {
+      "slug": "operations",
+      "label": "Covering operational overhead"
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, signage & media",
+      "weight": 1
+    },
+    {
+      "slug": "new_offices",
+      "label": "Opening additional offices",
+      "weight": 2
+    },
+    {
+      "slug": "software",
+      "label": "CRM or real estate software",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

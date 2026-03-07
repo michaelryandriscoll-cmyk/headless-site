@@ -1,0 +1,41 @@
+{
+  "state": "Arizona",
+  "city": "Glendale",
+  "industry": "fitness",
+  "title": "Glendale Fitness Business Loans",
+  "intro": "From boutique studios to full gyms, fitness businesses in Glendale, Arizona use loans to stay competitive.",
+  "bestFor": [
+    {
+      "slug": "equipment",
+      "label": "Fitness equipment & flooring"
+    },
+    {
+      "slug": "buildouts",
+      "label": "Studio buildouts & renovations"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring trainers & support staff"
+    },
+    {
+      "slug": "multi_location",
+      "label": "Opening additional locations",
+      "weight": 2
+    },
+    {
+      "slug": "membership_growth",
+      "label": "Membership & marketing programs",
+      "weight": 2
+    },
+    {
+      "slug": "new_classes",
+      "label": "New class offerings",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

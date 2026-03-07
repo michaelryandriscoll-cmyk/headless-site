@@ -1,0 +1,24 @@
+{
+  "stateSlug": "georgia",
+  "stateName": "Georgia",
+  "citySlug": "savannah-business-loans",
+  "cityName": "Savannah",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Savannah Healthcare Business Loans | Georgia",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Savannah, Georgia.",
+  "h1": "Savannah Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Savannah, Georgia.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Savannah Healthcare Business Loans",
+    "areaServed": "Savannah, Georgia",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

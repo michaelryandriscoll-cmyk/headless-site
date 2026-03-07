@@ -1,0 +1,24 @@
+{
+  "stateSlug": "montana",
+  "stateName": "Montana",
+  "citySlug": "missoula-business-loans",
+  "cityName": "Missoula",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Missoula Restaurant Business Loans | Montana",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Missoula, Montana.",
+  "h1": "Missoula Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Missoula, Montana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Missoula Restaurant Business Loans",
+    "areaServed": "Missoula, Montana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

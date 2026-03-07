@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-mexico",
+  "stateName": "New Mexico",
+  "citySlug": "santa-fe-business-loans",
+  "cityName": "Santa Fe",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Santa Fe Trucking Business Loans | New Mexico",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Santa Fe, New Mexico.",
+  "h1": "Santa Fe Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Santa Fe, New Mexico.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Santa Fe Trucking Business Loans",
+    "areaServed": "Santa Fe, New Mexico",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

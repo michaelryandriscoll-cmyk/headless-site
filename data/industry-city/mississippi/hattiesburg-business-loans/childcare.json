@@ -1,0 +1,41 @@
+{
+  "state": "Mississippi",
+  "city": "Hattiesburg",
+  "industry": "childcare",
+  "title": "Hattiesburg Childcare Business Loans",
+  "intro": "From licensing to expansion, childcare centers in Hattiesburg, Mississippi use loans to better serve families.",
+  "bestFor": [
+    {
+      "slug": "staffing",
+      "label": "Hiring teachers & childcare staff"
+    },
+    {
+      "slug": "supplies",
+      "label": "Toys, supplies & educational materials"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety & licensing compliance"
+    },
+    {
+      "slug": "facility_renovation",
+      "label": "Facility renovation",
+      "weight": 1
+    },
+    {
+      "slug": "playground",
+      "label": "Playground & outdoor upgrades",
+      "weight": 2
+    },
+    {
+      "slug": "after_school",
+      "label": "Launching after-school programs",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

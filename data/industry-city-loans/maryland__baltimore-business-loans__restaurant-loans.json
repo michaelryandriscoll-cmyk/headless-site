@@ -1,0 +1,24 @@
+{
+  "stateSlug": "maryland",
+  "stateName": "Maryland",
+  "citySlug": "baltimore-business-loans",
+  "cityName": "Baltimore",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Baltimore Restaurant Business Loans | Maryland",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Baltimore, Maryland.",
+  "h1": "Baltimore Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Baltimore, Maryland.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Baltimore Restaurant Business Loans",
+    "areaServed": "Baltimore, Maryland",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "Michigan",
+  "city": "Flint",
+  "industry": "wholesale",
+  "title": "Flint Wholesale Business Loans",
+  "intro": "Wholesale distributors in Flint, Michigan rely on financing for bulk inventory and logistics.",
+  "bestFor": [
+    {
+      "slug": "inventory",
+      "label": "Bulk inventory purchases"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics, fuel & vehicles"
+    },
+    {
+      "slug": "warehousing",
+      "label": "Warehouse space & storage"
+    },
+    {
+      "slug": "expansion",
+      "label": "Territory or product line expansion",
+      "weight": 2
+    },
+    {
+      "slug": "new_accounts",
+      "label": "Onboarding new retail accounts",
+      "weight": 2
+    },
+    {
+      "slug": "software",
+      "label": "Inventory management systems",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

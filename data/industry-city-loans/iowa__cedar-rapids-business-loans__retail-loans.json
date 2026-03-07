@@ -1,0 +1,24 @@
+{
+  "stateSlug": "iowa",
+  "stateName": "Iowa",
+  "citySlug": "cedar-rapids-business-loans",
+  "cityName": "Cedar Rapids",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Cedar Rapids Retail Business Loans | Iowa",
+  "description": "Compare retail business loans, working capital and equipment financing available in Cedar Rapids, Iowa.",
+  "h1": "Cedar Rapids Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Cedar Rapids, Iowa.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Cedar Rapids Retail Business Loans",
+    "areaServed": "Cedar Rapids, Iowa",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

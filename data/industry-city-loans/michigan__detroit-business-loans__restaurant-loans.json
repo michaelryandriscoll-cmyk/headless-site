@@ -1,0 +1,24 @@
+{
+  "stateSlug": "michigan",
+  "stateName": "Michigan",
+  "citySlug": "detroit-business-loans",
+  "cityName": "Detroit",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Detroit Restaurant Business Loans | Michigan",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Detroit, Michigan.",
+  "h1": "Detroit Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Detroit, Michigan.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Detroit Restaurant Business Loans",
+    "areaServed": "Detroit, Michigan",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "ohio",
+  "stateName": "Ohio",
+  "citySlug": "cleveland-business-loans",
+  "cityName": "Cleveland",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Cleveland Trucking Business Loans | Ohio",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Cleveland, Ohio.",
+  "h1": "Cleveland Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Cleveland, Ohio.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Cleveland Trucking Business Loans",
+    "areaServed": "Cleveland, Ohio",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

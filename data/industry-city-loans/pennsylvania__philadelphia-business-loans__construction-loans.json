@@ -1,0 +1,24 @@
+{
+  "stateSlug": "pennsylvania",
+  "stateName": "Pennsylvania",
+  "citySlug": "philadelphia-business-loans",
+  "cityName": "Philadelphia",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Philadelphia Construction Business Loans | Pennsylvania",
+  "description": "Compare construction business loans, working capital and equipment financing available in Philadelphia, Pennsylvania.",
+  "h1": "Philadelphia Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Philadelphia, Pennsylvania.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Philadelphia Construction Business Loans",
+    "areaServed": "Philadelphia, Pennsylvania",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

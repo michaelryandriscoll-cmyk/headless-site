@@ -1,0 +1,24 @@
+{
+  "stateSlug": "connecticut",
+  "stateName": "Connecticut",
+  "citySlug": "hartford-business-loans",
+  "cityName": "Hartford",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Hartford Retail Business Loans | Connecticut",
+  "description": "Compare retail business loans, working capital and equipment financing available in Hartford, Connecticut.",
+  "h1": "Hartford Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Hartford, Connecticut.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Hartford Retail Business Loans",
+    "areaServed": "Hartford, Connecticut",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

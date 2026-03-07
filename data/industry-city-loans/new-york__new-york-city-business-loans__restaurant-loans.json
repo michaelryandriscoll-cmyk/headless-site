@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-york",
+  "stateName": "New York",
+  "citySlug": "new-york-city-business-loans",
+  "cityName": "New York City",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "New York City Restaurant Business Loans | New York",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in New York City, New York.",
+  "h1": "New York City Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in New York City, New York.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "New York City Restaurant Business Loans",
+    "areaServed": "New York City, New York",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

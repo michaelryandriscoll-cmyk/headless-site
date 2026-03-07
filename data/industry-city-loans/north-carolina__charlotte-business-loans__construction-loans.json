@@ -1,0 +1,24 @@
+{
+  "stateSlug": "north-carolina",
+  "stateName": "North Carolina",
+  "citySlug": "charlotte-business-loans",
+  "cityName": "Charlotte",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Charlotte Construction Business Loans | North Carolina",
+  "description": "Compare construction business loans, working capital and equipment financing available in Charlotte, North Carolina.",
+  "h1": "Charlotte Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Charlotte, North Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Charlotte Construction Business Loans",
+    "areaServed": "Charlotte, North Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

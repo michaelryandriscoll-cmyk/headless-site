@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arizona",
+  "stateName": "Arizona",
+  "citySlug": "glendale-az-business-loans",
+  "cityName": "Glendale",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Glendale Construction Business Loans | Arizona",
+  "description": "Compare construction business loans, working capital and equipment financing available in Glendale, Arizona.",
+  "h1": "Glendale Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Glendale, Arizona.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Glendale Construction Business Loans",
+    "areaServed": "Glendale, Arizona",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

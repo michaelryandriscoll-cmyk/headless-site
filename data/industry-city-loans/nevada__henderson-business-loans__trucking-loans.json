@@ -1,0 +1,24 @@
+{
+  "stateSlug": "nevada",
+  "stateName": "Nevada",
+  "citySlug": "henderson-business-loans",
+  "cityName": "Henderson",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Henderson Trucking Business Loans | Nevada",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Henderson, Nevada.",
+  "h1": "Henderson Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Henderson, Nevada.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Henderson Trucking Business Loans",
+    "areaServed": "Henderson, Nevada",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "indiana",
+  "stateName": "Indiana",
+  "citySlug": "evansville-business-loans",
+  "cityName": "Evansville",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Evansville Retail Business Loans | Indiana",
+  "description": "Compare retail business loans, working capital and equipment financing available in Evansville, Indiana.",
+  "h1": "Evansville Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Evansville, Indiana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Evansville Retail Business Loans",
+    "areaServed": "Evansville, Indiana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

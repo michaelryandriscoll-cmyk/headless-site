@@ -1,0 +1,24 @@
+{
+  "stateSlug": "kansas",
+  "stateName": "Kansas",
+  "citySlug": "topeka-business-loans",
+  "cityName": "Topeka",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Topeka Retail Business Loans | Kansas",
+  "description": "Compare retail business loans, working capital and equipment financing available in Topeka, Kansas.",
+  "h1": "Topeka Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Topeka, Kansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Topeka Retail Business Loans",
+    "areaServed": "Topeka, Kansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "minnesota",
+  "stateName": "Minnesota",
+  "citySlug": "saint-paul-business-loans",
+  "cityName": "Saint Paul",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Saint Paul Restaurant Business Loans | Minnesota",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Saint Paul, Minnesota.",
+  "h1": "Saint Paul Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Saint Paul, Minnesota.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Saint Paul Restaurant Business Loans",
+    "areaServed": "Saint Paul, Minnesota",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

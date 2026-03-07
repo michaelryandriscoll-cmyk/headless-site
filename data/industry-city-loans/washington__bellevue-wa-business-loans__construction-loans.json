@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "bellevue-wa-business-loans",
+  "cityName": "Bellevue",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Bellevue Construction Business Loans | Washington",
+  "description": "Compare construction business loans, working capital and equipment financing available in Bellevue, Washington.",
+  "h1": "Bellevue Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Bellevue, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Bellevue Construction Business Loans",
+    "areaServed": "Bellevue, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "Vermont",
+  "city": "Montpelier",
+  "industry": "ecommerce",
+  "title": "Montpelier Ecommerce Business Loans",
+  "intro": "Ecommerce stores in Montpelier, Vermont use financing for inventory, ads, and fulfillment.",
+  "bestFor": [
+    {
+      "slug": "inventory",
+      "label": "Inventory & new product launches"
+    },
+    {
+      "slug": "ads",
+      "label": "Paid advertising & marketing"
+    },
+    {
+      "slug": "fulfillment",
+      "label": "Fulfillment & 3PL costs"
+    },
+    {
+      "slug": "warehouse",
+      "label": "Warehouse storage expansion",
+      "weight": 1
+    },
+    {
+      "slug": "marketplaces",
+      "label": "Expanding to Amazon/Walmart marketplaces",
+      "weight": 1
+    },
+    {
+      "slug": "seo",
+      "label": "SEO & CRO website improvements",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "1–3 Days",
+    "terms": "6–24 Months"
+  }
+}

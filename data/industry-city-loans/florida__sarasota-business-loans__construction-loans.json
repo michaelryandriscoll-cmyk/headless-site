@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "sarasota-business-loans",
+  "cityName": "Sarasota",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Sarasota Construction Business Loans | Florida",
+  "description": "Compare construction business loans, working capital and equipment financing available in Sarasota, Florida.",
+  "h1": "Sarasota Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Sarasota, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Sarasota Construction Business Loans",
+    "areaServed": "Sarasota, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

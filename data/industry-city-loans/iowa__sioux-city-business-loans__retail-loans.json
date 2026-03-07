@@ -1,0 +1,24 @@
+{
+  "stateSlug": "iowa",
+  "stateName": "Iowa",
+  "citySlug": "sioux-city-business-loans",
+  "cityName": "Sioux City",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Sioux City Retail Business Loans | Iowa",
+  "description": "Compare retail business loans, working capital and equipment financing available in Sioux City, Iowa.",
+  "h1": "Sioux City Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Sioux City, Iowa.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Sioux City Retail Business Loans",
+    "areaServed": "Sioux City, Iowa",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

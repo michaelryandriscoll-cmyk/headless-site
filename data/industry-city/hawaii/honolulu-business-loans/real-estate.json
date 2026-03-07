@@ -1,0 +1,41 @@
+{
+  "state": "Hawaii",
+  "city": "Honolulu",
+  "industry": "real-estate",
+  "title": "Honolulu Real Estate Business Loans",
+  "intro": "From listings to operations, real estate businesses in Honolulu, Hawaii use loans to stay competitive.",
+  "bestFor": [
+    {
+      "slug": "marketing",
+      "label": "Marketing & lead generation"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring agents & support staff"
+    },
+    {
+      "slug": "operations",
+      "label": "Covering operational overhead"
+    },
+    {
+      "slug": "new_offices",
+      "label": "Opening additional offices",
+      "weight": 2
+    },
+    {
+      "slug": "software",
+      "label": "CRM or real estate software",
+      "weight": 1
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, signage & media",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

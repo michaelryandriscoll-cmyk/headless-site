@@ -1,0 +1,24 @@
+{
+  "stateSlug": "idaho",
+  "stateName": "Idaho",
+  "citySlug": "nampa-business-loans",
+  "cityName": "Nampa",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Nampa Retail Business Loans | Idaho",
+  "description": "Compare retail business loans, working capital and equipment financing available in Nampa, Idaho.",
+  "h1": "Nampa Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Nampa, Idaho.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Nampa Retail Business Loans",
+    "areaServed": "Nampa, Idaho",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

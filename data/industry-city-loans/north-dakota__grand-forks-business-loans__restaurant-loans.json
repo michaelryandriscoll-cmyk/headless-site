@@ -1,0 +1,24 @@
+{
+  "stateSlug": "north-dakota",
+  "stateName": "North Dakota",
+  "citySlug": "grand-forks-business-loans",
+  "cityName": "Grand Forks",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Grand Forks Restaurant Business Loans | North Dakota",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Grand Forks, North Dakota.",
+  "h1": "Grand Forks Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Grand Forks, North Dakota.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Grand Forks Restaurant Business Loans",
+    "areaServed": "Grand Forks, North Dakota",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

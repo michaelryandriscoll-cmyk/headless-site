@@ -1,0 +1,24 @@
+{
+  "stateSlug": "illinois",
+  "stateName": "Illinois",
+  "citySlug": "naperville-business-loans",
+  "cityName": "Naperville",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Naperville Construction Business Loans | Illinois",
+  "description": "Compare construction business loans, working capital and equipment financing available in Naperville, Illinois.",
+  "h1": "Naperville Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Naperville, Illinois.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Naperville Construction Business Loans",
+    "areaServed": "Naperville, Illinois",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

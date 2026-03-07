@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "fort-lauderdale-business-loans",
+  "cityName": "Fort Lauderdale",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Fort Lauderdale Healthcare Business Loans | Florida",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Fort Lauderdale, Florida.",
+  "h1": "Fort Lauderdale Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Fort Lauderdale, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fort Lauderdale Healthcare Business Loans",
+    "areaServed": "Fort Lauderdale, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arkansas",
+  "stateName": "Arkansas",
+  "citySlug": "jonesboro-business-loans",
+  "cityName": "Jonesboro",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Jonesboro Restaurant Business Loans | Arkansas",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Jonesboro, Arkansas.",
+  "h1": "Jonesboro Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Jonesboro, Arkansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Jonesboro Restaurant Business Loans",
+    "areaServed": "Jonesboro, Arkansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

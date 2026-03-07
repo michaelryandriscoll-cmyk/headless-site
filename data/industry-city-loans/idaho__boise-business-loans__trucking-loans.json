@@ -1,0 +1,24 @@
+{
+  "stateSlug": "idaho",
+  "stateName": "Idaho",
+  "citySlug": "boise-business-loans",
+  "cityName": "Boise",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Boise Trucking Business Loans | Idaho",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Boise, Idaho.",
+  "h1": "Boise Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Boise, Idaho.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Boise Trucking Business Loans",
+    "areaServed": "Boise, Idaho",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

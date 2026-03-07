@@ -1,0 +1,24 @@
+{
+  "stateSlug": "virginia",
+  "stateName": "Virginia",
+  "citySlug": "richmond-va-business-loans",
+  "cityName": "Richmond",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Richmond Construction Business Loans | Virginia",
+  "description": "Compare construction business loans, working capital and equipment financing available in Richmond, Virginia.",
+  "h1": "Richmond Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Richmond, Virginia.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Richmond Construction Business Loans",
+    "areaServed": "Richmond, Virginia",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "Vermont",
+  "city": "Montpelier",
+  "industry": "plumbing",
+  "title": "Montpelier Plumbing Business Loans",
+  "intro": "Plumbing companies in Montpelier, Vermont rely on flexible financing for tools, trucks, and emergency repair demand.",
+  "bestFor": [
+    {
+      "slug": "tools_equipment",
+      "label": "Tools & equipment purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vans & trucks"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring additional plumbers"
+    },
+    {
+      "slug": "commercial_contracts",
+      "label": "Commercial plumbing expansion",
+      "weight": 2
+    },
+    {
+      "slug": "local_marketing",
+      "label": "Local marketing & lead generation",
+      "weight": 2
+    },
+    {
+      "slug": "water_heaters",
+      "label": "Water heater installation growth",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

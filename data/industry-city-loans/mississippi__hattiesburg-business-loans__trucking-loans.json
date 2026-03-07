@@ -1,0 +1,24 @@
+{
+  "stateSlug": "mississippi",
+  "stateName": "Mississippi",
+  "citySlug": "hattiesburg-business-loans",
+  "cityName": "Hattiesburg",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Hattiesburg Trucking Business Loans | Mississippi",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Hattiesburg, Mississippi.",
+  "h1": "Hattiesburg Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Hattiesburg, Mississippi.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Hattiesburg Trucking Business Loans",
+    "areaServed": "Hattiesburg, Mississippi",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

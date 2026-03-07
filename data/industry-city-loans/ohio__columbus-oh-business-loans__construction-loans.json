@@ -1,0 +1,24 @@
+{
+  "stateSlug": "ohio",
+  "stateName": "Ohio",
+  "citySlug": "columbus-oh-business-loans",
+  "cityName": "Columbus",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Columbus Construction Business Loans | Ohio",
+  "description": "Compare construction business loans, working capital and equipment financing available in Columbus, Ohio.",
+  "h1": "Columbus Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Columbus, Ohio.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Columbus Construction Business Loans",
+    "areaServed": "Columbus, Ohio",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

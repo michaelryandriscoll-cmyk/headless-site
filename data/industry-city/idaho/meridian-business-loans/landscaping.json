@@ -1,0 +1,41 @@
+{
+  "state": "Idaho",
+  "city": "Meridian",
+  "industry": "landscaping",
+  "title": "Meridian Landscaping Business Loans",
+  "intro": "Landscaping companies in Meridian, Idaho rely on flexible funding for equipment, crews, and seasonal work.",
+  "bestFor": [
+    {
+      "slug": "equipment",
+      "label": "Mowers & landscaping equipment"
+    },
+    {
+      "slug": "truck_trailer",
+      "label": "Truck & trailer purchases"
+    },
+    {
+      "slug": "seasonal_labor",
+      "label": "Seasonal labor hiring"
+    },
+    {
+      "slug": "snow_removal",
+      "label": "Snow removal operations",
+      "weight": 1
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, uniforms & marketing",
+      "weight": 1
+    },
+    {
+      "slug": "hardscaping",
+      "label": "Hardscaping & outdoor living expansion",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "24–48 Hours",
+    "terms": "6–12 Months"
+  }
+}

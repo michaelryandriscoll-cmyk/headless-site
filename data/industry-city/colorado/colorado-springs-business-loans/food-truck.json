@@ -1,0 +1,41 @@
+{
+  "state": "Colorado",
+  "city": "Colorado Springs",
+  "industry": "food-truck",
+  "title": "Colorado Springs Food Truck Business Loans",
+  "intro": "Grow your food truck business in Colorado Springs, Colorado with capital for equipment, staff, and events.",
+  "bestFor": [
+    {
+      "slug": "truck",
+      "label": "Food truck purchases & buildouts"
+    },
+    {
+      "slug": "equipment",
+      "label": "Kitchen equipment & generators"
+    },
+    {
+      "slug": "permits",
+      "label": "Permits, licensing & fees"
+    },
+    {
+      "slug": "second_truck",
+      "label": "Launching a second truck",
+      "weight": 2
+    },
+    {
+      "slug": "events",
+      "label": "Event & festival fees",
+      "weight": 2
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, wraps & signage",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

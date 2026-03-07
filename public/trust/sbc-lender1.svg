@@ -1,0 +1,6 @@
+﻿<svg width="150" height="48" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+ <rect width="200" height="60" rx="10" fill="#0b1f41" />
+ <path fill="#00c684" d="M78 18l8 12-8 12H64l-8-12 8-12h14z"/>
+ <text x="100" y="34" fill="#fff" font-size="18" font-family="Arial" font-weight="600"
+       text-anchor="middle">Lender Partner</text>
+</svg>

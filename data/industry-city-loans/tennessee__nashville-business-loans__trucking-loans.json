@@ -1,0 +1,24 @@
+{
+  "stateSlug": "tennessee",
+  "stateName": "Tennessee",
+  "citySlug": "nashville-business-loans",
+  "cityName": "Nashville",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Nashville Trucking Business Loans | Tennessee",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Nashville, Tennessee.",
+  "h1": "Nashville Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Nashville, Tennessee.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Nashville Trucking Business Loans",
+    "areaServed": "Nashville, Tennessee",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

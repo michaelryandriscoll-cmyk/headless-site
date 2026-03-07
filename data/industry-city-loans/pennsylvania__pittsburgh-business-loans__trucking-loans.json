@@ -1,0 +1,24 @@
+{
+  "stateSlug": "pennsylvania",
+  "stateName": "Pennsylvania",
+  "citySlug": "pittsburgh-business-loans",
+  "cityName": "Pittsburgh",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Pittsburgh Trucking Business Loans | Pennsylvania",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Pittsburgh, Pennsylvania.",
+  "h1": "Pittsburgh Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Pittsburgh, Pennsylvania.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Pittsburgh Trucking Business Loans",
+    "areaServed": "Pittsburgh, Pennsylvania",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

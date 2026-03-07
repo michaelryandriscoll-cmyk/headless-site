@@ -1,0 +1,41 @@
+{
+  "state": "Wisconsin",
+  "city": "Kenosha",
+  "industry": "childcare",
+  "title": "Kenosha Childcare Business Loans",
+  "intro": "Grow your childcare business in Kenosha, Wisconsin with capital for classrooms, playgrounds, and programs.",
+  "bestFor": [
+    {
+      "slug": "staffing",
+      "label": "Hiring teachers & childcare staff"
+    },
+    {
+      "slug": "supplies",
+      "label": "Toys, supplies & educational materials"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety & licensing compliance"
+    },
+    {
+      "slug": "facility_renovation",
+      "label": "Facility renovation",
+      "weight": 1
+    },
+    {
+      "slug": "playground",
+      "label": "Playground & outdoor upgrades",
+      "weight": 2
+    },
+    {
+      "slug": "after_school",
+      "label": "Launching after-school programs",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

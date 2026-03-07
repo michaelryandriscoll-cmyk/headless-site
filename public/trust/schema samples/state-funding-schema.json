@@ -1,0 +1,49 @@
+﻿<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Small Business Capital — Business Funding in STATE",
+  "url": "https://smallbusiness.capital/STATE-URL",
+  "image": "https://smallbusiness.capital/logo.png",
+  "description": "Fast business funding in STATE — working capital, equipment financing, credit lines & private lending with approvals in 2–24 hours.",
+  "telephone": "+1-888-365-7999",
+  "areaServed": {
+    "@type": "State",
+    "name": "STATE",
+    "alternateName": "ABBREV"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressRegion": "STATE",
+    "addressLocality": "CAPITAL",
+    "postalCode": "00000"
+  },
+  "serviceArea": [
+    "MAJOR CITY 1",
+    "MAJOR CITY 2",
+    "MAJOR CITY 3",
+    "MAJOR CITY 4",
+    "MAJOR CITY 5"
+  ],
+  "serviceType": [
+    "Working Capital Loans in STATE",
+    "Equipment Financing STATE",
+    "Business Line of Credit STATE",
+    "Merchant Advance Alternative STATE",
+    "Small Business Funding STATE"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Business Funding — STATE",
+      "url": "https://smallbusiness.capital/STATE-URL"
+    }
+  ],
+  "hasRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1800"
+  }
+}
+</script>

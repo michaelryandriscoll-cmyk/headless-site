@@ -1,0 +1,2234 @@
+﻿/* app/css/state-loans.css */
+
+/* ==========================================================
+   STATE LOANS HUB — PREMIUM FINTECH STYLING (PATCHED)
+   - Removes “duplicate list” look by making legacy state-* styles inert
+   - Improves city card header hierarchy + spacing
+   - Upgrades dropdown height / borders / focus
+   - Reduces chip noise + adds tighter section separation
+========================================================== */
+
+/* ------------------------------------------------------------------
+   SAFETY: If you still have legacy .state-* markup anywhere else,
+   keep these, but they won't affect the newer .city-loan-page layout.
+------------------------------------------------------------------- */
+.state-page { max-width: 1100px; margin: 0 auto; padding: 120px 20px 80px; }
+.state-hero { text-align: left; margin-bottom: 36px; }
+.state-hero h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; color: #0b1b2b; margin-bottom: 10px; }
+.state-hero p { font-size: 1.05rem; color: #516175; max-width: 720px; line-height: 1.6; }
+.state-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 24px; }
+.state-stat { background: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 16px; padding: 16px 18px; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04); }
+.state-stat strong { display: block; font-size: 0.85rem; color: #5a6b7e; margin-bottom: 6px; font-weight: 700; }
+.state-stat span { font-size: 1rem; color: #0b1b2b; font-weight: 700; }
+.state-section { margin-top: 44px; }
+.state-section h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.01em; color: #0b1b2b; margin-bottom: 8px; }
+.state-section p { color: #516175; margin-bottom: 18px; }
+.state-city-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.state-city-card { background: #ffffff; border: 1px solid rgba(15, 23, 42, 0.08); border-radius: 18px; padding: 16px 18px; transition: all 0.18s ease; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04); }
+.state-city-card:hover { transform: translateY(-2px); border-color: rgba(0, 198, 132, 0.35); box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08); }
+.state-city-card a { display: flex; justify-content: space-between; align-items: center; text-decoration: none; font-weight: 800; color: #0b1b2b; }
+.state-city-card a span { font-weight: 700; color: #00c684; }
+.state-cta { margin-top: 56px; border-radius: 22px; padding: 34px 28px; background: linear-gradient(135deg, #0b1b2b, #142c44); color: white; box-shadow: 0 18px 44px rgba(11, 27, 43, 0.25); text-align: center; }
+.state-cta h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 10px; color: #fff; }
+.state-cta p { color: rgba(255, 255, 255, 0.82); max-width: 700px; margin: 0 auto 18px; }
+.state-cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.state-btn-primary { background: #00c684; color: #062018; font-weight: 900; padding: 14px 18px; border-radius: 14px; text-decoration: none; box-shadow: 0 10px 24px rgba(0, 198, 132, 0.35); }
+.state-btn-secondary { background: transparent; border: 1px solid rgba(255, 255, 255, 0.35); color: white; font-weight: 800; padding: 14px 18px; border-radius: 14px; text-decoration: none; }
+a.state-btn-secondary:hover { color:#00c68480 !important; }
+@media (max-width: 820px) {
+  .state-stats { grid-template-columns: 1fr; }
+  .state-city-grid { grid-template-columns: 1fr; }
+  .state-page { padding-top: 110px; }
+}
+
+/* ==========================================================
+   STATE LOANS HUB — PREMIUM FINTECH STYLING
+   File: app/styles/state-loans.css
+========================================================== */
+
+:root {
+  --sl-bg: #f5f7fb;
+  --sl-surface: #ffffff;
+  --sl-text: #0b1220;
+  --sl-muted: rgba(11, 18, 32, 0.62);
+  --sl-border: rgba(11, 18, 32, 0.08);
+
+  --sl-navy: #07162c;
+  --sl-navy-2: #0b1f3b;
+
+  --sl-green: #00c684;
+  --sl-green-2: #00a86f;
+
+  --sl-radius: 18px;
+  --sl-radius-lg: 26px;
+
+  --sl-shadow-sm: 0 6px 18px rgba(10, 20, 35, 0.06);
+  --sl-shadow-md: 0 14px 40px rgba(10, 20, 35, 0.10);
+  --sl-shadow-lg: 0 22px 70px rgba(10, 20, 35, 0.14);
+
+  --sl-max: 1100px;
+}
+
+/* ==========================================================
+   PAGE WRAPPER
+========================================================== */
+
+.city-loan-page {
+  background: var(--sl-bg);
+  color: var(--sl-text);
+  min-height: 100vh;
+}
+
+/* Adds a premium fintech "soft gradient" background */
+.city-loan-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(900px 420px at 20% 12%, rgba(0, 198, 132, 0.14), transparent 60%),
+    radial-gradient(760px 360px at 85% 18%, rgba(12, 86, 255, 0.10), transparent 55%),
+    radial-gradient(900px 520px at 50% 80%, rgba(0, 0, 0, 0.04), transparent 60%);
+}
+
+.city-loan-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Constrain content nicely */
+.city-loan-page header,
+.city-loan-page section {
+  width: 100%;
+  max-width: var(--sl-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.city-header {
+  padding-top: 60px;
+  padding-bottom: 26px;
+}
+
+.city-header h1 {
+  font-size: clamp(2.1rem, 3.6vw, 3.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin: 0 0 10px 0;
+  font-weight: 800;
+}
+
+.city-header p {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 1.05rem;
+  color: var(--sl-muted);
+  line-height: 1.55;
+}
+
+/* ==========================================================
+   STATS ROW
+========================================================== */
+
+.loan-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+  margin-bottom: 34px;
+}
+
+.loan-stats p {
+  background: var(--sl-surface);
+  border: 1px solid var(--sl-border);
+  border-radius: var(--sl-radius);
+  padding: 16px 16px;
+  box-shadow: var(--sl-shadow-sm);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 78px;
+}
+
+.loan-stats p strong {
+  font-size: 0.82rem;
+  color: rgba(11, 18, 32, 0.55);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.loan-stats p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--sl-text);
+}
+
+/* ==========================================================
+   CITY LIST SECTION (premium separator)
+========================================================== */
+
+.seo-silo {
+  margin-top: 8px;
+  margin-bottom: 34px; /* slightly tighter */
+  position: relative;
+}
+
+/* subtle divider band behind the grid */
+.seo-silo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 54px;
+  height: 1px;
+  background: rgba(11, 18, 32, 0.06);
+  opacity: 0.9;
+}
+
+.seo-silo h2 {
+  font-size: 1.55rem;
+  margin: 0 0 6px 0;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.seo-silo p {
+  margin: 0 0 18px 0;
+  color: var(--sl-muted);
+  font-size: 1rem;
+}
+
+/* NOTE:
+   If you removed the old/simple list section in JSX, these remain safe.
+*/
+.silo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* City card link */
+.silo-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--sl-text);
+
+  background: var(--sl-surface);
+  border: 1px solid var(--sl-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+
+  box-shadow: var(--sl-shadow-sm);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft hover glow */
+.silo-list li a::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(400px 180px at 10% 20%, rgba(0, 198, 132, 0.16), transparent 55%);
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.silo-list li a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 198, 132, 0.35);
+  box-shadow: var(--sl-shadow-md);
+}
+
+.silo-list li a:hover::before {
+  opacity: 1;
+}
+
+/* Right arrow indicator */
+.silo-list li a::after {
+  content: "→";
+  font-weight: 900;
+  color: rgba(0, 198, 132, 0.85);
+  margin-left: 12px;
+}
+
+/* ==========================================================
+   CTA MODULE
+========================================================== */
+
+.city-cta {
+  margin-top: 18px;
+  margin-bottom: 80px;
+
+  border-radius: var(--sl-radius-lg);
+  padding: 34px 26px;
+
+  background:
+    radial-gradient(700px 260px at 25% 10%, rgba(0, 198, 132, 0.22), transparent 60%),
+    radial-gradient(700px 280px at 85% 15%, rgba(0, 140, 255, 0.18), transparent 60%),
+    linear-gradient(180deg, var(--sl-navy), var(--sl-navy-2));
+
+  box-shadow: var(--sl-shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  text-align: center;
+}
+
+.city-cta h2 {
+  margin: 0 0 10px 0;
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.city-cta p {
+  margin: 0 auto 18px auto;
+  max-width: 64ch;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.city-cta .cta-apply-btn,
+.city-cta .cta-call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  text-decoration: none;
+  font-weight: 900;
+  padding: 13px 18px;
+  border-radius: 14px;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, border-color 160ms ease;
+  margin: 6px 8px;
+  min-width: 220px;
+}
+
+/* Primary button */
+.city-cta .cta-apply-btn {
+  background: linear-gradient(180deg, var(--sl-green), var(--sl-green-2));
+  color: #062014;
+  box-shadow: 0 14px 34px rgba(0, 198, 132, 0.28);
+}
+
+.city-cta .cta-apply-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px rgba(0, 198, 132, 0.36);
+}
+
+/* Secondary button */
+.city-cta .cta-call-btn {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.city-cta .cta-call-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 920px) {
+  .loan-stats { grid-template-columns: 1fr; }
+  .silo-list { grid-template-columns: 1fr; }
+
+  .city-cta { padding: 28px 18px; }
+
+  .city-cta .cta-apply-btn,
+  .city-cta .cta-call-btn {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==========================================================
+   SMALL POLISH
+========================================================== */
+a { -webkit-tap-highlight-color: transparent; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+
+/* ==========================================================
+   INDUSTRY SELECTOR (global / optional)
+========================================================== */
+
+.industry-selector {
+  margin-top: 26px;
+  margin-bottom: 34px;
+
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(11, 18, 32, 0.08);
+  border-radius: 22px;
+  padding: 22px 18px;
+
+  box-shadow: 0 14px 40px rgba(10, 20, 35, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.industry-selector__head h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.industry-selector__head p {
+  margin: 0 0 14px 0;
+  color: rgba(11, 18, 32, 0.62);
+  line-height: 1.5;
+}
+
+.industry-selector__hint {
+  color: rgba(11, 18, 32, 0.55);
+  font-weight: 700;
+}
+
+.industry-selector__search {
+  margin-bottom: 14px;
+}
+
+.industry-selector__search input {
+  width: 100%;
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1px solid rgba(11, 18, 32, 0.10);
+  background: #fff;
+  outline: none;
+  font-weight: 700;
+  box-shadow: 0 10px 22px rgba(10, 20, 35, 0.05);
+}
+
+.industry-selector__search input:focus {
+  border-color: rgba(0, 198, 132, 0.40);
+  box-shadow: 0 12px 30px rgba(0, 198, 132, 0.10);
+}
+
+.industry-selector__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.industry-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid rgba(11, 18, 32, 0.08);
+  border-radius: 14px;
+  padding: 12px 14px;
+
+  font-weight: 900;
+  color: #0b1220;
+
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  box-shadow: 0 10px 22px rgba(10, 20, 35, 0.06);
+}
+
+.industry-chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 198, 132, 0.35);
+  box-shadow: 0 18px 44px rgba(10, 20, 35, 0.12);
+}
+
+.industry-chip__arrow {
+  color: rgba(0, 198, 132, 0.9);
+  font-weight: 900;
+}
+
+.industry-selector__empty {
+  margin-top: 12px;
+  color: rgba(11, 18, 32, 0.62);
+  font-weight: 700;
+}
+
+@media (max-width: 920px) {
+  .industry-selector__grid { grid-template-columns: 1fr; }
+}
+
+
+/* ==========================================================
+   STATE PAGE — CITY GRID + INLINE INDUSTRIES (PATCHED)
+   - Stronger header hierarchy
+   - Cleaner link placement
+   - Better spacing + sectioning
+========================================================== */
+
+.state-city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+  margin-bottom: 36px;
+}
+
+.state-city-card {
+  background: #fff;
+  border: 1px solid rgba(11, 18, 32, 0.08);
+  border-radius: 18px;
+  padding: 16px 16px 16px 16px;
+  box-shadow: 0 14px 40px rgba(10, 20, 35, 0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.state-city-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 198, 132, 0.30);
+  box-shadow: 0 18px 54px rgba(10, 20, 35, 0.10);
+}
+
+.state-city-card__head {
+  display: flex;
+  align-items: flex-start; /* better hierarchy */
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.state-city-card__head h3 {
+  margin: 0;
+  font-size: 1.1rem; /* slightly bigger */
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.state-city-card__sub {
+  margin: 4px 0 0 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: rgba(11, 18, 32, 0.58);
+}
+
+.state-city-card__link {
+  font-weight: 900;
+  text-decoration: none;
+  color: rgba(0, 198, 132, 0.95);
+  white-space: nowrap;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.state-city-card__link::after {
+  content: "→";
+  font-weight: 900;
+  opacity: 0.95;
+}
+
+.state-city-card__link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================
+   CITY CARD — INDUSTRY DROPDOWN (PATCHED)
+   - Taller, cleaner select
+   - Softer borders
+   - Better focus ring
+   - Chips slightly smaller to reduce noise
+========================================================== */
+
+.city-industry-dropdown {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(11, 18, 32, 0.08);
+}
+
+.city-industry-dropdown__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.city-industry-dropdown__label {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: rgba(11, 18, 32, 0.62);
+}
+
+.city-industry-dropdown__all {
+  font-weight: 900;
+  text-decoration: none;
+  color: rgba(0, 198, 132, 0.95);
+}
+
+.city-industry-dropdown__all:hover {
+  text-decoration: underline;
+}
+
+.city-industry-dropdown__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ===== INDUSTRY DROPDOWN WRAPPER ===== */
+.city-industry-dropdown {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+  margin-top: 14px;
+}
+
+/* ===== TOP ROW ===== */
+.city-industry-dropdown__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.city-industry-dropdown__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.city-industry-dropdown__all {
+  font-size: 13px;
+  font-weight: 600;
+  color: #15803d;
+  text-decoration: none;
+}
+
+.city-industry-dropdown__all:hover {
+  text-decoration: underline;
+}
+
+/* ===== SELECT ROW ===== */
+.city-industry-dropdown__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* PREMIUM SELECT */
+.city-industry-select {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  font-size: 14px;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.city-industry-select:focus {
+  outline: none;
+  border-color: #15803d;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15);
+  background: #ffffff;
+}
+
+/* VIEW BUTTON */
+.city-industry-go {
+  padding: 11px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #15803d;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.city-industry-go:hover {
+  background: #166534;
+}
+
+.city-industry-go.disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* POPULAR CHIPS */
+.city-industry-mini {
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.6);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.city-industry-mini__chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(21, 128, 61, 0.08);
+  color: #15803d;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.city-industry-mini__chip:hover {
+  background: rgba(21, 128, 61, 0.18);
+}
+
+.city-industry-select {
+  flex: 1;
+  height: 48px; /* taller */
+  border-radius: 14px;
+  padding: 0 14px;
+  font-weight: 800;
+  line-height: 48px;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(11, 18, 32, 0.10);
+  box-shadow: 0 10px 22px rgba(10, 20, 35, 0.05);
+  outline: none;
+
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(11, 18, 32, 0.55) 50%),
+    linear-gradient(135deg, rgba(11, 18, 32, 0.55) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 13px) 50%;
+  background-size:
+    6px 6px,
+    6px 6px;
+  background-repeat: no-repeat;
+}
+
+.city-industry-select:focus {
+  border-color: rgba(0, 198, 132, 0.45);
+  box-shadow:
+    0 12px 30px rgba(0, 198, 132, 0.10),
+    0 0 0 4px rgba(0, 198, 132, 0.14);
+}
+
+.city-industry-go {
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(180deg, #00c684 0%, #00b578 100%);
+  color: #08131f;
+  font-weight: 900;
+  text-decoration: none;
+  border: 0;
+
+  box-shadow: 0 12px 28px rgba(0, 198, 132, 0.22);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+.city-industry-go:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 36px rgba(0, 198, 132, 0.26);
+  filter: brightness(1.02);
+}
+
+.city-industry-go.disabled {
+  background: rgba(11, 18, 32, 0.08);
+  color: rgba(11, 18, 32, 0.45);
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.city-industry-mini {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: rgba(11, 18, 32, 0.55);
+}
+
+/* “Popular:” label spacing */
+.city-industry-mini > span:first-child,
+.city-industry-mini__label {
+  opacity: 0.95;
+}
+
+/* Smaller chips, less visual noise */
+.city-industry-mini__chip {
+  padding: 6px 10px; /* smaller */
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.84rem;
+
+  background: rgba(0, 198, 132, 0.07);
+  border: 1px solid rgba(0, 198, 132, 0.16);
+  color: rgba(11, 18, 32, 0.95);
+
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.city-industry-mini__chip:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 198, 132, 0.11);
+  box-shadow: 0 10px 22px rgba(0, 198, 132, 0.10);
+}
+
+@media (max-width: 980px) {
+  .state-city-grid { grid-template-columns: 1fr; }
+  .city-industry-dropdown__row { flex-direction: column; align-items: stretch; }
+  .city-industry-go { width: 100%; }
+}
+
+/* =========================================================
+   STATE PAGE – PREMIUM CITY GRID UPGRADE
+   ========================================================= */
+
+/* Page background polish */
+.state-page {
+  background: linear-gradient(
+    180deg,
+    #f7fafc 0%,
+    #ffffff 40%
+  );
+}
+
+/* Hero spacing refinement */
+.state-hero {
+  margin-bottom: 26px;
+}
+
+.state-hero h1 {
+  letter-spacing: -0.02em;
+}
+
+.state-hero p {
+  max-width: 720px;
+}
+
+/* Stats cards */
+.state-stats {
+  gap: 14px;
+}
+
+.state-stat {
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.03),
+    0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+/* =========================================================
+   CITY GRID
+   ========================================================= */
+
+.state-city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+/* City card base */
+.state-city-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.03),
+    0 12px 30px rgba(15, 23, 42, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  position: relative;
+}
+
+/* Hover lift */
+.state-city-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.03),
+    0 20px 46px rgba(15, 23, 42, 0.10);
+}
+
+/* Card header */
+.state-city-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.state-city-card__head h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+/* View City link */
+.state-city-card__link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0ea5e9;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.state-city-card__link:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+/* =========================================================
+   INDUSTRY DROPDOWN (INLINE)
+   ========================================================= */
+
+.city-industry-dropdown {
+  margin-top: 6px;
+}
+
+/* Dropdown top row */
+.city-industry-dropdown__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.city-industry-dropdown__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(11, 18, 32, 0.65);
+}
+
+/* Select styling */
+.city-industry-select,
+.state-city-card select {
+  width: 100%;
+  padding: 0px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ffffff;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.city-industry-select:focus,
+.state-city-card select:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+}
+
+/* Disabled button polish */
+.city-industry-go.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   INDUSTRY CHIPS
+   ========================================================= */
+
+.city-industry-mini {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: rgba(11, 18, 32, 0.65);
+}
+
+.city-industry-mini__chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.08);
+  color: #15803d;
+  font-weight: 700;
+  font-size: 0.75rem;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.city-industry-mini__chip:hover {
+  background: rgba(34, 197, 94, 0.18);
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   CTA POLISH
+   ========================================================= */
+
+.state-cta {
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #020617
+  );
+  box-shadow:
+    0 20px 60px rgba(2, 6, 23, 0.55);
+}
+
+.state-btn-primary {
+  box-shadow: 0 12px 30px rgba(34, 197, 94, 0.45);
+}
+
+.state-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(34, 197, 94, 0.6);
+}
+
+/* =========================================================
+   CITY PAGE – STICKY MINI NAV
+   ========================================================= */
+
+.city-sticky-nav {
+  position: sticky;
+  top: 88px;
+  z-index: 40;
+
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.04),
+    0 10px 30px rgba(15, 23, 42, 0.12);
+
+  white-space: nowrap;
+}
+
+/* Links */
+.city-sticky-nav a {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(11, 18, 32, 0.75);
+  padding: 6px 12px;
+  border-radius: 999px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.city-sticky-nav a:hover {
+  background: rgba(15, 23, 42, 0.06);
+  color: rgba(11, 18, 32, 0.95);
+  transform: translateY(-1px);
+}
+
+/* CTA button */
+.city-sticky-nav a.cta {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(34, 197, 94, 0.45);
+}
+
+.city-sticky-nav a.cta:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 12px 30px rgba(34, 197, 94, 0.6);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .city-sticky-nav {
+    top: 64px;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .city-sticky-nav a {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+}
+
+
+/* ================= INTENT CTA ================= */
+.intent-cta {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 999;
+  background: #0b1220;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  animation: slideUp 0.4s ease forwards;
+  max-width: 340px;
+}
+
+.intent-cta-inner {
+  padding: 16px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.intent-cta strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.intent-cta p {
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  opacity: 0.85;
+  color:#fff;
+}
+
+.intent-cta-btn {
+  background: #00c684;
+  color: #000;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* Mobile: full-width bottom bar */
+@media (max-width: 768px) {
+  .intent-cta {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: none;
+  }
+}
+
+.city-loan-page section,
+.city-loan-page header {
+  scroll-margin-top: 140px;
+}
+
+/* Pull the breadcrumb up — it's the first visible element */
+.city-loan-page .seo-silo:first-of-type,
+.city-loan-page nav.seo-silo {
+  margin-top: 0 !important;
+  padding-top: 14px !important;
+}
+
+/* Breadcrumb nav specifically */
+nav.seo-silo[aria-label="Breadcrumb"] {
+  padding-top: 12px !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* ===============================
+   2. HERO — tighten top and bottom
+   .city-header currently has 60px top
+   which on top of the existing gap
+   creates the large empty space.
+================================ */
+
+.city-header {
+  padding-top: 20px !important;
+  padding-bottom: 18px !important;
+}
+
+.city-header h1 {
+  margin-bottom: 8px !important;
+}
+
+.city-header p {
+  font-size: 1rem !important;
+}
+
+
+/* ===============================
+   3. STICKY NAV — reduce its vertical
+   footprint so it doesn't push content
+   down as much.
+================================ */
+
+.city-sticky-nav {
+  margin: 10px auto 14px !important;
+  padding: 8px 12px !important;
+}
+
+
+/* ===============================
+   4. STATS ROW — tighten margins
+   Currently has 18px top and 34px
+   bottom — both too generous.
+================================ */
+
+.loan-stats {
+  margin-top: 12px !important;
+  margin-bottom: 20px !important;
+}
+
+.loan-stats p {
+  min-height: 68px !important;
+  padding: 12px 14px !important;
+}
+
+
+/* ===============================
+   5. INDUSTRY SECTION — the gap
+   between stats and the industry
+   list is the biggest mid-page issue.
+================================ */
+
+.seo-silo {
+  margin-top: 4px !important;
+  margin-bottom: 20px !important;
+}
+
+.seo-silo h2 {
+  font-size: 1.35rem !important;
+  margin-bottom: 10px !important;
+}
+
+/* Industry chip row */
+.city-industry-mini {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  gap: 6px !important;
+}
+
+/* Industry list rows — currently too tall */
+.silo-list {
+  gap: 8px !important;
+}
+
+.silo-list li a {
+  padding: 10px 14px !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+}
+
+
+/* ===============================
+   6. FAQ SECTION — reduce the gap
+   between industry list and FAQ,
+   and between FAQ card rows.
+================================ */
+
+/* The inline style={{ marginTop: 26 }} on
+   the FAQ section in JSX is fine — this
+   overrides it to be slightly tighter */
+.seo-silo#faq {
+  margin-top: 16px !important;
+}
+
+.seo-silo#faq h2 {
+  margin-bottom: 12px !important;
+}
+
+.state-city-grid {
+  gap: 12px !important;
+  margin-top: 12px !important;
+  margin-bottom: 20px !important;
+}
+
+.state-city-card {
+  padding: 14px !important;
+}
+
+.state-city-card h3 {
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  color: #00a870 !important;
+  margin: 0 0 6px !important;
+}
+
+.state-city-card p {
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+}
+
+
+/* ===============================
+   7. CTA SECTION — reduce top margin
+   and tighten bottom margin so it
+   doesn't float away from the FAQ.
+================================ */
+
+.city-cta {
+  margin-top: 20px !important;
+  margin-bottom: 48px !important;
+  padding: 28px 22px !important;
+}
+
+.city-cta h2 {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem) !important;
+  margin-bottom: 8px !important;
+}
+
+
+/* ===============================
+   QUICK JSX FIX (recommended)
+   In your page.js, change:
+   
+   <main className="city-loan-page" style={{ paddingTop: 120 }}>
+   
+   to:
+   
+   <main className="city-loan-page" style={{ paddingTop: 0 }}>
+   
+   This is the cleanest fix since body
+   already handles the 88px header offset.
+   The CSS above handles it either way,
+   but the JSX change removes the conflict
+   at the source.
+================================ */
+
+/* ============================================================
+   STATE PAGE — SPACING PATCH
+   Drop at the bottom of state-loans.css
+   Fixes the gap between stats and city grid,
+   the dead air below the city grid, and the
+   floating CTA block.
+   ============================================================ */
+
+
+/* ===============================
+   1. PAGE WRAPPER
+   Base .state-page rule has padding: 120px 20px 80px
+   The JSX overrides top with paddingTop: 25 but the
+   bottom 80px still fires. Kill it here.
+================================ */
+
+.state-page {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* ===============================
+   2. BREADCRUMB — tighten so it
+   sits close to the top of the page
+================================ */
+
+.state-page > nav[aria-label="Breadcrumb"] {
+  padding-top: 12px !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* ===============================
+   3. HERO — tighten bottom margin
+   so stats flow directly into city grid
+================================ */
+
+.state-page .state-hero {
+  margin-bottom: 16px !important;
+  padding-top: 16px !important;
+}
+
+.state-page .state-hero h1 {
+  margin-bottom: 8px !important;
+}
+
+.state-page .state-hero p {
+  margin-bottom: 0 !important;
+}
+
+/* Stats row — reduce gap above and below */
+.state-page .state-stats {
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.state-stat {
+  padding: 14px 16px !important;
+}
+
+.state-stat strong {
+  font-size: 0.78rem !important;
+  margin-bottom: 4px !important;
+}
+
+.state-stat span {
+  font-size: 0.95rem !important;
+}
+
+
+/* ===============================
+   4. CITY SECTION — the gap between
+   stats and "Business Loans by City"
+   heading is the biggest spacing issue.
+================================ */
+
+.state-page .seo-silo {
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+.state-page .seo-silo h2 {
+  font-size: 1.35rem !important;
+  margin-bottom: 6px !important;
+}
+
+.state-page .seo-silo > p {
+  margin-bottom: 14px !important;
+  font-size: 0.95rem !important;
+}
+
+
+/* ===============================
+   5. CITY GRID — reduce the gap
+   below the last row of cards
+================================ */
+
+.state-page .state-city-grid {
+  margin-bottom: 24px !important;
+  gap: 14px !important;
+}
+
+/* City card internal spacing */
+.state-page .state-city-card {
+  padding: 14px 16px !important;
+}
+
+.state-page .state-city-card__head {
+  margin-bottom: 8px !important;
+}
+
+.state-page .state-city-card__head h3 {
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  color: #00a870 !important;
+  margin: 0 !important;
+}
+
+.state-page .state-city-card__link {
+  font-size: 0.78rem !important;
+  white-space: nowrap !important;
+}
+
+/* Industry dropdown inside card */
+.state-page .city-industry-dropdown {
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+}
+
+.state-page .city-industry-dropdown__label {
+  font-size: 0.78rem !important;
+}
+
+.state-page .city-industry-select {
+  height: 40px !important;
+  font-size: 0.85rem !important;
+}
+
+.state-page .city-industry-go {
+  height: 40px !important;
+  padding: 0 12px !important;
+  font-size: 0.85rem !important;
+}
+
+/* Popular chips */
+.state-page .city-industry-mini {
+  margin-top: 8px !important;
+  gap: 5px !important;
+}
+
+.state-page .city-industry-mini__chip {
+  padding: 4px 8px !important;
+  font-size: 0.72rem !important;
+}
+
+
+/* ===============================
+   6. CTA BLOCK — sits inside white
+   container creating floating effect.
+   Pull margins tight so it connects
+   properly to the content above and
+   the footer below.
+================================ */
+
+.state-page .state-cta {
+  margin-top: 8px !important;
+  margin-bottom: 32px !important;
+  padding: 32px 24px !important;
+}
+
+.state-cta h2 {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem) !important;
+  margin-bottom: 8px !important;
+}
+
+.state-cta > p {
+  font-size: 14.5px !important;
+  margin-bottom: 18px !important;
+}
+
+.state-cta-actions {
+  gap: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.state-btn-primary,
+.state-btn-secondary {
+  padding: 12px 20px !important;
+  font-size: 14.5px !important;
+}
+
+
+/* ============================================================
+   STATE LOANS HUB PAGE — SPACING PATCH
+   Drop at the bottom of state-loans.css
+   Targets the /state-loans index page specifically.
+   
+   ALSO: Change paddingTop: 120 to paddingTop: 0
+   in your StateLoansHubPage JSX <main> tag.
+   ============================================================ */
+
+
+/* ===============================
+   1. HERO — the paddingTop: 120 inline
+   style stacks on the body header offset.
+   The CSS patch below handles it but the
+   JSX fix is cleaner (change 120 → 0).
+================================ */
+
+.city-loan-page .city-header {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.city-loan-page .city-header h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem) !important;
+  margin-bottom: 8px !important;
+}
+
+.city-loan-page .city-header p {
+  font-size: 0.98rem !important;
+}
+
+
+/* ===============================
+   2. STATE GRID CARD — the industry-
+   selector wrapper has margin-top: 26px
+   from the base rule. With the inline
+   style={{ marginTop: 18 }} it becomes
+   18px. Fine. But the bottom margin
+   is 34px which creates the gap into
+   the popular section.
+================================ */
+
+.city-loan-page .industry-selector {
+  margin-top: 14px !important;
+  margin-bottom: 16px !important;
+  padding: 18px 16px !important;
+}
+
+.industry-selector__head h2 {
+  font-size: 1.2rem !important;
+  margin-bottom: 4px !important;
+}
+
+.industry-selector__head p {
+  margin-bottom: 8px !important;
+  font-size: 0.92rem !important;
+}
+
+.industry-selector__hint {
+  font-size: 0.85rem !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+}
+
+.industry-selector__search {
+  margin-bottom: 12px !important;
+}
+
+.industry-selector__search input {
+  padding: 10px 12px !important;
+  font-size: 0.9rem !important;
+}
+
+
+/* ===============================
+   3. STATE CHIPS (the 50 state cards)
+   — slightly reduce padding so the
+   grid doesn't feel so tall.
+================================ */
+
+.industry-selector__grid .industry-chip {
+  padding: 10px 12px !important;
+  gap: 3px !important;
+  border-radius: 12px !important;
+}
+
+.industry-selector__grid .industry-chip span:first-child {
+  font-size: 14.5px !important;
+}
+
+.industry-selector__grid .industry-chip .industry-chip__arrow {
+  font-size: 12px !important;
+  margin-top: 2px !important;
+}
+
+
+/* ===============================
+   4. POPULAR SECTION — fix the
+   seo-silo::before divider line that
+   cuts through the heading, and tighten
+   the spacing above and below.
+================================ */
+
+.city-loan-page .seo-silo {
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+}
+
+/* Kill the divider line — on this page it
+   cuts awkwardly through the heading */
+.city-loan-page .seo-silo::before {
+  display: none !important;
+}
+
+.city-loan-page .seo-silo h2 {
+  font-size: 1.25rem !important;
+  margin-bottom: 4px !important;
+}
+
+.city-loan-page .seo-silo > p {
+  font-size: 0.9rem !important;
+  margin-bottom: 12px !important;
+}
+
+/* Popular links list */
+.city-loan-page .silo-list {
+  gap: 8px !important;
+}
+
+.city-loan-page .silo-list li a {
+  padding: 10px 14px !important;
+  font-size: 0.88rem !important;
+}
+
+
+/* ===============================
+   5. CTA — tighten top margin and
+   fix the 80px bottom margin that
+   creates the gap before the footer.
+================================ */
+
+.city-loan-page .city-cta {
+  margin-top: 8px !important;
+  margin-bottom: 36px !important;
+  padding: 28px 22px !important;
+}
+
+.city-loan-page .city-cta h2 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem) !important;
+  margin-bottom: 8px !important;
+}
+
+.city-loan-page .city-cta p {
+  font-size: 14.5px !important;
+  margin-bottom: 16px !important;
+}
+
+/* ============================================================
+   CITY LOANS HUB PAGE — STYLING PATCH
+   Drop at the bottom of state-loans.css
+   Targets /state-loans/[state]/[city] pages
+   ============================================================ */
+
+
+/* ===============================
+   1. PAGE WRAPPER
+   JSX has paddingTop: 120 which stacks
+   on the body's 88px header offset.
+   Change to paddingTop: 0 in JSX, or
+   this override handles it either way.
+================================ */
+
+
+/* ===============================
+   2. BREADCRUMB
+   Sits tight to top, no extra space.
+================================ */
+
+.city-loan-page nav.seo-silo[aria-label="Breadcrumb"] {
+  padding-top: 12px !important;
+  padding-bottom: 6px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 13px !important;
+}
+
+.city-loan-page nav.seo-silo[aria-label="Breadcrumb"]::before {
+  display: none !important;
+}
+
+
+/* ===============================
+   3. HERO
+================================ */
+
+.city-loan-page .city-header {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+.city-loan-page .city-header h1 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem) !important;
+  margin-bottom: 6px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  color: #0b1220 !important;
+}
+
+.city-loan-page .city-header p {
+  font-size: 0.96rem !important;
+  color: rgba(11, 18, 32, 0.62) !important;
+  margin: 0 !important;
+}
+
+
+/* ===============================
+   4. STICKY NAV
+================================ */
+
+.city-loan-page .city-sticky-nav {
+  margin: 10px auto 12px !important;
+  padding: 7px 12px !important;
+  top: 88px !important;
+}
+
+
+/* ===============================
+   5. STATS ROW
+================================ */
+
+.city-loan-page .loan-stats {
+  margin-top: 10px !important;
+  margin-bottom: 16px !important;
+}
+
+.city-loan-page .loan-stats p {
+  min-height: 64px !important;
+  padding: 12px 14px !important;
+  border-top: 3px solid #00c684 !important;
+}
+
+.city-loan-page .loan-stats p strong {
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: rgba(11, 18, 32, 0.5) !important;
+  margin-bottom: 4px !important;
+}
+
+.city-loan-page .loan-stats p {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: #0b1220 !important;
+}
+
+
+/* ===============================
+   6. INDUSTRY SECTION
+   - 3-column list on desktop
+   - Tight gap between chips and list
+================================ */
+
+.city-loan-page #industries {
+  margin-top: 8px !important;
+  margin-bottom: 16px !important;
+}
+
+.city-loan-page #industries::before {
+  display: none !important;
+}
+
+.city-loan-page #industries h2 {
+  font-size: 1.2rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 10px !important;
+  color: #0b1220 !important;
+}
+
+/* Quick-filter chips row */
+.city-loan-page #industries .city-industry-mini {
+  margin-bottom: 12px !important;
+  gap: 6px !important;
+}
+
+.city-loan-page #industries .city-industry-mini__chip {
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  border-radius: 999px !important;
+  background: rgba(0, 198, 132, 0.08) !important;
+  border: 1px solid rgba(0, 198, 132, 0.18) !important;
+  color: #007a52 !important;
+}
+
+.city-loan-page #industries .city-industry-mini__chip:hover {
+  background: rgba(0, 198, 132, 0.16) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Industry list — 3 columns on desktop */
+.city-loan-page .silo-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+}
+
+.city-loan-page .silo-list li a {
+  padding: 10px 12px !important;
+  font-size: 0.83rem !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  line-height: 1.4 !important;
+}
+
+/* Responsive: 2 cols on tablet, 1 on mobile */
+@media (max-width: 860px) {
+  .city-loan-page .silo-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .city-loan-page .silo-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* ===============================
+   7. FAQ SECTION
+   The FAQ uses .state-city-card which
+   is styled for city cards on state pages.
+   Override specifically for the FAQ context
+   on city hub pages.
+================================ */
+
+.city-loan-page #faq::before {
+  display: none !important;
+}
+
+.city-loan-page #faq h2 {
+  font-size: 1.2rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 12px !important;
+  color: #0b1220 !important;
+}
+
+/* FAQ grid — 2 columns */
+.city-loan-page #faq .state-city-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* FAQ cards — clean minimal style */
+.city-loan-page #faq .state-city-card {
+  padding: 16px !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(11, 18, 32, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(11, 18, 32, 0.04) !important;
+  background: #ffffff !important;
+  border-top: 2px solid #00c684 !important;
+}
+
+.city-loan-page #faq .state-city-card h3 {
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.03em !important;
+  text-transform: uppercase !important;
+  color: #007a52 !important;
+  margin: 0 0 6px !important;
+  line-height: 1.4 !important;
+}
+
+.city-loan-page #faq .state-city-card p {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 680px) {
+  .city-loan-page #faq .state-city-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* ===============================
+   8. CTA SECTION
+================================ */
+
+.city-loan-page .city-cta {
+  margin-top: 16px !important;
+  margin-bottom: 40px !important;
+  padding: 28px 22px !important;
+}
+
+.city-loan-page .city-cta h2 {
+  font-size: clamp(1.3rem, 2vw, 1.7rem) !important;
+  margin-bottom: 16px !important;
+}
+
+.city-loan-page .city-cta .cta-apply-btn,
+.city-loan-page .city-cta .cta-call-btn {
+  min-width: 180px !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+}
+
+@media (max-width: 600px) {
+  .city-loan-page .city-cta .cta-apply-btn,
+  .city-loan-page .city-cta .cta-call-btn {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+}
+
+
+/* ===============================
+   ALSO RECOMMENDED JSX CHANGE:
+   In CityLoansPage, change:
+   
+   <main className="city-loan-page" style={{ paddingTop: 120 }}>
+   
+   to:
+   
+   <main className="city-loan-page" style={{ paddingTop: 0 }}>
+================================ */
+
+/* ===============================
+   INDUSTRY GROUPS — CATEGORIZED
+================================ */
+
+.city-loan-page .industry-group {
+  margin-bottom: 20px !important;
+}
+
+.city-loan-page .industry-group__label {
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #00a870 !important;
+  margin: 0 0 8px !important;
+  padding-bottom: 6px !important;
+  border-bottom: 1px solid rgba(0, 198, 132, 0.18) !important;
+}
+
+.city-loan-page .industry-group__list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+}
+
+.city-loan-page .industry-group__list li a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 9px 12px !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  color: #0b1220 !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(11, 18, 32, 0.08) !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  transition: border-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+.city-loan-page .industry-group__list li a::after {
+  content: "→" !important;
+  color: rgba(0, 198, 132, 0.8) !important;
+  font-weight: 900 !important;
+  margin-left: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+.city-loan-page .industry-group__list li a:hover {
+  border-color: rgba(0, 198, 132, 0.35) !important;
+  box-shadow: 0 4px 12px rgba(0, 198, 132, 0.08) !important;
+  color: #0b1220 !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 860px) {
+  .city-loan-page .industry-group__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .city-loan-page .industry-group__list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ============================================================
+   CITY LOANS HUB — SPACING FIX
+   Drop after the existing city-loans-hub-patch.css rules
+   ============================================================ */
+
+/* ===============================
+   Kill the large gaps between
+   every section on this page.
+   The .seo-silo base rule has
+   margin-top: 8px but !important
+   overrides from the hub patch are
+   fighting with the state-loans patch.
+   These win by being last + specific.
+================================ */
+
+.city-loan-page > section,
+.city-loan-page > header,
+.city-loan-page > nav {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Stats row */
+.city-loan-page .loan-stats {
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+}
+
+/* Industry section */
+.city-loan-page #industries {
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* FAQ section */
+.city-loan-page #faq {
+  margin-bottom: 0 !important;
+  padding-top: 40px !important;
+}
+
+
+/* ===============================
+   Industry group internal spacing
+   The groups themselves have too
+   much bottom margin.
+================================ */
+
+.city-loan-page .industry-group {
+  margin-bottom: 16px !important;
+}
+
+.city-loan-page .industry-group:last-child {
+  margin-bottom: 0 !important;
+}
+
+.city-loan-page .industry-group__label {
+  margin-bottom: 8px !important;
+  padding-bottom: 5px !important;
+}
+
+.city-loan-page .industry-group__list {
+  gap: 6px !important;
+}
+
+/* ===============================
+   Section headings — pull tighter
+================================ */
+
+.city-loan-page #industries h2,
+.city-loan-page #faq h2 {
+  margin-bottom: 6px !important;
+}
+
+.city-loan-page #industries > p {
+  margin-bottom: 14px !important;
+  margin-top: 0 !important;
+}
+
+/* ============================================================
+   STATE LOANS LAYOUT — TOP BAR + BREADCRUMB
+   Add to city-loans.css or state-loans.css
+============================================================ */
+
+.sl-topbar {
+  position: fixed;
+  top: 88px; /* sits directly below the 88px main header */
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 20px;
+}
+
+.sl-topbar__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  height: 44px;
+  flex-wrap: wrap;
+}
+
+/* Breadcrumb */
+.sl-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(11, 18, 32, 0.65);
+}
+
+.sl-breadcrumb a {
+  color: rgba(11, 18, 32, 0.65);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.sl-breadcrumb a:hover {
+  color: #16a34a;
+  text-decoration: none;
+}
+
+.sl-breadcrumb strong {
+  color: #0b1f41;
+  font-weight: 700;
+}
+
+.sl-breadcrumb__sep {
+  color: rgba(11, 18, 32, 0.35);
+  margin: 0 2px;
+}
+
+/* CTA Buttons */
+.sl-topbar__actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.sl-topbar__btn {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: 0.18s ease;
+}
+
+.sl-topbar__btn--primary {
+  background: rgba(0, 198, 132, 0.10);
+  border: 1px solid rgba(0, 198, 132, 0.25);
+  color: rgba(11, 18, 32, 0.95);
+}
+
+.sl-topbar__btn--primary:hover {
+  background: rgba(0, 198, 132, 0.18);
+  border-color: rgba(0, 198, 132, 0.4);
+}
+
+.sl-topbar__btn--secondary {
+  background: rgba(11, 18, 32, 0.04);
+  border: 1px solid rgba(11, 18, 32, 0.10);
+  color: rgba(11, 18, 32, 0.85);
+}
+
+.sl-topbar__btn--secondary:hover {
+  background: rgba(11, 18, 32, 0.08);
+}
+
+/* Push page content down to account for fixed topbar */
+.city-loan-page {
+  padding-top: 132px; /* 88px header + 44px topbar */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sl-topbar__actions {
+    display: none; /* hide buttons on mobile — too cramped */
+  }
+
+  .sl-topbar__inner {
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .city-loan-page {
+    padding-top: 120px;
+  }
+}
+
+.city-loan-page {
+  padding-top: 88px; /* 88px header + 44px topbar + 16px breathing room */
+}
+
+.city-loan-page .city-header p {
+  color: #475569;
+}

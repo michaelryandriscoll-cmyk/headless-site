@@ -1,0 +1,24 @@
+{
+  "stateSlug": "michigan",
+  "stateName": "Michigan",
+  "citySlug": "detroit-business-loans",
+  "cityName": "Detroit",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Detroit Trucking Business Loans | Michigan",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Detroit, Michigan.",
+  "h1": "Detroit Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Detroit, Michigan.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Detroit Trucking Business Loans",
+    "areaServed": "Detroit, Michigan",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

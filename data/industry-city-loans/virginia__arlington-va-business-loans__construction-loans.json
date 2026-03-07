@@ -1,0 +1,24 @@
+{
+  "stateSlug": "virginia",
+  "stateName": "Virginia",
+  "citySlug": "arlington-va-business-loans",
+  "cityName": "Arlington",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Arlington Construction Business Loans | Virginia",
+  "description": "Compare construction business loans, working capital and equipment financing available in Arlington, Virginia.",
+  "h1": "Arlington Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Arlington, Virginia.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Arlington Construction Business Loans",
+    "areaServed": "Arlington, Virginia",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

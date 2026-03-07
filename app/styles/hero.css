@@ -1,0 +1,164 @@
+/* ============================================================
+   STATIC HERO — SINGLE SOURCE OF TRUTH
+   Clean. Predictable. No duplicates.
+   ============================================================ */
+
+.static-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 620px;
+
+  background: url("/hero/cafe-owner-2000x800.png") no-repeat 32% center / cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-bottom: 64px;
+  overflow: hidden;
+}
+
+/* Dark overlay for contrast */
+.static-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7,20,42,0.35) 0%,
+    rgba(7,20,42,0.55) 60%,
+    rgba(7,20,42,0.65) 100%
+  );
+  z-index: 1;
+}
+
+/* Inner container */
+.static-hero__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 40px 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Glass card */
+.static-hero__overlay {
+  width: 450px;
+  max-width: 100%;
+
+  background: rgba(11,31,65,0.88);
+  backdrop-filter: blur(10px);
+
+  border-radius: var(--sbc-radius-lg);
+  padding: 36px 32px;
+
+  color: #ffffff;
+  box-shadow: var(--sbc-shadow-hero);
+}
+
+/* ============================================================
+   HERO TYPOGRAPHY
+   ============================================================ */
+
+.static-hero h1 {
+  margin: 0 0 14px;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+
+  font-size: clamp(32px, 4.5vw, 44px);
+  line-height: 1.08;
+  max-width: 18ch;
+}
+
+.static-hero__subhead {
+  font-size: 16.5px;
+  line-height: 1.55;
+  max-width: 42ch;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 20px;
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.static-hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.static-hero .btn-primary {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(0,198,132,0.35);
+}
+
+.static-hero .btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.static-hero__under {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+}
+
+/* ============================================================
+   TRUST LINE
+   ============================================================ */
+
+.static-hero__trust {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .static-hero {
+    justify-content: center;
+    background-position: 40% top;
+    padding: 120px 16px 48px;
+  }
+
+  .static-hero__overlay {
+    margin: 0 auto;
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 640px) {
+  .static-hero {
+    min-height: 520px;
+    background-position: center top;
+  }
+
+  .static-hero h1 {
+    font-size: clamp(26px, 7vw, 32px);
+    line-height: 1.12;
+  }
+
+  .static-hero__overlay {
+    padding: 26px 22px;
+  }
+
+  .static-hero__actions .btn-primary {
+    width: 100%;
+  }
+}

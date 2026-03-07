@@ -1,0 +1,41 @@
+{
+  "state": "Colorado",
+  "city": "Fort Collins",
+  "industry": "hvac",
+  "title": "Fort Collins HVAC Business Loans",
+  "intro": "Grow your HVAC business in Fort Collins, Colorado with capital for technicians, tools, and service vehicles.",
+  "bestFor": [
+    {
+      "slug": "equipment_costs",
+      "label": "HVAC equipment & tool purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vehicle upgrades"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring technicians during peak season"
+    },
+    {
+      "slug": "local_ads",
+      "label": "Local marketing & service-area expansion",
+      "weight": 2
+    },
+    {
+      "slug": "inventory_storage",
+      "label": "Warehouse & inventory storage",
+      "weight": 1
+    },
+    {
+      "slug": "seasonal_demand",
+      "label": "Managing seasonal cash-flow swings",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–24 Months"
+  }
+}

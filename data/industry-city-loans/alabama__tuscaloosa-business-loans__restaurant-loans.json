@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alabama",
+  "stateName": "Alabama",
+  "citySlug": "tuscaloosa-business-loans",
+  "cityName": "Tuscaloosa",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Tuscaloosa Restaurant Business Loans | Alabama",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Tuscaloosa, Alabama.",
+  "h1": "Tuscaloosa Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Tuscaloosa, Alabama.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tuscaloosa Restaurant Business Loans",
+    "areaServed": "Tuscaloosa, Alabama",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

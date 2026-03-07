@@ -1,0 +1,24 @@
+{
+  "stateSlug": "montana",
+  "stateName": "Montana",
+  "citySlug": "bozeman-business-loans",
+  "cityName": "Bozeman",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Bozeman Construction Business Loans | Montana",
+  "description": "Compare construction business loans, working capital and equipment financing available in Bozeman, Montana.",
+  "h1": "Bozeman Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Bozeman, Montana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Bozeman Construction Business Loans",
+    "areaServed": "Bozeman, Montana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

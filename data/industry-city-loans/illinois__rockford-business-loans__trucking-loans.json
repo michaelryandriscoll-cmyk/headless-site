@@ -1,0 +1,24 @@
+{
+  "stateSlug": "illinois",
+  "stateName": "Illinois",
+  "citySlug": "rockford-business-loans",
+  "cityName": "Rockford",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Rockford Trucking Business Loans | Illinois",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Rockford, Illinois.",
+  "h1": "Rockford Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Rockford, Illinois.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Rockford Trucking Business Loans",
+    "areaServed": "Rockford, Illinois",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

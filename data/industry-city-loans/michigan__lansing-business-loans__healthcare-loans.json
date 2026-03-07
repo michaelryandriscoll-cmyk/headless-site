@@ -1,0 +1,24 @@
+{
+  "stateSlug": "michigan",
+  "stateName": "Michigan",
+  "citySlug": "lansing-business-loans",
+  "cityName": "Lansing",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Lansing Healthcare Business Loans | Michigan",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Lansing, Michigan.",
+  "h1": "Lansing Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Lansing, Michigan.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Lansing Healthcare Business Loans",
+    "areaServed": "Lansing, Michigan",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

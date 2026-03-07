@@ -1,0 +1,41 @@
+{
+  "state": "Indiana",
+  "city": "Indianapolis",
+  "industry": "solar",
+  "title": "Indianapolis Solar Installation Business Loans",
+  "intro": "Demand for clean energy is rising in Indianapolis, Indiana—compare solar business loans to expand your operations.",
+  "bestFor": [
+    {
+      "slug": "equipment_costs",
+      "label": "Solar equipment & panel purchases"
+    },
+    {
+      "slug": "project_cashflow",
+      "label": "Project cash-flow smoothing"
+    },
+    {
+      "slug": "installation_crews",
+      "label": "Hiring & managing installation crews"
+    },
+    {
+      "slug": "warehouse_space",
+      "label": "Warehouse & storage space",
+      "weight": 2
+    },
+    {
+      "slug": "ev_charging",
+      "label": "EV charger installation expansion",
+      "weight": 1
+    },
+    {
+      "slug": "commercial_projects",
+      "label": "Commercial solar projects",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

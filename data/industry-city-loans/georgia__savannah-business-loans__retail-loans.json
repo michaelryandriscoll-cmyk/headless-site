@@ -1,0 +1,24 @@
+{
+  "stateSlug": "georgia",
+  "stateName": "Georgia",
+  "citySlug": "savannah-business-loans",
+  "cityName": "Savannah",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Savannah Retail Business Loans | Georgia",
+  "description": "Compare retail business loans, working capital and equipment financing available in Savannah, Georgia.",
+  "h1": "Savannah Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Savannah, Georgia.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Savannah Retail Business Loans",
+    "areaServed": "Savannah, Georgia",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

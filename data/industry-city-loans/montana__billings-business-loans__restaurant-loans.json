@@ -1,0 +1,24 @@
+{
+  "stateSlug": "montana",
+  "stateName": "Montana",
+  "citySlug": "billings-business-loans",
+  "cityName": "Billings",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Billings Restaurant Business Loans | Montana",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Billings, Montana.",
+  "h1": "Billings Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Billings, Montana.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Billings Restaurant Business Loans",
+    "areaServed": "Billings, Montana",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

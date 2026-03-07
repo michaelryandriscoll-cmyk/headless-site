@@ -1,0 +1,41 @@
+{
+  "state": "New York",
+  "city": "Yonkers",
+  "industry": "construction",
+  "title": "Yonkers Construction Business Loans",
+  "intro": "Keep projects on track in Yonkers, New York with construction loans built for materials, crews, and delays.",
+  "bestFor": [
+    {
+      "slug": "project_cashflow",
+      "label": "Project cash-flow management"
+    },
+    {
+      "slug": "equipment_purchases",
+      "label": "Equipment purchases & rentals"
+    },
+    {
+      "slug": "labor_costs",
+      "label": "Skilled labor & subcontractor costs"
+    },
+    {
+      "slug": "safety_upgrades",
+      "label": "Safety gear & compliance upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "fleet_expansion",
+      "label": "Expanding work vehicle fleet",
+      "weight": 1
+    },
+    {
+      "slug": "material_delays",
+      "label": "Handling material cost spikes",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

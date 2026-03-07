@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-mexico",
+  "stateName": "New Mexico",
+  "citySlug": "albuquerque-business-loans",
+  "cityName": "Albuquerque",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Albuquerque Construction Business Loans | New Mexico",
+  "description": "Compare construction business loans, working capital and equipment financing available in Albuquerque, New Mexico.",
+  "h1": "Albuquerque Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Albuquerque, New Mexico.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Albuquerque Construction Business Loans",
+    "areaServed": "Albuquerque, New Mexico",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

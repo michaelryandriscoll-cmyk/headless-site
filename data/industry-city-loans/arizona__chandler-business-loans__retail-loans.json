@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arizona",
+  "stateName": "Arizona",
+  "citySlug": "chandler-business-loans",
+  "cityName": "Chandler",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Chandler Retail Business Loans | Arizona",
+  "description": "Compare retail business loans, working capital and equipment financing available in Chandler, Arizona.",
+  "h1": "Chandler Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Chandler, Arizona.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Chandler Retail Business Loans",
+    "areaServed": "Chandler, Arizona",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

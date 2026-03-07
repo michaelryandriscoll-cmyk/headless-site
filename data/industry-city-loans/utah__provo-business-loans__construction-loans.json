@@ -1,0 +1,24 @@
+{
+  "stateSlug": "utah",
+  "stateName": "Utah",
+  "citySlug": "provo-business-loans",
+  "cityName": "Provo",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Provo Construction Business Loans | Utah",
+  "description": "Compare construction business loans, working capital and equipment financing available in Provo, Utah.",
+  "h1": "Provo Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Provo, Utah.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Provo Construction Business Loans",
+    "areaServed": "Provo, Utah",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

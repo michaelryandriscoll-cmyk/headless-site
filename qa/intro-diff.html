@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Intro Diff Report</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    color: #222;
+  }
+  .sidebar {
+    width: 220px;
+    background: #0b1724;
+    color: #f7f7f7;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  .sidebar h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .sidebar a {
+    display: block;
+    color: #d0d6e0;
+    text-decoration: none;
+    padding: 4px 0;
+    font-size: 14px;
+  }
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 24px;
+    background: #f3f4f6;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  .intro-block {
+    margin-bottom: 24px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.08);
+    padding: 12px 16px 16px;
+  }
+  .intro-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .intro-index {
+    font-weight: 600;
+    color: #111827;
+  }
+  .impact-badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .impact-small {
+    color: #166534;
+    background: #dcfce7;
+    border-color: #bbf7d0;
+  }
+  .impact-medium {
+    color: #92400e;
+    background: #ffedd5;
+    border-color: #fed7aa;
+  }
+  .impact-major {
+    color: #991b1b;
+    background: #fee2e2;
+    border-color: #fecaca;
+  }
+  .intro-meta {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .col {
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 8px 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .col h4 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+  }
+  .removed {
+    color: #b91c1c;
+    text-decoration: line-through;
+  }
+  .added {
+    color: #15803d;
+    text-decoration: underline;
+  }
+  .industry-block {
+    margin-bottom: 32px;
+  }
+  .industry-header {
+    margin-bottom: 8px;
+  }
+  .industry-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #111827;
+  }
+  .industry-header span {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  .filters {
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #374151;
+  }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>Industries</h2>
+<a href="#industry-roofing">roofing</a>
+<a href="#industry-trucking">trucking</a>
+<a href="#industry-solar">solar</a>
+<a href="#industry-restaurants">restaurants</a>
+<a href="#industry-retail">retail</a>
+<a href="#industry-construction">construction</a>
+<a href="#industry-hvac">hvac</a>
+<a href="#industry-plumbing">plumbing</a>
+<a href="#industry-electrician">electrician</a>
+<a href="#industry-cleaning">cleaning</a>
+<a href="#industry-landscaping">landscaping</a>
+<a href="#industry-auto-repair">auto-repair</a>
+<a href="#industry-medical">medical</a>
+<a href="#industry-pharmacy">pharmacy</a>
+<a href="#industry-fitness">fitness</a>
+<a href="#industry-professional-services">professional-services</a>
+<a href="#industry-manufacturing">manufacturing</a>
+<a href="#industry-wholesale">wholesale</a>
+<a href="#industry-real-estate">real-estate</a>
+<a href="#industry-food-truck">food-truck</a>
+<a href="#industry-childcare">childcare</a>
+<a href="#industry-nonprofit">nonprofit</a>
+<a href="#industry-franchise">franchise</a>
+<a href="#industry-technology">technology</a>
+<a href="#industry-ecommerce">ecommerce</a>
+<a href="#industry-food-services">food-services</a>
+<a href="#industry-general-contractors">general-contractors</a>
+</div>
+<div class="main">
+  <h1>Intro Diff Report</h1>
+  <p style="font-size:13px;color:#4b5563;">Left: Original &nbsp;&nbsp; Right: Rewritten</p>
+  <div class="filters">
+    <strong>Legend:</strong>
+    <span style="margin-left:10px;">🟢 Small change (>= 85% similar)</span>
+    <span style="margin-left:10px;">🟡 Medium (65–84%)</span>
+    <span style="margin-left:10px;">🔴 Major (&lt; 65%)</span>
+  </div>
+<div class="industry-block" id="industry-roofing">
+  <div class="industry-header">
+    <h2>roofing</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Need reliable roofing contractors in {{city}}, {{state}}? Compare top-rated pros for repairs, replacements, and inspections.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Need reliable roofing contractors in {{city}}, {{state}}? Compare top-rated pros for repairs, replacements, and inspections.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 83.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>{{city}}, {{state}} homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>{{city}}, {{state}} homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Find trusted roofing contractors in {{city}}, {{state}} for repairs, inspections, or complete roof replacements.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Find trusted roofing contractors in {{city}}, {{state}} for repairs, inspections, or complete roof replacements.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Your home in {{city}}, {{state}} deserves a dependable roof—explore local roofing services and financing options today.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Your home in {{city}}, {{state}} deserves a dependable roof—explore local roofing services and financing options today.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-trucking">
+  <div class="industry-header">
+    <h2>trucking</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 78.9%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local trucking companies in {{city}}, {{state}} benefit from flexible business funding for fuel costs, repairs, and fleet expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local trucking companies in {{city}}, {{state}} benefit from flexible business funding for fuel costs, repairs, and fleet expansion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Need capital to keep your trucks on the road in {{city}}, {{state}}? Explore fast financing options built for trucking businesses.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Need capital to keep your trucks on the road in {{city}}, {{state}}? Explore fast financing options built for trucking businesses.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.7%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Keep your routes running smoothly. Compare trucking business loans in {{city}}, {{state}} for fuel, maintenance, and new equipment.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Keep your routes running smoothly. Compare trucking business loans in {{city}}, {{state}} for fuel, maintenance, and new equipment.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Grow or stabilize your fleet in {{city}}, {{state}} with funding options designed to manage cash flow, repairs, and unexpected breakdowns.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Grow or stabilize your fleet in {{city}}, {{state}} with funding options designed to manage cash flow, repairs, and unexpected breakdowns.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-solar">
+  <div class="industry-header">
+    <h2>solar</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 78.9%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Solar installation companies in {{city}}, {{state}} benefit from fast, flexible financing to manage equipment costs and project timelines.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Solar installation companies in {{city}}, {{state}} benefit from fast, flexible financing to manage equipment costs and project timelines.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your solar business in {{city}}, {{state}} with funding options designed for panels, batteries, and installation crews.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your solar business in {{city}}, {{state}} with funding options designed for panels, batteries, and installation crews.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 72.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Demand for clean energy is rising in {{city}}, {{state}}—explore solar business loans to expand your operations.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Demand for clean energy is rising in {{city}}, {{state}}—explore solar business loans to expand your operations.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Secure capital for solar equipment, payroll, or new projects in {{city}}, {{state}} with tailored financing for installers.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Secure capital for solar equipment, payroll, or new projects in {{city}}, {{state}} with tailored financing for installers.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-restaurants">
+  <div class="industry-header">
+    <h2>restaurants</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Restaurants in {{city}}, {{state}} benefit from flexible funding to manage inventory, payroll, and seasonal slowdowns.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Restaurants in {{city}}, {{state}} benefit from flexible funding to manage inventory, payroll, and seasonal slowdowns.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your restaurant in {{city}}, {{state}} with capital for kitchen equipment, staff, and marketing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your restaurant in {{city}}, {{state}} with capital for kitchen equipment, staff, and marketing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local restaurants in {{city}}, {{state}} use working capital to cover food costs, upgrades, and delivery expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local restaurants in {{city}}, {{state}} use working capital to cover food costs, upgrades, and delivery expansion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 68.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From new menu launches to remodels, restaurants in {{city}}, {{state}} use business loans to stay competitive.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From new menu launches to remodels, restaurants in {{city}}, {{state}} use business loans to stay competitive.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-retail">
+  <div class="industry-header">
+    <h2>retail</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 68.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Retail shops in {{city}}, {{state}} use flexible financing to manage inventory, staffing, and seasonal peaks.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Retail shops in {{city}}, {{state}} use flexible financing to manage inventory, staffing, and seasonal peaks.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your retail business in {{city}}, {{state}} with capital for bulk inventory, store upgrades, and marketing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your retail business in {{city}}, {{state}} with capital for bulk inventory, store upgrades, and marketing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 72.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local retailers in {{city}}, {{state}} benefit from working capital to handle slow seasons and new product launches.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local retailers in {{city}}, {{state}} benefit from working capital to handle slow seasons and new product launches.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-major">🔴 MAJOR — 62.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From pop-up displays to remodels, retailers in {{city}}, {{state}} use business loans to stay competitive.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From pop-up displays to remodels, retailers in {{city}}, {{state}} use business loans to stay competitive.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-construction">
+  <div class="industry-header">
+    <h2>construction</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Construction companies in {{city}}, {{state}} benefit from fast, flexible financing to manage labor, materials, and project timelines.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Construction companies in {{city}}, {{state}} benefit from fast, flexible financing to manage labor, materials, and project timelines.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your construction business in {{city}}, {{state}} with capital for equipment, hiring, and new project bids.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your construction business in {{city}}, {{state}} with capital for equipment, hiring, and new project bids.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Keep projects on track in {{city}}, {{state}} with construction loans built for materials, crews, and delays.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Keep projects on track in {{city}}, {{state}} with construction loans built for materials, crews, and delays.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 66.7%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Secure funding for equipment, subcontractors, and expanding contracts in {{city}}, {{state}}.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Secure funding for equipment, subcontractors, and expanding contracts in {{city}}, {{state}}.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-hvac">
+  <div class="industry-header">
+    <h2>hvac</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 68.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>HVAC companies in {{city}}, {{state}} depend on fast financing for equipment, vehicles, and seasonal demand.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>HVAC companies in {{city}}, {{state}} depend on fast financing for equipment, vehicles, and seasonal demand.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your HVAC business in {{city}}, {{state}} with capital for technicians, tools, and service vehicles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your HVAC business in {{city}}, {{state}} with capital for technicians, tools, and service vehicles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Peak seasons in {{city}}, {{state}} require HVAC companies to stay stocked and staffed — explore financing options today.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Peak seasons in {{city}}, {{state}} require HVAC companies to stay stocked and staffed — explore financing options today.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Keep your HVAC operations running smoothly in {{city}}, {{state}} with loans designed for repairs, upgrades, and expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Keep your HVAC operations running smoothly in {{city}}, {{state}} with loans designed for repairs, upgrades, and expansion.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-plumbing">
+  <div class="industry-header">
+    <h2>plumbing</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Plumbing companies in {{city}}, {{state}} benefit from flexible financing for tools, trucks, and emergency repair demand.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Plumbing companies in {{city}}, {{state}} benefit from flexible financing for tools, trucks, and emergency repair demand.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your plumbing business in {{city}}, {{state}} with capital for equipment, technicians, and marketing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your plumbing business in {{city}}, {{state}} with capital for equipment, technicians, and marketing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 82.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local homeowners in {{city}}, {{state}} need fast plumbing services — explore financing options to expand your team.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local homeowners in {{city}}, {{state}} need fast plumbing services — explore financing options to expand your team.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 69.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Secure funding for service vehicles, tools, and expansion projects in {{city}}, {{state}}.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Secure funding for service vehicles, tools, and expansion projects in {{city}}, {{state}}.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-electrician">
+  <div class="industry-header">
+    <h2>electrician</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Electricians in {{city}}, {{state}} benefit from fast financing for tools, vans, and growing customer demand.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Electricians in {{city}}, {{state}} benefit from fast financing for tools, vans, and growing customer demand.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Expand your electrical business in {{city}}, {{state}} with capital for equipment, apprentices, and service vehicles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Expand your electrical business in {{city}}, {{state}} with capital for equipment, apprentices, and service vehicles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local homeowners and businesses in {{city}}, {{state}} depend on reliable electricians — explore growth-focused financing options.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local homeowners and businesses in {{city}}, {{state}} depend on reliable electricians — explore growth-focused financing options.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Secure funding for panel upgrades, rewiring, and expanding service areas in {{city}}, {{state}}.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Secure funding for panel upgrades, rewiring, and expanding service areas in {{city}}, {{state}}.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-cleaning">
+  <div class="industry-header">
+    <h2>cleaning</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-major">🔴 MAJOR — 64.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Cleaning companies in {{city}}, {{state}} use business funding for supplies, staffing, and vehicles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Cleaning companies in {{city}}, {{state}} use business funding for supplies, staffing, and vehicles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your cleaning service in {{city}}, {{state}} with capital for crews, equipment, and marketing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your cleaning service in {{city}}, {{state}} with capital for crews, equipment, and marketing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Residential and commercial cleaners in {{city}}, {{state}} benefit from working capital to win contracts and handle growth.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Residential and commercial cleaners in {{city}}, {{state}} benefit from working capital to win contracts and handle growth.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 81.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From move-outs to recurring accounts, cleaning businesses in {{city}}, {{state}} access loan options to scale.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From move-outs to recurring accounts, cleaning businesses in {{city}}, {{state}} access loan options to scale.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-landscaping">
+  <div class="industry-header">
+    <h2>landscaping</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Landscaping companies in {{city}}, {{state}} benefit from flexible funding for equipment, crews, and seasonal work.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Landscaping companies in {{city}}, {{state}} benefit from flexible funding for equipment, crews, and seasonal work.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your landscaping business in {{city}}, {{state}} with capital for mowers, trailers, and labor.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your landscaping business in {{city}}, {{state}} with capital for mowers, trailers, and labor.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local landscapers in {{city}}, {{state}} use working capital to handle spring rushes and slow winter months.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local landscapers in {{city}}, {{state}} use working capital to handle spring rushes and slow winter months.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From residential routes to commercial contracts, landscapers in {{city}}, {{state}} use business loans to scale.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From residential routes to commercial contracts, landscapers in {{city}}, {{state}} use business loans to scale.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-auto-repair">
+  <div class="industry-header">
+    <h2>auto-repair</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Auto repair shops in {{city}}, {{state}} depend on financing for diagnostic tools, lifts, and parts inventory.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Auto repair shops in {{city}}, {{state}} depend on financing for diagnostic tools, lifts, and parts inventory.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your auto repair business in {{city}}, {{state}} with capital for technicians, equipment, and shop expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your auto repair business in {{city}}, {{state}} with capital for technicians, equipment, and shop expansion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 82.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local drivers in {{city}}, {{state}} benefit from fast repairs—explore financing options to upgrade your shop.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local drivers in {{city}}, {{state}} benefit from fast repairs—explore financing options to upgrade your shop.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Keep your auto repair shop running smoothly in {{city}}, {{state}} with loans for equipment, staffing, and inventory.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Keep your auto repair shop running smoothly in {{city}}, {{state}} with loans for equipment, staffing, and inventory.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-medical">
+  <div class="industry-header">
+    <h2>medical</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Medical practices in {{city}}, {{state}} secure financing for equipment, staffing, and patient services.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Medical practices in {{city}}, {{state}} secure financing for equipment, staffing, and patient services.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your medical practice in {{city}}, {{state}} with capital for technology, buildouts, and providers.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your medical practice in {{city}}, {{state}} with capital for technology, buildouts, and providers.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local clinics in {{city}}, {{state}} benefit from working capital to manage insurance delays and operations.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local clinics in {{city}}, {{state}} benefit from working capital to manage insurance delays and operations.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 81.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From diagnostics to expansion, medical practices in {{city}}, {{state}} access loan options to improve patient care.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From diagnostics to expansion, medical practices in {{city}}, {{state}} access loan options to improve patient care.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-pharmacy">
+  <div class="industry-header">
+    <h2>pharmacy</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Pharmacies in {{city}}, {{state}} secure financing for inventory, staffing, and insurance reimbursement gaps.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Pharmacies in {{city}}, {{state}} secure financing for inventory, staffing, and insurance reimbursement gaps.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your pharmacy in {{city}}, {{state}} with capital for technology, upgrades, and expanded services.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your pharmacy in {{city}}, {{state}} with capital for technology, upgrades, and expanded services.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 80.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Independent pharmacies in {{city}}, {{state}} benefit from working capital to manage cash flow challenges.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Independent pharmacies in {{city}}, {{state}} benefit from working capital to manage cash flow challenges.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 81.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From inventory to delivery, pharmacies in {{city}}, {{state}} access loan options to better serve their customers.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From inventory to delivery, pharmacies in {{city}}, {{state}} access loan options to better serve their customers.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-fitness">
+  <div class="industry-header">
+    <h2>fitness</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Gyms and fitness studios in {{city}}, {{state}} secure financing for equipment, buildouts, and membership growth.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Gyms and fitness studios in {{city}}, {{state}} secure financing for equipment, buildouts, and membership growth.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your fitness business in {{city}}, {{state}} with capital for trainers, classes, and marketing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your fitness business in {{city}}, {{state}} with capital for trainers, classes, and marketing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 70.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Local fitness centers in {{city}}, {{state}} benefit from working capital to manage seasonality and new programs.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Local fitness centers in {{city}}, {{state}} benefit from working capital to manage seasonality and new programs.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 82.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From boutique studios to full gyms, fitness businesses in {{city}}, {{state}} access loan options to stay competitive.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From boutique studios to full gyms, fitness businesses in {{city}}, {{state}} access loan options to stay competitive.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-professional-services">
+  <div class="industry-header">
+    <h2>professional-services</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Professional service firms in {{city}}, {{state}} secure financing for hiring, technology, and client acquisition.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Professional service firms in {{city}}, {{state}} secure financing for hiring, technology, and client acquisition.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your practice in {{city}}, {{state}} with capital for staff, marketing, and office upgrades.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your practice in {{city}}, {{state}} with capital for staff, marketing, and office upgrades.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 77.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Consultants, attorneys, accountants, and agencies in {{city}}, {{state}} benefit from working capital to manage long project cycles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Consultants, attorneys, accountants, and agencies in {{city}}, {{state}} benefit from working capital to manage long project cycles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 81.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From retainers to expansion, professional service firms in {{city}}, {{state}} access loan options to scale sustainably.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From retainers to expansion, professional service firms in {{city}}, {{state}} access loan options to scale sustainably.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-manufacturing">
+  <div class="industry-header">
+    <h2>manufacturing</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-major">🔴 MAJOR — 64.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Manufacturers in {{city}}, {{state}} secure financing for machinery, raw materials, and large orders.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Manufacturers in {{city}}, {{state}} secure financing for machinery, raw materials, and large orders.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your manufacturing operation in {{city}}, {{state}} with capital for equipment and staffing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your manufacturing operation in {{city}}, {{state}} with capital for equipment and staffing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 72.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Production facilities in {{city}}, {{state}} benefit from working capital to handle long lead times and big contracts.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Production facilities in {{city}}, {{state}} benefit from working capital to handle long lead times and big contracts.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From automation to expansion, manufacturers in {{city}}, {{state}} use business loans to scale capacity.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From automation to expansion, manufacturers in {{city}}, {{state}} use business loans to scale capacity.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-wholesale">
+  <div class="industry-header">
+    <h2>wholesale</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Wholesale distributors in {{city}}, {{state}} benefit from financing for bulk inventory and logistics.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Wholesale distributors in {{city}}, {{state}} benefit from financing for bulk inventory and logistics.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your wholesale business in {{city}}, {{state}} with capital for stock, staffing, and vehicles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your wholesale business in {{city}}, {{state}} with capital for stock, staffing, and vehicles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 66.7%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Distributors in {{city}}, {{state}} use working capital to manage payment terms and large orders.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Distributors in {{city}}, {{state}} use working capital to manage payment terms and large orders.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 68.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From new accounts to expanded product lines, wholesalers in {{city}}, {{state}} use business loans to scale.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From new accounts to expanded product lines, wholesalers in {{city}}, {{state}} use business loans to scale.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-real-estate">
+  <div class="industry-header">
+    <h2>real-estate</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 66.7%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Real estate service businesses in {{city}}, {{state}} use funding for marketing, staffing, and operations.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Real estate service businesses in {{city}}, {{state}} use funding for marketing, staffing, and operations.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 84.6%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your real estate company in {{city}}, {{state}} with flexible business capital.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your real estate company in {{city}}, {{state}} with flexible business capital.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Agents and real estate teams in {{city}}, {{state}} benefit from financing for lead generation and expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Agents and real estate teams in {{city}}, {{state}} benefit from financing for lead generation and expansion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 81.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From listings to operations, real estate businesses in {{city}}, {{state}} access loan options to stay competitive.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From listings to operations, real estate businesses in {{city}}, {{state}} access loan options to stay competitive.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-food-truck">
+  <div class="industry-header">
+    <h2>food-truck</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Food truck owners in {{city}}, {{state}} secure financing for vehicles, kitchen buildouts, and permits.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Food truck owners in {{city}}, {{state}} secure financing for vehicles, kitchen buildouts, and permits.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Grow your food truck business in {{city}}, {{state}} with capital for equipment, staff, and events.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Grow your food truck business in {{city}}, {{state}} with capital for equipment, staff, and events.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Mobile food businesses in {{city}}, {{state}} benefit from working capital to manage seasonality and festivals.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Mobile food businesses in {{city}}, {{state}} benefit from working capital to manage seasonality and festivals.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From new routes to additional trucks, food truck operators in {{city}}, {{state}} access loan options to expand.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From new routes to additional trucks, food truck operators in {{city}}, {{state}} access loan options to expand.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-childcare">
+  <div class="industry-header">
+    <h2>childcare</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Childcare centers in {{city}}, {{state}} secure financing for staffing, safety, and facility improvements.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Childcare centers in {{city}}, {{state}} secure financing for staffing, safety, and facility improvements.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your childcare business in {{city}}, {{state}} with capital for classrooms, playgrounds, and programs.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your childcare business in {{city}}, {{state}} with capital for classrooms, playgrounds, and programs.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Daycares in {{city}}, {{state}} benefit from working capital to manage regulations and enrollment changes.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Daycares in {{city}}, {{state}} benefit from working capital to manage regulations and enrollment changes.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 81.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From licensing to expansion, childcare centers in {{city}}, {{state}} access loan options to better serve families.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From licensing to expansion, childcare centers in {{city}}, {{state}} access loan options to better serve families.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-nonprofit">
+  <div class="industry-header">
+    <h2>nonprofit</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 69.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Nonprofits in {{city}}, {{state}} secure financing to support staffing, outreach, and programs.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Nonprofits in {{city}}, {{state}} secure financing to support staffing, outreach, and programs.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 66.7%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your nonprofit's impact in {{city}}, {{state}} with capital for operations and expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your nonprofit's impact in {{city}}, {{state}} with capital for operations and expansion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Organizations in {{city}}, {{state}} benefit from working capital to manage grants and donor cycles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Organizations in {{city}}, {{state}} benefit from working capital to manage grants and donor cycles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 80.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From community services to advocacy, nonprofits in {{city}}, {{state}} secure financing to stabilize cash flow.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From community services to advocacy, nonprofits in {{city}}, {{state}} secure financing to stabilize cash flow.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-franchise">
+  <div class="industry-header">
+    <h2>franchise</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 69.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Franchise owners in {{city}}, {{state}} secure financing for buildouts, fees, and marketing.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Franchise owners in {{city}}, {{state}} secure financing for buildouts, fees, and marketing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your franchise in {{city}}, {{state}} with capital for equipment, staff, and working capital.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your franchise in {{city}}, {{state}} with capital for equipment, staff, and working capital.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-major">🔴 MAJOR — 64.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Franchisees in {{city}}, {{state}} rely on loans to support expansion and brand standards.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Franchisees in {{city}}, {{state}} rely on loans to support expansion and brand standards.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 71.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From new openings to remodels, franchise businesses in {{city}}, {{state}} secure financing to scale.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From new openings to remodels, franchise businesses in {{city}}, {{state}} secure financing to scale.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-technology">
+  <div class="industry-header">
+    <h2>technology</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 69.2%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Technology companies in {{city}}, {{state}} secure financing for hiring, development, and infrastructure.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Technology companies in {{city}}, {{state}} secure financing for hiring, development, and infrastructure.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your tech business in {{city}}, {{state}} with capital for engineers, sales, and product investment.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your tech business in {{city}}, {{state}} with capital for engineers, sales, and product investment.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 80.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Tech startups in {{city}}, {{state}} benefit from working capital to navigate long development cycles.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Tech startups in {{city}}, {{state}} benefit from working capital to navigate long development cycles.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 76.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From SaaS to IT services, tech companies in {{city}}, {{state}} access loan options to accelerate their roadmap.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From SaaS to IT services, tech companies in {{city}}, {{state}} access loan options to accelerate their roadmap.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-ecommerce">
+  <div class="industry-header">
+    <h2>ecommerce</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-major">🔴 MAJOR — 61.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Ecommerce stores in {{city}}, {{state}} secure financing for inventory, ads, and fulfillment.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Ecommerce stores in {{city}}, {{state}} secure financing for inventory, ads, and fulfillment.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your ecommerce business in {{city}}, {{state}} with capital for product launches, marketing, and logistics.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your ecommerce business in {{city}}, {{state}} with capital for product launches, marketing, and logistics.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 75.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Online sellers in {{city}}, {{state}} benefit from working capital to scale advertising and order volume.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Online sellers in {{city}}, {{state}} benefit from working capital to scale advertising and order volume.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From new SKUs to warehousing, ecommerce brands in {{city}}, {{state}} access loan options to expand.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From new SKUs to warehousing, ecommerce brands in {{city}}, {{state}} access loan options to expand.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-food-services">
+  <div class="industry-header">
+    <h2>food-services</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Food service businesses in {{city}}, {{state}} secure financing for equipment, staff, and delivery operations.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Food service businesses in {{city}}, {{state}} secure financing for equipment, staff, and delivery operations.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 80.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Strengthen your catering or food service company in {{city}}, {{state}} with flexible business capital.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Strengthen your catering or food service company in {{city}}, {{state}} with flexible business capital.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Ghost kitchens and caterers in {{city}}, {{state}} benefit from working capital for supplies and expansion.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Ghost kitchens and caterers in {{city}}, {{state}} benefit from working capital for supplies and expansion.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 82.4%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From events to meal prep, food service businesses in {{city}}, {{state}} access loan options to scale production.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From events to meal prep, food service businesses in {{city}}, {{state}} access loan options to scale production.</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="industry-block" id="industry-general-contractors">
+  <div class="industry-header">
+    <h2>general-contractors</h2>
+    <span>4 intros</span>
+  </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #1</div>
+        <div class="impact-badge impact-major">🔴 MAJOR — 62.5%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>General contractors in {{city}}, {{state}} use flexible financing to manage labor, materials, and job scheduling.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>General contractors in {{city}}, {{state}} use flexible financing to manage labor, materials, and job scheduling.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #2</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 68.8%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Grow your contracting business in {{city}}, {{state}} with capital for tools, equipment, and new bids.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Grow your contracting business in {{city}}, {{state}} with capital for tools, equipment, and new bids.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #3</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 73.3%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>Contractors in {{city}}, {{state}} benefit from working capital to balance multiple projects and timelines.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>Contractors in {{city}}, {{state}} benefit from working capital to balance multiple projects and timelines.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <div class="intro-header">
+        <div class="intro-index">Intro #4</div>
+        <div class="impact-badge impact-medium">🟡 MEDIUM — 80.0%</div>
+      </div>
+      <div class="intro-meta">
+        Unchanged
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Original</h4>
+          <div>From remodels to additions, general contractors in {{city}}, {{state}} access loan options to stay competitive.</div>
+        </div>
+        <div class="col">
+          <h4>Rewritten</h4>
+          <div>From remodels to additions, general contractors in {{city}}, {{state}} access loan options to stay competitive.</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div></body></html>

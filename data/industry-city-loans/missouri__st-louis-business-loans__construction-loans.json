@@ -1,0 +1,24 @@
+{
+  "stateSlug": "missouri",
+  "stateName": "Missouri",
+  "citySlug": "st-louis-business-loans",
+  "cityName": "St. Louis",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "St. Louis Construction Business Loans | Missouri",
+  "description": "Compare construction business loans, working capital and equipment financing available in St. Louis, Missouri.",
+  "h1": "St. Louis Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in St. Louis, Missouri.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "St. Louis Construction Business Loans",
+    "areaServed": "St. Louis, Missouri",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "connecticut",
+  "stateName": "Connecticut",
+  "citySlug": "stamford-business-loans",
+  "cityName": "Stamford",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Stamford Trucking Business Loans | Connecticut",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Stamford, Connecticut.",
+  "h1": "Stamford Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Stamford, Connecticut.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Stamford Trucking Business Loans",
+    "areaServed": "Stamford, Connecticut",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

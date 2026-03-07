@@ -1,0 +1,24 @@
+{
+  "stateSlug": "michigan",
+  "stateName": "Michigan",
+  "citySlug": "lansing-business-loans",
+  "cityName": "Lansing",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Lansing Construction Business Loans | Michigan",
+  "description": "Compare construction business loans, working capital and equipment financing available in Lansing, Michigan.",
+  "h1": "Lansing Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Lansing, Michigan.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Lansing Construction Business Loans",
+    "areaServed": "Lansing, Michigan",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

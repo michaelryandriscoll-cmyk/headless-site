@@ -1,0 +1,371 @@
+﻿/* ==================================================
+   SHARED LOAN PAGE LAYOUT
+   Used by ALL loan-type pages (WC, SBA, Term, etc)
+================================================== */
+
+/* ---------- GLOBAL WRAPPERS ---------- */
+
+.loan-page {
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.loan-what,
+.loan-who,
+.loan-how,
+.loan-form,
+.loan-compare-why,
+.loan-faq,
+.loan-final {
+  margin-bottom: 72px;
+}
+
+
+/* ---------- HERO GRID ---------- */
+
+.loan-hero-grid,
+.wc-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px; 
+  align-items: center;
+}
+
+/* WC / Loan hero background polish */
+.wc-hero,
+.loan-hero {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  padding: 110px 0 100px; 
+}
+
+/* Hero typography boost */
+.wc-hero-copy h1 {
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.wc-hero-sub,
+.loan-hero-sub {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #475569;
+  max-width: 520px;
+}
+
+/* ---------- HERO FEATURES (shared) ---------- */
+
+.hero-features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.hero-features span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+/* ---------- INFO / CARD GRID ---------- */
+
+.loan-info-grid,
+.wc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.loan-card,
+.wc-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.06),
+    0 2px 6px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loan-card:hover,
+.wc-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 40px rgba(15, 23, 42, 0.08),
+    0 4px 10px rgba(15, 23, 42, 0.06);
+}
+
+.loan-card h3,
+.wc-card h3 {
+  margin-bottom: 12px;
+}
+
+.loan-card p,
+.wc-card p {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.loan-card ul,
+.wc-card ul {
+  padding-left: 18px;
+}
+
+/* ---------- STEPS ---------- */
+
+.loan-steps,
+.wc-steps {
+  padding: 72px 0;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.loan-steps h2,
+.wc-steps h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.loan-steps-grid,
+.wc-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.loan-step,
+.wc-step {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.loan-step span,
+.wc-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.35);
+}
+
+.loan-step p,
+.wc-step p {
+  font-size: 14.5px;
+}
+
+/* ---------- FORM ---------- */
+
+.loan-form,
+.wc-form {
+  padding: 96px 0;
+}
+
+.loan-form-inner,
+.wc-form-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(180deg, #f7fbf9 0%, #ffffff 100%);
+  border-radius: 24px;
+  padding: 56px;
+  box-shadow:
+    0 24px 60px rgba(16, 185, 129, 0.15),
+    0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.loan-form-inner h2,
+.wc-form-inner h2 {
+  margin-bottom: 8px;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.loan-form-inner p,
+.wc-form-inner p {
+  margin-bottom: 32px;
+  color: #4a5568;
+}
+
+.form-trust {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 24px;
+  font-weight: 500;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- COMPARISON ---------- */
+
+.loan-compare,
+.wc-compare {
+  padding: 72px 0;
+}
+
+.loan-compare-grid,
+.wc-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.loan-compare-grid > div,
+.wc-compare-grid > div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- FINAL CTA ---------- */
+
+.loan-final,
+.wc-final {
+  padding: 96px 0;
+  text-align: center;
+  background: radial-gradient(
+    circle at top,
+    #0f2a4d 0%,
+    #020617 60%
+  );
+}
+
+.loan-final-card,
+.wc-final-card {
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 56px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  transform: translateY(-20px);
+}
+
+.loan-final-card h2,
+.wc-final-card h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.loan-final-card p,
+.wc-final-card p {
+  color: rgba(255,255,255,0.85);
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .loan-hero-grid,
+  .wc-hero-grid,
+  .loan-info-grid,
+  .wc-grid,
+  .loan-compare-grid,
+  .wc-compare-grid,
+  .loan-steps-grid,
+  .wc-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    margin-bottom: 56px;
+  }
+
+  .wc-hero-copy h1,
+  .loan-hero-copy h1 {
+    font-size: 36px;
+  }
+}
+
+/* =========================
+   HERO IMAGE NORMALIZATION
+========================= */
+
+.loan-hero-visual {
+  width: 100%;
+  max-width: 600px; 
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: #f8fafc;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .loan-hero-visual {
+    height: 420px;
+  }
+}
+
+/* Large Tablet */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .loan-hero-visual {
+    height: 360px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .loan-hero-visual {
+    height: 280px;
+    max-width: 100%;
+  }
+}
+
+.loan-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.loan-hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 80% 20%,
+    rgba(46, 204, 113, 0.06),
+    transparent 62%
+  );
+  pointer-events: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "connecticut",
+  "stateName": "Connecticut",
+  "citySlug": "stamford-business-loans",
+  "cityName": "Stamford",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Stamford Construction Business Loans | Connecticut",
+  "description": "Compare construction business loans, working capital and equipment financing available in Stamford, Connecticut.",
+  "h1": "Stamford Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Stamford, Connecticut.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Stamford Construction Business Loans",
+    "areaServed": "Stamford, Connecticut",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

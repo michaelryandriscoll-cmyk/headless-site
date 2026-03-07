@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "fort-lauderdale-business-loans",
+  "cityName": "Fort Lauderdale",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Fort Lauderdale Retail Business Loans | Florida",
+  "description": "Compare retail business loans, working capital and equipment financing available in Fort Lauderdale, Florida.",
+  "h1": "Fort Lauderdale Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Fort Lauderdale, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fort Lauderdale Retail Business Loans",
+    "areaServed": "Fort Lauderdale, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

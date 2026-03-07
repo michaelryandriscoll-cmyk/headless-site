@@ -1,0 +1,41 @@
+{
+  "state": "Virginia",
+  "city": "Virginia Beach",
+  "industry": "hvac",
+  "title": "Virginia Beach HVAC Business Loans",
+  "intro": "Keep your HVAC operations running smoothly in Virginia Beach, Virginia with loans designed for repairs, upgrades, and expansion.",
+  "bestFor": [
+    {
+      "slug": "equipment_costs",
+      "label": "HVAC equipment & tool purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vehicle upgrades"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring technicians during peak season"
+    },
+    {
+      "slug": "local_ads",
+      "label": "Local marketing & service-area expansion",
+      "weight": 2
+    },
+    {
+      "slug": "inventory_storage",
+      "label": "Warehouse & inventory storage",
+      "weight": 1
+    },
+    {
+      "slug": "seasonal_demand",
+      "label": "Managing seasonal cash-flow swings",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–24 Months"
+  }
+}

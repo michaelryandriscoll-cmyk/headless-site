@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "st-petersburg-business-loans",
+  "cityName": "St. Petersburg",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "St. Petersburg Trucking Business Loans | Florida",
+  "description": "Compare trucking business loans, working capital and equipment financing available in St. Petersburg, Florida.",
+  "h1": "St. Petersburg Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in St. Petersburg, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "St. Petersburg Trucking Business Loans",
+    "areaServed": "St. Petersburg, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

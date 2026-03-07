@@ -1,0 +1,41 @@
+{
+  "state": "Wisconsin",
+  "city": "Madison",
+  "industry": "food-truck",
+  "title": "Madison Food Truck Business Loans",
+  "intro": "Grow your food truck business in Madison, Wisconsin with capital for equipment, staff, and events.",
+  "bestFor": [
+    {
+      "slug": "truck",
+      "label": "Food truck purchases & buildouts"
+    },
+    {
+      "slug": "equipment",
+      "label": "Kitchen equipment & generators"
+    },
+    {
+      "slug": "permits",
+      "label": "Permits, licensing & fees"
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, wraps & signage",
+      "weight": 1
+    },
+    {
+      "slug": "staff",
+      "label": "Hiring cooks & servers",
+      "weight": 1
+    },
+    {
+      "slug": "second_truck",
+      "label": "Launching a second truck",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

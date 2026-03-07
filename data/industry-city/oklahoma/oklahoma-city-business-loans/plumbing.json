@@ -1,0 +1,41 @@
+{
+  "state": "Oklahoma",
+  "city": "Oklahoma City",
+  "industry": "plumbing",
+  "title": "Oklahoma City Plumbing Business Loans",
+  "intro": "Plumbing companies in Oklahoma City, Oklahoma rely on flexible financing for tools, trucks, and emergency repair demand.",
+  "bestFor": [
+    {
+      "slug": "tools_equipment",
+      "label": "Tools & equipment purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vans & trucks"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring additional plumbers"
+    },
+    {
+      "slug": "local_marketing",
+      "label": "Local marketing & lead generation",
+      "weight": 2
+    },
+    {
+      "slug": "water_heaters",
+      "label": "Water heater installation growth",
+      "weight": 1
+    },
+    {
+      "slug": "emergency_calls",
+      "label": "Emergency service call handling",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

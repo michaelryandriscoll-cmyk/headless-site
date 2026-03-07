@@ -1,0 +1,41 @@
+{
+  "state": "Texas",
+  "city": "Arlington",
+  "industry": "trucking",
+  "title": "Arlington Trucking Business Loans",
+  "intro": "Local trucking companies in Arlington, Texas rely on flexible business funding for fuel costs, repairs, and fleet expansion.",
+  "bestFor": [
+    {
+      "slug": "fuel_costs",
+      "label": "Fuel & operating expenses"
+    },
+    {
+      "slug": "fleet_repairs",
+      "label": "Fleet repairs & maintenance"
+    },
+    {
+      "slug": "cashflow_gaps",
+      "label": "Covering cash-flow gaps"
+    },
+    {
+      "slug": "freight_slowdowns",
+      "label": "Handling seasonal freight slowdowns",
+      "weight": 1
+    },
+    {
+      "slug": "dot_compliance",
+      "label": "DOT compliance upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "hire_drivers",
+      "label": "Hiring CDL drivers",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "12–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

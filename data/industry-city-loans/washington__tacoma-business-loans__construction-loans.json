@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "tacoma-business-loans",
+  "cityName": "Tacoma",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Tacoma Construction Business Loans | Washington",
+  "description": "Compare construction business loans, working capital and equipment financing available in Tacoma, Washington.",
+  "h1": "Tacoma Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Tacoma, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tacoma Construction Business Loans",
+    "areaServed": "Tacoma, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

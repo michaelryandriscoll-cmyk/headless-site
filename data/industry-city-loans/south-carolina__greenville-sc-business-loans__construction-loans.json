@@ -1,0 +1,24 @@
+{
+  "stateSlug": "south-carolina",
+  "stateName": "South Carolina",
+  "citySlug": "greenville-sc-business-loans",
+  "cityName": "Greenville",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Greenville Construction Business Loans | South Carolina",
+  "description": "Compare construction business loans, working capital and equipment financing available in Greenville, South Carolina.",
+  "h1": "Greenville Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Greenville, South Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Greenville Construction Business Loans",
+    "areaServed": "Greenville, South Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

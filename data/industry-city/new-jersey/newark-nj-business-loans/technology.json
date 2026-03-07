@@ -1,0 +1,41 @@
+{
+  "state": "New Jersey",
+  "city": "Newark",
+  "industry": "technology",
+  "title": "Newark Technology Business Loans",
+  "intro": "Tech startups in Newark, New Jersey rely on working capital to navigate long development cycles.",
+  "bestFor": [
+    {
+      "slug": "hiring",
+      "label": "Hiring engineers & product teams"
+    },
+    {
+      "slug": "development",
+      "label": "Product development & software build"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Cloud & infrastructure costs"
+    },
+    {
+      "slug": "expansion",
+      "label": "Scaling into new markets",
+      "weight": 2
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing & go-to-market programs",
+      "weight": 1
+    },
+    {
+      "slug": "security",
+      "label": "Security, compliance & audits",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "640+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

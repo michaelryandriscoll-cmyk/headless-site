@@ -1,0 +1,24 @@
+{
+  "stateSlug": "minnesota",
+  "stateName": "Minnesota",
+  "citySlug": "rochester-mn-business-loans",
+  "cityName": "Rochester",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Rochester Retail Business Loans | Minnesota",
+  "description": "Compare retail business loans, working capital and equipment financing available in Rochester, Minnesota.",
+  "h1": "Rochester Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Rochester, Minnesota.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Rochester Retail Business Loans",
+    "areaServed": "Rochester, Minnesota",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

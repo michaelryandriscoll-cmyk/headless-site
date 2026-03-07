@@ -1,0 +1,41 @@
+{
+  "state": "New York",
+  "city": "Rochester",
+  "industry": "plumbing",
+  "title": "Rochester Plumbing Business Loans",
+  "intro": "Grow your plumbing business in Rochester, New York with capital for equipment, technicians, and marketing.",
+  "bestFor": [
+    {
+      "slug": "tools_equipment",
+      "label": "Tools & equipment purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vans & trucks"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring additional plumbers"
+    },
+    {
+      "slug": "local_marketing",
+      "label": "Local marketing & lead generation",
+      "weight": 2
+    },
+    {
+      "slug": "water_heaters",
+      "label": "Water heater installation growth",
+      "weight": 1
+    },
+    {
+      "slug": "emergency_calls",
+      "label": "Emergency service call handling",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

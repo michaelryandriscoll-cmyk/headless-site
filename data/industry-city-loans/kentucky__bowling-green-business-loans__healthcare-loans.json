@@ -1,0 +1,24 @@
+{
+  "stateSlug": "kentucky",
+  "stateName": "Kentucky",
+  "citySlug": "bowling-green-business-loans",
+  "cityName": "Bowling Green",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Bowling Green Healthcare Business Loans | Kentucky",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Bowling Green, Kentucky.",
+  "h1": "Bowling Green Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Bowling Green, Kentucky.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Bowling Green Healthcare Business Loans",
+    "areaServed": "Bowling Green, Kentucky",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

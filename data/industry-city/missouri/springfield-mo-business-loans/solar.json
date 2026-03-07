@@ -1,0 +1,41 @@
+{
+  "state": "Missouri",
+  "city": "Springfield",
+  "industry": "solar",
+  "title": "Springfield Solar Installation Business Loans",
+  "intro": "Secure capital for solar equipment, payroll, or new projects in Springfield, Missouri with tailored financing for installers.",
+  "bestFor": [
+    {
+      "slug": "equipment_costs",
+      "label": "Solar equipment & panel purchases"
+    },
+    {
+      "slug": "project_cashflow",
+      "label": "Project cash-flow smoothing"
+    },
+    {
+      "slug": "installation_crews",
+      "label": "Hiring & managing installation crews"
+    },
+    {
+      "slug": "permitting_delays",
+      "label": "Managing permitting delays",
+      "weight": 1
+    },
+    {
+      "slug": "battery_storage",
+      "label": "Adding battery storage systems",
+      "weight": 3
+    },
+    {
+      "slug": "marketing_growth",
+      "label": "Local marketing & lead generation",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

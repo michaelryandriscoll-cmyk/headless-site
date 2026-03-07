@@ -1,0 +1,46 @@
+.elite-nav-item {
+  position: relative;
+}
+
+.elite-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+
+  background: #0b1220;
+  border-radius: 14px;
+  padding: 16px;
+
+  min-width: 280px;
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+
+  box-shadow: var(--shadow-strong);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+
+  z-index: 10000;
+}
+
+.elite-has-dropdown:hover .elite-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.elite-dropdown a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+}
+
+.elite-dropdown a:hover {
+  background: var(--sbc-accent);
+  color: #fff;
+}

@@ -1,0 +1,41 @@
+{
+  "state": "Utah",
+  "city": "Salt Lake City",
+  "industry": "electrician",
+  "title": "Salt Lake City Electrician Business Loans",
+  "intro": "Secure funding for panel upgrades, rewiring, and expanding service areas in Salt Lake City, Utah.",
+  "bestFor": [
+    {
+      "slug": "tools_meters",
+      "label": "Electrical tools & meter upgrades"
+    },
+    {
+      "slug": "service_vans",
+      "label": "Service vans & fleet upgrades"
+    },
+    {
+      "slug": "hire_apprentices",
+      "label": "Hiring apprentices & technicians"
+    },
+    {
+      "slug": "emergency_repairs",
+      "label": "Emergency electrical repairs",
+      "weight": 1
+    },
+    {
+      "slug": "panel_upgrades",
+      "label": "Electrical panel upgrades",
+      "weight": 2
+    },
+    {
+      "slug": "ev_charger_installs",
+      "label": "EV charger installation services",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

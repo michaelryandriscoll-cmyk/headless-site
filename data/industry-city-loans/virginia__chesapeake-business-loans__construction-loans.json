@@ -1,0 +1,24 @@
+{
+  "stateSlug": "virginia",
+  "stateName": "Virginia",
+  "citySlug": "chesapeake-business-loans",
+  "cityName": "Chesapeake",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Chesapeake Construction Business Loans | Virginia",
+  "description": "Compare construction business loans, working capital and equipment financing available in Chesapeake, Virginia.",
+  "h1": "Chesapeake Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Chesapeake, Virginia.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Chesapeake Construction Business Loans",
+    "areaServed": "Chesapeake, Virginia",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

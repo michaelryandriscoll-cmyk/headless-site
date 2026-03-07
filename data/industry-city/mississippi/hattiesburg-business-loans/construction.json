@@ -1,0 +1,41 @@
+{
+  "state": "Mississippi",
+  "city": "Hattiesburg",
+  "industry": "construction",
+  "title": "Hattiesburg Construction Business Loans",
+  "intro": "Secure funding for equipment, subcontractors, and expanding contracts in Hattiesburg, Mississippi.",
+  "bestFor": [
+    {
+      "slug": "project_cashflow",
+      "label": "Project cash-flow management"
+    },
+    {
+      "slug": "equipment_purchases",
+      "label": "Equipment purchases & rentals"
+    },
+    {
+      "slug": "labor_costs",
+      "label": "Skilled labor & subcontractor costs"
+    },
+    {
+      "slug": "permit_delays",
+      "label": "Managing permit or inspection delays",
+      "weight": 2
+    },
+    {
+      "slug": "commercial_bids",
+      "label": "Bidding on commercial contracts",
+      "weight": 3
+    },
+    {
+      "slug": "safety_upgrades",
+      "label": "Safety gear & compliance upgrades",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

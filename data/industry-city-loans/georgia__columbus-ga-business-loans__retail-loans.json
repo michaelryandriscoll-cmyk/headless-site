@@ -1,0 +1,24 @@
+{
+  "stateSlug": "georgia",
+  "stateName": "Georgia",
+  "citySlug": "columbus-ga-business-loans",
+  "cityName": "Columbus",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Columbus Retail Business Loans | Georgia",
+  "description": "Compare retail business loans, working capital and equipment financing available in Columbus, Georgia.",
+  "h1": "Columbus Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Columbus, Georgia.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Columbus Retail Business Loans",
+    "areaServed": "Columbus, Georgia",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

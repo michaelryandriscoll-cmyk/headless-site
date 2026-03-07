@@ -1,0 +1,24 @@
+{
+  "stateSlug": "michigan",
+  "stateName": "Michigan",
+  "citySlug": "ann-arbor-business-loans",
+  "cityName": "Ann Arbor",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Ann Arbor Restaurant Business Loans | Michigan",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Ann Arbor, Michigan.",
+  "h1": "Ann Arbor Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Ann Arbor, Michigan.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Ann Arbor Restaurant Business Loans",
+    "areaServed": "Ann Arbor, Michigan",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

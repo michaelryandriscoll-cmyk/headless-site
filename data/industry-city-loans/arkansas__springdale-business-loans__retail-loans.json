@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arkansas",
+  "stateName": "Arkansas",
+  "citySlug": "springdale-business-loans",
+  "cityName": "Springdale",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Springdale Retail Business Loans | Arkansas",
+  "description": "Compare retail business loans, working capital and equipment financing available in Springdale, Arkansas.",
+  "h1": "Springdale Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Springdale, Arkansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Springdale Retail Business Loans",
+    "areaServed": "Springdale, Arkansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

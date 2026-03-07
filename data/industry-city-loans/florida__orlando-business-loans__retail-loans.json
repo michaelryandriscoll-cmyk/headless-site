@@ -1,0 +1,24 @@
+{
+  "stateSlug": "florida",
+  "stateName": "Florida",
+  "citySlug": "orlando-business-loans",
+  "cityName": "Orlando",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Orlando Retail Business Loans | Florida",
+  "description": "Compare retail business loans, working capital and equipment financing available in Orlando, Florida.",
+  "h1": "Orlando Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Orlando, Florida.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Orlando Retail Business Loans",
+    "areaServed": "Orlando, Florida",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "kansas",
+  "stateName": "Kansas",
+  "citySlug": "wichita-business-loans",
+  "cityName": "Wichita",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Wichita Restaurant Business Loans | Kansas",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Wichita, Kansas.",
+  "h1": "Wichita Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Wichita, Kansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Wichita Restaurant Business Loans",
+    "areaServed": "Wichita, Kansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

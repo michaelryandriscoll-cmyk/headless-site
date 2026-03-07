@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alaska",
+  "stateName": "Alaska",
+  "citySlug": "anchorage-business-loans",
+  "cityName": "Anchorage",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Anchorage Restaurant Business Loans | Alaska",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Anchorage, Alaska.",
+  "h1": "Anchorage Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Anchorage, Alaska.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Anchorage Restaurant Business Loans",
+    "areaServed": "Anchorage, Alaska",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

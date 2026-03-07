@@ -1,0 +1,41 @@
+{
+  "state": "Connecticut",
+  "city": "Stamford",
+  "industry": "fitness",
+  "title": "Stamford Fitness Business Loans",
+  "intro": "Local fitness centers in Stamford, Connecticut rely on working capital to manage seasonality and new programs.",
+  "bestFor": [
+    {
+      "slug": "equipment",
+      "label": "Fitness equipment & flooring"
+    },
+    {
+      "slug": "buildouts",
+      "label": "Studio buildouts & renovations"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring trainers & support staff"
+    },
+    {
+      "slug": "membership_growth",
+      "label": "Membership & marketing programs",
+      "weight": 2
+    },
+    {
+      "slug": "new_classes",
+      "label": "New class offerings",
+      "weight": 1
+    },
+    {
+      "slug": "wellness_expansion",
+      "label": "Adding wellness or nutrition services",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "2–7 Days",
+    "terms": "12–48 Months"
+  }
+}

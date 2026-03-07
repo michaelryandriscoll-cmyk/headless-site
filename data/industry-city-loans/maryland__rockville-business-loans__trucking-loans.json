@@ -1,0 +1,24 @@
+{
+  "stateSlug": "maryland",
+  "stateName": "Maryland",
+  "citySlug": "rockville-business-loans",
+  "cityName": "Rockville",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Rockville Trucking Business Loans | Maryland",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Rockville, Maryland.",
+  "h1": "Rockville Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Rockville, Maryland.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Rockville Trucking Business Loans",
+    "areaServed": "Rockville, Maryland",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

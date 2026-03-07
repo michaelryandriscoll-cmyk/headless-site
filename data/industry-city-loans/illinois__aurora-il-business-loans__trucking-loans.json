@@ -1,0 +1,24 @@
+{
+  "stateSlug": "illinois",
+  "stateName": "Illinois",
+  "citySlug": "aurora-il-business-loans",
+  "cityName": "Aurora",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Aurora Trucking Business Loans | Illinois",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Aurora, Illinois.",
+  "h1": "Aurora Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Aurora, Illinois.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Aurora Trucking Business Loans",
+    "areaServed": "Aurora, Illinois",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

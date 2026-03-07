@@ -1,0 +1,24 @@
+{
+  "stateSlug": "california",
+  "stateName": "California",
+  "citySlug": "san-jose-business-loans",
+  "cityName": "San Jose",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "San Jose Trucking Business Loans | California",
+  "description": "Compare trucking business loans, working capital and equipment financing available in San Jose, California.",
+  "h1": "San Jose Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in San Jose, California.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "San Jose Trucking Business Loans",
+    "areaServed": "San Jose, California",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

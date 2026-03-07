@@ -1,0 +1,24 @@
+{
+  "stateSlug": "kentucky",
+  "stateName": "Kentucky",
+  "citySlug": "lexington-business-loans",
+  "cityName": "Lexington",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Lexington Retail Business Loans | Kentucky",
+  "description": "Compare retail business loans, working capital and equipment financing available in Lexington, Kentucky.",
+  "h1": "Lexington Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Lexington, Kentucky.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Lexington Retail Business Loans",
+    "areaServed": "Lexington, Kentucky",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

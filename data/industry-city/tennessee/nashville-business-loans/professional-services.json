@@ -1,0 +1,41 @@
+{
+  "state": "Tennessee",
+  "city": "Nashville",
+  "industry": "professional-services",
+  "title": "Nashville Professional Services Loans",
+  "intro": "From retainers to expansion, professional service firms in Nashville, Tennessee use loans to scale sustainably.",
+  "bestFor": [
+    {
+      "slug": "staffing",
+      "label": "Hiring staff & assistants"
+    },
+    {
+      "slug": "software",
+      "label": "Software & productivity tools"
+    },
+    {
+      "slug": "cashflow",
+      "label": "Managing cash-flow between clients"
+    },
+    {
+      "slug": "marketing",
+      "label": "Marketing & business development",
+      "weight": 2
+    },
+    {
+      "slug": "office_upgrades",
+      "label": "Office upgrades & furniture",
+      "weight": 1
+    },
+    {
+      "slug": "training",
+      "label": "Education & certification",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–5 Days",
+    "terms": "12–36 Months"
+  }
+}

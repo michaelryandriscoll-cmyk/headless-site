@@ -1,0 +1,24 @@
+{
+  "stateSlug": "kansas",
+  "stateName": "Kansas",
+  "citySlug": "overland-park-business-loans",
+  "cityName": "Overland Park",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Overland Park Retail Business Loans | Kansas",
+  "description": "Compare retail business loans, working capital and equipment financing available in Overland Park, Kansas.",
+  "h1": "Overland Park Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Overland Park, Kansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Overland Park Retail Business Loans",
+    "areaServed": "Overland Park, Kansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

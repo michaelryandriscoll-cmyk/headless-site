@@ -1,0 +1,24 @@
+{
+  "stateSlug": "texas",
+  "stateName": "Texas",
+  "citySlug": "dallas-business-loans",
+  "cityName": "Dallas",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Dallas Construction Business Loans | Texas",
+  "description": "Compare construction business loans, working capital and equipment financing available in Dallas, Texas.",
+  "h1": "Dallas Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Dallas, Texas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Dallas Construction Business Loans",
+    "areaServed": "Dallas, Texas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

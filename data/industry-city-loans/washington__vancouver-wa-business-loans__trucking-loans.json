@@ -1,0 +1,24 @@
+{
+  "stateSlug": "washington",
+  "stateName": "Washington",
+  "citySlug": "vancouver-wa-business-loans",
+  "cityName": "Vancouver",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Vancouver Trucking Business Loans | Washington",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Vancouver, Washington.",
+  "h1": "Vancouver Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Vancouver, Washington.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Vancouver Trucking Business Loans",
+    "areaServed": "Vancouver, Washington",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

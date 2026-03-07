@@ -1,0 +1,24 @@
+{
+  "stateSlug": "tennessee",
+  "stateName": "Tennessee",
+  "citySlug": "knoxville-business-loans",
+  "cityName": "Knoxville",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Knoxville Trucking Business Loans | Tennessee",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Knoxville, Tennessee.",
+  "h1": "Knoxville Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Knoxville, Tennessee.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Knoxville Trucking Business Loans",
+    "areaServed": "Knoxville, Tennessee",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

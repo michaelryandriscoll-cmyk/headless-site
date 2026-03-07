@@ -1,0 +1,41 @@
+{
+  "state": "New Jersey",
+  "city": "Newark",
+  "industry": "plumbing",
+  "title": "Newark Plumbing Business Loans",
+  "intro": "Local homeowners in Newark, New Jersey need fast plumbing services — compare financing options to expand your team.",
+  "bestFor": [
+    {
+      "slug": "tools_equipment",
+      "label": "Tools & equipment purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vans & trucks"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring additional plumbers"
+    },
+    {
+      "slug": "emergency_calls",
+      "label": "Emergency service call handling",
+      "weight": 3
+    },
+    {
+      "slug": "pipe_relining",
+      "label": "Pipe relining & trenchless repairs",
+      "weight": 1
+    },
+    {
+      "slug": "commercial_contracts",
+      "label": "Commercial plumbing expansion",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

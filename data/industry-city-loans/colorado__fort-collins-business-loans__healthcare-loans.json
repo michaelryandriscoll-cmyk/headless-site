@@ -1,0 +1,24 @@
+{
+  "stateSlug": "colorado",
+  "stateName": "Colorado",
+  "citySlug": "fort-collins-business-loans",
+  "cityName": "Fort Collins",
+  "industrySlug": "healthcare-loans",
+  "industryLabel": "Healthcare & Professional Services",
+  "title": "Fort Collins Healthcare Business Loans | Colorado",
+  "description": "Compare healthcare business loans, working capital and equipment financing available in Fort Collins, Colorado.",
+  "h1": "Fort Collins Healthcare Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for healthcare businesses in Fort Collins, Colorado.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fort Collins Healthcare Business Loans",
+    "areaServed": "Fort Collins, Colorado",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Healthcare & Professional Services"
+  }
+}

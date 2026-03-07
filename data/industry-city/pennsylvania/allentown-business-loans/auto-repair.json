@@ -1,0 +1,41 @@
+{
+  "state": "Pennsylvania",
+  "city": "Allentown",
+  "industry": "auto-repair",
+  "title": "Allentown Auto Repair Business Loans",
+  "intro": "Auto repair shops in Allentown, Pennsylvania depend on financing for diagnostic tools, lifts, and parts inventory.",
+  "bestFor": [
+    {
+      "slug": "diagnostic_tools",
+      "label": "Diagnostic tools & scanners"
+    },
+    {
+      "slug": "shop_equipment",
+      "label": "Lifts, jacks & major equipment"
+    },
+    {
+      "slug": "parts_inventory",
+      "label": "Parts inventory & bulk ordering"
+    },
+    {
+      "slug": "marketing_growth",
+      "label": "Local marketing & acquisition",
+      "weight": 2
+    },
+    {
+      "slug": "mobile_repair",
+      "label": "Launching mobile repair services",
+      "weight": 1
+    },
+    {
+      "slug": "shop_expansion",
+      "label": "Expanding repair bays or locations",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

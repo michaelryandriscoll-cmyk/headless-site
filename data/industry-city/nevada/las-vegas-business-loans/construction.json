@@ -1,0 +1,41 @@
+{
+  "state": "Nevada",
+  "city": "Las Vegas",
+  "industry": "construction",
+  "title": "Las Vegas Construction Business Loans",
+  "intro": "Keep projects on track in Las Vegas, Nevada with construction loans built for materials, crews, and delays.",
+  "bestFor": [
+    {
+      "slug": "project_cashflow",
+      "label": "Project cash-flow management"
+    },
+    {
+      "slug": "equipment_purchases",
+      "label": "Equipment purchases & rentals"
+    },
+    {
+      "slug": "labor_costs",
+      "label": "Skilled labor & subcontractor costs"
+    },
+    {
+      "slug": "permit_delays",
+      "label": "Managing permit or inspection delays",
+      "weight": 2
+    },
+    {
+      "slug": "commercial_bids",
+      "label": "Bidding on commercial contracts",
+      "weight": 3
+    },
+    {
+      "slug": "safety_upgrades",
+      "label": "Safety gear & compliance upgrades",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "600+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

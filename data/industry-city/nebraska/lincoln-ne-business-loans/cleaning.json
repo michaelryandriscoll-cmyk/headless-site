@@ -1,0 +1,41 @@
+{
+  "state": "Nebraska",
+  "city": "Lincoln",
+  "industry": "cleaning",
+  "title": "Lincoln Cleaning Business Loans",
+  "intro": "From move-outs to recurring accounts, cleaning businesses in Lincoln, Nebraska use loans to scale.",
+  "bestFor": [
+    {
+      "slug": "supplies",
+      "label": "Cleaning supplies & chemicals"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring cleaning crews"
+    },
+    {
+      "slug": "vehicles",
+      "label": "Service vehicles"
+    },
+    {
+      "slug": "specialty_cleaning",
+      "label": "Medical, post-construction, or deep cleaning",
+      "weight": 2
+    },
+    {
+      "slug": "marketing",
+      "label": "Local advertising & SEO",
+      "weight": 1
+    },
+    {
+      "slug": "carpet_floor",
+      "label": "Carpet & floor care expansion",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "24–48 Hours",
+    "terms": "6–12 Months"
+  }
+}

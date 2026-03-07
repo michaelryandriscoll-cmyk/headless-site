@@ -1,0 +1,41 @@
+{
+  "state": "Oklahoma",
+  "city": "Oklahoma City",
+  "industry": "medical",
+  "title": "Oklahoma City Medical Practice Business Loans",
+  "intro": "Medical practices in Oklahoma City, Oklahoma use financing for equipment, staffing, and patient services.",
+  "bestFor": [
+    {
+      "slug": "medical_equipment",
+      "label": "Medical equipment & diagnostic tools"
+    },
+    {
+      "slug": "staffing",
+      "label": "Hiring physicians & medical staff"
+    },
+    {
+      "slug": "insurance_gaps",
+      "label": "Insurance reimbursement float"
+    },
+    {
+      "slug": "buildouts",
+      "label": "Buildouts & exam room expansion",
+      "weight": 2
+    },
+    {
+      "slug": "telehealth",
+      "label": "Telehealth technology investment",
+      "weight": 1
+    },
+    {
+      "slug": "marketing",
+      "label": "Local patient acquisition & marketing",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "2–7 Days",
+    "terms": "12–60 Months"
+  }
+}

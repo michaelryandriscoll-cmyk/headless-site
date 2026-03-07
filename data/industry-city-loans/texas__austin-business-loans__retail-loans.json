@@ -1,0 +1,24 @@
+{
+  "stateSlug": "texas",
+  "stateName": "Texas",
+  "citySlug": "austin-business-loans",
+  "cityName": "Austin",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Austin Retail Business Loans | Texas",
+  "description": "Compare retail business loans, working capital and equipment financing available in Austin, Texas.",
+  "h1": "Austin Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Austin, Texas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Austin Retail Business Loans",
+    "areaServed": "Austin, Texas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

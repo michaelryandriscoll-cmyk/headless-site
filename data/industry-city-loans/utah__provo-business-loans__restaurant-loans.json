@@ -1,0 +1,24 @@
+{
+  "stateSlug": "utah",
+  "stateName": "Utah",
+  "citySlug": "provo-business-loans",
+  "cityName": "Provo",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Provo Restaurant Business Loans | Utah",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Provo, Utah.",
+  "h1": "Provo Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Provo, Utah.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Provo Restaurant Business Loans",
+    "areaServed": "Provo, Utah",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

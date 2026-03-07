@@ -1,0 +1,24 @@
+{
+  "stateSlug": "kansas",
+  "stateName": "Kansas",
+  "citySlug": "topeka-business-loans",
+  "cityName": "Topeka",
+  "industrySlug": "restaurant-loans",
+  "industryLabel": "Restaurant & Food Service",
+  "title": "Topeka Restaurant Business Loans | Kansas",
+  "description": "Compare restaurant business loans, working capital and equipment financing available in Topeka, Kansas.",
+  "h1": "Topeka Restaurant Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for restaurant businesses in Topeka, Kansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Topeka Restaurant Business Loans",
+    "areaServed": "Topeka, Kansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Restaurant & Food Service"
+  }
+}

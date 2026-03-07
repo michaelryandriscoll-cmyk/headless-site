@@ -1,0 +1,24 @@
+{
+  "stateSlug": "new-york",
+  "stateName": "New York",
+  "citySlug": "buffalo-business-loans",
+  "cityName": "Buffalo",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Buffalo Trucking Business Loans | New York",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Buffalo, New York.",
+  "h1": "Buffalo Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Buffalo, New York.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Buffalo Trucking Business Loans",
+    "areaServed": "Buffalo, New York",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

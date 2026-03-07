@@ -408,7 +408,7 @@ export default [
     },
     "industry": "HVAC",
     "audience": "HVAC Contractors",
-    "label": "Hvac"
+    "label": "HVAC" 
   },
   {
     "slug": "plumbing",
@@ -1351,6 +1351,34 @@ export default [
     "industry": "Ecommerce",
     "audience": "Ecommerce Stores",
     "label": "Ecommerce"
+  },
+  {
+  slug: "salon-spa",
+  title: "Salon & Spa Business Loans",
+  introTemplates: [
+    "Salon and spa businesses in {{city}}, {{state}} use flexible financing for equipment, buildouts, and marketing.",
+    "Grow your salon or spa in {{city}}, {{state}} with funding for chairs, staff, and expansion.",
+    "Beauty businesses in {{city}}, {{state}} benefit from working capital to manage payroll and seasonal demand.",
+    "From remodels to product inventory, salons and spas in {{city}}, {{state}} access financing to scale."
+  ],
+  bestForCore: [
+    { slug: "equipment", label: "Salon chairs & equipment" },
+    { slug: "inventory", label: "Beauty product inventory" },
+    { slug: "payroll", label: "Staff payroll & hiring" }
+  ],
+  bestForExtras: [
+    { slug: "remodel", label: "Remodels & buildouts", weight: 2 },
+    { slug: "marketing", label: "Local marketing & ads", weight: 1 },
+    { slug: "expansion", label: "Opening additional locations", weight: 2 }
+  ],
+  stats: {
+    credit: "580+",
+    speed: "24–48 Hours",
+    terms: "6–24 Months"
+  },
+  industry: "Salon & Spa",
+  audience: "Salon & Spa Owners",
+  label: "Salon & Spa"
   },
   {
     "slug": "food-services",

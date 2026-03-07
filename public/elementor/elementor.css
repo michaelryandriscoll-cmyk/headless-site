@@ -1,0 +1,235 @@
+/* ============================================================
+   ELEMENTOR CORE FRONTEND CSS (Next.js Optimized Edition)
+   Cleaned & Slimmed from frontend.min.css
+   ============================================================ */
+
+/* --- 1. Base Reset --- */
+
+.elementor,
+.elementor * {
+  box-sizing: border-box;
+}
+
+.elementor img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: middle;
+}
+
+/* --- 2. Sections --- */
+
+.elementor-section {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.elementor-section.elementor-section-stretched {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* --- 3. Containers (rows) --- */
+
+.elementor-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* --- 4. Columns --- */
+
+.elementor-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.elementor-column .elementor-widget-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 768px) {
+  .elementor-col-50 {
+    width: 50%;
+  }
+  .elementor-col-33 {
+    width: 33.333%;
+  }
+  .elementor-col-25 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .elementor-col-20 {
+    width: 20%;
+  }
+}
+
+/* --- 5. Widgets --- */
+
+.elementor-widget {
+  position: relative;
+  display: block;
+}
+
+.elementor-widget-heading .elementor-heading-title {
+  margin: 0 0 0.6em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.elementor-widget-text-editor p {
+  margin-bottom: 1em;
+}
+
+.elementor-widget-divider {
+  width: 100%;
+}
+
+.elementor-divider {
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+/* --- 6. Spacers --- */
+
+.elementor-widget-spacer .elementor-spacer {
+  width: 100%;
+}
+
+.elementor-spacer-inner {
+  height: 20px;
+}
+
+/* --- 7. Image Widget --- */
+
+.elementor-widget-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* --- 8. Buttons --- */
+
+.elementor-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.elementor-button:hover {
+  filter: brightness(0.95);
+}
+
+/* --- 9. Alignments --- */
+
+.elementor-align-left {
+  text-align: left;
+}
+.elementor-align-center {
+  text-align: center;
+}
+.elementor-align-right {
+  text-align: right;
+}
+
+/* --- 10. Responsive Utils --- */
+
+.elementor-hidden-desktop {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .elementor-hidden-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-hidden-phone {
+    display: none !important;
+  }
+}
+
+/* --- 11. Inner Sections --- */
+
+.elementor-inner-section .elementor-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* --- 12. Backgrounds & Overlays --- */
+
+.elementor-section {
+  background-position: center center;
+  background-size: cover;
+}
+
+.elementor-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  mix-blend-mode: normal;
+}
+
+/* --- 13. Typography Safe Defaults --- */
+
+.elementor-widget-heading h1,
+.elementor-widget-heading h2,
+.elementor-widget-heading h3 {
+  color: #0b1f41;
+  font-weight: 700;
+}
+
+.elementor-widget-text-editor {
+  color: #111827;
+}
+
+/* --- 14. Lists --- */
+
+.elementor-widget-text-editor ul {
+  margin: 0 0 1em 1.25em;
+  padding: 0;
+}
+
+.elementor-widget-text-editor ol {
+  margin: 0 0 1em 1.25em;
+  padding: 0;
+}
+
+/* --- 15. Column Gap Support --- */
+
+.elementor-column-gap-default > .elementor-container > .elementor-column {
+  padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .elementor-column {
+    width: 100% !important;
+  }
+}
+
+/* ===== END OF OPTIMIZED ELEMENTOR CORE ===== */

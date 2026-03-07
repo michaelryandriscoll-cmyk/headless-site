@@ -1,0 +1,24 @@
+{
+  "stateSlug": "alabama",
+  "stateName": "Alabama",
+  "citySlug": "mobile-business-loans",
+  "cityName": "Mobile",
+  "industrySlug": "trucking-loans",
+  "industryLabel": "Trucking & Logistics",
+  "title": "Mobile Trucking Business Loans | Alabama",
+  "description": "Compare trucking business loans, working capital and equipment financing available in Mobile, Alabama.",
+  "h1": "Mobile Trucking Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for trucking businesses in Mobile, Alabama.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Mobile Trucking Business Loans",
+    "areaServed": "Mobile, Alabama",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Trucking & Logistics"
+  }
+}

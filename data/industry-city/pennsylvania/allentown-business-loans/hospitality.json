@@ -1,0 +1,22 @@
+{
+  "state": "Pennsylvania",
+  "stateSlug": "pennsylvania",
+  "city": "Allentown",
+  "citySlug": "allentown-business-loans",
+  "industry": "hospitality",
+  "label": "Hospitality",
+  "title": "Allentown Hospitality and Lodging Business Loans",
+  "intro": "Hotels, motels and hospitality businesses need capital for renovations, staffing and seasonality.",
+  "bestFor": [
+    "Renovations and room upgrades",
+    "Furniture, fixtures and equipment",
+    "Seasonal staffing and training",
+    "Online travel agency marketing",
+    "Technology and property systems"
+  ],
+  "stats": {
+    "credit": "620+",
+    "speed": "3–7 Days",
+    "terms": "12–72 Months"
+  }
+}

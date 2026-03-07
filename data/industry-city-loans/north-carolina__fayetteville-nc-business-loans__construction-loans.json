@@ -1,0 +1,24 @@
+{
+  "stateSlug": "north-carolina",
+  "stateName": "North Carolina",
+  "citySlug": "fayetteville-nc-business-loans",
+  "cityName": "Fayetteville",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Fayetteville Construction Business Loans | North Carolina",
+  "description": "Compare construction business loans, working capital and equipment financing available in Fayetteville, North Carolina.",
+  "h1": "Fayetteville Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Fayetteville, North Carolina.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Fayetteville Construction Business Loans",
+    "areaServed": "Fayetteville, North Carolina",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

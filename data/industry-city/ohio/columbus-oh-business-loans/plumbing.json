@@ -1,0 +1,41 @@
+{
+  "state": "Ohio",
+  "city": "Columbus",
+  "industry": "plumbing",
+  "title": "Columbus Plumbing Business Loans",
+  "intro": "Local homeowners in Columbus, Ohio need fast plumbing services — compare financing options to expand your team.",
+  "bestFor": [
+    {
+      "slug": "tools_equipment",
+      "label": "Tools & equipment purchases"
+    },
+    {
+      "slug": "service_vehicles",
+      "label": "Service vans & trucks"
+    },
+    {
+      "slug": "hiring_techs",
+      "label": "Hiring additional plumbers"
+    },
+    {
+      "slug": "water_heaters",
+      "label": "Water heater installation growth",
+      "weight": 1
+    },
+    {
+      "slug": "emergency_calls",
+      "label": "Emergency service call handling",
+      "weight": 3
+    },
+    {
+      "slug": "pipe_relining",
+      "label": "Pipe relining & trenchless repairs",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

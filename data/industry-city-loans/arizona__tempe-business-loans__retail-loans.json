@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arizona",
+  "stateName": "Arizona",
+  "citySlug": "tempe-business-loans",
+  "cityName": "Tempe",
+  "industrySlug": "retail-loans",
+  "industryLabel": "Retail & E-Commerce",
+  "title": "Tempe Retail Business Loans | Arizona",
+  "description": "Compare retail business loans, working capital and equipment financing available in Tempe, Arizona.",
+  "h1": "Tempe Retail Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for retail businesses in Tempe, Arizona.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Tempe Retail Business Loans",
+    "areaServed": "Tempe, Arizona",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Retail & E-Commerce"
+  }
+}

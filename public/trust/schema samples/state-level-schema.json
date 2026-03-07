@@ -1,0 +1,21 @@
+﻿{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Small Business Loans in {STATE}",
+  "url": "https://{URL}/{STATE}",
+  "description": "Business financing, working capital, equipment loans, and credit lines available statewide in {STATE}. Approval in as fast as 24 hours.",
+  "areaServed": "{STATE}, United States",
+  "telephone": "+1-888-365-7999",
+  "serviceType": [
+    "Business Loans",
+    "MCA Financing",
+    "Equipment Funding",
+    "Business Line of Credit",
+    "Invoice Factoring",
+    "Startup Funding"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "Small Business Capital"
+  }
+}

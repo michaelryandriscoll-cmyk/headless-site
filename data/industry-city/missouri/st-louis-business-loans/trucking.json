@@ -1,0 +1,41 @@
+{
+  "state": "Missouri",
+  "city": "St. Louis",
+  "industry": "trucking",
+  "title": "St. Louis Trucking Business Loans",
+  "intro": "Need capital to keep your trucks on the road in St. Louis, Missouri? Explore fast financing options built for trucking businesses.",
+  "bestFor": [
+    {
+      "slug": "fuel_costs",
+      "label": "Fuel & operating expenses"
+    },
+    {
+      "slug": "fleet_repairs",
+      "label": "Fleet repairs & maintenance"
+    },
+    {
+      "slug": "cashflow_gaps",
+      "label": "Covering cash-flow gaps"
+    },
+    {
+      "slug": "dot_compliance",
+      "label": "DOT compliance upgrades",
+      "weight": 1
+    },
+    {
+      "slug": "hire_drivers",
+      "label": "Hiring CDL drivers",
+      "weight": 3
+    },
+    {
+      "slug": "buy_used_trucks",
+      "label": "Purchasing used trucks",
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "12–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

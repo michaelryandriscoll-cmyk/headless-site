@@ -1,0 +1,24 @@
+{
+  "stateSlug": "arkansas",
+  "stateName": "Arkansas",
+  "citySlug": "springdale-business-loans",
+  "cityName": "Springdale",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Springdale Construction Business Loans | Arkansas",
+  "description": "Compare construction business loans, working capital and equipment financing available in Springdale, Arkansas.",
+  "h1": "Springdale Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Springdale, Arkansas.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Springdale Construction Business Loans",
+    "areaServed": "Springdale, Arkansas",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

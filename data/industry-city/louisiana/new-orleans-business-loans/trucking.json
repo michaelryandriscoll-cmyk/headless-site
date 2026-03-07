@@ -1,0 +1,41 @@
+{
+  "state": "Louisiana",
+  "city": "New Orleans",
+  "industry": "trucking",
+  "title": "New Orleans Trucking Business Loans",
+  "intro": "Need capital to keep your trucks on the road in New Orleans, Louisiana? Explore fast financing options built for trucking businesses.",
+  "bestFor": [
+    {
+      "slug": "fuel_costs",
+      "label": "Fuel & operating expenses"
+    },
+    {
+      "slug": "fleet_repairs",
+      "label": "Fleet repairs & maintenance"
+    },
+    {
+      "slug": "cashflow_gaps",
+      "label": "Covering cash-flow gaps"
+    },
+    {
+      "slug": "buy_used_trucks",
+      "label": "Purchasing used trucks",
+      "weight": 3
+    },
+    {
+      "slug": "new_route_expansion",
+      "label": "Expanding routes or contracts",
+      "weight": 2
+    },
+    {
+      "slug": "insurance_costs",
+      "label": "High trucking insurance costs",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "560+",
+    "speed": "12–48 Hours",
+    "terms": "6–18 Months"
+  }
+}

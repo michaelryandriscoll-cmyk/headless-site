@@ -1,0 +1,41 @@
+{
+  "state": "Utah",
+  "city": "Salt Lake City",
+  "industry": "food-truck",
+  "title": "Salt Lake City Food Truck Business Loans",
+  "intro": "From new routes to additional trucks, food truck operators in Salt Lake City, Utah use loans to expand.",
+  "bestFor": [
+    {
+      "slug": "truck",
+      "label": "Food truck purchases & buildouts"
+    },
+    {
+      "slug": "equipment",
+      "label": "Kitchen equipment & generators"
+    },
+    {
+      "slug": "permits",
+      "label": "Permits, licensing & fees"
+    },
+    {
+      "slug": "branding",
+      "label": "Branding, wraps & signage",
+      "weight": 1
+    },
+    {
+      "slug": "staff",
+      "label": "Hiring cooks & servers",
+      "weight": 1
+    },
+    {
+      "slug": "second_truck",
+      "label": "Launching a second truck",
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "credit": "580+",
+    "speed": "24–72 Hours",
+    "terms": "6–24 Months"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stateSlug": "pennsylvania",
+  "stateName": "Pennsylvania",
+  "citySlug": "harrisburg-business-loans",
+  "cityName": "Harrisburg",
+  "industrySlug": "construction-loans",
+  "industryLabel": "Construction & Trades",
+  "title": "Harrisburg Construction Business Loans | Pennsylvania",
+  "description": "Compare construction business loans, working capital and equipment financing available in Harrisburg, Pennsylvania.",
+  "h1": "Harrisburg Construction Business Loans",
+  "intro": "Access working capital, credit lines and equipment financing designed for construction businesses in Harrisburg, Pennsylvania.",
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Harrisburg Construction Business Loans",
+    "areaServed": "Harrisburg, Pennsylvania",
+    "serviceType": "Working Capital, Business Line of Credit, Equipment Financing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Small Business Capital"
+    },
+    "category": "Construction & Trades"
+  }
+}

@@ -1,0 +1,218 @@
+/* ============================================================
+   ELITE FOOTER — CLEAN PRODUCTION BUILD
+   ============================================================ */
+
+/* =========================
+   FOOTER WRAPPER
+========================= */
+
+.sbc-footer {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    #07142a 0%,
+    #050d1f 100%
+  );
+
+  color: #e5e7eb;
+  padding: 56px 20px 40px;
+  margin-top: 40px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Subtle top glow */
+.sbc-footer::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 420px;
+  height: 120px;
+
+  background: radial-gradient(
+    circle,
+    rgba(0, 198, 132, 0.18) 0%,
+    transparent 70%
+  );
+
+  filter: blur(40px);
+  opacity: 0.35;
+}
+
+/* =========================
+   INNER CONTAINER
+========================= */
+
+.sbc-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+
+.sbc-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 64px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 900px) {
+  .sbc-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sbc-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* =========================
+   COLUMN CONTENT
+========================= */
+
+.sbc-footer__col h4 {
+  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+
+.sbc-footer__col p {
+  font-size: 14px;
+  color: #d1d5db;
+  margin-bottom: 12px;
+}
+
+.sbc-footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sbc-footer__col li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.sbc-footer a {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  transition: color 160ms ease, opacity 160ms ease;
+  position: relative;
+}
+
+/* Brand green hover */
+.sbc-footer a:hover {
+  color: #22c55e;
+  opacity: 1;
+}
+
+/* Subtle animated underline */
+.sbc-footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 0;
+  height: 2px;
+
+  background: #22c55e;
+  transition: width 160ms ease;
+}
+
+.sbc-footer a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   PHONE LINK
+========================= */
+
+.sbc-footer-phone {
+  color: #22c55e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sbc-footer-phone:hover {
+  color: #22c55e;
+}
+
+/* =========================
+   FOOTER CTA BUTTON
+========================= */
+
+.sbc-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--sbc-accent);
+  color: #0b1f41;
+
+  padding: 14px 32px;
+  border-radius: 999px;
+
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+
+  box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sbc-footer-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 198, 132, 0.55);
+}
+
+/* =========================
+   BOTTOM STRIP
+========================= */
+
+.sbc-footer__bottom {
+  text-align: center;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 14px;
+  color: #9ca3af;
+  opacity: 0.8;
+}
+
+.sbc-footer__disclaimer {
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.38);
+  margin-bottom: 14px;
+  max-width: 26ch;
+}
+
+.sbc-footer__disclaimer {
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.38);
+  margin-bottom: 14px;
+  max-width: 26ch;
+}
