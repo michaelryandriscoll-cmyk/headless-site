@@ -505,6 +505,10 @@
   background: rgba(255, 255, 255, 0.06);
 }
 
+a.contact-cta-secondary:hover {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
 .contact-cta-footnote {
   margin-top: 14px;
   font-size: 12px;

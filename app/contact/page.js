@@ -18,8 +18,8 @@ export async function generateMetadata() {
 
 export default function ContactPage() {
   // Easy edits here
-  const PHONE_DISPLAY = "(888) 365-7999";
-  const PHONE_TEL = "18883657999";
+  const PHONE_DISPLAY = "(888) 900-8979";
+  const PHONE_TEL = "18889008979";
   const SUPPORT_EMAIL = "support@smallbusiness.capital";
 
   return (

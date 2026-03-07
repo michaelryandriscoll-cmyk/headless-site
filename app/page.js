@@ -23,7 +23,7 @@ export default function HomePage() {
       "@type": "FinancialService",
       "name": "Small Business Capital",
       "url": "https://smallbusiness.capital",
-      "telephone": "+1-888-365-7999",
+      "telephone": "+1-888-900-8979",
       "areaServed": {
         "@type": "Country",
         "name": "United States"
@@ -260,13 +260,13 @@ export default function HomePage() {
             		<Link href="/apply" className="btn-primary final">
               			Get Approved Today
             		</Link>
-            		<a href="tel:18883657999" className="btn-secondary final">
-					  📞 Quick Call (888) 365-7999
-					</a>
           		</div>
 				<div className="form-microcopy">
   					Takes under 2 minutes. No obligation. No impact on personal credit.
 				</div>
+				<p className="home-final-cta__phone">
+					Prefer to talk? <a href="tel:18889008979">(888) 900-8979</a>
+				</p>
         	</div>
 		</div>
       </section>
@@ -544,8 +544,8 @@ export default function HomePage() {
 				<strong> Speak with a funding specialist</strong> — no pressure, no obligation.
 			  </p>
 
-			  <a href="tel:18883657999" className="faq-callout__cta">
-				📞 Call (888) 365-7999
+			  <a href="tel:18889008979" className="faq-callout__cta">
+				📞 Call (888) 900-8979
 			  </a>
 
 			  <span className="faq-callout__meta">

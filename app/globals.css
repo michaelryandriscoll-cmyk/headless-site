@@ -710,13 +710,13 @@ body.sbc-body {
 .sbc-footer__col ul { list-style: none; padding: 0; margin: 0; }
 .sbc-footer__col li { margin-bottom: 8px; }
 .sbc-footer__col a { font-size: 14px; line-height: 1.55; color: #cbd5e1; text-decoration: none; transition: 0.2s ease; }
-.sbc-footer__col a:hover { color: var(--sbc-green); padding-left: 2px; }
+.sbc-footer__col a:hover { color: var(--sbc-green); padding-left: 0px; }
 
 .sbc-footer-phone { color: var(--sbc-green); font-weight: 700; text-decoration: none; }
 
 .sbc-footer-cta {
   background: var(--sbc-green);
-  color: #0b1f41;
+  color: #111827 !important;
   padding: 14px 32px;
   border-radius: 999px;
   font-weight: 700;
@@ -731,10 +731,38 @@ body.sbc-body {
   box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
 }
 
-.sbc-footer-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 36px rgba(0, 198, 132, 0.55);
-  background: #0fea9a;
+a.sbc-footer-cta:hover { 
+  background: var(--sbc-green);
+  color: #fff !important; 
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -1px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
+}
+
+a.sbc-footer-cta:hover { 
+  background: var(--sbc-green);
+  color: #fff !important; 
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -1px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
 }
 
 .sbc-footer__bottom {
@@ -758,8 +786,12 @@ body.sbc-body {
   opacity: 1;
 }
 
-.sbc-footer-phone:hover,
-.sbc-footer-cta:hover { color: #22c55e !important; }
+.sbc-footer a.sbc-footer-cta:hover {
+  color: #fff !important;
+}
+
+
+.sbc-footer-phone:hover { color: #22c55e !important; }
 
 .sbc-footer a::after {
   content: "";
@@ -1896,4 +1928,17 @@ section.content-section > .home-proof__inner { padding-top: 72px; padding-bottom
   h1 { font-size: 1.9rem; }
   h2 { font-size: 1.4rem; }
   h3 { font-size: 1.25rem; }
+}
+
+
+.home-final-cta__phone,
+.city-cta-phone { 
+  margin-top: 12px; 
+  font-size: 13px; 
+  color: rgba(255,255,255,0.6); 
+}
+.home-final-cta__phone a,
+.city-cta-phone a { 
+  color: rgba(255,255,255,0.85); 
+  text-decoration: none; 
 }

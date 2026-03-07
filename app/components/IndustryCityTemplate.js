@@ -271,6 +271,7 @@ const normalizedBestForObjects = Array.isArray(bestFor)
         <a href="#related">Related</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
+        <a href="tel:18889008979" className="industry-sticky-nav__phone">(888) 900-8979</a>
         <a href="#top" className="industry-sticky-nav__top">
           ↑ Top
         </a>
@@ -515,11 +516,10 @@ const normalizedBestForObjects = Array.isArray(bestFor)
 		  <Link href="/apply" className="btn-primary">
 			Start Application
 		  </Link>
-
-		  <a href="tel:18883657999" className="btn-outline">
-			Speak With a {industry} Funding Specialist
-		  </a>
 		</div>
+		<p className="city-cta-phone">
+		  Prefer to talk? <a href="tel:18889008979">(888) 900-8979</a>
+		</p>
 	  </div>
 	</section>
 	  

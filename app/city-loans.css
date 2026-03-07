@@ -1277,3 +1277,20 @@
   margin-right: 4px;
   line-height: 1;
 }
+
+
+.form-alt-contact {
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+  margin: 8px 0 0;
+}
+.form-alt-contact a {
+  color: #0b1f41;
+  font-weight: 600;
+  text-decoration: none;
+}
+.industry-sticky-nav__phone {
+  color: #00c684 !important;
+  font-weight: 600;
+}

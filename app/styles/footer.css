@@ -180,9 +180,8 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.sbc-footer-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 36px rgba(0, 198, 132, 0.55);
+.sbc-footer-cta::after {
+  display: none;
 }
 
 /* =========================

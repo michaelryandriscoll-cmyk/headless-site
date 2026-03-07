@@ -137,6 +137,10 @@ export default function LeadForm({
             {status === "loading" ? "Submitting..." : "Check My Funding Options"}
           </button>
 
+          <p className="form-alt-contact">
+            Prefer to talk? <a href="tel:18889008979">(888) 900-8979</a>
+          </p>
+
           <p className="form-tcpa">
             By submitting this form, I agree to receive calls, texts, and emails
             from Small Business Capital and its lending partners at the number and
@@ -150,7 +154,7 @@ export default function LeadForm({
 
       {status === "error" && (
         <p className="lead-error">
-          Something went wrong. Try again or call 888-365-7999.
+          Something went wrong. Try again or call (888) 900-8979.
         </p>
       )}
     </div>

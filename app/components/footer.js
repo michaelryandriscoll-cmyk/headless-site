@@ -21,8 +21,8 @@ export default function Footer() {
 				availability are determined solely by the lender.
 			  </p>
 
-			  <a className="sbc-footer-phone" href="tel:18883657999">
-				(888) 365-7999
+			  <a className="sbc-footer-phone" href="tel:18889008979">
+				(888) 900-8979
 			  </a>
 		  </div>
 
