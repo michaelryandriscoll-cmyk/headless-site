@@ -40,3 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 headless-wordpress.zip
+data/city-loans/
+data/industry-city-loans/
+data/industry-city/
+logs/
+scripts/backups/
+public/elementor/
+public/wp-css/
