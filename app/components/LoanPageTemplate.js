@@ -1,5 +1,4 @@
-﻿import "@/app/styles/LoanLayout.css";
-import "@/app/styles/loan-page.css";
+﻿import "@/app/styles/loan-page.css";
 import LeadForm from "@/app/components/LeadForm";
 import { notFound } from "next/navigation";
 

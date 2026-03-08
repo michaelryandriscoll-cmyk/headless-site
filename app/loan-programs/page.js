@@ -67,7 +67,7 @@ export default async function LoanProgramsPage() {
 
   const FEATURED_SLUGS = [
     "working-capital-loans",
-    "bad-credit-loans",
+    "business-loans-for-bad-credit",
     "no-doc-loans",
   ];
 

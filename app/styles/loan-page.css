@@ -304,6 +304,19 @@
   border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
+.loan-hero-visual--natural {
+  height: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.loan-hero-visual--natural img {
+  object-fit: contain !important;
+  height: auto !important;
+  border-radius: 0 !important;
+}
+
 /* Desktop */
 @media (min-width: 1200px) {
   .loan-hero-visual {

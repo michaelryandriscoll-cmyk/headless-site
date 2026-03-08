@@ -70,7 +70,7 @@ export default async function BusinessServicesHubPage() {
             </div>
           </div>
 
-          <div className="loan-hero-visual">
+          <div className="loan-hero-visual loan-hero-visual--natural">
 			  <img
 				src="/hero/business-services-hero.png"
 				alt="Business services that help small businesses strengthen operations and qualify for funding"

@@ -10,13 +10,37 @@ const CATEGORY_DEFS = [
   { key: "badcredit", label: "Bad credit" },
 ];
 
-// Slug → chip categories mapping (edit as needed)
+// Slug → chip categories mapping
 const SLUG_CATEGORIES = {
   "working-capital-loans": ["fast"],
   "no-doc-loans": ["fast", "lowdocs"],
   "startup-loans": ["newbiz"],
-  "bad-credit-loans": ["badcredit"],
+  "startup-business-loans": ["newbiz"],
+  "business-loans-for-bad-credit": ["badcredit"],
+  "low-credit-score-loans": ["badcredit"],
   "revenue-based-financing": ["fast"],
+  "merchant-cash-advance": ["fast", "lowdocs"],
+  "payroll-funding": ["fast"],
+};
+
+// Slug → unique description
+const SLUG_DESCRIPTIONS = {
+  "working-capital-loans": "Cover payroll, inventory, and day-to-day expenses without touching your reserves.",
+  "no-doc-loans": "Get funded fast with minimal paperwork — no tax returns or financials required.",
+  "business-loans-for-bad-credit": "Approval based on revenue, not credit score. Options starting at 500+ FICO.",
+  "business-line-of-credit": "Draw only what you need and pay interest on what you use — flexible and revolving.",
+  "equipment-financing": "Finance the tools, vehicles, or machinery your business needs without draining cash flow.",
+  "low-credit-score-loans": "Designed for business owners rebuilding credit — revenue and cash flow drive approval.",
+  "merchant-cash-advance": "Get an advance on future sales — repay automatically as revenue comes in.",
+  "payroll-funding": "Make payroll on time even when cash flow is tight. Fast approvals, same-week funding.",
+  "revenue-based-financing": "Repayments flex with your revenue — pay more when business is strong, less when it's slow.",
+  "sba-loans": "Government-backed loans with the lowest rates and longest terms available to small businesses.",
+  "startup-business-loans": "Funding options for businesses under 2 years old — built around potential, not history.",
+  "term-loans": "A lump sum with fixed payments — predictable, straightforward, and ideal for planned growth.",
+};
+
+const getDescription = (slug, title) => {
+  return SLUG_DESCRIPTIONS[slug] || `${title} — fast decisions, flexible terms, and no obligation to check your options.`;
 };
 
 function matchesCategory(program, activeCats) {
@@ -47,7 +71,6 @@ export default function LoanProgramsClient({ loanPrograms, featuredSlugs }) {
 
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase();
-
     return loanPrograms.filter((p) => {
       const haystack = `${p.title} ${p.slug}`.toLowerCase();
       const matchesQuery = query ? haystack.includes(query) : true;
@@ -56,7 +79,6 @@ export default function LoanProgramsClient({ loanPrograms, featuredSlugs }) {
     });
   }, [loanPrograms, q, activeCats]);
 
-  // Featured first (in the order you defined), then alphabetical for the rest
   const featuredPrograms = useMemo(() => {
     const map = new Map(filtered.map((p) => [p.slug, p]));
     return featuredSlugs.map((s) => map.get(s)).filter(Boolean);
@@ -64,7 +86,6 @@ export default function LoanProgramsClient({ loanPrograms, featuredSlugs }) {
 
   const otherPrograms = useMemo(() => {
     const featuredSet = new Set(featuredSlugs);
-
     return filtered
       .filter((p) => !featuredSet.has(p.slug))
       .sort((a, b) => a.title.localeCompare(b.title));
@@ -92,7 +113,7 @@ export default function LoanProgramsClient({ loanPrograms, featuredSlugs }) {
               Clear
             </button>
           ) : (
-            <span className="loan-programs-search-hint">Tip: try “startup”</span>
+            <span className="loan-programs-search-hint">Tip: try "startup"</span>
           )}
         </div>
 
@@ -152,8 +173,7 @@ export default function LoanProgramsClient({ loanPrograms, featuredSlugs }) {
                     </div>
 
                     <p className="loan-program-featured-desc">
-                      Learn how {p.title} works, who it’s best for, and how to
-                      apply.
+                      {getDescription(p.slug, p.title)}
                     </p>
 
                     <div className="loan-program-featured-cta">
@@ -204,7 +224,7 @@ export default function LoanProgramsClient({ loanPrograms, featuredSlugs }) {
                     </div>
 
                     <p className="loan-program-desc">
-                      Learn how {p.title} works, who it’s best for, and how to apply.
+                      {getDescription(p.slug, p.title)}
                     </p>
 
                     <div className="loan-program-cta">
