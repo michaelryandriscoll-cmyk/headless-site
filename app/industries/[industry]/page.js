@@ -3,10 +3,10 @@
 import "@/app/city-loans.css";
 import "@/app/styles/industries.css";
 import "@/app/styles/industry-detail.css";
-// ← state-loans.css removed — was overriding city-loans.css
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Script from "next/script";
 import industries from "@/app/lib/_industryList25";
 
 export const dynamic = "force-dynamic";
@@ -14,9 +14,6 @@ export const dynamic = "force-dynamic";
 /* --------------------------------------------
    Helpers
 -------------------------------------------- */
-
-const titleCase = (str = "") =>
-  str.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
 const safeSlug = (val = "") =>
   val?.toLowerCase().trim().replace(/^\/+|\/+$/g, "");
@@ -30,7 +27,7 @@ export async function generateStaticParams() {
 }
 
 /* --------------------------------------------
-   Metadata
+   Metadata — tightened for SEO
 -------------------------------------------- */
 
 export async function generateMetadata({ params }) {
@@ -42,9 +39,14 @@ export async function generateMetadata({ params }) {
     return { title: "Industry Business Loans | Small Business Capital" };
   }
 
+  const name = industryData.industry;
+
   return {
-    title: `${industryData.industry} Business Loans | Funding Options`,
-    description: `Compare working capital, equipment financing, and credit line options for ${industryData.industry.toLowerCase()} businesses nationwide.`,
+    title: `${name} Business Loans | Fast Funding for ${name} Companies`,
+    description: `Get ${name.toLowerCase()} business loans fast. Compare working capital, equipment financing, lines of credit, and more. Apply in minutes — no impact to credit.`,
+    alternates: {
+      canonical: `/industries/${slug}`,
+    },
   };
 }
 
@@ -60,7 +62,6 @@ export default function IndustryPage({ params }) {
 
   const {
     industry,
-    title,
     introTemplates,
     bestForCore = [],
     bestForExtras = [],
@@ -79,8 +80,42 @@ export default function IndustryPage({ params }) {
 
   const allUses = [...bestForCore, ...bestForExtras];
 
+  // LoanOrCredit schema
+  const loanSchema = {
+    "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    name: `${industry} Business Loans`,
+    description: `Business loan options for ${industry.toLowerCase()} companies including working capital, equipment financing, and lines of credit.`,
+    provider: {
+      "@type": "FinancialService",
+      name: "Small Business Capital",
+      url: "https://smallbusiness.capital",
+      telephone: "+18889008979",
+    },
+    amount: {
+      "@type": "MonetaryAmount",
+      minValue: 10000,
+      maxValue: 500000,
+      currency: "USD",
+    },
+    loanTerm: {
+      "@type": "QuantitativeValue",
+      minValue: 6,
+      maxValue: 24,
+      unitText: "months",
+    },
+    url: `https://smallbusiness.capital/industries/${slug}`,
+  };
+
   return (
     <main className="industry-detail-page">
+
+      <Script
+        id={`loan-schema-${slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(loanSchema) }}
+      />
 
       {/* ── HERO ── */}
       <header className="idp-hero">
@@ -179,7 +214,7 @@ export default function IndustryPage({ params }) {
             <Link href="/apply" className="btn-primary">
               Start Online Application
             </Link>
-            <a href="tel:18883657999" className="btn-outline">
+            <a href="tel:18889008979" className="btn-outline">
               Speak With a Funding Specialist
             </a>
           </div>

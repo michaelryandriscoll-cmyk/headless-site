@@ -1,5 +1,6 @@
 ﻿import "@/app/styles/loan-page.css";
 import LeadForm from "@/app/components/LeadForm";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 
 const WP_GRAPHQL_URL = process.env.NEXT_PUBLIC_WP_GRAPHQL_URL;
@@ -17,7 +18,6 @@ const hasItems = (v) => Array.isArray(v) && v.length > 0;
 
 const startsWithVowelSound = (word = "") => {
   if (!word) return false;
-
   const vowelSoundPatterns = [
     /^honest/i,
     /^hour/i,
@@ -26,7 +26,6 @@ const startsWithVowelSound = (word = "") => {
     /^sba/i,
     /^[aeiou]/i,
   ];
-
   return vowelSoundPatterns.some((r) => r.test(word));
 };
 
@@ -37,11 +36,9 @@ const withIndefiniteArticle = (phrase = "") => {
 
 const getLoanNameParts = (title = "") => {
   const cleaned = title.replace(/loans?/i, "").trim();
-
   const base = cleaned || "Business";
   const singular = cleaned ? `${cleaned} Loan` : "Business Loan";
   const plural = cleaned ? `${cleaned} Loans` : "Business Loans";
-
   return {
     base,
     singular,
@@ -87,12 +84,10 @@ const CTA_FALLBACKS = {
    HERO IMAGE RESOLVER
 ========================= */
 
-const getHeroImage = ({ d, slug, loan }) => {
-  return {
-    src: `/hero/${slug}.png`,
-    alt: loan.plural,
-  };
-};
+const getHeroImage = ({ slug, loan }) => ({
+  src: `/hero/${slug}.png`,
+  alt: loan.plural,
+});
 
 /* =========================
    GRAPHQL QUERY
@@ -151,11 +146,11 @@ async function fetchLoanPage(slug) {
 
 export default async function LoanPageTemplate({ slug }) {
   const page = await fetchLoanPage(slug);
-  if (!page?.loanPageStarterKit) notFound(); 
+  if (!page?.loanPageStarterKit) notFound();
 
   const d = page.loanPageStarterKit;
   const loan = getLoanNameParts(page.title);
-  const heroImage = getHeroImage({ d, slug, loan });
+  const heroImage = getHeroImage({ slug, loan });
 
   const heroHeadline = hasText(d.heroHeadline)
     ? d.heroHeadline
@@ -199,8 +194,42 @@ export default async function LoanPageTemplate({ slug }) {
 
   const finalCtaLink = d.finalCtaLink || CTA_FALLBACKS.link;
 
+  // LoanOrCredit schema
+  const loanSchema = {
+    "@context": "https://schema.org",
+    "@type": "LoanOrCredit",
+    name: loan.plural,
+    description: heroSubheadline,
+    provider: {
+      "@type": "FinancialService",
+      name: "Small Business Capital",
+      url: "https://smallbusiness.capital",
+      telephone: "+18889008979",
+    },
+    amount: {
+      "@type": "MonetaryAmount",
+      minValue: 10000,
+      maxValue: 500000,
+      currency: "USD",
+    },
+    loanTerm: {
+      "@type": "QuantitativeValue",
+      minValue: 3,
+      maxValue: 60,
+      unitText: "months",
+    },
+    url: `https://smallbusiness.capital/loan-programs/${slug}`,
+  };
+
   return (
-    <main className="loan-page">
+    <main className="loan-page loan-theme">
+
+      <Script
+        id={`loan-schema-${slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(loanSchema) }}
+      />
 
       <section className="loan-hero">
         <div className="container loan-hero-grid">

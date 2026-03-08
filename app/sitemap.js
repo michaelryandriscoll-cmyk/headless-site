@@ -33,6 +33,22 @@ const INDUSTRIES = [
   "wholesale",
 ];
 
+// Loan program slugs
+const LOAN_PROGRAMS = [
+  "working-capital-loans",
+  "business-line-of-credit",
+  "equipment-financing",
+  "business-loans-for-bad-credit",
+  "low-credit-score-loans",
+  "merchant-cash-advance",
+  "no-doc-loans",
+  "payroll-funding",
+  "revenue-based-financing",
+  "sba-loans",
+  "startup-business-loans",
+  "term-loans",
+];
+
 // High-value contractor industries get priority boost
 const HIGH_VALUE_INDUSTRIES = new Set([
   "roofing", "hvac", "plumbing", "electrician",
@@ -54,6 +70,7 @@ export default function sitemap() {
     { path: "/about-us", priority: 0.5, changeFrequency: "yearly" },
     { path: "/contact", priority: 0.5, changeFrequency: "yearly" },
     { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
+    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
   ];
 
   staticPages.forEach(({ path, priority, changeFrequency }) => {
@@ -62,6 +79,26 @@ export default function sitemap() {
       lastModified,
       changeFrequency,
       priority,
+    });
+  });
+
+  // ── Loan program pages ────────────────────────────────────
+  LOAN_PROGRAMS.forEach((slug) => {
+    urls.push({
+      url: `${BASE_URL}/loan-programs/${slug}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+  });
+
+  // ── Industry hub pages ────────────────────────────────────
+  INDUSTRIES.forEach((slug) => {
+    urls.push({
+      url: `${BASE_URL}/industries/${slug}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
     });
   });
 
