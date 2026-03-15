@@ -9,30 +9,14 @@ import IntentCTAClient from "@/app/components/IntentCTAClient";
 import { buildMetadata, buildIntro } from "@/app/lib/seoTemplates";
 import { notFound } from "next/navigation";
 
-export const dynamic = "force-static";
+export const revalidate = 86400;
+export const dynamicParams = true;
 
 const normalizeStateSlug = (slug = "") => slug.toLowerCase().trim();
 const normalizeCitySlug = (slug = "") => slug.toLowerCase().trim();
 
 const titleCase = (str = "") =>
   str.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
-
-/* ---------------------------------------------------------
-   Static Params
---------------------------------------------------------- */
-
-export async function generateStaticParams() {
-  const params = [];
-  Object.keys(stateCityMap || {}).forEach((state) => {
-    const S = stateCityMap[state];
-    (S?.cities || []).forEach((city) => {
-      industries.forEach((ind) => {
-        params.push({ state, city: city.slug, industry: ind.slug });
-      });
-    });
-  });
-  return params;
-}
 
 /* ---------------------------------------------------------
    Metadata — uses shared seoTemplates utility

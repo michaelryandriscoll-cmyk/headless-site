@@ -288,8 +288,9 @@
    INDUSTRY IMAGES
 ============================================================ */
 
-.industry-images {
+.city-loan-page .industry-images {
   padding: 0 20px 32px;
+  margin-top: 24px;
 }
 
 .industry-image-grid {

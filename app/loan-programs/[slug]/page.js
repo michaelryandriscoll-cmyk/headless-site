@@ -3,8 +3,8 @@ import LeadForm from "@/app/components/LeadForm";
 import Link from "next/link";
 import { notFound } from "next/navigation"; 
 
-export const dynamic = "force-static";
 export const revalidate = 60;
+export const dynamicParams = true;
 
 const WP_GRAPHQL_URL = process.env.NEXT_PUBLIC_WP_GRAPHQL_URL;
 
@@ -848,9 +848,9 @@ export default async function LoanTypePage({ params }) {
   const d = page.loanPageStarterKit;
   const loan = getLoanNameParts(page.title);
 
-  const heroImage = getHeroImage({ d, slug, loan });
-
   const normalizedSlug = normalizeLoanSlug(slug);
+
+  const heroImage = getHeroImage({ d, slug: normalizedSlug, loan });
 
   const relatedLoans = RELATED_LOANS_MAP[normalizedSlug] || [];
 

@@ -138,7 +138,7 @@ export default async function BusinessServicePage({ params }) {
 
   // ================= FEATURED IMAGE =================
 	const rawHeroImage =
-	  page?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+	  page?._embedded?.["wp:featuredmedia"]?.find(m => m?.source_url)?.source_url;
 
 	const heroImage = sanitizeImageUrl(rawHeroImage); 
 

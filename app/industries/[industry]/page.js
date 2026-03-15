@@ -54,14 +54,15 @@ export async function generateMetadata({ params }) {
    Page
 -------------------------------------------- */
 
-export default function IndustryPage({ params }) {
-  const slug = safeSlug(params.industry);
+export default async function IndustryPage({ params }) {
+  const { industry } = await params;
+  const slug = safeSlug(industry);
   const industryData = industries.find((i) => i.slug === slug);
 
   if (!industryData) notFound();
 
   const {
-    industry,
+    industry: industryName,
     introTemplates,
     bestForCore = [],
     bestForExtras = [],
@@ -76,7 +77,7 @@ export default function IndustryPage({ params }) {
     introTemplates?.[0]
       ?.replace("{{city}}", "your area")
       ?.replace("{{state}}", "your state") ||
-    `Flexible funding options available for ${industry} businesses.`;
+    `Flexible funding options available for ${industryName} businesses.`;
 
   const allUses = [...bestForCore, ...bestForExtras];
 
@@ -84,8 +85,8 @@ export default function IndustryPage({ params }) {
   const loanSchema = {
     "@context": "https://schema.org",
     "@type": "LoanOrCredit",
-    name: `${industry} Business Loans`,
-    description: `Business loan options for ${industry.toLowerCase()} companies including working capital, equipment financing, and lines of credit.`,
+    name: `${industryName} Business Loans`,
+    description: `Business loan options for ${industryName.toLowerCase()} companies including working capital, equipment financing, and lines of credit.`,
     provider: {
       "@type": "FinancialService",
       name: "Small Business Capital",
@@ -121,7 +122,7 @@ export default function IndustryPage({ params }) {
       <header className="idp-hero">
         <div className="idp-hero__inner">
           <span className="section-eyebrow">BUSINESS FUNDING</span>
-          <h1>{industry} Business Loans</h1>
+          <h1>{industryName} Business Loans</h1>
           <p>{intro}</p>
           <div className="idp-hero__cta">
             <a href="#cta" className="btn-primary">
@@ -159,7 +160,7 @@ export default function IndustryPage({ params }) {
         <section className="idp-section bg-white">
           <div className="idp-inner">
             <span className="section-eyebrow">BEST USES</span>
-            <h2>Common Uses of {industry} Financing</h2>
+            <h2>Common Uses of {industryName} Financing</h2>
             <div className="idp-use-grid">
               {allUses.map((item, i) => (
                 <div key={i} className="idp-use-card">
@@ -177,7 +178,7 @@ export default function IndustryPage({ params }) {
           <div className="idp-local__content">
             <div>
               <span className="section-eyebrow">LOCAL FUNDING</span>
-              <h2>Find {industry} Loans in Your State</h2>
+              <h2>Find {industryName} Loans in Your State</h2>
               <p>
                 Funding availability and approval requirements vary by state
                 and city. Select your location to see local lenders, rates,
@@ -208,7 +209,7 @@ export default function IndustryPage({ params }) {
       {/* ── CTA ── */}
       <section className="idp-cta" id="cta">
         <div className="idp-cta__inner">
-          <h2>Compare {industry} Funding Options</h2>
+          <h2>Compare {industryName} Funding Options</h2>
           <p>One application. Multiple lenders. Fast decisions.</p>
           <div className="idp-cta__buttons">
             <Link href="/apply" className="btn-primary">
