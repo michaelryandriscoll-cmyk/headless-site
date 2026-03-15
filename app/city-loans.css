@@ -740,7 +740,7 @@
 ============================================================ */
 
 .section-eyebrow {
-  display: block;
+  display: inline-block;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -749,6 +749,7 @@
   margin-bottom: 10px;
   position: relative;
   padding-left: 14px;
+  background: transparent;
 }
 
 .section-eyebrow::before {
@@ -884,13 +885,7 @@
     grid-template-columns: 1fr;
   }
 
-  .comparison-table .row {
-    grid-template-columns: 1fr 1fr;
-    font-size: 13px;
-    gap: 4px;
-  }
-
-  .comparison-table .row.header { display: none; }
+  /* comparison table — see mobile card stack below */
 
   .city-cta-buttons {
     flex-direction: column;
@@ -1293,4 +1288,106 @@
 .industry-sticky-nav__phone {
   color: #00c684 !important;
   font-weight: 600;
+}
+
+/* ============================================================
+   CITY/STATE/INDUSTRY HERO — MOBILE CENTER ALIGNMENT
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center !important;
+  }
+
+  .city-hero h1,
+  .hero-subtitle,
+  .hero-tag {
+    text-align: center !important;
+  }
+
+  .hero-cta-group {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-trust {
+    justify-content: center !important;
+  }
+}
+
+/* ============================================================
+   COMPARISON TABLE — MOBILE CARD STACK
+   Replaces the cramped 2-column grid with
+   one card per loan program, labeled rows
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .comparison-table {
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  /* Hide desktop header row */
+  .comparison-table .row.header {
+    display: none !important;
+  }
+
+  /* Each row becomes a card */
+  .comparison-table .row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    font-size: 14px !important;
+  }
+
+  /* Program name spans full width — acts as card header */
+  .comparison-table .row > div:first-child {
+    grid-column: 1 / -1 !important;
+    background: #0b1f41 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    padding: 10px 14px !important;
+  }
+
+  /* Remaining cells — 2 per row with label styling */
+  .comparison-table .row > div:not(:first-child) {
+    padding: 10px 14px !important;
+    border-top: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+    font-size: 13.5px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Alternating subtle background */
+  .comparison-table .row > div:nth-child(even) {
+    background: #f8fafc !important;
+  }
+
+  .comparison-table .row > div:nth-child(odd):not(:first-child) {
+    background: #ffffff !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-sticky-nav {
+    padding: 0 8px !important;
+  }
+
+  .industry-sticky-nav a {
+    padding: 10px 10px !important;
+    font-size: 12px !important;
+  }
+
+  .industry-sticky-nav__phone {
+    display: none !important;
+  }
 }

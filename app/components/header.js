@@ -4,7 +4,6 @@ import WhiteLogo from "@/components/logo/sbc-logo-white.js";
 import WhiteLogoMobile from "@/components/logo/sbc-logo-white-mobile";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { usePathname } from "next/navigation";
 
 // ── Industries grouped by category ──
 const INDUSTRY_GROUPS = [
@@ -55,12 +54,10 @@ const INDUSTRY_GROUPS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openSection, setOpenSection] = useState(null);
   const [loanPrograms, setLoanPrograms] = useState([]);
   const [businessServices, setBusinessServices] = useState([]);
 
-  // =========================
-  // FEATURED STATES
-  // =========================
   const DEFAULT_FEATURED_STATES = useMemo(
     () => [
       { name: "Texas", slug: "texas" },
@@ -137,9 +134,6 @@ export default function Header() {
     }
   }, [DEFAULT_FEATURED_STATES, FEATURED_BY_REGION]);
 
-  // =========================
-  // SCROLL STATE
-  // =========================
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 120);
     handleScroll();
@@ -147,9 +141,17 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // =========================
-  // LOAD LOAN PROGRAMS
-  // =========================
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setMobileOpen(false);
+        setOpenSection(null);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
     async function loadLoanPrograms() {
@@ -174,9 +176,6 @@ export default function Header() {
     return () => { cancelled = true; };
   }, []);
 
-  // =========================
-  // LOAD BUSINESS SERVICES
-  // =========================
   useEffect(() => {
     let cancelled = false;
     async function loadBusinessServices() {
@@ -205,11 +204,8 @@ export default function Header() {
     return () => { cancelled = true; };
   }, []);
 
-  // =========================
-  // MENUS
-  // =========================
   const loanProgramsMenu = useMemo(() => [
-    { title: "Loan Programs Hub", href: "/loan-programs" },
+    { title: "All Loan Programs", href: "/loan-programs" },
     ...loanPrograms,
   ], [loanPrograms]);
 
@@ -220,15 +216,22 @@ export default function Header() {
       { title: "Business Plan Creation", href: "/business-services/business-plan-creation" },
     ];
     return [
-      { title: "Business Services Hub", href: "/business-services" },
+      { title: "All Business Services", href: "/business-services" },
       ...(businessServices.length ? businessServices : fallback),
     ];
   }, [businessServices]);
 
+  const toggleSection = (section) =>
+    setOpenSection((prev) => (prev === section ? null : section));
+
+  const closeMobile = () => {
+    setMobileOpen(false);
+    setOpenSection(null);
+  };
+
   return (
     <header className={`elite-header ${scrolled ? "scrolled" : ""}`}>
 
-      {/* ── MAIN NAV ── */}
       <div className="elite-nav-wrapper">
         <div className="elite-nav-inner">
 
@@ -250,9 +253,10 @@ export default function Header() {
           <nav className="elite-desktop-nav">
             <ul className="elite-nav-list">
 
-              {/* Loan Programs */}
               <li className="elite-nav-item elite-has-dropdown">
-                <span className="elite-nav-link">Loan Programs</span>
+                <Link href="/loan-programs" className="elite-nav-link" prefetch>
+                  Loan Programs
+                </Link>
                 <div className="elite-dropdown elite-dropdown--two-col">
                   {loanProgramsMenu.map((item) => (
                     <Link
@@ -267,42 +271,33 @@ export default function Header() {
                 </div>
               </li>
 
-              {/* ── INDUSTRIES (NEW) ── */}
               <li className="elite-nav-item elite-has-dropdown">
-                <span className="elite-nav-link">Industries</span>
+                <Link href="/industries" className="elite-nav-link" prefetch>
+                  Industries
+                </Link>
                 <div className="elite-dropdown elite-dropdown--industries">
-
-                  {/* Hub link */}
                   <Link href="/industries" className="elite-dropdown-hub" prefetch>
                     Browse All Industries
                   </Link>
-
-                  {/* 4 category groups in a 2×2 grid */}
                   <div className="elite-dropdown-industry-grid">
                     {INDUSTRY_GROUPS.map((group) => (
                       <div key={group.label} className="elite-dropdown-section">
-                        <div className="elite-dropdown-section-title">
-                          {group.label}
-                        </div>
+                        <div className="elite-dropdown-section-title">{group.label}</div>
                         {group.items.map((ind) => (
-                          <Link
-                            key={ind.slug}
-                            href={`/industries/${ind.slug}`}
-                            prefetch
-                          >
+                          <Link key={ind.slug} href={`/industries/${ind.slug}`} prefetch>
                             {ind.name}
                           </Link>
                         ))}
                       </div>
                     ))}
                   </div>
-
                 </div>
               </li>
 
-              {/* Business Services */}
               <li className="elite-nav-item elite-has-dropdown">
-                <span className="elite-nav-link">Business Services</span>
+                <Link href="/business-services" className="elite-nav-link" prefetch>
+                  Business Services
+                </Link>
                 <div className="elite-dropdown">
                   {businessServicesMenu.map((item) => (
                     <Link
@@ -317,9 +312,10 @@ export default function Header() {
                 </div>
               </li>
 
-              {/* Resources */}
               <li className="elite-nav-item elite-has-dropdown">
-                <span className="elite-nav-link">Resources</span>
+                <Link href="/state-loans" className="elite-nav-link" prefetch>
+                  Resources
+                </Link>
                 <div className="elite-dropdown elite-dropdown--resources">
                   <Link href="/state-loans" className="elite-dropdown-hub" prefetch>
                     Funding by State
@@ -358,9 +354,10 @@ export default function Header() {
 
           {/* Mobile Toggle */}
           <button
-            className="elite-mobile-toggle"
+            className={`elite-mobile-toggle ${mobileOpen ? "open" : ""}`}
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle mobile menu"
+            aria-expanded={mobileOpen}
           >
             <span></span>
             <span></span>
@@ -372,41 +369,133 @@ export default function Header() {
 
       {/* ── MOBILE MENU ── */}
       <div className={`elite-mobile-menu ${mobileOpen ? "open" : ""}`}>
-        <ul>
-          <li>
-            <Link href="/loan-programs" onClick={() => setMobileOpen(false)}>
-              Loan Programs
-            </Link>
+
+        {/* Primary CTA at top */}
+        <Link href="/apply" className="elite-mobile-cta" onClick={closeMobile}>
+          Apply Now &mdash; Free &amp; No Obligation
+        </Link>
+
+        <ul className="elite-mobile-nav-list">
+
+          {/* Loan Programs */}
+          <li className="elite-mobile-section">
+            <div className="elite-mobile-section-row">
+              <Link href="/loan-programs" className="elite-mobile-hub-link" onClick={closeMobile}>
+                Loan Programs
+              </Link>
+              <button
+                className={`elite-mobile-chevron ${openSection === "loans" ? "open" : ""}`}
+                onClick={() => toggleSection("loans")}
+                aria-label="Toggle loan programs"
+              >
+                &#8250;
+              </button>
+            </div>
+            {openSection === "loans" && (
+              <ul className="elite-mobile-submenu">
+                {loanPrograms.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} onClick={closeMobile}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
-          <li>
-            <Link href="/industries" onClick={() => setMobileOpen(false)}>
-              Industries
-            </Link>
+
+          {/* Industries */}
+          <li className="elite-mobile-section">
+            <div className="elite-mobile-section-row">
+              <Link href="/industries" className="elite-mobile-hub-link" onClick={closeMobile}>
+                Industries
+              </Link>
+              <button
+                className={`elite-mobile-chevron ${openSection === "industries" ? "open" : ""}`}
+                onClick={() => toggleSection("industries")}
+                aria-label="Toggle industries"
+              >
+                &#8250;
+              </button>
+            </div>
+            {openSection === "industries" && (
+              <ul className="elite-mobile-submenu">
+                {INDUSTRY_GROUPS.map((group) => (
+                  <li key={group.label} className="elite-mobile-group">
+                    <span className="elite-mobile-group-label">{group.label}</span>
+                    <ul>
+                      {group.items.map((ind) => (
+                        <li key={ind.slug}>
+                          <Link href={`/industries/${ind.slug}`} onClick={closeMobile}>
+                            {ind.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
-          <li>
-            <Link href="/business-services" onClick={() => setMobileOpen(false)}>
-              Business Services
-            </Link>
+
+          {/* Business Services */}
+          <li className="elite-mobile-section">
+            <div className="elite-mobile-section-row">
+              <Link href="/business-services" className="elite-mobile-hub-link" onClick={closeMobile}>
+                Business Services
+              </Link>
+              <button
+                className={`elite-mobile-chevron ${openSection === "services" ? "open" : ""}`}
+                onClick={() => toggleSection("services")}
+                aria-label="Toggle business services"
+              >
+                &#8250;
+              </button>
+            </div>
+            {openSection === "services" && (
+              <ul className="elite-mobile-submenu">
+                {businessServicesMenu.slice(1).map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} onClick={closeMobile}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
-          <li>
-            <Link href="/state-loans" onClick={() => setMobileOpen(false)}>
-              Funding by State
-            </Link>
+
+          {/* Resources */}
+          <li className="elite-mobile-section">
+            <div className="elite-mobile-section-row">
+              <Link href="/state-loans" className="elite-mobile-hub-link" onClick={closeMobile}>
+                Resources
+              </Link>
+              <button
+                className={`elite-mobile-chevron ${openSection === "resources" ? "open" : ""}`}
+                onClick={() => toggleSection("resources")}
+                aria-label="Toggle resources"
+              >
+                &#8250;
+              </button>
+            </div>
+            {openSection === "resources" && (
+              <ul className="elite-mobile-submenu">
+                <li><Link href="/state-loans" onClick={closeMobile}>Funding by State</Link></li>
+                <li><Link href="/blog" onClick={closeMobile}>Blog</Link></li>
+                <li><Link href="/about-us" onClick={closeMobile}>About Us</Link></li>
+                <li><Link href="/contact" onClick={closeMobile}>Contact</Link></li>
+              </ul>
+            )}
           </li>
-          <li>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>
-              Contact
-            </Link>
+
+          <li className="elite-mobile-direct">
+            <Link href="/contact" onClick={closeMobile}>Contact Us</Link>
           </li>
+
         </ul>
 
-        <Link
-          href="/apply"
-          className="elite-mobile-cta"
-          onClick={() => setMobileOpen(false)}
-        >
-          Apply Now
-        </Link>
+        {/* Phone at bottom */}
+        <a href="tel:18889008979" className="elite-mobile-phone" onClick={closeMobile}>
+          (888) 900-8979
+        </a>
+
       </div>
 
     </header>

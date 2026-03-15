@@ -493,3 +493,42 @@
   position: relative;
   z-index: 2;
 }
+
+/* ============================================================
+   APPLY PAGE — MOBILE HERO BREATHING ROOM
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .apply-page {
+    padding-top: 48px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .apply-header {
+    margin-bottom: 24px;
+  }
+
+  .apply-header h1 {
+    font-size: 28px !important;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+  }
+
+  .apply-header p {
+    font-size: 14.5px;
+    margin-top: 8px;
+  }
+
+  .apply-form-card {
+    padding: 20px 16px !important;
+  }
+
+  .lead-form-trust {
+    gap: 8px;
+  }
+
+  .lead-form-trust span {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

@@ -670,151 +670,6 @@ body.sbc-body {
 }
 
 /* ============================================================
-   6. FOOTER
-   ============================================================ */
-
-.sbc-footer {
-  background: linear-gradient(180deg, #07142a 0%, #050d1f 100%);
-  color: #e5e7eb;
-  padding: 70px 20px 50px;
-  margin-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  position: relative;
-  overflow: hidden;
-}
-
-.sbc-footer::before {
-  content: "";
-  position: absolute;
-  top: -80px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 420px;
-  height: 120px;
-  background: radial-gradient(circle, rgba(0, 198, 132, 0.18) 0%, transparent 70%);
-  filter: blur(40px);
-  opacity: 0.35;
-}
-
-.sbc-footer__inner { max-width: 1200px; margin: 0 auto; }
-
-.sbc-footer__grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 64px;
-  margin-bottom: 48px;
-}
-
-.sbc-footer__col h4 { margin-bottom: 18px; font-size: 15px; font-weight: 700; color: #ffffff; letter-spacing: 0.01em; }
-.sbc-footer__col p { font-size: 14px; color: #d1d5db; margin-bottom: 12px; }
-.sbc-footer__col ul { list-style: none; padding: 0; margin: 0; }
-.sbc-footer__col li { margin-bottom: 8px; }
-.sbc-footer__col a { font-size: 14px; line-height: 1.55; color: #cbd5e1; text-decoration: none; transition: 0.2s ease; }
-.sbc-footer__col a:hover { color: var(--sbc-green); padding-left: 0px; }
-
-.sbc-footer-phone { color: var(--sbc-green); font-weight: 700; text-decoration: none; }
-
-.sbc-footer-cta {
-  background: var(--sbc-green);
-  color: #111827 !important;
-  padding: 14px 32px;
-  border-radius: 999px;
-  font-weight: 700;
-  letter-spacing: 0.15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -1px;
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
-}
-
-a.sbc-footer-cta:hover { 
-  background: var(--sbc-green);
-  color: #fff !important; 
-  padding: 14px 32px;
-  border-radius: 999px;
-  font-weight: 700;
-  letter-spacing: 0.15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -1px;
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
-}
-
-a.sbc-footer-cta:hover { 
-  background: var(--sbc-green);
-  color: #fff !important; 
-  padding: 14px 32px;
-  border-radius: 999px;
-  font-weight: 700;
-  letter-spacing: 0.15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -1px;
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 10px 26px rgba(0, 198, 132, 0.45);
-}
-
-.sbc-footer__bottom {
-  color: #9ca3af;
-  font-size: 14px;
-  opacity: 0.8;
-  text-align: center;
-  padding-top: 26px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sbc-footer a {
-  position: relative;
-  color: rgba(255, 255, 255, 0.78);
-  text-decoration: none;
-  transition: color 160ms ease, opacity 160ms ease;
-}
-
-.sbc-footer a:hover {
-  color: #22c55e !important;
-  opacity: 1;
-}
-
-.sbc-footer a.sbc-footer-cta:hover {
-  color: #fff !important;
-}
-
-
-.sbc-footer-phone:hover { color: #22c55e !important; }
-
-.sbc-footer a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background: #22c55e;
-  transition: width 160ms ease;
-}
-
-.sbc-footer a:hover::after { width: 100%; }
-
-@media (max-width: 900px) {
-  .sbc-footer__grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
-}
-
-@media (max-width: 600px) {
-  .sbc-footer__grid { grid-template-columns: 1fr; gap: 32px; text-align: left; }
-}
-
-/* ============================================================
    7. HOME SECTIONS
    ============================================================ */
 
@@ -1919,7 +1774,6 @@ section.content-section > .home-proof__inner { padding-top: 72px; padding-bottom
 
 .home h2, .home h3 { margin-top: 0; margin-bottom: 16px; }
 .home .home-section { padding-top: 80px; padding-bottom: 80px; }
-.home .static-hero { max-width: none; }
 
 @media (max-width: 768px) {
   .home { overflow-x: hidden; }
@@ -1941,4 +1795,189 @@ section.content-section > .home-proof__inner { padding-top: 72px; padding-bottom
 .city-cta-phone a { 
   color: rgba(255,255,255,0.85); 
   text-decoration: none; 
+}
+
+/* ============================================================
+   FOOTER MOBILE FIXES
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .sbc-footer {
+    padding: 44px 20px 36px !important;
+    margin-top: 0 !important;
+  }
+
+  .sbc-footer__inner {
+    padding: 0;
+  }
+
+  .sbc-footer__grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    margin-bottom: 32px !important;
+  }
+
+  /* Brand col — tighten disclaimer text */
+  .sbc-footer__col:first-child {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .sbc-footer__disclaimer {
+    font-size: 11.5px !important;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.45) !important;
+    margin-bottom: 14px !important;
+  }
+
+  .sbc-footer-phone {
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 4px;
+  }
+
+  /* Column headings */
+  .sbc-footer__col h4 {
+    font-size: 13px !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5) !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Links */
+  .sbc-footer__col a {
+    font-size: 15px !important;
+    padding: 3px 0;
+    display: inline-block;
+  }
+
+  .sbc-footer__col li {
+    margin-bottom: 10px !important;
+  }
+
+  /* CTA button — full width on mobile */
+  .sbc-footer-cta {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+    margin-top: 8px;
+  }
+
+  /* Kill the underline animation on footer links — too busy on mobile */
+  .sbc-footer a::after {
+    display: none !important;
+  }
+
+  /* Bottom bar */
+  .sbc-footer__bottom {
+    font-size: 12px !important;
+    padding-top: 20px !important;
+    line-height: 1.6;
+  }
+}
+
+/* ============================================================
+   STATIC HERO — MOBILE CONTRAST FIX
+   The background photo bleeds through on mobile making
+   text hard to read. Solution: solid dark overlay on mobile
+   so the image is purely decorative texture.
+   ============================================================ */
+
+/* hero contrast — see STATIC HERO MOBILE CONTRAST FIX below */
+
+/* ============================================================
+   HOMEPAGE HERO — MOBILE: REMOVE IMAGE, SOLID NAVY
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .static-hero {
+    background-image: none !important;
+    background: linear-gradient(
+      135deg,
+      #07142a 0%,
+      #0b1f41 60%,
+      #0e2c4f 100%
+    ) !important;
+  }
+
+  /* Kill the overlay since there's no image to cover */
+  .static-hero::before {
+    display: none !important;
+  }
+
+  /* Overlay card — transparent now, text sits directly on navy */
+  .static-hero__overlay {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* Subtle green glow top-left like the loan hub hero */
+  .static-hero::after {
+    content: "" !important;
+    position: absolute !important;
+    top: -40px !important;
+    left: -40px !important;
+    width: 400px !important;
+    height: 260px !important;
+    background: radial-gradient(
+      circle,
+      rgba(0, 198, 132, 0.18) 0%,
+      transparent 70%
+    ) !important;
+    opacity: 1 !important;
+    pointer-events: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .static-hero {
+    padding: 100px 28px 48px !important;
+  }
+
+  .static-hero__overlay {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .static-hero__overlay {
+    text-align: center !important;
+  }
+
+  .static-hero h1,
+  .static-hero__subhead,
+  .static-hero__content p,
+  .hero-micro-badge,
+  .lender-signal {
+    text-align: center !important;
+  }
+
+  .hero-micro-badge {
+    justify-content: center !important;
+  }
+
+  .lender-signal {
+    justify-content: center !important;
+  }
+
+  .static-hero__actions {
+    align-items: center !important;
+  }
+
+  .static-hero__under {
+    text-align: center !important;
+  }
+	
+  .static-hero__subhead {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }

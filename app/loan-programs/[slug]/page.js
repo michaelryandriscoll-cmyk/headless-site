@@ -775,6 +775,7 @@ const LOAN_PAGE_QUERY = `
 ========================= */
 
 async function fetchLoanPage(slug) {
+  if (!WP_GRAPHQL_URL) return null;
   const res = await fetch(WP_GRAPHQL_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -792,6 +793,7 @@ async function fetchLoanPage(slug) {
 }
 
 async function fetchAllLoanSlugs() {
+  if (!WP_GRAPHQL_URL) return [];
   const res = await fetch(WP_GRAPHQL_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

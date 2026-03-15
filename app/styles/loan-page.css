@@ -358,30 +358,11 @@
   pointer-events: none;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* =========================
    BASE GLOBAL RHYTHM
 ========================= */
 
-.loan-page section {
-  padding: clamp(80px, 8vw, 110px) 0;
-}
-
-@media (max-width: 768px) {
-  .loan-page section {
-    padding: 64px 0;
-  }
-} 
+/* section rhythm — see GLOBAL SECTION RHYTHM below */
 
 /* Wider + cleaner container */
 .loan-page .container {
@@ -2358,4 +2339,197 @@
 
 .loan-cta-reassurance {
   margin-bottom: 14px !important;
+}
+
+/* ===============================
+   HUB PAGES: Loan Programs + Business Services
+   These use .loan-page without .loan-theme/.service-theme
+   so the hero padding override must target base class
+================================ */
+@media (max-width: 768px) {
+  .loan-page .loan-hero {
+    padding-top: 48px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* ===============================
+   MOBILE: Hide hero image, full-width copy
+================================ */
+@media (max-width: 768px) {
+  .loan-hero-visual {
+    display: none !important;
+  }
+
+  .loan-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .loan-hero-copy h1 {
+    font-size: clamp(28px, 7vw, 36px) !important;
+  }
+
+  .loan-hero-sub {
+    font-size: 15px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .loan-hero-trust {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 14px 16px !important;
+  }
+
+  .loan-hero-trust-item strong {
+    font-size: 13px !important;
+  }
+
+  .loan-hero-trust-item span {
+    font-size: 11px !important;
+  }
+}
+
+/* ===============================
+   LOAN PROGRAMS HUB — HERO FIX
+   .loan-page without .loan-theme
+================================ */
+@media (max-width: 768px) {
+  .loan-page .loan-hero {
+    padding-top: 44px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .loan-page .loan-hero-trust-wrap {
+    margin-top: 16px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .loan-page .loan-hero-trust {
+    transform: translateY(0) !important;
+    margin-top: 0 !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 14px !important;
+  }
+
+  .loan-page section.loan-what {
+    padding-top: 32px !important;
+  }
+}
+
+/* ===============================
+   HUB HERO — DARK NAVY BACKGROUND
+   Mobile only — desktop still has hero image
+================================ */
+
+@media (max-width: 768px) {
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero {
+    background: linear-gradient(
+      135deg,
+      #07142a 0%,
+      #0b1f41 50%,
+      #0e2c4f 100%
+    ) !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 500px;
+    height: 300px;
+    background: radial-gradient(
+      circle,
+      rgba(0, 198, 132, 0.14) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero h1,
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero-copy h1 {
+    color: #ffffff !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero-sub {
+    color: rgba(255, 255, 255, 0.80) !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .hero-features span {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero {
+    padding-bottom: 32px !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-what {
+    padding-top: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero {
+    padding-bottom: 32px !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-what {
+    padding-top: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero-copy {
+    text-align: center !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero-copy h1 {
+    text-align: center !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero-sub {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .hero-features {
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-what,
+  .loan-page:not(.loan-theme):not(.service-theme) section:nth-child(2) {
+    margin-top: 0 !important;
+    padding-top: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hero — flush to edges, no bottom gap */
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-hero {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding-bottom: 36px !important;
+  }
+
+  /* First section after hero — pull it up flush */
+  .loan-page:not(.loan-theme):not(.service-theme) .loan-what {
+    padding-top: 32px !important;
+    margin-top: 0 !important;
+  }
 }

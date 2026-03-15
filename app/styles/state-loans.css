@@ -1245,11 +1245,6 @@ nav.seo-silo[aria-label="Breadcrumb"] {
   text-decoration: none;
 }
 
-@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to   { transform: translateY(0); opacity: 1; }
-}
-
 
 /* ============================================================
    TOPBAR + BREADCRUMB
@@ -1381,4 +1376,64 @@ nav.seo-silo[aria-label="Breadcrumb"] {
 @media (max-width: 560px) {
   .industry-group__list { grid-template-columns: 1fr; }
   .city-loan-page .silo-list { grid-template-columns: 1fr; }
+}
+
+/* State grid — responsive columns */
+.state-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .state-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ============================================================
+   CITY STICKY NAV — MOBILE FIX
+   The inline-flex + left:50% trick breaks on narrow screens.
+   Switch to full-width flex bar on mobile.
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .city-sticky-nav {
+    display: flex !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 12px !important;
+    top: 88px !important;
+    gap: 0 !important;
+    justify-content: space-between !important;
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08) !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  .city-sticky-nav a {
+    flex: 1 !important;
+    text-align: center !important;
+    padding: 11px 6px !important;
+    font-size: 13px !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
+    color: #374151 !important;
+  }
+
+  .city-sticky-nav a:hover {
+    background: none !important;
+    border-bottom-color: #16a34a !important;
+    color: #16a34a !important;
+    transform: none !important;
+  }
+
+  .city-sticky-nav a.cta {
+    background: none !important;
+    color: #16a34a !important;
+    font-weight: 800 !important;
+    box-shadow: none !important;
+    border-bottom-color: #16a34a !important;
+  }
 }

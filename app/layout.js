@@ -43,6 +43,10 @@ export const metadata = {
 	icon: "/favicon.ico",
   },
 	
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 

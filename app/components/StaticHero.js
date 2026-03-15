@@ -9,12 +9,7 @@ export default function StaticHero() {
         <div className="static-hero__overlay">
           <div className="static-hero__content">
 
-            <h1>
-			  Fast Small Business Loans<br />
-			  <span className="hero-emphasis">
-				Get Approved in 24–72 Hours
-			  </span>
-			</h1>
+            <h1>Get Approved for a Small Business Loan in 24&ndash;72 Hours</h1>
 
 	  		<p className="static-hero__subhead">See what you qualify for in minutes — no impact to your credit. Compare multiple funding offers with one simple application.</p>
 	  

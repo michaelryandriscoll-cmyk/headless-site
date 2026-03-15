@@ -1,5 +1,4 @@
 ﻿"use client";
-
 import { useState, useMemo } from "react";
 import Link from "next/link";
 
@@ -9,10 +8,7 @@ export default function StateSearchFilter({ states = [] }) {
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
     if (!q) return states;
-
-    return states.filter((s) =>
-      s.name.toLowerCase().includes(q)
-    );
+    return states.filter((s) => s.name.toLowerCase().includes(q));
   }, [query, states]);
 
   return (
@@ -20,17 +16,14 @@ export default function StateSearchFilter({ states = [] }) {
       <div className="industry-selector__search">
         <input
           type="text"
-          placeholder="Search a state (ex: Texas, Florida, New York)…"
+          placeholder="Search a state (ex: Texas, Florida, New York)&hellip;"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           aria-label="Search states"
         />
       </div>
 
-      <div
-        className="industry-selector__grid"
-        style={{ gridTemplateColumns: "repeat(3, minmax(0, 1fr))" }}
-      >
+      <div className="industry-selector__grid state-grid">
         {filtered.map((st) => (
           <Link
             key={st.slug}
@@ -46,19 +39,11 @@ export default function StateSearchFilter({ states = [] }) {
             <span style={{ fontSize: 16, fontWeight: 900 }}>
               {st.name}
             </span>
-
-            <span
-              style={{
-                fontSize: 13,
-                fontWeight: 800,
-                color: "rgba(11,18,32,0.62)",
-              }}
-            >
+            <span style={{ fontSize: 13, fontWeight: 800, color: "rgba(11,18,32,0.62)" }}>
               {st.citiesCount} cities
             </span>
-
             <span className="industry-chip__arrow" style={{ marginTop: 4 }}>
-              View funding pages →
+              View funding pages &rarr;
             </span>
           </Link>
         ))}
@@ -66,7 +51,7 @@ export default function StateSearchFilter({ states = [] }) {
 
       {filtered.length === 0 && (
         <p className="industry-selector__empty">
-          No states matched your search. Try “Texas” or “Florida”.
+          No states matched your search. Try &ldquo;Texas&rdquo; or &ldquo;Florida&rdquo;.
         </p>
       )}
     </>

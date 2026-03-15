@@ -206,7 +206,7 @@
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .ihub-hero {
-    padding: 92px 16px 40px;
+    padding: 60px 16px 36px;
   }
 
   .ihub-hero h1 {

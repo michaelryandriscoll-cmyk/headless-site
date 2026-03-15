@@ -207,11 +207,80 @@
   max-width: 26ch;
 }
 
-.sbc-footer__disclaimer {
-  font-size: 11.5px;
-  font-weight: 400;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.38);
-  margin-bottom: 14px;
-  max-width: 26ch;
+/* ============================================================
+   FOOTER MOBILE FIXES
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .sbc-footer {
+    padding: 44px 20px 36px;
+    margin-top: 0;
+  }
+
+  .sbc-footer__grid {
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  /* Brand col — subtle divider from link cols */
+  .sbc-footer__col:first-child {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Disclaimer already small — just ensure it doesn't wrap awkwardly */
+  .sbc-footer__disclaimer {
+    max-width: 100%;
+  }
+
+  /* Phone number — make it tappable */
+  .sbc-footer-phone {
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  /* Column headings — shrink + mute so links stand out */
+  .sbc-footer__col h4 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 12px;
+  }
+
+  /* Links — bigger tap targets */
+  .sbc-footer a {
+    font-size: 15px;
+    display: inline-block;
+    padding: 2px 0;
+  }
+
+  .sbc-footer__col li {
+    margin-bottom: 10px;
+  }
+
+  /* Kill underline animation on touch — it's a hover-only effect */
+  .sbc-footer a::after {
+    display: none;
+  }
+
+  /* CTA — full width, easy to tap */
+  .sbc-footer-cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-top: 6px;
+    border-radius: 14px;
+  }
+
+  /* Bottom bar */
+  .sbc-footer__bottom {
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 1.6;
+  }
 }
