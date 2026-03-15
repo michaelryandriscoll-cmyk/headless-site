@@ -39,13 +39,14 @@ export async function generateStaticParams() {
 --------------------------------------------------------- */
 
 export async function generateMetadata({ params }) {
-  const stateSlug = normalizeStateSlug(params?.state || "");
-  const citySlug = normalizeCitySlug(params?.city || "");
-  const industrySlug = params?.industry || "";
+  const { state, city, industry: industryParam } = await params;
+  const stateSlug = normalizeStateSlug(state || "");
+  const citySlug = normalizeCitySlug(city || "");
+  const industrySlug = industryParam || "";
 
   const S = stateCityMap[stateSlug];
   const C = S?.cities?.find((c) => c.slug === citySlug);
-  const industry = industries.find((i) => i.slug === industrySlug);
+  const industryMeta = industries.find((i) => i.slug === industrySlug);
 
   const cityName = C?.name || titleCase(citySlug);
   const stateName = S?.stateName || titleCase(stateSlug);
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }) {
     cityName,
     stateName,
     industrySlug,
-    industry,
+    industry: industryMeta,
     stateSlug,
     citySlug,
   });
@@ -65,9 +66,10 @@ export async function generateMetadata({ params }) {
 --------------------------------------------------------- */
 
 export default async function IndustryCityPage({ params }) {
-  const stateParam = params?.state || "";
-  const cityParam = params?.city || "";
-  const industrySlug = params?.industry || "";
+  const { state, city, industry: industryParam } = await params;
+  const stateParam = state || "";
+  const cityParam = city || "";
+  const industrySlug = industryParam || "";
 
   const normalizedState = normalizeStateSlug(stateParam);
   const normalizedCity = normalizeCitySlug(cityParam);
@@ -92,13 +94,12 @@ export default async function IndustryCityPage({ params }) {
   });
 
   const pageData = normalizeIndustryPage({
-    stateNode: null, // no longer needed — stats come from industryMeta
+    stateNode: null,
     city: C.name,
     citySlug: normalizedCity,
     state: S.stateName,
     stateSlug: normalizedState,
     industrySlug,
-    // Pass industry-specific stats directly
     creditScore: industryMeta.stats?.credit,
     processingTime: industryMeta.stats?.speed,
     terms: industryMeta.stats?.terms,
