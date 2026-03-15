@@ -1,6 +1,5 @@
-﻿import fs from "fs";
-import path from "path";
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
+import industries from "@/app/lib/_industryList25";
 
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
@@ -15,26 +14,6 @@ export async function GET(req) {
     );
   }
 
-  try {
-    const dir = path.join(process.cwd(), "data", "industry-city", state, city);
-
-    if (!fs.existsSync(dir)) {
-      return NextResponse.json({ industries: [] });
-    }
-
-    const files = fs.readdirSync(dir);
-
-    // example: roofing.json → roofing
-    const industries = files
-      .filter((f) => f.endsWith(".json"))
-      .map((f) => f.replace(".json", ""))
-      .sort();
-
-    return NextResponse.json({ industries });
-  } catch (err) {
-    return NextResponse.json(
-      { industries: [], error: "Failed reading directory" },
-      { status: 500 }
-    );
-  }
+  const industryList = industries.map((i) => i.slug).sort();
+  return NextResponse.json({ industries: industryList });
 }
