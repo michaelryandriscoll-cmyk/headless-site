@@ -6,7 +6,7 @@ const ALLOWED_ORIGINS = [
   "http://localhost:3000",
 ];
 
-export function middleware(request) {
+export function proxy(request) {
   const origin = request.headers.get("origin") ?? "";
   const response = NextResponse.next();
 
