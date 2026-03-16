@@ -254,7 +254,7 @@ export default function Header() {
             <ul className="elite-nav-list">
 
               <li className="elite-nav-item elite-has-dropdown">
-                <Link href="/loan-programs" className="elite-nav-link" prefetch>
+                <Link href="/loan-programs" className="elite-nav-link" prefetch={false}>
                   Loan Programs
                 </Link>
                 <div className="elite-dropdown elite-dropdown--two-col">
@@ -263,7 +263,7 @@ export default function Header() {
                       key={item.href}
                       href={item.href}
                       className={item.href === "/loan-programs" ? "elite-dropdown-hub" : ""}
-                      prefetch
+                      prefetch={false}
                     >
                       {item.title}
                     </Link>
@@ -272,11 +272,11 @@ export default function Header() {
               </li>
 
               <li className="elite-nav-item elite-has-dropdown">
-                <Link href="/industries" className="elite-nav-link" prefetch>
+                <Link href="/industries" className="elite-nav-link" prefetch={false}>
                   Industries
                 </Link>
                 <div className="elite-dropdown elite-dropdown--industries">
-                  <Link href="/industries" className="elite-dropdown-hub" prefetch>
+                  <Link href="/industries" className="elite-dropdown-hub" prefetch={false}>
                     Browse All Industries
                   </Link>
                   <div className="elite-dropdown-industry-grid">
@@ -284,7 +284,7 @@ export default function Header() {
                       <div key={group.label} className="elite-dropdown-section">
                         <div className="elite-dropdown-section-title">{group.label}</div>
                         {group.items.map((ind) => (
-                          <Link key={ind.slug} href={`/industries/${ind.slug}`} prefetch>
+                          <Link key={ind.slug} href={`/industries/${ind.slug}`} prefetch={false}>
                             {ind.name}
                           </Link>
                         ))}
@@ -295,7 +295,7 @@ export default function Header() {
               </li>
 
               <li className="elite-nav-item elite-has-dropdown">
-                <Link href="/business-services" className="elite-nav-link" prefetch>
+                <Link href="/business-services" className="elite-nav-link" prefetch={false}>
                   Business Services
                 </Link>
                 <div className="elite-dropdown">
@@ -304,7 +304,7 @@ export default function Header() {
                       key={item.href}
                       href={item.href}
                       className={item.href === "/business-services" ? "elite-dropdown-hub" : ""}
-                      prefetch
+                      prefetch={false}
                     >
                       {item.title}
                     </Link>
@@ -313,11 +313,11 @@ export default function Header() {
               </li>
 
               <li className="elite-nav-item elite-has-dropdown">
-                <Link href="/state-loans" className="elite-nav-link" prefetch>
+                <Link href="/state-loans" className="elite-nav-link" prefetch={false}>
                   Resources
                 </Link>
                 <div className="elite-dropdown elite-dropdown--resources">
-                  <Link href="/state-loans" className="elite-dropdown-hub" prefetch>
+                  <Link href="/state-loans" className="elite-dropdown-hub" prefetch={false}>
                     Funding by State
                   </Link>
                   <div className="elite-dropdown-section">
@@ -328,7 +328,7 @@ export default function Header() {
                           key={s.slug}
                           href={`/state-loans/${s.slug}`}
                           className="elite-dropdown-chip"
-                          prefetch
+                          prefetch={false}
                         >
                           {s.name}
                         </Link>
@@ -337,9 +337,9 @@ export default function Header() {
                   </div>
                   <div className="elite-dropdown-section">
                     <div className="elite-dropdown-section-title">More</div>
-                    <Link href="/blog" prefetch>Blog</Link>
-                    <Link href="/about-us" prefetch>About</Link>
-                    <Link href="/contact" prefetch>Contact</Link>
+                    <Link href="/blog" prefetch={false}>Blog</Link>
+                    <Link href="/about-us" prefetch={false}>About</Link>
+                    <Link href="/contact" prefetch={false}>Contact</Link>
                   </div>
                 </div>
               </li>
@@ -348,7 +348,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <Link href="/apply" className="elite-cta" prefetch>
+          <Link href="/apply" className="elite-cta" prefetch={false}>
             Apply Now
           </Link>
 
