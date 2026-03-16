@@ -17,7 +17,12 @@ export async function POST(req) {
       intent_industry,
       intent_source,
       loan_amount,
-      funding_purpose
+      funding_purpose,
+      credit_score,
+      time_in_business,
+      monthly_revenue,
+      lead_tier,
+      lender_recommendation
     } = body;
 
     if (!email) {
@@ -59,7 +64,12 @@ export async function POST(req) {
             intent_industry: industry || "",
             lead_source: leadSource,
             loan_amount: loan_amount || "",
-            funding_purpose: funding_purpose || ""
+            funding_purpose: funding_purpose || "",
+            credit_score: credit_score || "",
+            time_in_business: time_in_business || "",
+            monthly_revenue: monthly_revenue || "",
+            lead_tier: lead_tier || "",
+            lender_recommendation: lender_recommendation || ""
           }
         })
       }
@@ -88,7 +98,7 @@ export async function POST(req) {
         body: JSON.stringify({
           from: "leads@smallbusiness.capital",
           to: process.env.ALERT_EMAIL,
-          subject: `🔥 New Lead: ${intent_industry || industry || "Unknown"} — ${intent_city || city || "Unknown"}, ${intent_state || state || "Unknown"}`,
+          subject: `🔥 New Lead [${lead_tier?.toUpperCase() || "?"}]: ${intent_industry || industry || "Unknown"} — ${intent_city || city || "Unknown"}, ${intent_state || state || "Unknown"}`,
           html: `
             <h2>New Lead Submitted</h2>
             <table style="border-collapse:collapse;width:100%;font-family:sans-serif;">
@@ -100,7 +110,12 @@ export async function POST(req) {
               <tr style="background:#f9f9f9;"><td style="padding:8px;font-weight:bold;">State</td><td style="padding:8px;">${intent_state || state || "--"}</td></tr>
               <tr><td style="padding:8px;font-weight:bold;">Loan Amount</td><td style="padding:8px;">${loan_amount || "--"}</td></tr>
               <tr style="background:#f9f9f9;"><td style="padding:8px;font-weight:bold;">Funding Purpose</td><td style="padding:8px;">${funding_purpose || "--"}</td></tr>
-              <tr><td style="padding:8px;font-weight:bold;">Source</td><td style="padding:8px;">${leadSource}</td></tr>
+              <tr><td style="padding:8px;font-weight:bold;">Credit Score</td><td style="padding:8px;">${credit_score || "--"}</td></tr>
+              <tr style="background:#f9f9f9;"><td style="padding:8px;font-weight:bold;">Time in Business</td><td style="padding:8px;">${time_in_business || "--"}</td></tr>
+              <tr><td style="padding:8px;font-weight:bold;">Monthly Revenue</td><td style="padding:8px;">${monthly_revenue || "--"}</td></tr>
+              <tr style="background:#f9f9f9;"><td style="padding:8px;font-weight:bold;">Lead Tier</td><td style="padding:8px;font-weight:bold;color:${lead_tier === 'prime' ? '#16a34a' : lead_tier === 'near-prime' ? '#d97706' : '#dc2626'}">${lead_tier?.toUpperCase() || "--"}</td></tr>
+              <tr><td style="padding:8px;font-weight:bold;">Send To</td><td style="padding:8px;font-weight:bold;">${lender_recommendation || "--"}</td></tr>
+              <tr style="background:#f9f9f9;"><td style="padding:8px;font-weight:bold;">Source</td><td style="padding:8px;">${leadSource}</td></tr>
             </table>
             <p style="margin-top:16px;color:#666;font-size:12px;">View in HubSpot: https://app.hubspot.com/contacts</p>
           `
@@ -113,7 +128,7 @@ export async function POST(req) {
 
     // ─── 3. SMS NOTIFICATION (Twilio) ─────────────────────────
     try {
-      const smsBody = `🔥 New Lead\n${name || "Unknown"}\n📞 ${phone || "No phone"}\n📧 ${email}\n🏙️ ${intent_city || city || "?"}, ${intent_state || state || "?"}\n🏢 ${intent_industry || industry || "?"}\n💰 ${loan_amount || "?"}\n📋 ${funding_purpose || "?"}`;
+      const smsBody = `🔥 New Lead [${lead_tier?.toUpperCase() || "?"}]\n${name || "Unknown"}\n📞 ${phone || "No phone"}\n📧 ${email}\n🏙️ ${intent_city || city || "?"}, ${intent_state || state || "?"}\n🏢 ${intent_industry || industry || "?"}\n💰 ${loan_amount || "?"}\n📊 Credit: ${credit_score || "?"}\n⏱️ ${time_in_business || "?"}\n💵 Rev: ${monthly_revenue || "?"}\n➡️ Send to: ${lender_recommendation || "?"}`;
 
       const twilioAuth = Buffer.from(
         `${process.env.TWILIO_ACCOUNT_SID}:${process.env.TWILIO_AUTH_TOKEN}`
