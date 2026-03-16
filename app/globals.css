@@ -1026,7 +1026,7 @@ a.feature-link:hover { text-decoration: underline; color: var(--sbc-green) !impo
   position: relative;
   width: 100vw;
   min-height: 620px;
-  background-image: url("/hero/cafe-owner-2000x800.png");
+  background-image: url("/hero/cafe-owner-2000x800.webp");
   background-repeat: no-repeat;
   background-position: 32% center;
   background-size: cover;
