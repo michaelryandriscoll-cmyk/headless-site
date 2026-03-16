@@ -137,7 +137,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00a870;
+  color: #007a52;
   margin: 0;
 }
 
@@ -270,7 +270,7 @@ a.state-btn-secondary:hover { color: rgba(0, 198, 132, 0.5); }
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #00a870;
+  color: #007a52;
   margin: 0 0 6px;
 }
 
@@ -309,7 +309,7 @@ a.state-btn-secondary:hover { color: rgba(0, 198, 132, 0.5); }
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00a870;
+  color: #007a52;
   margin: 0;
   line-height: 1.2;
 }
@@ -761,7 +761,7 @@ nav.seo-silo[aria-label="Breadcrumb"] {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #00a870;
+  color: #007a52;
   margin: 0 0 8px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 198, 132, 0.18);

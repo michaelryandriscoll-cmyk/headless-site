@@ -1036,7 +1036,7 @@ body.home {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #9ca3af;
+  color: #4b5563;
   margin-bottom: 6px;
 }
 
@@ -1079,7 +1079,7 @@ body.home {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   background: #f3f4f6;
-  color: #6b7280;
+  color: #4b5563;
   cursor: pointer;
   transition: background 0.16s ease, color 0.16s ease, transform 0.16s ease;
 }
@@ -1105,7 +1105,7 @@ body.home {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #9ca3af;
+  color: #4b5563;
   margin-right: 4px;
 }
 
@@ -1130,7 +1130,7 @@ body.home {
 .state-empty-message {
   text-align: center;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #4b5563;
   margin-top: 10px;
 }
 
@@ -1888,7 +1888,7 @@ body.home {
   display: block;
   margin-top: 1rem;
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: #4b5563;
 }
 
 /* MOBILE TUNING */
