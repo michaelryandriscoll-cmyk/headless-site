@@ -93,16 +93,16 @@ export default function LeadForm({
             maxLength={14}
           />
 
-          <select
-            name="loan_amount"
-            value={form.loan_amount}
-            onChange={handleChange}
-            required
-            style={{
-              appearance: "auto"
-            }}
-          >
-            <option value="" disabled>How much funding do you need?</option>
+          <label htmlFor="loan_amount" className="sr-only">How much funding do you need?</label>
+			<select
+			  id="loan_amount"
+			  name="loan_amount"
+			  value={form.loan_amount}
+			  onChange={handleChange}
+			  required
+			  style={{ appearance: "auto" }}
+			>
+			<option value="" disabled>How much funding do you need?</option>
             <option value="Under $10,000">Under $10,000</option>
             <option value="$10,000 - $50,000">$10,000 – $50,000</option>
             <option value="$50,000 - $150,000">$50,000 – $150,000</option>
@@ -110,16 +110,16 @@ export default function LeadForm({
             <option value="$500,000+">$500,000+</option>
           </select>
 
-          <select
-            name="funding_purpose"
-            value={form.funding_purpose}
-            onChange={handleChange}
-            required
-            style={{
-              appearance: "auto"
-            }}
-          >
-            <option value="" disabled>What is this for?</option>
+          <label htmlFor="funding_purpose" className="sr-only">What is this for?</label>
+			<select
+			  id="funding_purpose"
+			  name="funding_purpose"
+			  value={form.funding_purpose}
+			  onChange={handleChange}
+			  required
+			  style={{ appearance: "auto" }}
+			>
+			<option value="" disabled>What is this for?</option>
             <option value="Working Capital">Working Capital</option>
             <option value="Equipment Purchase">Equipment Purchase</option>
             <option value="Business Expansion">Business Expansion</option>

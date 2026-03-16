@@ -232,7 +232,7 @@
   display: block;
   font-size: 22px;
   font-weight: 900;
-  color: #00c684;
+  color: #007a52;
   margin-bottom: 4px;
 }
 
@@ -746,7 +746,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #16a34a;
+  color: #007a52;
   margin-bottom: 10px;
   position: relative;
   padding-left: 14px;
@@ -761,10 +761,9 @@
   transform: translateY(-50%);
   width: 4px;
   height: 11px;
-  background: #16a34a;
+  background: #007a52;
   border-radius: 2px;
 }
-
 .section-eyebrow + h2 { margin-top: 0; }
 
 .section-subhead {
