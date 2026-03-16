@@ -3,7 +3,6 @@ import "@/app/styles/blog.css";
 import Link from "next/link";
 import Script from "next/script";
 
-export const dynamic = "force-static";
 export const revalidate = 300;
 
 function stripHtml(html = "") {
