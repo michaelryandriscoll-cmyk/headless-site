@@ -76,6 +76,12 @@ export default function Footer() {
               <li>
                 <a href="/privacy-policy">Privacy</a>
               </li>
+			  <li>
+                <a href="/terms-and-conditions">Terms</a>
+              </li>
+				<li>
+                <a href="/sms-terms-conditions">SMS Terms</a>
+              </li>
               <li>
                 <a href="/blog">Blog</a>
               </li>

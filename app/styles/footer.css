@@ -139,6 +139,14 @@
   width: 100%;
 }
 
+.sbc-footer a:hover {
+	color: #22c55e !important;
+}
+
+.sbc-footer a.sbc-footer-cta:hover {
+	color: #111827 !important; 
+}
+
 /* =========================
    PHONE LINK
 ========================= */
