@@ -2,10 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_next/
-Disallow: /admin/
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /private/
 Disallow: /?s=
 Disallow: /search/
 
