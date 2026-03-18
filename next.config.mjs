@@ -1,3 +1,4 @@
+cat > next.config.mjs << 'EOF'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -36,24 +37,8 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: "/api/:path*",
-        headers: [
-          {
-            key: "Access-Control-Allow-Origin",
-            value: "https://smallbusiness.capital",
-          },
-          {
-            key: "Access-Control-Allow-Methods",
-            value: "GET, POST, OPTIONS",
-          },
-          {
-            key: "Access-Control-Allow-Headers",
-            value: "Content-Type, Authorization",
-          },
-        ],
-      },
     ];
   },
 };
 export default nextConfig;
+EOF
