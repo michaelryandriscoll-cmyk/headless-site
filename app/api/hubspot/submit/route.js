@@ -126,30 +126,24 @@ export async function POST(req) {
       console.error("⚠️ Email notification failed:", emailErr);
     }
 
-    // ─── 3. SMS NOTIFICATION (Twilio) ─────────────────────────
+    // ─── 3. SMS NOTIFICATION (AT&T email-to-SMS via Resend) ───
     try {
-      const smsBody = `🔥 New Lead [${lead_tier?.toUpperCase() || "?"}]\n${name || "Unknown"}\n📞 ${phone || "No phone"}\n📧 ${email}\n🏙️ ${intent_city || city || "?"}, ${intent_state || state || "?"}\n🏢 ${intent_industry || industry || "?"}\n💰 ${loan_amount || "?"}\n📊 Credit: ${credit_score || "?"}\n⏱️ ${time_in_business || "?"}\n💵 Rev: ${monthly_revenue || "?"}\n➡️ Send to: ${lender_recommendation || "?"}`;
+      const smsText = `New Lead [${lead_tier?.toUpperCase() || "?"}] ${name || "Unknown"} | ${phone || "No phone"} | ${intent_city || city || "?"}, ${intent_state || state || "?"} | ${intent_industry || industry || "?"} | ${loan_amount || "?"} | Credit: ${credit_score || "?"} | ${time_in_business || "?"} | Rev: ${monthly_revenue || "?"} | Send to: ${lender_recommendation || "?"}`;
 
-      const twilioAuth = Buffer.from(
-        `${process.env.TWILIO_ACCOUNT_SID}:${process.env.TWILIO_AUTH_TOKEN}`
-      ).toString("base64");
-
-      await fetch(
-        `https://api.twilio.com/2010-04-01/Accounts/${process.env.TWILIO_ACCOUNT_SID}/Messages.json`,
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Basic ${twilioAuth}`,
-            "Content-Type": "application/x-www-form-urlencoded"
-          },
-          body: new URLSearchParams({
-            From: process.env.TWILIO_FROM_NUMBER,
-            To: process.env.ALERT_PHONE,
-            Body: smsBody
-          })
-        }
-      );
-      console.log("✅ SMS notification sent");
+      await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          from: "leads@smallbusiness.capital",
+          to: process.env.ALERT_SMS_GATEWAY, // 7169034623@txt.att.net
+          subject: "", // carriers ignore subject, body is what shows as SMS
+          text: smsText
+        })
+      });
+      console.log("✅ SMS notification sent via AT&T gateway");
     } catch (smsErr) {
       console.error("⚠️ SMS notification failed:", smsErr);
     }
