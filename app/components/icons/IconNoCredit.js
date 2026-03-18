@@ -1,16 +1,7 @@
-export default function IconNoCredit({ className = "", size = 24 }) {
+export default function IconNoCredit(props) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M4 6h16v12H4V6zm2 3h12v2H6V9z" />
-      <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" strokeWidth="2" />
+    <svg viewBox="0 0 24 24" {...props}>
+      <path d="M12 2L4 6v6c0 5 3.5 9.7 8 11 4.5-1.3 8-6 8-11V6L12 2zm-1 13l-3-3 1.4-1.4 1.6 1.6 4.6-4.6L17 9l-6 6z" />
     </svg>
   );
 }

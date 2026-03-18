@@ -954,8 +954,9 @@ a.feature-link:hover { text-decoration: underline; color: var(--sbc-green) !impo
 .trust-badge { display: flex; align-items: center; gap: 12px; }
 .trust-text strong { display: block; font-size: 14px; font-weight: 800; color: #0b1f41; }
 .trust-text span { font-size: 12px; color: #4b5563; }
-.trust-icon svg { width: 22px; height: 22px; color: #00c684; }
-.trust-icon svg rect { fill: #00c684 !important; }
+.trust-icon svg { width: 24px; height: 24px; fill: #ffffff; }
+.trust-icon.filled svg { width: 26px; height: 26px; fill: #ffffff; }
+.trust-icon svg rect { fill: #ffffff; }
 
 .trust-icon.filled {
   background: #0b1f41;
