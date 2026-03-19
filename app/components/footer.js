@@ -1,4 +1,4 @@
-// app/page.js
+// app/components/footer.js
 import Link from "next/link";
 import "@/app/styles/footer.css";
 
@@ -12,26 +12,26 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="sbc-footer__col">
-			  <h4>Small Business Capital</h4>
-			  <p>Fast results. Trusted funding for American businesses.</p>
+            <h4>Small Business Capital</h4>
+            <p>Fast results. Trusted funding for American businesses.</p>
 
-			  <p className="sbc-footer__disclaimer">
-				Small Business Capital is not a lender. We connect small business owners 
-				with third-party lenders and funding providers. Loan approval, terms, and 
-				availability are determined solely by the lender.
-			  </p>
+            <p className="sbc-footer__disclaimer">
+              Small Business Capital is not a lender. We connect small business owners 
+              with third-party lenders and funding providers. Loan approval, terms, and 
+              availability are determined solely by the lender.
+            </p>
 
-			  <a className="sbc-footer-phone" href="tel:18889008979">
-				(888) 900-8979
-			  </a>
-		  </div>
+            <a className="sbc-footer-phone" href="tel:18889008979">
+              (888) 900-8979
+            </a>
+          </div>
 
           {/* Loan Programs */}
           <div className="sbc-footer__col">
             <h4>Loan Programs</h4>
             <ul>
               <li>
-                <a href="/loan-programs/working-capital">
+                <a href="/loan-programs/working-capital-loans">
                   Working Capital
                 </a>
               </li>
@@ -76,10 +76,10 @@ export default function Footer() {
               <li>
                 <a href="/privacy-policy">Privacy</a>
               </li>
-			  <li>
+              <li>
                 <a href="/terms-and-conditions">Terms</a>
               </li>
-				<li>
+              <li>
                 <a href="/sms-terms-conditions">SMS Terms</a>
               </li>
               <li>
