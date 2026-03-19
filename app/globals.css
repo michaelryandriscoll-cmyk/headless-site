@@ -1386,6 +1386,24 @@ a.feature-link:hover { text-decoration: underline; color: var(--sbc-green) !impo
 }
 @media (max-width: 640px) { .state-pro-grid { grid-template-columns: 1fr; } }
 
+/* TOP CITIES */
+.home-top-cities { padding: 64px 0; background: #f8fafc; }
+.home-top-cities__inner { text-align: center; }
+.home-top-cities__lead { max-width: 60ch; margin: 0 auto 2rem; color: #4b5563; }
+.home-top-cities__grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 1.5rem; }
+.home-top-cities__chip { padding: 8px 16px; background: #fff; border: 1px solid #e2e8f0; border-radius: 999px; font-size: 14px; color: #0f172a; text-decoration: none; transition: all 0.2s; }
+.home-top-cities__chip:hover { background: #0f172a; color: #fff; border-color: #0f172a; }
+.home-top-cities__cta { margin-top: 1rem; }
+.home-top-cities__link { color: #007a52; font-weight: 600; text-decoration: none; }
+.home-top-cities__link:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .home-top-cities { padding: 48px 0; }
+  .home-top-cities__chip { font-size: 13px; padding: 7px 14px; }
+}
+
+.state-pro-card__header p { font-size:12px; } 
+
 /* ============================================================
    SPACING SYSTEM
    ============================================================ */

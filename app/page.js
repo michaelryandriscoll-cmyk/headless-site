@@ -31,6 +31,33 @@ export const metadata = {
 };
 
 /* =========================
+   TOP CITIES DATA
+========================= */
+
+const TOP_CITIES = [
+  { name: "New York City", slug: "new-york-city", state: "new-york" },
+  { name: "Los Angeles", slug: "los-angeles", state: "california" },
+  { name: "Chicago", slug: "chicago", state: "illinois" },
+  { name: "Houston", slug: "houston", state: "texas" },
+  { name: "Phoenix", slug: "phoenix", state: "arizona" },
+  { name: "Philadelphia", slug: "philadelphia", state: "pennsylvania" },
+  { name: "San Antonio", slug: "san-antonio", state: "texas" },
+  { name: "San Diego", slug: "san-diego", state: "california" },
+  { name: "Dallas", slug: "dallas", state: "texas" },
+  { name: "Jacksonville", slug: "jacksonville", state: "florida" },
+  { name: "Austin", slug: "austin", state: "texas" },
+  { name: "Fort Worth", slug: "fort-worth", state: "texas" },
+  { name: "Columbus", slug: "columbus", state: "ohio" },
+  { name: "Charlotte", slug: "charlotte", state: "north-carolina" },
+  { name: "Indianapolis", slug: "indianapolis", state: "indiana" },
+  { name: "San Francisco", slug: "san-francisco", state: "california" },
+  { name: "Seattle", slug: "seattle", state: "washington" },
+  { name: "Denver", slug: "denver", state: "colorado" },
+  { name: "Nashville", slug: "nashville", state: "tennessee" },
+  { name: "Miami", slug: "miami", state: "florida" },
+];
+
+/* =========================
    PAGE
 ========================= */
 
@@ -307,6 +334,37 @@ export default function HomePage() {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TOP CITIES */}
+      <section className="home-top-cities">
+        <div className="container">
+          <div className="home-top-cities__inner">
+            <span className="section-eyebrow">Funding by city</span>
+            <h2>Small Business Loans by City</h2>
+            <p className="home-top-cities__lead">
+              Fast funding for small businesses in every major U.S. city.
+              Find working capital, equipment financing, and flexible credit
+              lines near you.
+            </p>
+            <div className="home-top-cities__grid">
+              {TOP_CITIES.map((city) => (
+                <Link
+                  key={city.slug}
+                  href={`/state-loans/${city.state}/${city.slug}`}
+                  className="home-top-cities__chip"
+                >
+                  {city.name}
+                </Link>
+              ))}
+            </div>
+            <div className="home-top-cities__cta">
+              <Link href="/state-loans" className="home-top-cities__link">
+                Browse all cities and states &rarr;
+              </Link>
             </div>
           </div>
         </div>
