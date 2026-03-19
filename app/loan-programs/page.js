@@ -67,7 +67,7 @@ export default async function LoanProgramsPage() {
 
   const FEATURED_SLUGS = [
     "working-capital-loans",
-    "business-loans-for-bad-credit",
+    "bad-credit-loans",
     "no-doc-loans",
   ];
 
@@ -91,13 +91,13 @@ export default async function LoanProgramsPage() {
           </div>
 
           <div className="loan-hero-visual">
-			  <img
-				src="/hero/loan-dashboard.png"
-				alt="Loan offers dashboard illustration"
-				className="loan-hero-image"
-				loading="eager"
-			  />
-		  </div>
+            <img
+              src="/hero/loan-dashboard.png"
+              alt="Loan offers dashboard illustration"
+              className="loan-hero-image"
+              loading="eager"
+            />
+          </div>
           
         </div>
       </section>
