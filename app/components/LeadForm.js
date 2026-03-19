@@ -96,9 +96,6 @@ export default function LeadForm({
   return (
     <div className="lead-form-box">
 
-      {/* Progress indicator */}
-      <p className="form-progress">Step {step} of 2</p>
-
       {step === 1 && (
         <form onSubmit={handleStep1} className="lead-form">
           <input
@@ -147,7 +144,7 @@ export default function LeadForm({
             required
             style={{ appearance: "auto" }}
           >
-            <option value="" disabled>How much funding do you need?</option>
+            <option value="" disabled>Funding Amount Needed</option>
             <option value="Under $10,000">Under $10,000</option>
             <option value="$10,000 - $50,000">$10,000 – $50,000</option>
             <option value="$50,000 - $150,000">$50,000 – $150,000</option>
