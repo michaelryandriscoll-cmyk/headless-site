@@ -1,6 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  async redirects() {
+    return [
+      // Redirect old state URLs with -business-loans suffix
+      // e.g. /state-loans/colorado-business-loans → /state-loans/colorado
+      {
+        source: "/state-loans/:state-business-loans",
+        destination: "/state-loans/:state",
+        permanent: true,
+      },
+      // Redirect old bare state URLs to correct /state-loans/ prefix
+      // e.g. /nevada/ → /state-loans/nevada
+      {
+        source: "/:state(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new-hampshire|new-jersey|new-mexico|new-york|north-carolina|north-dakota|ohio|oklahoma|oregon|pennsylvania|rhode-island|south-carolina|south-dakota|tennessee|texas|utah|vermont|virginia|washington|west-virginia|wisconsin|wyoming)",
+        destination: "/state-loans/:state",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -40,4 +58,3 @@ const nextConfig = {
   },
 };
 export default nextConfig;
-
