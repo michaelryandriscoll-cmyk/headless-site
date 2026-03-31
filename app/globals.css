@@ -1392,7 +1392,7 @@ a.feature-link:hover { text-decoration: underline; color: var(--sbc-green) !impo
 .home-top-cities__lead { max-width: 60ch; margin: 0 auto 2rem; color: #4b5563; }
 .home-top-cities__grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 1.5rem; }
 .home-top-cities__chip { padding: 8px 16px; background: #fff; border: 1px solid #e2e8f0; border-radius: 999px; font-size: 14px; color: #0f172a; text-decoration: none; transition: all 0.2s; }
-.home-top-cities__chip:hover { background: #0f172a; color: #fff; border-color: #0f172a; }
+.home-top-cities__chip:hover { background: #0f172a; color: #fff !important; border-color: #0f172a; }
 .home-top-cities__cta { margin-top: 1rem; }
 .home-top-cities__link { color: #007a52; font-weight: 600; text-decoration: none; }
 .home-top-cities__link:hover { text-decoration: underline; }
