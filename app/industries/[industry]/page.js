@@ -73,7 +73,8 @@ export default async function IndustryPage({ params }) {
   const speed  = stats?.speed  || "24–72 Hours";
   const terms  = stats?.terms  || "6–24 Months";
 
-  const intro = `Fast, flexible business loans for ${industryName} businesses — equipment financing, working capital, and growth funding with approvals in as little as 24 hours.`;
+  const intro = industryData.heroSubtitle ||
+  `Fast, flexible business loans for ${industryName} businesses — equipment financing, working capital, and growth funding with approvals in as little as 24 hours.`;
 
   const allUses = [...bestForCore, ...bestForExtras];
 

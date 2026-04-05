@@ -5,6 +5,7 @@ export default [
   {
     "slug": "roofing",
     "title": "Roofing Business Loans",
+    "heroSubtitle": "Cover materials upfront, bridge payment gaps, and handle storm season surges — roofing contractors get approved in as little as 24 hours.",
     "introTemplates": [
       "Need reliable roofing contractors in {{city}}, {{state}}? Compare top-rated pros for repairs, replacements, and inspections.",
       "{{city}}, {{state}} homeowners trust local roofing experts for leak repairs, storm damage fixes, and full roof replacements.",
@@ -59,6 +60,7 @@ export default [
   {
     "slug": "trucking",
     "title": "Trucking Business Loans",
+    "heroSubtitle": "Finance a new semi, cover fuel between loads, or expand your fleet — trucking companies get funded fast, even with less-than-perfect credit.",
     "introTemplates": [
       "Local trucking companies in {{city}}, {{state}} benefit from flexible business funding for fuel costs, repairs, and fleet expansion.",
       "Need capital to keep your trucks on the road in {{city}}, {{state}}? Explore fast financing options built for trucking businesses.",
@@ -123,6 +125,7 @@ export default [
   {
     "slug": "solar",
     "title": "Solar Installation Business Loans",
+    "heroSubtitle": "Fund panels, batteries, and installation crews without waiting on project payments — solar businesses get flexible financing with approvals in 24–72 hours.",
     "introTemplates": [
       "Solar installation companies in {{city}}, {{state}} benefit from fast, flexible financing to manage equipment costs and project timelines.",
       "Strengthen your solar business in {{city}}, {{state}} with funding options designed for panels, batteries, and installation crews.",
@@ -187,6 +190,7 @@ export default [
   {
     "slug": "restaurants",
     "title": "Restaurant Business Loans",
+    "heroSubtitle": "Cover food costs, kitchen equipment, and payroll between busy seasons — restaurant owners get funded in as little as 24 hours.",
     "introTemplates": [
       "Restaurants in {{city}}, {{state}} benefit from flexible funding to manage inventory, payroll, and seasonal slowdowns.",
       "Strengthen your restaurant in {{city}}, {{state}} with capital for kitchen equipment, staff, and marketing.",
@@ -241,6 +245,7 @@ export default [
   {
     "slug": "retail",
     "title": "Retail Business Loans",
+    "heroSubtitle": "Stock up for peak season, open a new location, or upgrade your store — retail business loans with approvals in as little as 24 hours.",
     "introTemplates": [
       "Retail shops in {{city}}, {{state}} use flexible financing to manage inventory, staffing, and seasonal peaks.",
       "Strengthen your retail business in {{city}}, {{state}} with capital for bulk inventory, store upgrades, and marketing.",
@@ -295,6 +300,7 @@ export default [
   {
     "slug": "construction",
     "title": "Construction Business Loans",
+    "heroSubtitle": "Buy materials upfront, pay your crew on time, and bid on bigger contracts — construction companies get funded in 24–72 hours.",
     "introTemplates": [
       "Construction companies in {{city}}, {{state}} benefit from fast, flexible financing to manage labor, materials, and project timelines.",
       "Strengthen your construction business in {{city}}, {{state}} with capital for equipment, hiring, and new project bids.",
@@ -354,6 +360,7 @@ export default [
   {
     "slug": "hvac",
     "title": "HVAC Business Loans",
+    "heroSubtitle": "Cover equipment purchases, service vehicles, and seasonal payroll gaps — HVAC contractors get approved in as little as 24 hours.",
     "introTemplates": [
       "HVAC companies in {{city}}, {{state}} depend on fast financing for equipment, vehicles, and seasonal demand.",
       "Strengthen your HVAC business in {{city}}, {{state}} with capital for technicians, tools, and service vehicles.",
@@ -408,11 +415,12 @@ export default [
     },
     "industry": "HVAC",
     "audience": "HVAC Contractors",
-    "label": "HVAC" 
+    "label": "HVAC"
   },
   {
     "slug": "plumbing",
     "title": "Plumbing Business Loans",
+    "heroSubtitle": "Fund new vans, tools, and technicians without waiting on invoices — plumbing contractors get fast financing with approvals in 24 hours.",
     "introTemplates": [
       "Plumbing companies in {{city}}, {{state}} benefit from flexible financing for tools, trucks, and emergency repair demand.",
       "Strengthen your plumbing business in {{city}}, {{state}} with capital for equipment, technicians, and marketing.",
@@ -472,6 +480,7 @@ export default [
   {
     "slug": "electrician",
     "title": "Electrician Business Loans",
+    "heroSubtitle": "Finance vans, tools, apprentices, and EV charger expansion — electricians get funded in as little as 24 hours, even with imperfect credit.",
     "introTemplates": [
       "Electricians in {{city}}, {{state}} benefit from fast financing for tools, vans, and growing customer demand.",
       "Expand your electrical business in {{city}}, {{state}} with capital for equipment, apprentices, and service vehicles.",
@@ -531,6 +540,7 @@ export default [
   {
     "slug": "cleaning",
     "title": "Cleaning Business Loans",
+    "heroSubtitle": "Fund new crews, equipment, and commercial contracts — cleaning businesses get fast, flexible financing with approvals in as little as 24 hours.",
     "introTemplates": [
       "Cleaning companies in {{city}}, {{state}} use business funding for supplies, staffing, and vehicles.",
       "Strengthen your cleaning service in {{city}}, {{state}} with capital for crews, equipment, and marketing.",
@@ -585,6 +595,7 @@ export default [
   {
     "slug": "landscaping",
     "title": "Landscaping Business Loans",
+    "heroSubtitle": "Cover equipment, seasonal labor, and slow winters — landscaping companies get funded in as little as 24 hours with no collateral required.",
     "introTemplates": [
       "Landscaping companies in {{city}}, {{state}} benefit from flexible funding for equipment, crews, and seasonal work.",
       "Strengthen your landscaping business in {{city}}, {{state}} with capital for mowers, trailers, and labor.",
@@ -639,6 +650,7 @@ export default [
   {
     "slug": "auto-repair",
     "title": "Auto Repair Business Loans",
+    "heroSubtitle": "Stock your parts inventory, upgrade your lifts, and hire experienced techs — auto repair shops get approved in as little as 24 hours.",
     "introTemplates": [
       "Auto repair shops in {{city}}, {{state}} depend on financing for diagnostic tools, lifts, and parts inventory.",
       "Strengthen your auto repair business in {{city}}, {{state}} with capital for technicians, equipment, and shop expansion.",
@@ -698,6 +710,7 @@ export default [
   {
     "slug": "medical",
     "title": "Medical Practice Business Loans",
+    "heroSubtitle": "Bridge insurance reimbursement delays, fund equipment, and hire staff — medical practices get flexible financing with approvals in 2–7 days.",
     "introTemplates": [
       "Medical practices in {{city}}, {{state}} secure financing for equipment, staffing, and patient services.",
       "Strengthen your medical practice in {{city}}, {{state}} with capital for technology, buildouts, and providers.",
@@ -752,6 +765,7 @@ export default [
   {
     "slug": "pharmacy",
     "title": "Pharmacy Business Loans",
+    "heroSubtitle": "Cover inventory costs, insurance timing gaps, and staff payroll — independent pharmacies get fast, flexible financing with approvals in 2–7 days.",
     "introTemplates": [
       "Pharmacies in {{city}}, {{state}} secure financing for inventory, staffing, and insurance reimbursement gaps.",
       "Strengthen your pharmacy in {{city}}, {{state}} with capital for technology, upgrades, and expanded services.",
@@ -806,6 +820,7 @@ export default [
   {
     "slug": "fitness",
     "title": "Fitness Business Loans",
+    "heroSubtitle": "Fund equipment, studio buildouts, and membership growth campaigns — gyms and fitness studios get financing with approvals in 2–7 days.",
     "introTemplates": [
       "Gyms and fitness studios in {{city}}, {{state}} secure financing for equipment, buildouts, and membership growth.",
       "Strengthen your fitness business in {{city}}, {{state}} with capital for trainers, classes, and marketing.",
@@ -860,6 +875,7 @@ export default [
   {
     "slug": "professional-services",
     "title": "Professional Services Loans",
+    "heroSubtitle": "Cover payroll between client payments, fund hiring, and invest in growth — professional service firms get flexible financing in 2–5 days.",
     "introTemplates": [
       "Professional service firms in {{city}}, {{state}} secure financing for hiring, technology, and client acquisition.",
       "Strengthen your practice in {{city}}, {{state}} with capital for staff, marketing, and office upgrades.",
@@ -909,6 +925,7 @@ export default [
   {
     "slug": "manufacturing",
     "title": "Manufacturing Business Loans",
+    "heroSubtitle": "Finance machinery, raw materials, and large contract fulfillment — manufacturers get flexible business loans with approvals in 3–7 days.",
     "introTemplates": [
       "Manufacturers in {{city}}, {{state}} secure financing for machinery, raw materials, and large orders.",
       "Strengthen your manufacturing operation in {{city}}, {{state}} with capital for equipment and staffing.",
@@ -958,6 +975,7 @@ export default [
   {
     "slug": "wholesale",
     "title": "Wholesale Business Loans",
+    "heroSubtitle": "Fund bulk inventory, logistics, and warehouse expansion — wholesale distributors get fast financing with approvals in 2–5 days.",
     "introTemplates": [
       "Wholesale distributors in {{city}}, {{state}} benefit from financing for bulk inventory and logistics.",
       "Strengthen your wholesale business in {{city}}, {{state}} with capital for stock, staffing, and vehicles.",
@@ -1007,6 +1025,7 @@ export default [
   {
     "slug": "real-estate",
     "title": "Real Estate Business Loans",
+    "heroSubtitle": "Fund lead generation, marketing, and team expansion — real estate businesses get flexible working capital with approvals in 2–5 days.",
     "introTemplates": [
       "Real estate service businesses in {{city}}, {{state}} use funding for marketing, staffing, and operations.",
       "Strengthen your real estate company in {{city}}, {{state}} with flexible business capital.",
@@ -1056,6 +1075,7 @@ export default [
   {
     "slug": "food-truck",
     "title": "Food Truck Business Loans",
+    "heroSubtitle": "Finance your truck buildout, kitchen equipment, and event fees — food truck owners get funded in as little as 24 hours.",
     "introTemplates": [
       "Food truck owners in {{city}}, {{state}} secure financing for vehicles, kitchen buildouts, and permits.",
       "Grow your food truck business in {{city}}, {{state}} with capital for equipment, staff, and events.",
@@ -1110,6 +1130,7 @@ export default [
   {
     "slug": "childcare",
     "title": "Childcare Business Loans",
+    "heroSubtitle": "Fund staffing, safety upgrades, and facility improvements — childcare centers get flexible financing with approvals in 2–7 days.",
     "introTemplates": [
       "Childcare centers in {{city}}, {{state}} secure financing for staffing, safety, and facility improvements.",
       "Strengthen your childcare business in {{city}}, {{state}} with capital for classrooms, playgrounds, and programs.",
@@ -1159,6 +1180,7 @@ export default [
   {
     "slug": "nonprofit",
     "title": "Nonprofit Financing",
+    "heroSubtitle": "Bridge gaps between grants, fund programs, and cover operations — nonprofits get flexible financing with approvals in 3–7 days.",
     "introTemplates": [
       "Nonprofits in {{city}}, {{state}} secure financing to support staffing, outreach, and programs.",
       "Strengthen your nonprofit's impact in {{city}}, {{state}} with capital for operations and expansion.",
@@ -1208,6 +1230,7 @@ export default [
   {
     "slug": "franchise",
     "title": "Franchise Business Loans",
+    "heroSubtitle": "Cover buildout costs, franchise fees, and grand opening marketing — franchise owners get funded in as little as 3–7 days.",
     "introTemplates": [
       "Franchise owners in {{city}}, {{state}} secure financing for buildouts, fees, and marketing.",
       "Strengthen your franchise in {{city}}, {{state}} with capital for equipment, staff, and working capital.",
@@ -1257,6 +1280,7 @@ export default [
   {
     "slug": "technology",
     "title": "Technology Business Loans",
+    "heroSubtitle": "Fund engineering hires, product development, and infrastructure — tech companies get flexible business loans with approvals in 2–7 days.",
     "introTemplates": [
       "Technology companies in {{city}}, {{state}} secure financing for hiring, development, and infrastructure.",
       "Strengthen your tech business in {{city}}, {{state}} with capital for engineers, sales, and product investment.",
@@ -1306,6 +1330,7 @@ export default [
   {
     "slug": "ecommerce",
     "title": "Ecommerce Business Loans",
+    "heroSubtitle": "Fund inventory, paid ads, and fulfillment costs before peak season hits — ecommerce businesses get approved in as little as 24 hours.",
     "introTemplates": [
       "Ecommerce stores in {{city}}, {{state}} secure financing for inventory, ads, and fulfillment.",
       "Strengthen your ecommerce business in {{city}}, {{state}} with capital for product launches, marketing, and logistics.",
@@ -1353,36 +1378,38 @@ export default [
     "label": "Ecommerce"
   },
   {
-  slug: "salon-spa",
-  title: "Salon & Spa Business Loans",
-  introTemplates: [
-    "Salon and spa businesses in {{city}}, {{state}} use flexible financing for equipment, buildouts, and marketing.",
-    "Grow your salon or spa in {{city}}, {{state}} with funding for chairs, staff, and expansion.",
-    "Beauty businesses in {{city}}, {{state}} benefit from working capital to manage payroll and seasonal demand.",
-    "From remodels to product inventory, salons and spas in {{city}}, {{state}} access financing to scale."
-  ],
-  bestForCore: [
-    { slug: "equipment", label: "Salon chairs & equipment" },
-    { slug: "inventory", label: "Beauty product inventory" },
-    { slug: "payroll", label: "Staff payroll & hiring" }
-  ],
-  bestForExtras: [
-    { slug: "remodel", label: "Remodels & buildouts", weight: 2 },
-    { slug: "marketing", label: "Local marketing & ads", weight: 1 },
-    { slug: "expansion", label: "Opening additional locations", weight: 2 }
-  ],
-  stats: {
-    credit: "580+",
-    speed: "24–48 Hours",
-    terms: "6–24 Months"
-  },
-  industry: "Salon & Spa",
-  audience: "Salon & Spa Owners",
-  label: "Salon & Spa"
+    slug: "salon-spa",
+    title: "Salon & Spa Business Loans",
+    heroSubtitle: "Fund equipment upgrades, salon buildouts, and slow season payroll — salon and spa owners get flexible financing with approvals in 24 hours.",
+    introTemplates: [
+      "Salon and spa businesses in {{city}}, {{state}} use flexible financing for equipment, buildouts, and marketing.",
+      "Grow your salon or spa in {{city}}, {{state}} with funding for chairs, staff, and expansion.",
+      "Beauty businesses in {{city}}, {{state}} benefit from working capital to manage payroll and seasonal demand.",
+      "From remodels to product inventory, salons and spas in {{city}}, {{state}} access financing to scale."
+    ],
+    bestForCore: [
+      { slug: "equipment", label: "Salon chairs & equipment" },
+      { slug: "inventory", label: "Beauty product inventory" },
+      { slug: "payroll", label: "Staff payroll & hiring" }
+    ],
+    bestForExtras: [
+      { slug: "remodel", label: "Remodels & buildouts", weight: 2 },
+      { slug: "marketing", label: "Local marketing & ads", weight: 1 },
+      { slug: "expansion", label: "Opening additional locations", weight: 2 }
+    ],
+    stats: {
+      credit: "580+",
+      speed: "24–48 Hours",
+      terms: "6–24 Months"
+    },
+    industry: "Salon & Spa",
+    audience: "Salon & Spa Owners",
+    label: "Salon & Spa"
   },
   {
     "slug": "food-services",
     "title": "Food Service Business Loans",
+    "heroSubtitle": "Cover kitchen equipment, food inventory, and catering expansion — food service businesses get funded in as little as 24 hours.",
     "introTemplates": [
       "Food service businesses in {{city}}, {{state}} secure financing for equipment, staff, and delivery operations.",
       "Strengthen your catering or food service company in {{city}}, {{state}} with flexible business capital.",
@@ -1432,6 +1459,7 @@ export default [
   {
     "slug": "general-contractors",
     "title": "General Contractor Business Loans",
+    "heroSubtitle": "Buy materials upfront, hire subcontractors, and bid on bigger jobs — general contractors get funded in 24–72 hours with minimal paperwork.",
     "introTemplates": [
       "General contractors in {{city}}, {{state}} use flexible financing to manage labor, materials, and job scheduling.",
       "Grow your contracting business in {{city}}, {{state}} with capital for tools, equipment, and new bids.",
