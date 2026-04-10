@@ -16,8 +16,9 @@ export default function Footer() {
             <p>Fast results. Trusted funding for American businesses.</p>
 
             <p className="sbc-footer__disclaimer">
-              Small Business Capital is not a lender. We connect small business owners 
-              with third-party lenders and funding providers. Loan approval, terms, and 
+              Small Business Capital is not a lender. We connect small business owners
+              with third-party lenders and funding providers, including revenue-based
+              financing and merchant cash advance programs. Loan approval, terms, and
               availability are determined solely by the lender.
             </p>
 
