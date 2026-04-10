@@ -59,8 +59,12 @@ export default function ApplyPage() {
 			  <span>✓ No obligation</span>
 			  <span>✓ Multiple lender options</span>
 			</div>
+      <p style={{fontSize:"11px",color:"#94a3b8",marginTop:"12px",textAlign:"center"}}>
+        By submitting this form you may be matched with lenders offering term loans, lines of credit, revenue-based financing, or merchant cash advance products.
+      </p>
+
 		  </div>
-		</div> 
+		</div>
 
         {/* What happens next */}
         <section className="apply-support">

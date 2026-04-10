@@ -11,7 +11,7 @@ export default function TermsPage() {
       <p style={{ color: "#6b7280", marginBottom: "32px" }}>Last updated: March 17, 2026</p>
 
       <h2>1. Acceptance of Terms</h2>
-      <p>By accessing or using smallbusiness.capital (the "Site"), you agree to be bound by these Terms & Conditions and our Privacy Policy. If you do not agree, please do not use this Site. These Terms apply to all visitors, users, and others who access the Site.</p>
+      <p>By accessing or using smallbusiness.capital (the "Site"), you agree to be bound by these Terms & Conditions and our Privacy Policy. If you do not agree, please do not use this Site. These Terms apply to all visitors, users, and others who access the Site. Products offered through our network may include term loans, lines of credit, equipment financing, revenue-based financing, and merchant cash advances.</p>
 
       <h2>2. About Our Service</h2>
       <p>Small Business Capital is operated by Proper Provider Companies LLC. We are a lead generation and referral service that connects small business owners with third-party lenders and funding providers.</p>
