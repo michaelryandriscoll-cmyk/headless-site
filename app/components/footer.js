@@ -47,11 +47,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/loan-programs/merchant-cash-advance">
-                  Merchant Cash Advance
-                </a>
-              </li>
-              <li>
                 <a href="/loan-programs/term-loans">
                   Term Loans
                 </a>
