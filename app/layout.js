@@ -86,6 +86,13 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.variable}>
       <head>
         <link rel="stylesheet" href="/wp-css/wp-frontend.min.css" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18096733041"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18096733041');
+        `}} />
       </head>
       <body className="sbc-body">
         <LayoutShell>{children}</LayoutShell>
