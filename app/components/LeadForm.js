@@ -1,5 +1,6 @@
 ﻿"use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function LeadForm({
   city = "",
@@ -21,6 +22,8 @@ export default function LeadForm({
     monthly_revenue: ""
   });
   const [status, setStatus] = useState("idle");
+
+  const router = useRouter();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -73,6 +76,7 @@ export default function LeadForm({
 
     if (res.ok) {
       setStatus("success");
+      router.push("/apply/thank-you");
     } else {
       setStatus("error");
     }
@@ -83,15 +87,6 @@ export default function LeadForm({
     setStep(2);
   }
 
-  if (status === "success") {
-    return (
-      <div className="lead-form-box">
-        <div className="lead-success">
-          <p>✅ Your request has been received. An advisor will reach out shortly.</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="lead-form-box">
