@@ -69,7 +69,8 @@ export async function POST(req) {
             time_in_business: time_in_business || "",
             monthly_revenue: monthly_revenue || "",
             lead_tier: lead_tier || "",
-            lender_recommendation: lender_recommendation || ""
+            lender_recommendation: lender_recommendation || "",
+            lead_source_site: "Small Business Capital"
           }
         })
       }
