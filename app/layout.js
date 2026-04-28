@@ -79,6 +79,9 @@ export const metadata = {
     canonical: "https://smallbusiness.capital",
   },
   category: "finance",
+  other: {
+    'impact-site-verification': '50d52bd6-6490-4838-9c05-aa93c83e6ea2',
+  },
 };
 
 export default function RootLayout({ children }) {
