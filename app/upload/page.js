@@ -29,7 +29,7 @@ export default function UploadIndexPage() {
   };
 
   return (
-    <main style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f2342 0%, #1a3a5c 100%)", marginTop:"50px", padding: "8px 16px 80px", fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <main style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f2342 0%, #1a3a5c 100%)", marginTop:"50px", padding: "80px 16px 80px", fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", display: "flex", alignItems: "center", justifyContent: "center" }}>
       <div style={{ maxWidth: "480px", width: "100%" }}>
         <div style={{ textAlign: "center", marginBottom: "32px" }}>
           <a href="/" style={{ textDecoration: "none" }}>
