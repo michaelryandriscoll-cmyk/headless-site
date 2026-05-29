@@ -340,6 +340,7 @@ export default function Header() {
                     <Link href="/blog" prefetch={false}>Blog</Link>
                     <Link href="/about-us" prefetch={false}>About</Link>
                     <Link href="/contact" prefetch={false}>Contact</Link>
+                    <Link href="/upload" prefetch={false}>Upload Documents</Link>
                   </div>
                 </div>
               </li>
@@ -480,7 +481,8 @@ export default function Header() {
                 <li><Link href="/state-loans" onClick={closeMobile}>Funding by State</Link></li>
                 <li><Link href="/blog" onClick={closeMobile}>Blog</Link></li>
                 <li><Link href="/about-us" onClick={closeMobile}>About Us</Link></li>
-                <li><Link href="/contact" onClick={closeMobile}>Contact</Link></li>
+                <li><Link href="/contact" onClick={closeMobile}>Contact</Link></li>\
+                <li><Link href="/upload" onClick={closeMobile}>Upload Documents</Link></li>
               </ul>
             )}
           </li>
