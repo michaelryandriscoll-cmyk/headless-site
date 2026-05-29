@@ -204,7 +204,7 @@ export async function POST(req) {
                       <li>Bank statement — most recent month</li>
                       <li>Bank statement — 2nd most recent month</li>
                       <li>Bank statement — 3rd most recent month</li>
-                      <li>Signed merchant application (we'll send this separately)</li>
+                      <li>Signed merchant application — <a href="https://sbc-uploads-portal.nyc3.digitaloceanspaces.com/sbc_merchant_application_fillable.pdf" style="color:#2563eb;font-weight:600;">download it here</a>, sign, and upload</li>
                     </ul>
                   </div>
                   <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px 16px; margin-bottom: 24px;">

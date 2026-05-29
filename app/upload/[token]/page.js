@@ -238,6 +238,14 @@ export default function UploadPage({ params }) {
               <DropZone onFiles={handleDropFiles} />
               <div style={{ marginBottom: "8px" }}>
                 <div style={{ fontWeight: "700", color: "#0f2342", fontSize: "14px", marginBottom: "12px", display: "flex", alignItems: "center", gap: "6px" }}><span style={{ color: "#dc2626" }}>*</span> Required Documents</div>
+                <a href="https://sbc-uploads-portal.nyc3.digitaloceanspaces.com/sbc_merchant_application_fillable.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: "8px", padding: "12px 16px", marginBottom: "16px", textDecoration: "none" }}>
+                  <span style={{ fontSize: "20px" }}>📥</span>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontWeight: "700", color: "#1d4ed8", fontSize: "14px" }}>Download Merchant Application</div>
+                    <div style={{ fontSize: "12px", color: "#3b82f6" }}>Print, sign, and upload below as "Signed Merchant Application"</div>
+                  </div>
+                  <div style={{ background: "#2563eb", color: "#fff", borderRadius: "6px", padding: "6px 12px", fontSize: "12px", fontWeight: "700", flexShrink: 0 }}>Download →</div>
+                </a>
                 {REQUIRED_DOCS.map((doc) => (<FileRow key={doc.id} doc={doc} file={fileMap[doc.id] || null} onSelect={handleSelect} onRemove={handleRemove} uploading={uploadingId === doc.id || (submitting && fileMap[doc.id] && progressMap[doc.id] < 100)} uploadProgress={progressMap[doc.id] || 0} error={errorMap[doc.id] || null} />))}
               </div>
               <div style={{ marginBottom: "24px" }}>
