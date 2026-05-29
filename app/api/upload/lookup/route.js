@@ -1,7 +1,4 @@
 // app/api/upload/lookup/route.js
-// Looks up a lead's upload token by email and resends their upload link.
-// Called from the /upload index page when someone enters their email.
-
 import { S3Client, ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
 import { NextResponse } from "next/server";
 
@@ -47,7 +44,6 @@ export async function POST(request) {
         const session = JSON.parse(str);
 
         if (session.email?.toLowerCase() === email.toLowerCase()) {
-          // Keep most recent if multiple sessions exist for same email
           if (!matchedSession || new Date(session.createdAt) > new Date(matchedSession.createdAt)) {
             matchedSession = session;
           }
@@ -57,26 +53,26 @@ export async function POST(request) {
       }
     }
 
+    // Always return success — don't reveal whether email exists
     if (!matchedSession) {
-      // Don't reveal whether email exists — always show same message
       return NextResponse.json({ success: true });
     }
 
     const uploadLink = `${process.env.NEXT_PUBLIC_SITE_URL}/upload/${matchedSession.token}`;
     const firstName = (matchedSession.name || "").split(" ")[0] || "there";
 
-    // Resend the upload link
-    await fetch("https://api.brevo.com/v3/smtp/email", {
+    // Send via Resend (SBC uses Resend, not Brevo)
+    await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        "api-key": process.env.BREVO_API_KEY,
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        sender: { name: "Small Business Capital", email: "leads@smallbusiness.capital" },
-        to: [{ email: matchedSession.email, name: matchedSession.name || "" }],
+        from: "leads@smallbusiness.capital",
+        to: matchedSession.email,
         subject: "Your Document Upload Link — Small Business Capital",
-        htmlContent: `
+        html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: #0f2342; padding: 24px 32px; border-radius: 8px 8px 0 0;">
               <h1 style="color: #ffffff; margin: 0; font-size: 20px;">Small Business Capital</h1>
