@@ -82,7 +82,7 @@ export async function POST(request) {
   try {
     const { sessionId } = await request.json();
 
-    if (!sessionId || !/^[a-z0-9\-]+$/.test(sessionId) || sessionId.length > 60) {
+    if (!sessionId || !/^[a-zA-Z0-9\-]+$/.test(sessionId) || sessionId.length > 60) {
       return NextResponse.json({ error: "Invalid session" }, { status: 400 });
     }
 
