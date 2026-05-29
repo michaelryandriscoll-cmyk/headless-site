@@ -10,7 +10,7 @@ const REQUIRED_DOCS = [
   { id: "bank-statement-1", label: "Bank Statement — Most Recent Month", hint: "Your most recent complete month", required: true },
   { id: "bank-statement-2", label: "Bank Statement — 2nd Most Recent Month", hint: "The month before your most recent", required: true },
   { id: "bank-statement-3", label: "Bank Statement — 3rd Most Recent Month", hint: "Three months back", required: true },
-  { id: "merchant-application", label: "Signed Merchant Application", hint: "The application we sent you — signed and dated", required: true },
+  { id: "merchant-application", label: "Signed Merchant Application", hint: "The application we sent or you downloaded — signed and dated", required: true },
 ];
 
 const OPTIONAL_DOCS = [
