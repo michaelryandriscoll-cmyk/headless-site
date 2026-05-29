@@ -76,6 +76,15 @@ export default function LeadForm({
 
     if (res.ok) {
       setStatus("success");
+      try {
+        sessionStorage.setItem("sbcLeadInfo", JSON.stringify({
+          name: form.name || "",
+          email: form.email || "",
+          phone: form.phone || "",
+          loanAmount: form.loan_amount || "",
+          businessName: "",
+        }));
+      } catch {}
       router.push("/apply/thank-you");
     } else {
       setStatus("error");

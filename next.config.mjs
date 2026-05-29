@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  trailingSlash: false,
   async redirects() {
     return [
       // Redirect old state URLs with -business-loans suffix
@@ -9,20 +10,30 @@ const nextConfig = {
         destination: "/state-loans/:state",
         permanent: true,
       },
-      // Redirect old bare state URLs (capitalized or lowercase) to /state-loans/
+      // Redirect old bare state URLs to /state-loans/
       {
         source: "/:state(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new-hampshire|new-jersey|new-mexico|new-york|north-carolina|north-dakota|ohio|oklahoma|oregon|pennsylvania|rhode-island|south-carolina|south-dakota|tennessee|texas|utah|vermont|virginia|washington|west-virginia|wisconsin|wyoming)",
         destination: "/state-loans/:state",
         permanent: true,
       },
-      // Capitalized state URLs Google found
+      // Capitalized state URLs
       {
         source: "/Pennsylvania",
         destination: "/state-loans/pennsylvania",
         permanent: true,
       },
       {
+        source: "/Pennsylvania/",
+        destination: "/state-loans/pennsylvania",
+        permanent: true,
+      },
+      {
         source: "/Colorado",
+        destination: "/state-loans/colorado",
+        permanent: true,
+      },
+      {
+        source: "/Colorado/",
         destination: "/state-loans/colorado",
         permanent: true,
       },
@@ -57,30 +68,41 @@ const nextConfig = {
         destination: "/loan-programs/sba-loans",
         permanent: true,
       },
-      // Old WordPress tag pages
+      // WordPress category pages
+      {
+        source: "/category/:slug",
+        destination: "/blog",
+        permanent: true,
+      },
+      // WordPress tag pages
       {
         source: "/tag/:slug",
         destination: "/blog",
         permanent: true,
       },
-      // Old state-loans URLs missing city (just state/industry)
+      // state/industry/[slug] missing city — redirect to state hub
       {
         source: "/state-loans/:state/industry/:industry",
         destination: "/state-loans/:state",
         permanent: true,
       },
-      // Old state-loans URLs missing industry slug at end
+      {
+        source: "/state-loans/:state/industry/:industry/",
+        destination: "/state-loans/:state",
+        permanent: true,
+      },
+      // state/city/industry missing slug at end — redirect to city page
       {
         source: "/state-loans/:state/:city/industry",
         destination: "/state-loans/:state/:city",
         permanent: true,
       },
-      // Old /industries/ path if any
       {
-        source: "/industries/:slug",
-        destination: "/loan-programs/:slug",
+        source: "/state-loans/:state/:city/industry/",
+        destination: "/state-loans/:state/:city",
         permanent: true,
       },
+
     ];
   },
   async headers() {
