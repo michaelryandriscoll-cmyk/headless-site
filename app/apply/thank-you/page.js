@@ -1,15 +1,19 @@
+"use client";
 // app/apply/thank-you/page.js
-// Clean confirmation page — upload link is sent separately by email.
-
+import { useEffect, useState } from "react";
 import Script from "next/script";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Application Received | Small Business Capital",
-  robots: { index: false },
-};
-
 export default function ThankYouPage() {
+  const [uploadToken, setUploadToken] = useState(null);
+
+  useEffect(() => {
+    try {
+      const stored = sessionStorage.getItem("sbcUploadToken");
+      if (stored) setUploadToken(stored);
+    } catch {}
+  }, []);
+
   return (
     <>
       <Script id="google-ads-conversion" strategy="afterInteractive">{`
@@ -35,21 +39,49 @@ export default function ThankYouPage() {
               Thank you — we've received your funding request and a specialist will be in touch within <strong>1 business day</strong>.
             </p>
 
-            <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: "10px", padding: "20px", marginBottom: "28px", textAlign: "left" }}>
-              <div style={{ fontWeight: "700", color: "#166534", marginBottom: "12px", fontSize: "15px" }}>📋 To speed up your approval:</div>
-              <p style={{ color: "#166534", fontSize: "14px", lineHeight: "1.7", margin: 0 }}>
-                We'll email you a <strong>secure upload link</strong> to submit your last 3 bank statements and signed application. 
-                Having these ready will significantly speed up your funding decision.
-              </p>
-            </div>
+            {/* Upload now box — shown if token is available */}
+            {uploadToken ? (
+              <div style={{ background: "#f0fdf4", border: "2px solid #00a870", borderRadius: "12px", padding: "20px 24px", marginBottom: "24px", textAlign: "left" }}>
+                <div style={{ fontWeight: "700", color: "#166534", fontSize: "15px", marginBottom: "8px" }}>
+                  📁 Have your documents ready?
+                </div>
+                <p style={{ color: "#166534", fontSize: "14px", lineHeight: "1.6", margin: "0 0 16px" }}>
+                  Upload your bank statements and signed application now to speed up your approval — it only takes a few minutes.
+                </p>
+                <a
+                  href={`/upload/${uploadToken}`}
+                  style={{ display: "block", background: "#00a870", color: "#ffffff", textDecoration: "none", borderRadius: "8px", padding: "13px 20px", fontSize: "15px", fontWeight: "700", textAlign: "center" }}
+                >
+                  Upload My Documents Now →
+                </a>
+              </div>
+            ) : (
+              <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: "10px", padding: "20px", marginBottom: "24px", textAlign: "left" }}>
+                <div style={{ fontWeight: "700", color: "#166534", marginBottom: "8px", fontSize: "15px" }}>📋 To speed up your approval:</div>
+                <p style={{ color: "#166534", fontSize: "14px", lineHeight: "1.7", margin: 0 }}>
+                  We'll email you a <strong>secure upload link</strong> to submit your last 3 bank statements and signed application.
+                  Having these ready will significantly speed up your funding decision.
+                </p>
+              </div>
+            )}
 
-            <div style={{ background: "#f8fafc", border: "1px solid #e5e7eb", borderRadius: "10px", padding: "16px 20px", marginBottom: "28px", textAlign: "left" }}>
+            <div style={{ background: "#f8fafc", border: "1px solid #e5e7eb", borderRadius: "10px", padding: "16px 20px", marginBottom: "24px", textAlign: "left" }}>
               <div style={{ fontWeight: "700", color: "#0f2342", marginBottom: "8px", fontSize: "14px" }}>What happens next:</div>
               <ol style={{ margin: 0, paddingLeft: "20px", color: "#4b5563", lineHeight: "1.9", fontSize: "14px" }}>
-                <li>Check your email for your secure upload link</li>
-                <li>Upload your bank statements &amp; signed application</li>
-                <li>A specialist reviews your file (same business day)</li>
-                <li>You receive your funding offer</li>
+                {uploadToken ? (
+                  <>
+                    <li>Upload your documents using the button above</li>
+                    <li>We review your file (same business day)</li>
+                    <li>A specialist contacts you with your funding offer</li>
+                  </>
+                ) : (
+                  <>
+                    <li>Check your email for your secure upload link</li>
+                    <li>Upload your bank statements &amp; signed application</li>
+                    <li>A specialist reviews your file (same business day)</li>
+                    <li>You receive your funding offer</li>
+                  </>
+                )}
               </ol>
             </div>
 

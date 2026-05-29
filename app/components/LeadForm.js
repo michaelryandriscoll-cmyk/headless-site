@@ -32,7 +32,6 @@ export default function LeadForm({
   function getLeadTier() {
     const credit = form.credit_score;
     const time = form.time_in_business;
-    const revenue = form.monthly_revenue;
     const purpose = form.funding_purpose;
 
     if (purpose === "Equipment Purchase") return "equipment";
@@ -77,6 +76,10 @@ export default function LeadForm({
     if (res.ok) {
       setStatus("success");
       try {
+        const resData = await res.json();
+        if (resData.uploadToken) {
+          sessionStorage.setItem("sbcUploadToken", resData.uploadToken);
+        }
         sessionStorage.setItem("sbcLeadInfo", JSON.stringify({
           name: form.name || "",
           email: form.email || "",
@@ -95,7 +98,6 @@ export default function LeadForm({
     e.preventDefault();
     setStep(2);
   }
-
 
   return (
     <div className="lead-form-box">

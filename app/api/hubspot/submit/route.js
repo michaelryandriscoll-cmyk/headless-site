@@ -150,6 +150,7 @@ export async function POST(req) {
     }
 
     // ─── 4. GENERATE UPLOAD LINK + EMAIL TO LEAD ─────────────
+    let uploadToken = null;
     try {
       const uploadRes = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/upload/init`, {
         method: "POST",
@@ -166,7 +167,8 @@ export async function POST(req) {
       const uploadData = await uploadRes.json();
 
       if (uploadData.token) {
-        const uploadLink = `${process.env.NEXT_PUBLIC_SITE_URL}/upload/${uploadData.token}`;
+        uploadToken = uploadData.token;
+        const uploadLink = `${process.env.NEXT_PUBLIC_SITE_URL}/upload/${uploadToken}`;
         const firstName = (name || "").split(" ")[0] || "there";
 
         await fetch("https://api.brevo.com/v3/smtp/email", {
@@ -222,7 +224,8 @@ export async function POST(req) {
       console.error("⚠️ Upload link generation failed:", uploadErr);
     }
 
-    return NextResponse.json({ success: true });
+    // Return token to client so thank-you page can show "Upload Now" button
+    return NextResponse.json({ success: true, uploadToken });
 
   } catch (err) {
     console.error("🔥 Server error:", err);
