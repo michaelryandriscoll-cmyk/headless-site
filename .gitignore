@@ -54,3 +54,4 @@ logs/
 scripts/backups/
 public/elementor/
 public/wp-css/
+.env*.local
