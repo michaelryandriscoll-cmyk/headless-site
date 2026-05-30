@@ -49,6 +49,7 @@ function SessionCard({ session }) {
         <div style={{ textAlign: "right", flexShrink: 0 }}>
           <div style={{ fontSize: "12px", color: "#9ca3af" }}>{formatDate(session.createdAt)}</div>
           <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "2px" }}>{session.files?.length || 0} file{session.files?.length !== 1 ? "s" : ""}</div>
+          <div style={{ fontSize: "11px", color: "#2563eb", marginTop: "2px" }}>/upload/{session.token}</div>
         </div>
         <div style={{ color: "#9ca3af", fontSize: "18px", flexShrink: 0 }}>{expanded ? "▲" : "▼"}</div>
       </div>
