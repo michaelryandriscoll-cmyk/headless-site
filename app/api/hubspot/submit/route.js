@@ -98,7 +98,7 @@ export async function POST(req) {
         },
         body: JSON.stringify({
           from: "leads@smallbusiness.capital",
-          to: process.env.ALERT_EMAIL,
+          to: [process.env.ALERT_EMAIL, "michael@smallbusiness.capital"],
           subject: `🔥 New Lead [${lead_tier?.toUpperCase() || "?"}]: ${intent_industry || industry || "Unknown"} — ${intent_city || city || "Unknown"}, ${intent_state || state || "Unknown"}`,
           html: `
             <h2>New Lead Submitted</h2>
