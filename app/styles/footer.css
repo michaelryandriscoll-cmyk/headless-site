@@ -213,6 +213,31 @@
   box-sizing: border-box;
 }
 
+.sbc-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sbc-footer__social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.sbc-footer__social a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.sbc-footer__social a:hover {
+  color: #00a870;
+}
+
 /* ============================================================
    FOOTER MOBILE FIXES
    ============================================================ */
