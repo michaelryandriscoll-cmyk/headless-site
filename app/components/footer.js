@@ -97,19 +97,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="sbc-footer__col">
-            <h4>Funding Speed</h4>
-            <p>
-              Funding in as fast as 24–72 hours.
-              <br />
-              One easy application.
-            </p>
-            <a className="sbc-footer-cta" href="/apply">
-              Apply Now
-            </a>
-          </div>
-
         </div>
 
         {/* Bottom Bar */}

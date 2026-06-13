@@ -3,43 +3,26 @@
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=63072000; includeSubDomains; preload"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=()"
-        },
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:; frame-ancestors 'none';"
-        },
-        {
-          "key": "Cross-Origin-Opener-Policy",
-          "value": "same-origin"
-        },
-        {
-          "key": "Cross-Origin-Resource-Policy",
-          "value": "cross-origin"
-        }
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:; frame-ancestors 'none';" },
+        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
+        { "key": "Cross-Origin-Resource-Policy", "value": "cross-origin" }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/category/:slug*", "destination": "/blog", "permanent": true },
+    { "source": "/tag/:slug*", "destination": "/blog", "permanent": true },
+    { "source": "/sba-loans", "destination": "/loan-programs/sba-loans", "permanent": true },
+    { "source": "/sba-loans/", "destination": "/loan-programs/sba-loans", "permanent": true },
+    { "source": "/loan-programs/business-loans-for-bad-credit", "destination": "/loan-programs/low-credit-score-loans", "permanent": true },
+    { "source": "/loan-programs/business-loans-for-bad-credit/", "destination": "/loan-programs/low-credit-score-loans", "permanent": true },
+    { "source": "/state-loans/:state/industry/:industry", "destination": "/state-loans/:state", "permanent": true },
+    { "source": "/state-loans/:state/:city/industry", "destination": "/state-loans/:state/:city", "permanent": true }
   ]
 }
