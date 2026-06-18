@@ -2468,3 +2468,31 @@ section.content-section > .home-proof__inner {
   background: var(--sbc-accent);
   color: #ffffff;
 }
+
+/* Sister site nav link */
+.elite-nav-sister {
+  font-size: 0.8rem;
+  color: #a5b4fc;
+  text-decoration: none;
+  opacity: 0.8;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding-left: 1rem;
+  margin-right: 0.75rem;
+  white-space: nowrap;
+}
+.elite-nav-sister:hover {
+  opacity: 1;
+  color: #fff;
+}
+.elite-mobile-sister {
+  display: block;
+  text-align: center;
+  color: #a5b4fc;
+  font-size: 0.85rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.elite-mobile-sister:hover {
+  opacity: 1;
+}

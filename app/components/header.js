@@ -348,6 +348,11 @@ export default function Header() {
             </ul>
           </nav>
 
+          {/* Sister site link */}
+          <a href="https://properpathloans.com" className="elite-nav-sister" target="_blank" rel="noopener">
+            Personal Loans →
+          </a>
+
           {/* Desktop CTA */}
           <Link href="/apply" className="elite-cta" prefetch={false}>
             Apply Now
@@ -492,6 +497,11 @@ export default function Header() {
           </li>
 
         </ul>
+
+        {/* Sister site link */}
+        <a href="https://properpathloans.com" className="elite-mobile-sister" target="_blank" rel="noopener" onClick={closeMobile}>
+          Personal Loans → properpathloans.com
+        </a>
 
         {/* Phone at bottom */}
         <a href="tel:18889008979" className="elite-mobile-phone" onClick={closeMobile}>
