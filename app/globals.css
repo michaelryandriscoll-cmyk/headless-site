@@ -2041,3 +2041,10 @@ section.content-section > .home-proof__inner { padding-top: 72px; padding-bottom
 .elite-mobile-sister:hover {
   color: #fff !important;
 }
+
+/* Hide desktop sister link pill on mobile collapsed header */
+@media (max-width: 767px) {
+  .elite-nav-sister {
+    display: none;
+  }
+}
