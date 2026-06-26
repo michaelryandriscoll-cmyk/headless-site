@@ -492,7 +492,6 @@ const normalizedBestForObjects = Array.isArray(bestFor)
           <div className="section-inner">
             <p className="silo-label">STATE HUB</p>
             <ul className="silo-list mini">
-              <li><Link href={`/state-loans/${finalStateSlug}/industry/${finalIndustrySlug}`}><span className="silo-arrow">›</span>{state} {industry}</Link></li>
               <li><Link href={`/state-loans/${finalStateSlug}`}><span className="silo-arrow">›</span>All {state} Loans</Link></li>
               <li><Link href="/industries"><span className="silo-arrow">›</span>All Industries</Link></li>
             </ul>
