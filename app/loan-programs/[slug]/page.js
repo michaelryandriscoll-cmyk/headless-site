@@ -437,6 +437,29 @@ const FAQS_BY_SLUG = {
 
   // =========================
   // DEFAULT FAQs (AUTO-INJECTED ON ALL LOAN PAGES)
+  "equipment-financing": [
+    {
+      q: "What rates does equipment financing start at?",
+      a: "Equipment financing rates start as low as 7%, with terms ranging from 1 to 5 years depending on the equipment type and business profile.",
+    },
+    {
+      q: "Can I get 100% financing for equipment?",
+      a: "Yes. Many equipment financing programs offer 100% financing, so you don't need a large down payment to acquire the machinery or equipment your business needs.",
+    },
+    {
+      q: "What types of equipment can be financed?",
+      a: "Equipment financing covers a wide range of purchases, including construction machinery, commercial vehicles, kitchen equipment, medical and diagnostic tools, manufacturing machinery, and more.",
+    },
+    {
+      q: "Is equipment financing available for vendor or private-party sales?",
+      a: "Yes. Equipment financing programs typically support both vendor purchases and private-party sales, giving you flexibility in where you buy.",
+    },
+    {
+      q: "How long does equipment financing approval take?",
+      a: "Approval timelines vary by lender and equipment type, but many equipment financing applications move quickly once basic business and equipment details are submitted.",
+    },
+  ],
+
   // =========================
   default: [
     {
