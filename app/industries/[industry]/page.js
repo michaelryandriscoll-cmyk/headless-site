@@ -67,6 +67,8 @@ export default async function IndustryPage({ params }) {
     bestForCore = [],
     bestForExtras = [],
     stats = {},
+    equipmentTypes = [],
+    industryFaqs = [],
   } = industryData;
 
   const credit = stats?.credit || "580+";
@@ -105,6 +107,16 @@ export default async function IndustryPage({ params }) {
     url: `https://smallbusiness.capital/industries/${slug}`,
   };
 
+  const faqSchema = industryFaqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: industryFaqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <main className="industry-detail-page">
 
@@ -114,6 +126,15 @@ export default async function IndustryPage({ params }) {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(loanSchema) }}
       />
+
+      {faqSchema && (
+        <Script
+          id={`faq-schema-${slug}`}
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* ── HERO ── */}
       <header className="idp-hero">
@@ -163,6 +184,45 @@ export default async function IndustryPage({ params }) {
                 <div key={i} className="idp-use-card">
                   {item.label}
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── EQUIPMENT WE FINANCE ── */}
+      {equipmentTypes.length > 0 && (
+        <section className="idp-section bg-light">
+          <div className="idp-inner">
+            <span className="section-eyebrow">EQUIPMENT WE FINANCE</span>
+            <h2>Equipment We Finance for {industryName} Companies</h2>
+            <p>
+              Rates starting at 7%, with 100% financing available on many
+              purchases — new, used, or private-party.
+            </p>
+            <div className="idp-use-grid">
+              {equipmentTypes.map((item, i) => (
+                <div key={i} className="idp-use-card">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── FAQ ── */}
+      {industryFaqs.length > 0 && (
+        <section className="idp-section bg-white">
+          <div className="idp-inner">
+            <span className="section-eyebrow">FAQ</span>
+            <h2>{industryName} Equipment Financing FAQs</h2>
+            <div className="idp-faq-list">
+              {industryFaqs.map((f, i) => (
+                <details key={i} className="idp-faq-item">
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
               ))}
             </div>
           </div>
