@@ -54,6 +54,7 @@ function parseIntentFromPath(pathname) {
   // pathname examples:
   // /state-loans/texas
   // /state-loans/texas/dallas
+  // /state-loans/texas/dallas/industry/construction
   // /loans/texas
   // /loans/texas/dallas
   // /[state]/[city] (you also have app/[state]/[city]/page.js)
@@ -61,20 +62,26 @@ function parseIntentFromPath(pathname) {
   const parts = pathname.split("/").filter(Boolean);
 
   // helpers
-  const build = (state, city, source) => ({
+  const build = (state, city, source, industry = null) => ({
     state: state ? normalizeSlug(state) : null,
     city: city ? normalizeSlug(city) : null,
+    industry: industry ? normalizeSlug(industry) : null,
     source,
     path: pathname,
     ts: Date.now(),
   });
 
-  // /state-loans/:state/:city?
+  // /state-loans/:state/:city/industry/:industry
   const iStateLoans = parts.indexOf("state-loans");
   if (iStateLoans !== -1) {
     const state = parts[iStateLoans + 1] || null;
     const city = parts[iStateLoans + 2] || null;
-    if (state) return build(state, city, "route:state-loans");
+    const iIndustry = parts.indexOf("industry");
+    const industry =
+      iIndustry !== -1 && iIndustry > iStateLoans
+        ? parts[iIndustry + 1] || null
+        : null;
+    if (state) return build(state, city, "route:state-loans", industry);
   }
 
   // /loans/:state/:city?
@@ -83,6 +90,13 @@ function parseIntentFromPath(pathname) {
     const state = parts[iLoans + 1] || null;
     const city = parts[iLoans + 2] || null;
     if (state) return build(state, city, "route:loans");
+  }
+
+  // /industries/:industry (single industry page, no state/city)
+  const iIndustries = parts.indexOf("industries");
+  if (iIndustries !== -1) {
+    const industry = parts[iIndustries + 1] || null;
+    if (industry) return build(null, null, "route:industries", industry);
   }
 
   // /:state/:city? (your app/[state]/[city])
@@ -133,7 +147,7 @@ function parseIntentFromHref(href) {
 }
 
 function applyIntentToApplyLinks(intent) {
-  if (!intent?.state) return;
+  if (!intent?.state && !intent?.industry) return;
 
   const links = document.querySelectorAll('a[href^="/apply"], a[href^="https://"]');
 
@@ -154,8 +168,9 @@ function applyIntentToApplyLinks(intent) {
         ? new URL(href)
         : new URL(href, window.location.origin);
 
-      url.searchParams.set("state", intent.state);
+      if (intent.state) url.searchParams.set("state", intent.state);
       if (intent.city) url.searchParams.set("city", intent.city);
+      if (intent.industry) url.searchParams.set("industry", intent.industry);
 
       // keep relative if original was relative
       const nextHref = href.startsWith("http")
@@ -171,13 +186,14 @@ export default function StateIntentCapture() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // A) Capture intent from current route (when user lands on a state/city page)
+    // A) Capture intent from current route (when user lands on a state/city/industry page)
     const routeIntent = parseIntentFromPath(pathname);
-    if (routeIntent?.state) setIntent(routeIntent);
+    if (routeIntent?.state || routeIntent?.industry) setIntent(routeIntent);
 
-    // B) Apply intent to /apply links (so user carries state into the funnel)
-    const currentIntent = routeIntent?.state ? routeIntent : getIntent();
-    if (currentIntent?.state) applyIntentToApplyLinks(currentIntent);
+    // B) Apply intent to /apply links (so user carries state/industry into the funnel)
+    const currentIntent =
+      routeIntent?.state || routeIntent?.industry ? routeIntent : getIntent();
+    if (currentIntent?.state || currentIntent?.industry) applyIntentToApplyLinks(currentIntent);
 
     // C) Capture intent from clicks anywhere (homepage grid, nav, internal links)
     const onClick = (e) => {
@@ -186,7 +202,7 @@ export default function StateIntentCapture() {
 
       const href = anchor.getAttribute("href");
       const clickIntent = parseIntentFromHref(href);
-      if (clickIntent?.state) setIntent(clickIntent);
+      if (clickIntent?.state || clickIntent?.industry) setIntent(clickIntent);
     };
 
     document.addEventListener("click", onClick, true);

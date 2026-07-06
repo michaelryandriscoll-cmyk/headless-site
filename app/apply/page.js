@@ -2,21 +2,41 @@
 "use client";
 import "@/app/styles/apply-page.css";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import LeadForm from "../components/LeadForm";
 
-export default function ApplyPage() {
+function ApplyPageInner() {
+  const searchParams = useSearchParams();
   const [intent, setIntent] = useState({
     state: "",
     city: "",
+    industry: "",
     source: "organic",
   });
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const stored = localStorage.getItem("sbc_intent");
+    // Prefer URL params (set by StateIntentCapture when rewriting /apply links)
+    // since they're present even on first load, before localStorage reads settle.
+    const qsState = searchParams.get("state") || "";
+    const qsCity = searchParams.get("city") || "";
+    const qsIndustry = searchParams.get("industry") || "";
+
+    if (qsState || qsIndustry) {
+      setIntent({
+        state: qsState,
+        city: qsCity,
+        industry: qsIndustry,
+        source: "organic",
+      });
+      return;
+    }
+
+    // Fallback to localStorage (matches the key StateIntentCapture actually writes)
+    const stored = localStorage.getItem("sbc_intent_v1");
 
     if (stored) {
       try {
@@ -24,13 +44,14 @@ export default function ApplyPage() {
         setIntent({
           state: parsed.state || "",
           city: parsed.city || "",
+          industry: parsed.industry || "",
           source: parsed.source || "organic",
         });
       } catch {
         console.warn("Invalid intent data");
       }
     }
-  }, []);
+  }, [searchParams]);
 
   return (
     <section className="apply-page">
@@ -50,6 +71,7 @@ export default function ApplyPage() {
 			<LeadForm
 			  intentState={intent.state}
 			  intentCity={intent.city}
+			  intentIndustry={intent.industry}
 			  intentSource={intent.source}
 			/>
 
@@ -192,5 +214,13 @@ export default function ApplyPage() {
         </section>
       </div>
     </section>
+  );
+}
+
+export default function ApplyPage() {
+  return (
+    <Suspense fallback={null}>
+      <ApplyPageInner />
+    </Suspense>
   );
 }

@@ -37,7 +37,8 @@ export async function POST(req) {
       paid: "Paid Ads",
       phone: "Phone Call",
       referral: "Referral",
-      website: "Website Form"
+      website: "Website Form",
+      loan_program: "Loan Program Page"
     };
 
     const leadSource = leadSourceMap[intent_source] || "Website Form";

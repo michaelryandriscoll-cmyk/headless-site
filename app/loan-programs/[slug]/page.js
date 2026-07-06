@@ -347,31 +347,8 @@ const FAQS_BY_SLUG = {
 	],
 		
   // =========================
-  // Equipment Financing FAQs 
+  // LOW CREDIT SCORE LOANS
   // =========================
-		
-	"equipment-financing": [
-	  {
-		q: "What is equipment financing?",
-		a: "Equipment financing helps businesses purchase equipment, vehicles, or machinery by spreading the cost over time instead of paying upfront.",
-	  },
-	  {
-		q: "Does equipment financing require collateral?",
-		a: "Often the equipment being financed acts as collateral, which may make approval easier compared to unsecured financing options.",
-	  },
-	  {
-		q: "What types of equipment can be financed?",
-		a: "Common examples include construction equipment, vehicles, medical equipment, restaurant equipment, computers, machinery, and other business tools.",
-	  },
-	  {
-		q: "How fast can equipment financing be approved?",
-		a: "Many equipment financing options can be approved quickly depending on the equipment type, documentation needed, and lender requirements.",
-	  },
-	],
-
-	// =========================
-	// LOW CREDIT SCORE LOANS
-	// =========================
 	"low-credit-score-loans": [
 	  {
 		q: "Can I get a business loan with a low credit score?",
@@ -490,6 +467,13 @@ const RELATED_LOANS_MAP = {
     { slug: "bad-credit-loans", label: "Bad Credit Loans" },
     { slug: "no-doc-loans", label: "No Doc Loans" },
     { slug: "revenue-based-financing", label: "Revenue-Based Financing" },
+    { slug: "equipment-financing", label: "Equipment Financing" },
+  ],
+
+  "equipment-financing": [
+    { slug: "working-capital-loans", label: "Working Capital Loans" },
+    { slug: "revenue-based-financing", label: "Revenue-Based Financing" },
+    { slug: "no-doc-loans", label: "No Doc Loans" },
   ],
 
   "bad-credit-loans": [
@@ -1096,7 +1080,7 @@ export default async function LoanTypePage({ params }) {
           <h2>{formHeadline}</h2>
           <p>{formSubtext}</p>
 
-          <LeadForm />
+          <LeadForm intentSource="loan_program" />
 
           {hasItems(d.formTrustBullets) && (
             <ul className="form-trust">

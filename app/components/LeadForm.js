@@ -8,6 +8,7 @@ export default function LeadForm({
   industry = "",
   intentState = "",
   intentCity = "",
+  intentIndustry = "",
   intentSource = "organic"
 }) {
   const [step, setStep] = useState(1);
@@ -22,6 +23,7 @@ export default function LeadForm({
     monthly_revenue: ""
   });
   const [status, setStatus] = useState("idle");
+  const [phoneError, setPhoneError] = useState("");
 
   const router = useRouter();
 
@@ -62,11 +64,12 @@ export default function LeadForm({
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         ...form,
-        city,
-        state,
-        industry,
+        city: city || intentCity || "",
+        state: state || intentState || "",
+        industry: industry || intentIndustry || "",
         intent_state: intentState || state || "",
         intent_city: intentCity || city || "",
+        intent_industry: intentIndustry || industry || "",
         intent_source: intentSource,
         lead_tier: getLeadTier(),
         lender_recommendation: getLenderRecommendation()
@@ -96,6 +99,12 @@ export default function LeadForm({
 
   function handleStep1(e) {
     e.preventDefault();
+    const digits = form.phone.replace(/\D/g, "");
+    if (digits.length !== 10) {
+      setPhoneError("Please enter a valid 10-digit phone number.");
+      return;
+    }
+    setPhoneError("");
     setStep(2);
   }
 
@@ -135,11 +144,17 @@ export default function LeadForm({
                 formatted = `(${digits}`;
               }
               setForm({ ...form, phone: formatted });
+              if (phoneError) setPhoneError("");
             }}
             inputMode="numeric"
             maxLength={14}
             required
           />
+          {phoneError && (
+            <p style={{ color: "#dc2626", fontSize: "13px", margin: "-4px 0 4px" }}>
+              {phoneError}
+            </p>
+          )}
 
           <label htmlFor="loan_amount" className="sr-only">How much funding do you need?</label>
           <select
