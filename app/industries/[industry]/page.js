@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Script from "next/script";
 import industries from "@/app/lib/_industryList25";
+import AuthorByline from "@/app/components/AuthorByline";
 
 export const dynamic = "force-dynamic";
 
@@ -262,6 +263,8 @@ export default async function IndustryPage({ params }) {
           </div>
         </div>
       </section>
+
+      <AuthorByline pageId={`industry-${slug}`} />
 
       {/* ── CTA ── */}
       <section className="idp-cta" id="cta">

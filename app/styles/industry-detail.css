@@ -166,6 +166,50 @@
   line-height: 1.6;
 }
 
+/* ── AUTHOR BYLINE ── */
+.author-byline {
+  padding: 24px 20px;
+  border-top: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.author-byline__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-byline__avatar {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0b1f41;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-byline__text {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.author-byline__label {
+  color: #94a3b8;
+}
+
+.author-byline__name {
+  color: #0b1f41;
+  font-weight: 600;
+}
+
 /* ── LOCAL FUNDING ── */
 .idp-local {
   background: #ffffff;

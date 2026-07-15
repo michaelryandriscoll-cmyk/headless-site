@@ -1,7 +1,8 @@
 ﻿import "@/app/styles/loan-page.css";
 import LeadForm from "@/app/components/LeadForm";
 import Link from "next/link";
-import { notFound } from "next/navigation"; 
+import { notFound } from "next/navigation";
+import AuthorByline from "@/app/components/AuthorByline";
 
 export const revalidate = 60;
 export const dynamicParams = true;
@@ -1215,6 +1216,8 @@ export default async function LoanTypePage({ params }) {
           </section>
         </>
       )}
+
+      <AuthorByline pageId={`loan-program-${normalizedSlug}`} />
 
       {/* ================= FINAL CTA ================= */}
 		<section className="loan-final">
