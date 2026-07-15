@@ -35,6 +35,9 @@ export default function normalizeIndustryPage({
     industry: industryConfig.industry,
     audience: industryConfig.audience,
     intro,
+    heroSubtitle: industryConfig.heroSubtitle || "",
+    equipmentTypes: industryConfig.equipmentTypes || [],
+    industryFaqs: industryConfig.industryFaqs || [],
     bestFor: [
       ...(industryConfig.bestForCore || []),
       ...(industryConfig.bestForExtras || []),

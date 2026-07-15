@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useEffect } from "react";
+import Script from "next/script";
 import "@/app/city-loans.css";
 import "@/app/styles/state-loans.css";
 import LeadForm from "@/components/LeadForm";
@@ -32,6 +33,9 @@ export default function IndustryCityTemplate({
   industry = "",
   industrySlug = "",
   intro = "",
+  heroSubtitle = "",
+  equipmentTypes = [],
+  industryFaqs = [],
   bestFor = [],
   stats = {},
 }) {
@@ -199,8 +203,34 @@ const normalizedBestForObjects = Array.isArray(bestFor)
     },
   };
 
+  const faqSchema = industryFaqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: industryFaqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <main className="city-loan-page">
+
+      <Script
+        id={`financial-service-schema-${finalStateSlug}-${finalCitySlug}-${finalIndustrySlug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
+      {faqSchema && (
+        <Script
+          id={`faq-schema-${finalStateSlug}-${finalCitySlug}-${finalIndustrySlug}`}
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* ================= HERO ================= */}
       <header className="city-hero section-lg bg-white" id="top">
@@ -218,8 +248,8 @@ const normalizedBestForObjects = Array.isArray(bestFor)
             </h1>
 
             <p className="hero-subtitle">
-              Working capital, equipment financing, or a flexible line of credit —
-              approved in 24–72 hours.
+              {heroSubtitle ||
+                "Working capital, equipment financing, or a flexible line of credit — approved in 24–72 hours."}
             </p>
 
             <div className="hero-cta-group">
@@ -239,6 +269,15 @@ const normalizedBestForObjects = Array.isArray(bestFor)
 
         </div>
       </header>
+
+      {/* ================= LOCAL INTRO (previously computed, never rendered) ================= */}
+      {intro && (
+        <section className="section-sm bg-white">
+          <div className="section-inner">
+            <p className="local-intro-text">{intro}</p>
+          </div>
+        </section>
+      )}
 
       {/* ================= TRUST STRIP ================= */}
       <section className="trust-strip bg-dark section-sm">
@@ -416,14 +455,43 @@ const normalizedBestForObjects = Array.isArray(bestFor)
         </div>
       </section>
 
+      {/* ================= EQUIPMENT WE FINANCE ================= */}
+      {equipmentTypes.length > 0 && (
+        <section id="equipment" className="section-md bg-light">
+          <div className="section-inner">
+            <span className="section-eyebrow">EQUIPMENT WE FINANCE</span>
+            <h2>Equipment We Finance for {industry} Companies in {city}</h2>
+            <p>
+              Rates starting at 7%, with 100% financing available on many
+              purchases — new, used, or private-party.
+            </p>
+            <div className="bestuse-grid">
+              {equipmentTypes.map((item, i) => (
+                <div key={i} className="bestuse-card">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ================= FAQ ================= */}
       <section id="faq" className="faq-section section-md bg-light">
         <div className="section-inner">
           <span className="section-eyebrow">COMMON QUESTIONS</span>
   		  <h2>{industry} Loan FAQ – {city}</h2>
-          <details><summary>How fast can we get approved?</summary><p>Most businesses receive decisions in 24–72 hours.</p></details>
-          <details><summary>Will applying affect credit?</summary><p>No impact for initial review.</p></details>
-          <details><summary>Do we need collateral?</summary><p>Many programs are unsecured.</p></details>
+          {industryFaqs.length > 0 ? (
+            industryFaqs.map((f, i) => (
+              <details key={i}><summary>{f.q}</summary><p>{f.a}</p></details>
+            ))
+          ) : (
+            <>
+              <details><summary>How fast can we get approved?</summary><p>Most businesses receive decisions in 24–72 hours.</p></details>
+              <details><summary>Will applying affect credit?</summary><p>No impact for initial review.</p></details>
+              <details><summary>Do we need collateral?</summary><p>Many programs are unsecured.</p></details>
+            </>
+          )}
         </div>
       </section>
 	  
