@@ -2,6 +2,7 @@
 import "@/app/styles/state-loans.css";
 import Link from "next/link";
 import stateCityMap from "@/app/lib/stateCityMap";
+import stateFacts from "@/app/lib/stateFacts";
 import IndustrySelectorDropdown from "@/app/components/IndustrySelectorDropdown";
 
 export const dynamic = "force-static";
@@ -24,9 +25,14 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const fact = stateFacts[normalizedState];
+  const description = fact
+    ? `${fact} Compare small business funding options by city and industry across ${S.stateName}.`
+    : `Working capital, credit lines, equipment financing and same-week funding available across ${S.stateName}. Compare programs and lenders by city.`;
+
   return {
     title: `${S.stateName} Small Business Loans | Funding Programs & Lenders`,
-    description: `Working capital, credit lines, equipment financing and same-week funding available across ${S.stateName}. Compare programs and lenders by city.`,
+    description,
     alternates: {
       canonical: `https://smallbusiness.capital/state-loans/${normalizedState}`,
     },
@@ -58,6 +64,7 @@ export default async function StatePage({ params }) {
   const speed = S?.processingTime || "24–72 Hours";
   const coverage = S?.stateName || "Statewide";
   const stateHref = `/state-loans/${normalizedState}`;
+  const stateFact = stateFacts[normalizedState] || "";
 
   return (
     <main className="state-page" style={{ paddingTop: 25 }}>
@@ -67,6 +74,9 @@ export default async function StatePage({ params }) {
           Explore working capital, equipment financing, and business credit lines
           available across {S.stateName}. Compare funding options by city and industry.
         </p>
+        {stateFact && (
+          <p className="state-hero__local-fact">{stateFact}</p>
+        )}
         <div className="state-stats">
           <div className="state-stat">
             <strong>Minimum Credit Score</strong>
