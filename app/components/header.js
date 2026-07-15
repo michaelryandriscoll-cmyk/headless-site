@@ -337,6 +337,7 @@ export default function Header() {
                   </div>
                   <div className="elite-dropdown-section">
                     <div className="elite-dropdown-section-title">More</div>
+                    <Link href="/loan-calculator" prefetch={false}>Funding Estimator</Link>
                     <Link href="/blog" prefetch={false}>Blog</Link>
                     <Link href="/about-us" prefetch={false}>About</Link>
                     <Link href="/contact" prefetch={false}>Contact</Link>
@@ -484,6 +485,7 @@ export default function Header() {
             {openSection === "resources" && (
               <ul className="elite-mobile-submenu">
                 <li><Link href="/state-loans" onClick={closeMobile}>Funding by State</Link></li>
+                <li><Link href="/loan-calculator" onClick={closeMobile}>Funding Estimator</Link></li>
                 <li><Link href="/blog" onClick={closeMobile}>Blog</Link></li>
                 <li><Link href="/about-us" onClick={closeMobile}>About Us</Link></li>
                 <li><Link href="/contact" onClick={closeMobile}>Contact</Link></li>\
