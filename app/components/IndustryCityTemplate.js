@@ -272,8 +272,9 @@ const normalizedBestForObjects = Array.isArray(bestFor)
 
       {/* ================= LOCAL INTRO (previously computed, never rendered) ================= */}
       {intro && (
-        <section className="local-intro-section bg-white">
+        <section className="local-intro-section bg-light">
           <div className="section-inner">
+            <span className="section-eyebrow">LOCAL TO {city.toUpperCase()}</span>
             <p className="local-intro-text">{intro}</p>
           </div>
         </section>
