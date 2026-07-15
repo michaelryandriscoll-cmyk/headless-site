@@ -57,18 +57,18 @@ export default async function AboutPage() {
     acf.hero_intro ||
     "At Small Business Capital, we don’t just provide funding — we create opportunity for business owners who need capital to grow and succeed.";
 
-  // CEO
-  const ceoSectionTitle = acf.ceo_section_title || "A Message from Our CEO";
+  // LEADERSHIP
+  const ceoSectionTitle = acf.ceo_section_title || "A Message from Our Team";
   const ceoQuote =
     acf.ceo_quote ||
-    "“Big things often have small beginnings — the key is to keep pushing forward, even when the odds seem stacked against you.”";
+    "“We built Small Business Capital around one idea: getting business owners real funding options, fast, without the runaround.”";
 
   const ceoMessageHtml =
     acf.ceo_message ||
-    `<p>Dear Business Owner,<br/>I know firsthand what it’s like to have a vision for your business but struggle to find the capital to bring it to life.</p>`;
+    `<p>Dear Business Owner,<br/>Every day, I talk with business owners who have a clear vision for what they need to grow — and just need the right funding partner to get there. That's what we're here for.</p>`;
 
   const ceoSignature =
-    acf.ceo_signature || "— Stephanie Johnson, Chief Executive Officer";
+    acf.ceo_signature || "— Daniel Taberski, Director of Business Development";
 
   // MISSION
   const missionTitle =
@@ -190,11 +190,11 @@ export default async function AboutPage() {
 			  <aside className="about-ceo-right">
 				<div className="about-ceo-profile">
 				  <div className="about-ceo-avatar" aria-hidden="true">
-					SJ
+					  DT
 				  </div>
 
 				  <div className="about-ceo-profile-text">
-					<div className="about-ceo-role">Chief Executive Officer</div>
+					<div className="about-ceo-role">Director of Business Development</div>
 					<div className="about-ceo-company">Small Business Capital</div>
 				  </div>
 				</div>
@@ -208,17 +208,12 @@ export default async function AboutPage() {
 				</div>
 
 				<div className="about-ceo-trust">
-				  <div className="about-ceo-trust-title">Trusted by business owners nationwide</div>
+				  <div className="about-ceo-trust-title">Nationwide funding support</div>
 
 				  <div className="about-ceo-trust-logos">
-					<span className="trust-logo">Inc.</span>
-					<span className="trust-logo">WSJ</span>
-					<span className="trust-logo">Forbes</span>
-					<span className="trust-logo">Entrepreneur</span>
-				  </div>
-
-				  <div className="about-ceo-trust-note">
-					*Logos shown for design/credibility layout — replace with real sources if needed.
+					<span className="trust-logo">50 States</span>
+					<span className="trust-logo">500+ Cities</span>
+					<span className="trust-logo">24–72hr Decisions</span>
 				  </div>
 				</div>
 			  </aside>
