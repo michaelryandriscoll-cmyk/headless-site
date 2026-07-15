@@ -4,7 +4,7 @@ import stateCityMap from "@/app/lib/stateCityMap";
 
 const BASE_URL = "https://smallbusiness.capital";
 
-// All 28 industry slugs — must match _industryList25.js exactly
+// 17 industry slugs — must match _industryList25.js exactly
 const INDUSTRIES = [
   "roofing",
   "trucking",
@@ -18,22 +18,11 @@ const INDUSTRIES = [
   "cleaning",
   "landscaping",
   "auto-repair",
-  "medical",
-  "pharmacy",
   "fitness",
-  "professional-services",
   "manufacturing",
-  "wholesale",
-  "real-estate",
   "food-truck",
-  "childcare",
-  "nonprofit",
-  "franchise",
-  "technology",
-  "ecommerce",
   "salon-spa",
   "food-services",
-  "general-contractors",
 ];
 
 // Loan program slugs
@@ -55,7 +44,7 @@ const LOAN_PROGRAMS = [
 // High-value contractor industries get priority boost
 const HIGH_VALUE_INDUSTRIES = new Set([
   "roofing", "hvac", "plumbing", "electrician",
-  "construction", "general-contractors", "solar",
+  "construction", "solar",
 ]);
 
 export default function sitemap() {

@@ -103,6 +103,42 @@ const nextConfig = {
         permanent: true,
       },
 
+      // Pruned industries (2026-07-15) — redirect old URLs to sensible fallbacks
+      ...[
+        "medical",
+        "pharmacy",
+        "professional-services",
+        "wholesale",
+        "real-estate",
+        "childcare",
+        "nonprofit",
+        "franchise",
+        "technology",
+        "ecommerce",
+        "general-contractors",
+      ].flatMap((slug) => [
+        {
+          source: `/industries/${slug}`,
+          destination: "/industries",
+          permanent: true,
+        },
+        {
+          source: `/industries/${slug}/`,
+          destination: "/industries",
+          permanent: true,
+        },
+        {
+          source: `/state-loans/:state/:city/industry/${slug}`,
+          destination: "/state-loans/:state/:city",
+          permanent: true,
+        },
+        {
+          source: `/state-loans/:state/:city/industry/${slug}/`,
+          destination: "/state-loans/:state/:city",
+          permanent: true,
+        },
+      ]),
+
     ];
   },
   async headers() {

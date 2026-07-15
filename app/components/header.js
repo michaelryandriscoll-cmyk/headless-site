@@ -31,10 +31,6 @@ const INDUSTRY_GROUPS = [
     label: "Professional Services",
     items: [
       { name: "Trucking", slug: "trucking" },
-      { name: "Ecommerce", slug: "ecommerce" },
-      { name: "Franchise", slug: "franchise" },
-      { name: "Real Estate", slug: "real-estate" },
-      { name: "Technology", slug: "technology" },
       { name: "Manufacturing", slug: "manufacturing" },
     ],
   },
@@ -43,8 +39,6 @@ const INDUSTRY_GROUPS = [
     items: [
       { name: "Retail", slug: "retail" },
       { name: "Auto Repair", slug: "auto-repair" },
-      { name: "Childcare", slug: "childcare" },
-      { name: "Medical", slug: "medical" },
       { name: "Fitness", slug: "fitness" },
       { name: "Cleaning", slug: "cleaning" },
     ],
