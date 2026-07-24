@@ -46,13 +46,13 @@ export default function LeadForm({
   function getLenderRecommendation() {
     const tier = getLeadTier();
     const map = {
-      prime: "Lendio / Fundera",
-      "near-prime": "Credibly / Ondeck",
-      subprime: "Greenbox / Rapid Finance",
-      equipment: "Equipment Specialty Lender",
-      startup: "MCA / Short-Term Lender"
+      prime: "Reliant Funding + LCF Group (submit to both)",
+      "near-prime": "LCF Group (or Reliant if bank account qualifies)",
+      subprime: "LCF Group",
+      equipment: "NBC if $2M+ annual revenue, otherwise Reliant/LCF as working capital",
+      startup: "LCF Group (hardest tier to place — verify viability first)"
     };
-    return map[tier] || "General Network";
+    return map[tier] || "LCF Group (default — verify manually)";
   }
 
   async function handleSubmit(e) {
